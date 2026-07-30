@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SitePlanner | Construction Intelligence Platform</title>
+  <meta name="description" content="Real-time construction project tracking and management — 255 units, multi-user, role-based." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       LOGIN SCREEN
+  ══════════════════════════════════════════ -->
+  <div id="loginScreen" class="login-screen">
+    <div class="login-card">
+      <div class="login-logo">
+        <div class="logo-mark">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <rect width="36" height="36" rx="10" fill="#1B4F8A"/>
+            <path d="M8 26L13 13L18 21L23 10L28 26H8Z" fill="white" stroke="white" stroke-width="1.2" stroke-linejoin="round"/>
+            <circle cx="18" cy="9" r="2.5" fill="#F59E0B"/>
+          </svg>
+        </div>
+        <div>
+          <div class="login-brand">SitePlanner</div>
+          <div class="login-tagline">Construction Intelligence Platform</div>
+        </div>
+      </div>
+      <h2 class="login-title">Sign in to your workspace</h2>
+      <div id="loginError" class="login-error" style="display:none"></div>
+      <div class="form-group">
+        <label class="form-label" for="loginEmail">Email Address</label>
+        <input type="email" id="loginEmail" class="form-input" placeholder="engineer@company.com" autocomplete="email" />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" class="form-input" placeholder="••••••••" autocomplete="current-password" />
+      </div>
+      <button class="btn-primary login-btn" id="loginBtn">Sign In</button>
+      <p class="login-note">Access is managed by your project administrator.</p>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       MAIN APP (hidden until authenticated)
+  ══════════════════════════════════════════ -->
+  <div id="appRoot" class="app-root" style="display:none">
+
+    <!-- ── HEADER ── -->
+    <header class="app-header" id="appHeader">
+      <div class="header-left">
+        <div class="app-logo">
+          <div class="logo-mark">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <rect width="28" height="28" rx="7" fill="#1B4F8A"/>
+              <path d="M6 20L10 10L14 16L18 8L22 20H6Z" fill="white" stroke="white" stroke-width="1" stroke-linejoin="round"/>
+              <circle cx="14" cy="7" r="2" fill="#F59E0B"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">SitePlanner</span>
+            <span class="logo-tagline">Construction Intelligence</span>
+          </div>
+        </div>
+        <div class="project-pill" id="projectPill">
+          <span class="live-dot"></span>
+          <span id="projectName">My Compound Project</span>
+        </div>
+      </div>
+
+      <div class="header-center">
+        <div class="stats-ribbon">
+          <div class="stat-chip">
+            <span class="stat-num" id="statTotal">255</span>
+            <span class="stat-lbl">Total</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat-chip">
+            <span class="stat-num" id="statNotStarted" style="color:#94A3B8">—</span>
+            <span class="stat-lbl">Not Started</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat-chip">
+            <span class="stat-num" id="statInProgress" style="color:#3B82F6">—</span>
+            <span class="stat-lbl">In Progress</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat-chip">
+            <span class="stat-num" id="statCompleted" style="color:#10B981">—</span>
+            <span class="stat-lbl">Completed</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat-chip">
+            <span class="stat-num" id="statOnHold" style="color:#F59E0B">—</span>
+            <span class="stat-lbl">On Hold</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-right">
+        <div class="search-wrap">
+          <svg class="search-ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="9" r="6"/><path d="M15 15l3 3"/>
+          </svg>
+          <input id="globalSearch" type="text" placeholder="Search units…" autocomplete="off" />
+          <div class="search-results" id="searchResults"></div>
+        </div>
+
+        <!-- Manager-only: User Management -->
+        <button class="hdr-btn manager-only" id="usersBtn" title="Manage Users" style="display:none">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </button>
+
+        <div class="user-chip" id="userChip">
+          <div class="user-avatar" id="userAvatar">?</div>
+          <div class="user-info">
+            <span class="user-name" id="userDisplayName">Loading…</span>
+            <span class="user-role-badge" id="userRoleBadge">—</span>
+          </div>
+          <button class="sign-out-btn" id="signOutBtn" title="Sign Out">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+              <polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ── APP SHELL ── -->
+    <div class="app-shell">
+
+      <!-- ── FILTER SIDEBAR ── -->
+      <aside class="filter-bar" id="filterBar">
+        <div class="fb-section">
+          <button class="fb-collapse-btn" id="sidebarToggle" title="Collapse sidebar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"/>
+            </svg>
+          </button>
+          <h3 class="fb-heading">Filters</h3>
+          <button class="fb-clear" id="clearFilters">Clear</button>
+        </div>
+
+        <div class="fb-group">
+          <p class="fb-label">Status</p>
+          <div id="statusFilterList">
+            <!-- Populated from Firestore config/statuses -->
+          </div>
+        </div>
+
+        <div class="fb-group">
+          <p class="fb-label">Unit Type</p>
+          <label class="fb-check"><input type="checkbox" class="tf" data-key="type" value="A" checked>Type A – Villa</label>
+          <label class="fb-check"><input type="checkbox" class="tf" data-key="type" value="B" checked>Type B – Villa</label>
+          <label class="fb-check"><input type="checkbox" class="tf" data-key="type" value="C" checked>Type C – Townhouse</label>
+          <label class="fb-check"><input type="checkbox" class="tf" data-key="type" value="D" checked>Type D – Townhouse</label>
+          <label class="fb-check"><input type="checkbox" class="tf" data-key="type" value="AP" checked>Apartment Block</label>
+        </div>
+
+        <div class="fb-group">
+          <p class="fb-label">Phase</p>
+          <select id="phaseFilter" class="fb-select"><option value="">All Phases</option></select>
+        </div>
+
+        <div class="fb-group">
+          <p class="fb-label">Engineer</p>
+          <select id="engineerFilter" class="fb-select"><option value="">All Engineers</option></select>
+        </div>
+
+        <div class="fb-group">
+          <p class="fb-label">Handover</p>
+          <label class="fb-check"><input type="radio" name="hf" value="" class="hf" checked>All Units</label>
+          <label class="fb-check"><input type="radio" name="hf" value="yes" class="hf">Handed Over</label>
+          <label class="fb-check"><input type="radio" name="hf" value="no" class="hf">Pending Handover</label>
+        </div>
+
+        <!-- Engineer-only: My Units filter -->
+        <div class="fb-group engineer-only" id="myUnitsGroup" style="display:none">
+          <p class="fb-label">My Units</p>
+          <label class="fb-check">
+            <input type="checkbox" id="myUnitsOnly"> Show my units only
+          </label>
+        </div>
+
+        <div class="fb-legend">
+          <p class="fb-label">Legend</p>
+          <div id="legendList"><!-- Populated from config --></div>
+        </div>
+      </aside>
+
+      <!-- ── MAIN CONTENT ── -->
+      <main class="content-area" id="contentArea">
+
+        <!-- View Tab Bar -->
+        <div class="view-bar">
+          <div class="view-tabs">
+            <button class="vtab active" data-view="map" id="tabMap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/>
+                <line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/>
+              </svg>Masterplan
+            </button>
+            <button class="vtab" data-view="list" id="tabList">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/>
+                <line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/>
+                <line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
+              </svg>Unit List
+            </button>
+            <button class="vtab" data-view="dashboard" id="tabDashboard">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+                <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+              </svg>Dashboard
+            </button>
+            <!-- Manager-only tab -->
+            <button class="vtab manager-only" data-view="users" id="tabUsers" style="display:none">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>Users
+            </button>
+          </div>
+          <div class="view-actions">
+            <button class="btn-outline" id="loadMapBtn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/>
+              </svg>Load Masterplan
+            </button>
+            <input type="file" id="masterplanInput" accept="image/*" style="display:none" />
+          </div>
+        </div>
+
+        <!-- ── MAP VIEW ── -->
+        <div class="view-pane active" id="viewMap">
+          <div class="map-stage" id="mapStage">
+            <div class="map-canvas" id="mapCanvas">
+              <img id="masterplanImg" src="" alt="Compound Masterplan" />
+              <svg id="hotspotSvg" class="hotspot-layer" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
+              <div class="map-tooltip" id="mapTooltip">
+                <div class="tt-num" id="ttNum"></div>
+                <div class="tt-row" id="ttType"></div>
+                <div class="tt-row" id="ttStatus"></div>
+                <div class="tt-row" id="ttPhase"></div>
+                <div class="tt-row" id="ttEngineer"></div>
+              </div>
+            </div>
+            <div class="map-empty" id="mapEmpty">
+              <div class="map-empty-inner">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                  <rect width="80" height="80" rx="16" fill="#EFF6FF"/>
+                  <rect x="16" y="16" width="48" height="48" rx="8" stroke="#3B82F6" stroke-width="2" fill="none"/>
+                  <circle cx="32" cy="30" r="5" stroke="#3B82F6" stroke-width="2"/>
+                  <path d="M16 55L28 40L36 48L50 30L64 55" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h3>Load Your Masterplan</h3>
+                <p>Upload your compound image to begin tracking units on the interactive map</p>
+                <button class="btn-primary" onclick="document.getElementById('masterplanInput').click()">Choose Image</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── LIST VIEW ── -->
+        <div class="view-pane" id="viewList">
+          <div class="list-bar">
+            <input type="text" id="listSearch" placeholder="Search unit, type, engineer…" />
+            <select id="listSort" class="fb-select">
+              <option value="number">Sort: Number</option>
+              <option value="status">Sort: Status</option>
+              <option value="phase">Sort: Phase</option>
+              <option value="engineer">Sort: Engineer</option>
+            </select>
+            <button class="btn-outline" id="exportCsvBtn">Export CSV</button>
+          </div>
+          <div class="tbl-wrap">
+            <table class="unit-tbl">
+              <thead>
+                <tr>
+                  <th>Unit #</th><th>Type</th><th>Status</th><th>Current Phase</th>
+                  <th>Engineer</th><th>Contractor</th>
+                  <th>Handed Over</th><th>Issues</th><th></th>
+                </tr>
+              </thead>
+              <tbody id="tblBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ── DASHBOARD VIEW ── -->
+        <div class="view-pane" id="viewDashboard">
+          <div class="dash-grid">
+
+            <div class="dash-card span-full dash-stats-row" id="dashStatsRow">
+              <!-- Populated by JS -->
+            </div>
+
+            <div class="dash-card">
+              <h3 class="dash-title">Overall Progress</h3>
+              <div class="progress-ring-wrap">
+                <svg class="prog-ring" viewBox="0 0 140 140">
+                  <circle class="ring-track" cx="70" cy="70" r="58"/>
+                  <circle class="ring-fill" cx="70" cy="70" r="58" id="ringFill"/>
+                </svg>
+                <div class="ring-label">
+                  <span id="progPct">0%</span>
+                  <small>Complete</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="dash-card">
+              <h3 class="dash-title">Phase Breakdown</h3>
+              <div id="phaseBreakdown"></div>
+            </div>
+
+            <div class="dash-card">
+              <h3 class="dash-title">Engineer Workload</h3>
+              <div id="engWorkload"></div>
+            </div>
+
+            <div class="dash-card dash-activity">
+              <h3 class="dash-title">Recent Activity</h3>
+              <div id="activityLog"></div>
+            </div>
+
+            <div class="dash-card">
+              <h3 class="dash-title">Units with Issues</h3>
+              <div id="issuesList"></div>
+            </div>
+
+            <div class="dash-card">
+              <h3 class="dash-title">Stalled Units <span class="dash-badge" id="stalledBadge">0</span></h3>
+              <div id="stalledList"></div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── USERS VIEW (Manager only) ── -->
+        <div class="view-pane" id="viewUsers">
+          <div class="users-page">
+            <div class="users-header">
+              <div>
+                <h2 class="users-title">User Management</h2>
+                <p class="users-sub">Add engineers and viewers, assign roles and units</p>
+              </div>
+              <button class="btn-primary" id="addUserBtn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                  <line x1="12" y1="1" x2="12" y2="5"/><line x1="10" y1="3" x2="14" y2="3"/>
+                </svg>
+                Add User
+              </button>
+            </div>
+            <div class="users-grid" id="usersGrid">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+        </div>
+
+      </main>
+    </div><!-- /app-shell -->
+
+    <!-- ══════════════════════════════════════════
+         UNIT DETAIL PANEL
+    ══════════════════════════════════════════ -->
+    <aside class="unit-panel" id="unitPanel">
+      <div class="panel-hdr">
+        <div class="phdr-left">
+          <div class="panel-badge" id="pBadge">V001</div>
+          <div>
+            <div class="panel-title" id="pTitle">Unit V001</div>
+            <div class="panel-sub" id="pSub">Type A – Villa</div>
+          </div>
+        </div>
+        <div class="phdr-right">
+          <button class="hdr-btn" id="pEditBtn" title="Edit Unit">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+              <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+            </svg>
+          </button>
+          <button class="hdr-btn" id="pCloseBtn" title="Close">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel-status-strip" id="pStatusStrip">
+        <span class="status-pill" id="pStatusPill">Not Started</span>
+        <span class="handover-pill" id="pHandoverPill">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14">
+            <path d="M10.5 14v-1.333A2.667 2.667 0 0 0 7.833 10H3.167A2.667 2.667 0 0 0 .5 12.667V14"/>
+            <circle cx="5.5" cy="5" r="2.667"/>
+            <line x1="13" y1="5" x2="13" y2="11"/><line x1="10" y1="8" x2="16" y2="8"/>
+          </svg>
+          <span id="pHandoverText">Not Handed Over</span>
+        </span>
+      </div>
+
+      <nav class="panel-tabs" id="panelTabs">
+        <button class="ptab active" data-tab="overview">Overview</button>
+        <button class="ptab" data-tab="phases">Phases</button>
+        <button class="ptab" data-tab="photos">Photos</button>
+        <button class="ptab" data-tab="drawings">Drawings</button>
+        <button class="ptab" data-tab="comments">Comments</button>
+        <button class="ptab" data-tab="issues">Issues</button>
+      </nav>
+
+      <div class="panel-body" id="panelBody">
+        <!-- Populated by JS -->
+      </div>
+    </aside>
+
+    <!-- Backdrop -->
+    <div class="backdrop" id="backdrop"></div>
+
+    <!-- ══════════════════════════════════════════
+         EDIT UNIT MODAL
+    ══════════════════════════════════════════ -->
+    <div class="modal-overlay" id="editModal">
+      <div class="modal-box">
+        <div class="modal-hdr">
+          <h3 id="modalTitle">Edit Unit</h3>
+          <button class="hdr-btn" id="modalClose">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body" id="modalBody"></div>
+        <div class="modal-footer">
+          <button class="btn-outline" id="modalCancel">Cancel</button>
+          <button class="btn-primary" id="modalSave">Save Changes</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════
+         ADD USER MODAL (Manager only)
+    ══════════════════════════════════════════ -->
+    <div class="modal-overlay" id="addUserModal">
+      <div class="modal-box">
+        <div class="modal-hdr">
+          <h3>Add New User</h3>
+          <button class="hdr-btn" id="addUserModalClose">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="addUserError" class="login-error" style="display:none"></div>
+          <div class="form-group">
+            <label class="form-label">Full Name</label>
+            <input type="text" id="newUserName" class="form-input" placeholder="Ahmed Hassan" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" id="newUserEmail" class="form-input" placeholder="ahmed@company.com" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Temporary Password</label>
+            <input type="password" id="newUserPass" class="form-input" placeholder="Min 6 characters" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Role</label>
+            <select id="newUserRole" class="form-input">
+              <option value="engineer">Engineer</option>
+              <option value="viewer">Viewer</option>
+              <option value="manager">Manager</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn-outline" id="addUserCancel">Cancel</button>
+          <button class="btn-primary" id="addUserSave">Create User</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════
+         IMAGE LIGHTBOX
+    ══════════════════════════════════════════ -->
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+      <div class="lightbox-content">
+        <button class="lightbox-close" id="lightboxClose">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+        <img id="lightboxImg" src="" alt="" />
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════
+         TOAST NOTIFICATION
+    ══════════════════════════════════════════ -->
+    <div id="toastContainer" class="toast-container"></div>
+
+  </div><!-- /appRoot -->
+
+  <!-- Firebase SDK (compat mode — no bundler needed) -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-storage-compat.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
