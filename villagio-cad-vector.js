@@ -1,0 +1,14278 @@
+/**
+ * Villagio Masterplan — Extracted AutoCAD Vector Layers
+ * Categorized Vector Geometry for:
+ * 1. Standalone Villas
+ * 2. Twin Houses
+ * 3. Townhouses
+ * 4. Apartment Buildings
+ * 5. Roads
+ * 6. Parking
+ * 7. Landscape
+ * 8. Water Features
+ * 9. Amenities
+ */
+
+const VILLAGIO_VECTOR_LAYERS = {
+  "meta": {
+    "title": "Villagio Masterplan Vector CAD Geometry",
+    "source": "Masterplan Final.dxf",
+    "viewBox": "0 0 1200 1090",
+    "width": 1200,
+    "height": 1090,
+    "cadBounds": {
+      "minX": 0.0,
+      "maxX": 805.8620418109649,
+      "minY": -12.74099745766014,
+      "maxY": 665.830618701859
+    }
+  },
+  "categories": {
+    "standalone_villas": [
+      {
+        "d": "M 811.77,615.37 L 812.44,593.9",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 809.95,665.67 L 809.95,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 800.22,665.67 L 800.22,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 790.49,665.67 L 790.49,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 780.76,665.67 L 780.76,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 771.03,665.67 L 771.03,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 761.3,665.67 L 761.3,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 810.22,657.33 L 809.67,657.33",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 800.43,657.33 L 796.54,657.33",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 791.35,657.33 L 784.4,657.33",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 781.62,657.33 L 774.67,657.33",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 771.89,657.33 L 764.94,657.33",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 762.16,657.33 L 757.13,657.33",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 814.12,687.21 L 814.12,687.21",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 764.94,687.21 L 767.21,687.21",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 769.99,687.21 L 771.89,687.21",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 774.85,687.21 L 781.62,687.21",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 784.4,687.21 L 786.67,687.21",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 789.45,687.21 L 791.35,687.21",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 794.31,687.21 L 803.85,687.21",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 803.85,687.21 L 806.12,687.21",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 808.9,687.21 L 810.8,687.21",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 813.77,687.21 L 820.53,687.21",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 820.53,657.33 L 813.58,657.33",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 810.8,657.33 L 803.85,657.33",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 801.07,657.33 L 794.13,657.33",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 791.35,657.33 L 784.4,657.33",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 781.62,657.33 L 774.67,657.33",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 771.89,657.33 L 764.94,657.33",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 762.16,657.33 L 757.13,657.33 L 757.14,687.21 L 762.16,687.21",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 756.16,687.21 L 756.16,659.13",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 746.02,688.06 L 757.14,687.21",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 771.03,665.67 L 761.3,665.67 L 761.3,681.65 L 771.03,681.65",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 780.76,665.67 L 771.03,665.67 L 771.03,681.65 L 780.76,681.65",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 800.22,665.67 L 780.76,665.67 L 780.76,681.65 L 790.49,681.65",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 790.49,665.67 L 790.49,681.65 L 800.22,681.65",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 809.95,665.67 L 800.22,665.67 L 800.22,681.65 L 809.95,681.65",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 819.68,665.67 L 809.95,665.67 L 809.95,681.65 L 819.68,681.65",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 771.74,631.38 L 773.02,642.18 L 818.61,640.51 L 818.61,628.58",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 757.43,650.61 L 757.6,635.37",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 750.53,687.72 L 750.53,678.94 L 750.03,677.35 L 735.79,657.02 L 752.69,657.01 L 752.69,687.55",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 810.8,687.21 L 810.8,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 813.58,687.21 L 813.58,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 813.58,693.94 L 813.58,695.65",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 803.85,693.94 L 803.85,695.65",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 794.13,693.94 L 794.13,695.65",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 785.1,695.5 L 785.1,697.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 774.67,693.94 L 774.67,695.65",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 765.64,695.5 L 765.64,697.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 767.21,687.21 L 769.99,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 771.89,687.21 L 774.67,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 786.67,687.21 L 789.45,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 791.53,687.21 L 794.31,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 801.07,687.21 L 803.85,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 810.8,687.21 L 813.58,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 761.3,673.66 L 757.13,673.66",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 810.23,681.65 L 810.23,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 809.67,681.65 L 809.67,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 800.5,681.65 L 800.5,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 799.94,681.65 L 799.94,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 790.77,681.65 L 790.77,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 790.21,681.65 L 790.21,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 781.04,681.65 L 781.04,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 780.48,681.65 L 780.48,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 771.31,681.65 L 771.31,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 770.76,681.65 L 770.76,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 810.22,657.33 L 810.22,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 809.67,657.33 L 809.67,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 800.5,657.37 L 800.5,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 799.94,657.33 L 799.94,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 790.77,657.33 L 790.77,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 790.21,657.33 L 790.21,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 781.04,657.33 L 781.04,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 780.48,657.33 L 780.48,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 771.31,657.33 L 771.31,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 770.75,657.33 L 770.75,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 810.8,656.35 L 810.8,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 813.58,656.35 L 813.58,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 801.07,656.35 L 801.07,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 803.85,656.35 L 803.85,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 791.35,656.35 L 791.35,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 794.13,656.35 L 794.13,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 781.62,656.35 L 781.62,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 784.4,656.35 L 784.4,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 771.89,656.35 L 771.89,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 774.67,656.35 L 774.67,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 762.16,656.35 L 762.16,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 764.94,656.35 L 764.94,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 809.95,665.67 L 809.95,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 800.22,665.67 L 800.22,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 790.49,665.67 L 790.49,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 780.76,665.67 L 780.76,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 771.03,665.67 L 771.03,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 761.3,665.67 L 761.3,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 810.22,657.33 L 809.67,657.33",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 800.43,657.33 L 796.54,657.33",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 791.34,657.33 L 784.4,657.33",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 781.62,657.33 L 774.67,657.33",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 771.89,657.33 L 764.94,657.33",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 762.16,657.33 L 757.13,657.33",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 814.12,687.21 L 814.12,687.21",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 764.94,687.21 L 767.21,687.21",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 769.99,687.21 L 772.07,687.21",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 774.85,687.21 L 784.4,687.21",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 784.4,687.21 L 786.67,687.21",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 789.45,687.21 L 791.53,687.21",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 794.31,687.21 L 801.07,687.21",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 803.85,687.21 L 806.12,687.21",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 808.9,687.21 L 810.99,687.21",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 820.53,657.33 L 813.58,657.33",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 810.8,657.33 L 803.85,657.33",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 801.07,657.33 L 794.12,657.33",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 791.34,657.33 L 784.4,657.33",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 781.62,657.33 L 774.67,657.33",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 771.89,657.33 L 764.94,657.33",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 762.16,657.33 L 757.13,657.33 L 757.13,687.21 L 764.94,687.21",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 756.16,687.49 L 756.16,659.13",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 771.03,665.67 L 761.3,665.67 L 761.3,681.65 L 771.03,681.65",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 780.76,665.67 L 771.03,665.67 L 771.03,681.65 L 780.76,681.65",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 800.22,665.67 L 780.76,665.67 L 780.76,681.65 L 790.49,681.65",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 790.49,665.67 L 790.49,681.65 L 800.22,681.65",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 809.95,665.67 L 800.22,665.67 L 800.22,681.65 L 809.95,681.65",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 819.67,665.67 L 809.95,665.67 L 809.95,681.65 L 819.67,681.65",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 813.58,687.21 L 813.58,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 801.07,687.21 L 801.07,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 803.85,687.21 L 803.85,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 791.34,687.21 L 791.34,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 781.62,687.21 L 781.62,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 784.4,687.21 L 784.4,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 771.89,687.21 L 771.89,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 774.85,687.21 L 774.85,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 762.16,687.21 L 762.16,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 764.94,687.21 L 764.94,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 767.21,687.21 L 769.99,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 771.89,687.21 L 774.67,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 771.89,687.62 L 771.89,687.62",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 771.89,688.04 L 771.89,688.04",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 786.67,687.21 L 789.45,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 791.53,687.21 L 794.31,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 801.07,687.21 L 803.85,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 810.8,687.21 L 813.58,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 761.3,673.66 L 757.13,673.66",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 810.22,681.65 L 810.22,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 809.67,681.65 L 809.67,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 800.5,681.65 L 800.5,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 799.94,681.65 L 799.94,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 790.77,681.65 L 790.77,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 790.21,681.65 L 790.21,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 781.04,681.65 L 781.04,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 780.48,681.65 L 780.48,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 771.31,681.65 L 771.31,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 770.75,681.65 L 770.75,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 810.22,657.33 L 810.22,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 809.67,657.33 L 809.67,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 800.49,657.37 L 800.49,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 799.94,657.33 L 799.94,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 790.77,657.33 L 790.77,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 790.21,657.33 L 790.21,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 781.04,657.33 L 781.04,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 780.48,657.33 L 780.48,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 771.31,657.33 L 771.31,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 770.75,657.33 L 770.75,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 810.8,656.35 L 810.8,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 813.58,656.35 L 813.58,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 801.07,656.35 L 801.07,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 803.85,656.35 L 803.85,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 791.34,656.35 L 791.34,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 794.12,656.35 L 794.12,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 781.62,656.35 L 781.62,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 784.4,656.35 L 784.4,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 771.89,656.35 L 771.89,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 774.67,656.35 L 774.67,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 762.16,656.35 L 762.16,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 764.94,656.35 L 764.94,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 757.13,687.21 L 764.94,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 764.94,687.21 L 767.21,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 769.99,687.21 L 781.62,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 767.21,688.18 L 774.84,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 767.21,688.56 L 769.99,688.56",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 772.07,688.56 L 774.84,688.56",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 767.21,688.93 L 769.99,688.93",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 772.07,688.93 L 774.84,688.93",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 784.4,687.21 L 786.67,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 789.45,687.21 L 806.12,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 786.67,688.18 L 789.45,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 786.67,688.56 L 789.45,688.56",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 791.53,688.18 L 794.31,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 791.53,688.56 L 794.31,688.56",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 808.9,687.21 L 820.53,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 756.86,688.18 L 764.94,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 764.94,688.18 L 767.21,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 769.99,688.18 L 771.89,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 774.85,688.18 L 784.4,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 784.4,688.18 L 786.67,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 794.31,688.18 L 803.85,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 803.85,688.18 L 806.12,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 808.9,688.18 L 810.8,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 813.77,688.18 L 823.31,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 812.11,604.64 L 808.63,604.53",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 812.09,605.05 L 808.62,604.94",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 812.08,605.47 L 808.61,605.36",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 817.88,585.56 L 817.88,588.34",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 817.87,623.71 L 817.87,623.72",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 806.12,687.21 L 813.77,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 806.12,688.18 L 813.77,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 762.16,656.35 L 764.94,656.35",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 771.89,656.35 L 774.67,656.35",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 781.62,656.35 L 784.4,656.35",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 791.35,656.35 L 794.12,656.35",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 801.07,656.35 L 803.85,656.35",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 810.8,656.35 L 813.58,656.35",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 817.87,623.71 L 820.65,623.71",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 817.88,588.34 L 826.24,588.34",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 817.88,587.51 L 826.24,587.51",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 525.88,616.94 L 535.22,638.12",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 527.15,617.42 L 535.79,637.0",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 270.4,673.87 L 283.52,692.78 L 306.66,698.54 L 307.99,661.87 L 299.52,653.67",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 759.34,628.86 L 750.31,594.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 753.83,621.6 L 748.35,600.84",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 760.6,620.05 L 755.12,599.27",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 722.24,603.05 L 735.71,635.78",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 721.1,609.41 L 729.28,629.27",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 727.63,607.02 L 735.82,626.9",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 783.62,624.83 L 779.18,589.74",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 779.12,616.95 L 776.43,595.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 786.04,616.22 L 783.34,594.91",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 808.03,623.71 L 809.14,588.34",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 804.82,615.37 L 805.49,593.9",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 811.77,615.37 L 812.45,593.9",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 696.89,614.03 L 712.54,645.75",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 696.26,620.6 L 705.76,639.86",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 702.47,617.48 L 711.96,636.73",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 436.16,584.56 A 145.93 145.93 0 0 0 603.82,440.25",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 592.61,509.55 A 151.49 151.49 0 0 0 597.32,499.48",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 605.17,475.73 A 151.49 151.49 0 0 0 607.38,464.84",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 608.35,457.93 A 151.49 151.49 0 0 0 609.24,446.84",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 445.27,531.62 A 92.23 92.23 0 0 0 550.13,440.25",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 306.07,564.96 A 54.2 54.2 0 0 0 253.47,649.46",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 250.1,610.07 A 48.64 48.64 0 0 0 252.96,636.92",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 264.43,583.35 A 48.64 48.64 0 0 0 252.26,602.01",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 283.68,600.94 A 29.05 29.05 0 0 0 278.93,607.2",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 275.89,615.16 A 29.04 29.04 0 0 0 275.19,621.49",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 423.58,558.77 L 412.43,557.09",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 426.67,537.26 L 415.66,535.6",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 430.03,670.93 A 343.05 343.05 0 0 0 411.17,671.0",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 352.96,677.95 A 343.05 343.05 0 0 0 342.1,680.36",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 348.73,656.63 A 364.8 364.8 0 0 0 337.88,659.06",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 404.18,671.33 A 343.05 343.05 0 0 0 385.37,672.82",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 378.43,673.68 A 343.05 343.05 0 0 0 359.77,676.58",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 335.29,682.1 A 343.05 343.05 0 0 0 324.54,685.09",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 809.95,665.67 L 809.95,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 800.22,665.67 L 800.22,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 790.49,665.67 L 790.49,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 780.76,665.67 L 780.76,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 771.03,665.67 L 771.03,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 761.3,665.66 L 761.3,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 512.32,644.42 A 2.78 2.78 0 0 0 512.32,644.42",
+        "layer": "comments",
+        "type": "ARC"
+      },
+      {
+        "d": "M 535.79,639.42 A 2.78 2.78 0 0 0 535.84,639.52",
+        "layer": "comments",
+        "type": "ARC"
+      },
+      {
+        "d": "M 504.52,706.6 A 218.66 218.66 0 0 0 523.38,705.89",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 805.49,593.9 L 805.02,593.9",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 294.5,730.63 A 21.62 21.62 0 0 0 282.92,712.05",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 288.07,735.16 A 0.35 0.35 0 0 0 287.9,735.68",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 741.89,680.75 L 678.27,725.1",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 350.6,607.52 L 332.46,604.78",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 332.46,604.78 L 314.32,602.05",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 332.03,651.9 L 315.97,656.05",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 391.42,613.67 L 409.56,616.4",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 409.56,616.4 L 427.7,619.13",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 368.74,610.25 L 350.6,607.52",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 351.14,647.57 L 332.03,651.89",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 536.67,645.74 L 517.92,648.12",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 517.92,648.12 L 514.46,648.26",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 386.41,526.85 L 348.73,553.12",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 458.38,643.31 L 439.53,642.02",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 353.12,520.41 L 362.26,533.52",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 345.13,525.97 L 354.28,539.08",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 361.1,514.84 L 370.24,527.96",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 414.28,707.79 L 458.65,771.76",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 427.41,698.68 L 471.79,762.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 434.8,694.71 L 531.55,834.16",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 369.07,509.28 L 337.15,531.54",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 337.15,531.54 L 346.29,544.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 346.29,544.65 L 378.21,522.39",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 378.21,522.39 L 369.07,509.28",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 492.02,647.67 L 510.91,648.38",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 510.91,648.38 A 158.17 158.17 0 0 0 514.38,648.27",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 489.26,647.23 L 462.82,643.72",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 497.83,617.31 L 508.74,614.49",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 470.84,621.2 L 465.5,621.6",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 465.5,621.6 L 454.24,621.72",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 454.24,621.72 L 448.9,621.44",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 517.36,454.66 L 490.37,433.44",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 525.63,443.21 L 532.9,433.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 550.36,417.48 A 85.1 85.1 0 0 0 532.9,433.65",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 406.91,642.1 A 374.46 374.46 0 0 0 379.01,644.43",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 379.03,644.43 A 374.46 374.46 0 0 0 351.38,648.83",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 434.91,641.87 A 374.46 374.46 0 0 0 406.91,642.1",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 420.91,727.11 L 420.91,727.11",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 733.91,686.31 L 724.49,672.87",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 741.89,680.75 L 732.46,667.29",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 746.02,679.37 L 731.11,658.09",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 725.93,691.87 L 716.51,678.43",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 717.95,697.44 L 708.53,684.0",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 709.97,703.0 L 700.55,689.56",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 701.99,708.57 L 692.57,695.12",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 694.01,714.13 L 684.59,700.69",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 686.02,719.69 L 676.61,706.25",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 814.12,687.21 L 814.12,687.21",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 609.22,439.9 L 630.92,439.89",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 603.79,443.37 L 639.3,443.37",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 630.92,439.89 L 630.92,428.78",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 608.35,457.93 L 629.99,459.5",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 602.34,460.97 L 637.83,463.56",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 637.35,467.01 L 637.57,467.02",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 629.99,459.5 L 630.8,448.41",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 630.8,448.41 L 609.24,446.84",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 605.17,475.73 L 626.53,479.85",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 598.84,478.05 L 633.78,484.79",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 626.53,479.85 L 628.63,468.94",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 628.63,468.94 L 607.38,464.84",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 592.61,509.55 L 612.34,518.71",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 612.34,518.71 L 617.02,508.63",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 617.02,508.63 L 597.32,499.48",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 320.34,663.5 L 331.13,660.75",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 403.23,650.64 A 366.12 366.12 0 0 0 382.88,652.34",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 382.88,652.34 L 385.37,672.82",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 404.18,671.33 L 403.23,650.64",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 375.95,653.22 A 366.12 366.12 0 0 0 355.78,656.43",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 355.78,656.43 L 359.77,676.58",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 378.43,673.68 L 375.95,653.22",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 430.64,650.11 A 366.12 366.12 0 0 0 410.22,650.28",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 410.22,650.28 L 411.17,671.0",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 430.03,670.93 L 430.64,650.11",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 574.64,527.8 L 574.64,527.8",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 418.03,913.88 A 12.51 12.51 0 0 0 418.07,913.88",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 388.96,712.72 L 360.98,732.13",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 360.98,732.13 L 375.69,753.38",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 413.99,793.97 L 424.76,809.5",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 399.25,772.73 L 410.03,788.26",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 410.03,788.26 L 426.58,776.77",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 401.08,740.0 L 384.52,751.48",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 395.29,767.02 L 411.85,755.53",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 380.58,745.76 L 397.12,734.29",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 419.92,817.08 L 434.65,838.33",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 405.16,795.86 L 419.89,817.11",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 390.42,774.62 L 405.16,795.86",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 405.16,795.86 L 433.13,776.46",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 375.71,753.37 L 390.42,774.62",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 359.81,732.97 L 388.96,712.72",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 359.81,732.97 L 345.55,712.41",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 680.26,590.10 A 13.20 13.20 0 1 0 706.66,590.10 A 13.20 13.20 0 1 0 680.26,590.10",
+        "layer": "set pack",
+        "type": "CIRCLE"
+      },
+      {
+        "d": "M 676.09,590.10 A 17.37 17.37 0 1 0 710.83,590.10 A 17.37 17.37 0 1 0 676.09,590.10",
+        "layer": "set pack",
+        "type": "CIRCLE"
+      },
+      {
+        "d": "M 404.82,896.91 L 412.18,907.52",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 415.66,535.6 L 412.43,557.09",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 411.87,562.63 L 411.87,562.63",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 408.44,562.11 L 426.91,564.89",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 423.47,564.4 L 423.47,564.37",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 423.58,558.77 L 426.67,537.26",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 427.01,559.27 L 430.11,537.76",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 468.38,567.69 L 468.38,567.73",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 475.28,566.93 L 475.29,566.98",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 471.83,567.35 A 127.86 127.86 0 0 0 494.68,562.69",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 491.35,563.7 L 491.34,563.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 467.66,567.75 L 465.39,532.19",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 444.95,567.51 L 444.95,567.46",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 451.88,568.02 L 451.88,567.98",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 425.34,515.15 L 417.81,517.08",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 233.67,650.2 L 232.95,653.12",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 233.67,650.2 L 231.19,651.91",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 408.44,937.40 A 4.17 4.17 0 1 0 416.78,937.40 A 4.17 4.17 0 1 0 408.44,937.40",
+        "layer": "set pack",
+        "type": "CIRCLE"
+      },
+      {
+        "d": "M 346.92,552.84 L 330.55,529.37",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 430.8,529.45 L 416.47,527.29",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 413.29,525.32 A 9.69 9.69 0 0 0 409.29,525.42",
+        "layer": "comments",
+        "type": "ARC"
+      },
+      {
+        "d": "M 289.22,638.83 L 260.11,659.03",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 315.95,594.04 L 319.19,572.56",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 304.87,592.96 L 308.19,570.91",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 301.13,594.45 L 305.57,564.99",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 319.19,572.56 L 308.19,570.91",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 250.12,643.97 L 283.54,620.78",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 245.54,604.93 L 283.27,612.36",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 270.34,582.26 L 270.34,582.26",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 263.2,576.71 L 292.55,603.4",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 323.45,567.58 L 306.52,565.03",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 306.52,565.03 L 305.57,564.99",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 318.17,602.63 L 323.45,567.58",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 732.48,667.31 L 668.89,711.63",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 668.89,711.63 L 678.27,725.1",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 407.92,540.26 L 405.55,556.07",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 405.82,556.11 L 394.55,554.42",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 396.92,538.61 L 408.2,540.3",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 415.18,511.94 L 395.99,525.31",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 396.92,538.61 L 394.55,554.42",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 412.35,490.35 L 415.78,501.81",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 299.59,653.63 L 270.4,673.87",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 390.73,613.56 L 368.74,610.25",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 639.33,440.25 L 639.33,425.3",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 633.78,484.79 L 604.09,479.06",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 599.95,492.88 A 151.49 151.49 0 0 0 603.39,482.46",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 603.39,482.46 L 624.01,489.24",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 624.01,489.24 L 620.54,499.8",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 620.54,499.8 L 599.9,493.01",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 627.14,505.63 L 593.36,494.52",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 624.95,504.91 L 602.4,497.49",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 627.14,505.63 L 593.36,494.52",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 617.42,526.69 A 181.44 181.44 0 0 0 627.14,505.63",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 586.03,510.08 L 617.65,526.34",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 617.62,526.32 L 586.03,510.08",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 576.81,524.83 L 606.27,544.74",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 572.39,539.45 A 151.49 151.49 0 0 0 579.35,530.79",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 572.39,539.45 L 589.1,553.08",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 589.1,553.08 L 596.12,544.46",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 596.12,544.46 L 579.35,530.79",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 593.31,561.0 L 565.76,538.54",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 559.75,552.37 A 151.49 151.49 0 0 0 567.7,544.6",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 574.79,567.77 L 582.75,559.99",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 582.75,559.99 L 567.69,544.59",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 574.79,567.77 L 559.75,552.37",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 593.31,561.0 L 568.36,540.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 553.27,550.71 L 578.12,576.14",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 545.62,563.76 A 151.49 151.49 0 0 0 554.44,557.0",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 545.62,563.76 L 558.87,580.82",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 558.87,580.82 L 567.65,574.0",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 567.65,574.0 L 554.44,556.99",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 539.34,561.34 L 561.16,589.44",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 542.71,565.68 L 552.75,578.61",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 530.21,573.37 A 151.49 151.49 0 0 0 539.77,567.7",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 530.21,573.37 L 541.34,591.89",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 550.87,586.16 L 539.77,567.7",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 533.37,578.64 L 538.54,587.23",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 524.26,570.22 L 542.59,600.71",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 524.26,570.22 L 542.59,600.71",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 524.26,570.22 L 542.59,600.7",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 508.34,577.19 L 522.69,609.72",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 383.94,830.59 L 408.49,813.56",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 386.11,824.01 L 399.25,814.89",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 380.57,816.01 L 393.71,806.9",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 375.02,808.02 L 388.16,798.91",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 369.48,800.03 L 382.62,790.91",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 363.93,792.03 L 377.07,782.92",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 358.39,784.04 L 371.53,774.93",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 406.11,810.14 L 406.11,810.14",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 390.88,830.85 L 404.02,821.74",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 396.43,838.84 L 409.56,829.73",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 401.98,846.84 L 415.11,837.72",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 407.52,854.83 L 420.65,845.72",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 413.07,862.82 L 426.2,853.71",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 418.61,870.82 L 431.74,861.7",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 424.16,878.81 L 437.29,869.7",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 345.85,775.83 L 370.4,758.8",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 348.03,769.25 L 361.17,760.13",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 342.48,761.25 L 355.62,752.14",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 336.94,753.26 L 350.08,744.14",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 331.39,745.27 L 344.53,736.15",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 325.85,737.27 L 338.99,728.16",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 320.3,729.28 L 333.44,720.16",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 314.76,721.29 L 327.84,712.21",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 352.79,776.09 L 365.93,766.98",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 399.25,814.89 L 365.93,766.98",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 361.17,760.13 L 327.84,712.21",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 386.11,824.01 L 352.79,776.09",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 348.03,769.25 L 314.76,721.42",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 425.37,723.78 L 438.5,714.67",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 419.82,715.79 L 432.96,706.67",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 414.28,707.79 L 427.41,698.68",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 478.8,704.95 L 477.08,725.16",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 604.17,683.4 A 218.83 218.83 0 0 0 620.62,674.13",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 580.42,693.49 A 218.47 218.47 0 0 0 597.84,686.23",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 555.68,700.87 A 218.89 218.89 0 0 0 573.86,695.71",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 478.8,704.95 A 220.78 220.78 0 0 0 497.63,706.42",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 497.63,706.42 L 497.25,726.88",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 523.38,705.89 L 525.41,726.23",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 525.41,726.23 L 504.14,726.93",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 524.34,734.61 L 529.68,734.02 L 526.29,700.02 L 501.15,701.03 L 500.51,735.19 L 505.45,735.23 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 500.57,735.12 L 501.21,700.96 L 476.41,699.04 L 475.82,698.97 L 472.91,733.18 L 476.37,733.47 L 495.2,735.08 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 388.96,712.72 L 381.12,701.47",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 272.98,667.85 L 266.65,658.72",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 266.65,658.72 L 284.35,646.44",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 284.35,646.44 L 290.68,655.57",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 290.68,655.57 L 272.98,667.85",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 649.13,502.47 L 687.21,500.81",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 382.55,499.95 L 394.08,516.48",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 348.73,656.63 L 352.96,677.95",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 337.88,659.06 L 342.1,680.36",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 331.13,660.75 L 335.29,682.1",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 320.34,663.5 L 324.54,685.09",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 498.32,586.22 L 487.51,588.79 L 492.49,609.75 L 503.3,607.18 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 480.65,590.0 L 469.6,591.26 L 472.05,612.67 L 483.1,611.4 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 451.52,591.47 L 462.64,591.54 L 462.52,613.08 L 451.4,613.01 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 444.54,591.13 L 433.51,589.74",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 433.51,589.74 L 430.81,611.11",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 430.81,611.11 L 441.84,612.51",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 441.84,612.51 L 444.54,591.13",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 466.15,585.82 L 465.94,621.37",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 483.44,583.8 L 487.48,619.12",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 500.36,579.75 L 508.58,614.33",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 448.51,585.74 L 440.03,584.95 L 430.72,583.8 L 430.49,585.65 L 430.52,585.67 L 428.89,598.53 L 425.77,618.89 L 432.5,619.74 L 445.36,621.1 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 500.36,579.75 L 448.51,585.74 L 445.36,621.1 L 506.43,614.94",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 466.15,585.82 L 465.94,621.36",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 506.43,614.94 L 508.58,614.33 L 500.36,579.75",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 337.05,575.31 L 326.05,573.66",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 326.05,573.66 L 322.84,594.96",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 322.84,594.96 L 333.84,596.62",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 333.84,596.62 L 337.05,575.31",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 305.57,564.99 L 301.13,594.45",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 301.13,594.45 L 301.2,600.07",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 400.3,480.8 L 376.52,497.38 L 395.99,525.31 L 415.18,511.94 L 410.04,494.76 L 400.3,480.8 L 410.04,494.76",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 576.81,524.83 L 606.24,544.72",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 526.33,541.67 L 513.08,549.61 L 503.39,529.95 L 513.07,524.31 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 681.65,426.99 L 681.65,445.89 L 661.5,445.89 L 661.5,426.99 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 681.66,452.84 L 681.66,471.74 L 661.5,471.74 L 661.5,452.84 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 479.85,453.55 L 492.79,439.78 L 507.47,453.58 L 494.53,467.35 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 459.36,469.22 L 474.77,458.28 L 486.43,474.72 L 471.02,485.66 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 436.6,481.42 L 453.5,472.95 L 462.53,490.97 L 445.63,499.44 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 517.33,676.68 L 516.52,656.59 L 535.33,654.32 L 539.25,674.09 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 406.36,642.13 L 378.43,644.5 L 382.59,678.77 L 405.38,676.84 L 407.95,676.72 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 350.76,648.95 L 357.44,682.73 L 382.59,678.77",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 436.99,670.55 L 437.57,650.3 L 438.67,650.31 L 457.22,651.57 L 457.94,651.64 L 455.84,671.8 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 462.26,643.73 L 458.38,643.31 L 439.53,642.02 L 434.34,641.99 L 433.34,676.58 L 458.64,678.42",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 488.36,676.09 L 490.56,656.06 L 509.5,656.71 L 510.42,676.79 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 514.18,682.95 L 512.64,648.34 L 510.91,648.38 L 492.02,647.67 L 488.13,647.25 L 484.14,681.76 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 462.75,672.51 L 464.85,652.39 L 483.75,654.92 L 481.42,675.01 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 473.98,680.36 L 484.15,681.67 L 488.16,647.02 L 462.26,643.73 L 458.64,678.42 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 687.21,449.36 L 687.21,423.51 L 653.16,423.51 L 653.16,449.36 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 687.21,475.22 L 687.21,449.36 L 653.16,449.36 L 653.16,475.29 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 386.41,526.85 L 369.35,502.38 L 330.58,529.41 L 346.92,552.84 L 348.73,553.12 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 473.38,451.48 L 453.46,466.21 L 471.33,495.52",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 443.63,509.19 L 517.36,454.66",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 417.77,508.48 L 411.99,489.17 L 430.1,483.75 L 435.88,503.06 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 517.36,454.66 L 490.37,433.44 L 473.38,451.48 L 496.17,477.15",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 558.26,449.34 L 579.73,450.83 L 577.21,466.28 L 556.56,460.37 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 581.94,471.24 L 585.54,447.59 L 550.18,445.29 L 549.93,448.94 L 548.23,459.93 L 547.85,461.49 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 555.36,467.23 L 575.7,473.08 L 571.43,485.61 L 551.25,477.64 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 575.3,490.88 L 581.94,471.24 L 547.85,461.49 L 546.77,465.71 L 543.08,476.2 L 542.41,477.88",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 548.77,484.13 L 568.88,492.01 L 560.92,506.2 L 543.16,493.72 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 575.3,490.88 L 542.35,477.86 L 540.59,481.61 L 535.03,491.24 L 534.53,491.91 L 563.55,512.25 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 539.42,499.55 L 557.01,511.94 L 546.89,523.79 L 532.23,507.94 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 563.57,512.26 L 534.53,491.91 L 531.4,495.97 L 524.35,504.55 L 548.42,530.55 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 558.39,431.31 L 579.91,430.47 L 580.35,441.58 L 558.82,442.42 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 585.53,447.75 L 585.65,435.26 L 585.68,426.78 L 549.92,428.16 L 550.3,443.03 L 550.18,445.29 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 543.81,679.22 L 537.14,645.64 L 536.67,645.74 L 517.92,648.12 L 512.59,648.34 L 514.18,682.95 L 517.32,682.63 L 524.61,682.07 L 537.2,680.43 L 541.78,679.63 L 544.78,679.04 L 545.49,678.9 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 430.55,782.48 L 441.32,798.01 L 424.76,809.5 L 413.99,793.97 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 415.81,761.24 L 426.59,776.77 L 410.03,788.26 L 399.25,772.73 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 411.88,755.51 L 395.32,767.0 L 384.55,751.47 L 401.11,739.98",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 397.14,734.27 L 380.58,745.76 L 369.81,730.23 L 386.37,718.74",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 447.87,797.7 L 433.13,776.46 L 405.16,795.86 L 419.89,817.11 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 410.03,788.26 L 399.25,772.73",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 433.13,776.46 L 418.4,755.22 L 390.42,774.62 L 405.16,795.86 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 395.29,767.02 L 384.52,751.48 L 401.11,739.98 L 411.88,755.51",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 418.4,755.22 L 403.7,733.96 L 403.69,733.96 L 375.71,753.37 L 390.42,774.62 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 386.37,718.74 L 397.14,734.27 L 380.58,745.76",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 403.67,733.98 L 388.96,712.72 L 360.98,732.13 L 375.69,753.38 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 380.58,745.76 L 369.81,730.23 L 386.35,718.76 L 386.37,718.74",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 411.88,755.51 L 395.29,767.02 L 395.29,767.02 L 384.52,751.48",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 399.25,772.73 L 410.03,788.26 L 410.03,788.26",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 413.99,793.97 L 430.55,782.48 L 441.32,798.01 L 424.76,809.5 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 388.93,712.73 L 381.64,702.19 L 374.94,699.27 L 345.55,712.41 L 359.78,732.95 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 382.39,713.05 L 375.36,702.89 L 355.31,711.85 L 364.65,725.34 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 496.65,524.07 L 481.36,529.46 L 490.52,563.87 L 512.34,555.95",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 481.36,529.46 L 465.39,532.19 L 467.66,567.75 L 490.52,563.87",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 465.39,532.19 L 449.14,532.14 L 444.07,567.41 L 455.71,568.1 L 467.66,567.75 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 431.3,529.53 L 413.47,526.73 L 408.16,562.07 L 426.22,564.79 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 434.34,641.86 L 406.36,642.13 L 407.95,676.72 L 433.34,676.58 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 953.86,501.53 L 960.02,498.23",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 953.86,501.53 L 957.8,495.75",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 524.01,576.55 L 513.84,581.04 L 522.53,600.75 L 532.7,596.26 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 542.07,529.15 L 531.94,537.58 L 518.74,520.31 L 527.42,513.32 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 548.42,530.55 L 524.35,504.55 L 510.9,515.74 L 532.53,544.07 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 510.9,515.74 L 496.65,524.07 L 512.34,555.95 L 532.53,544.07",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 602.34,460.97 L 637.83,463.56",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 598.84,478.05 L 633.78,484.79",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 593.36,494.52 L 627.14,505.63",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 586.03,510.08 L 617.62,526.32",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 607.74,527.09 L 589.28,515.65 L 583.4,525.09 L 601.89,536.54 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 565.76,538.54 L 593.31,561.0",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 539.34,561.34 L 561.16,589.44",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 553.27,550.71 L 578.12,576.14",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 524.26,570.22 L 542.59,600.71 L 639.33,440.25",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 603.82,440.25 L 508.34,577.19 L 522.69,609.72 L 542.59,600.7 L 524.26,570.22",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 691.27,658.31 L 671.64,628.74",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 683.71,653.2 L 671.84,635.32",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 689.49,649.35 L 677.62,631.46",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 646.68,580.49 L 664.52,590.03",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 651.17,609.33 A 133.42 133.42 0 0 0 664.53,590.02",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 398.06,489.14 L 409.58,505.67 L 394.08,516.48 L 382.55,499.95 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 416.8,517.34 L 406.94,484.41 L 412.82,482.86 L 431.25,477.17 L 443.63,509.19 L 420.16,516.47 L 416.8,517.34",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 426.44,588.8 L 415.45,587.11 L 412.18,608.41 L 423.17,610.09 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 372.8,580.7 L 361.8,579.04 L 358.59,600.35 L 369.59,602.0 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 354.93,578.01 L 343.94,576.35 L 340.73,597.65 L 351.72,599.31 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 408.53,586.09 L 405.32,607.39 L 394.32,605.73 L 397.53,584.43 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 412.79,581.1 L 394.93,578.41 L 389.64,613.46 L 407.51,616.15 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 430.72,583.79 L 412.79,581.1 L 407.51,616.15 L 425.76,618.95 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 318.16,602.69 L 336.3,605.42",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 359.2,573.02 L 341.31,570.33 L 336.3,605.42 L 353.92,608.07 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 377.06,575.71 L 359.2,573.02 L 353.92,608.07 L 371.78,610.77 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 390.66,583.39 L 379.67,581.74 L 376.46,603.04 L 387.45,604.69 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 394.93,578.41 L 377.06,575.72 L 371.79,610.77 L 389.64,613.46 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 323.45,567.58 L 306.52,565.03 L 305.57,564.99 L 301.13,594.45 L 301.21,600.99 L 318.17,602.63",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 299.52,653.67 L 289.22,638.83 L 260.11,659.03 L 270.4,673.87 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 275.19,621.49 L 252.96,636.92",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 250.1,610.07 L 275.89,615.16",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 279.73,611.66 L 245.54,604.93",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 250.12,643.97 L 278.92,623.99",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 278.93,607.2 L 252.26,602.01",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 264.43,583.35 L 283.68,600.94",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 263.37,576.87 A 54.2 54.2 0 0 0 250.12,643.97",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 245.54,604.93 L 285.44,612.79",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 290.31,595.7 L 270.91,578.09",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 300.6,569.99 A 45.7 45.7 0 0 0 270.91,578.09",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 300.6,569.99 L 297.12,593.07",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 297.12,593.07 L 290.31,595.7",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 301.21,600.99 L 301.13,594.45",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 301.13,594.45 L 305.59,564.89",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 305.59,564.89 A 52.14 52.14 0 0 0 263.37,576.87",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 289.02,600.19 L 293.17,603.97",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 350.76,648.95 L 350.48,647.72 L 332.9,651.68 L 339.72,686.67 L 357.44,682.73",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 339.72,686.67 L 332.9,651.68 L 315.37,656.17 L 322.34,691.75 L 328.94,689.62 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 253.47,649.46 L 260.11,659.03",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 687.21,526.81 L 687.21,525.04 L 687.21,500.81 L 649.13,502.47 L 649.13,525.05 L 649.08,528.35 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 671.93,588.41 A 138.98 138.98 0 0 0 682.99,559.07",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 570.0,580.16 L 567.83,581.83 L 565.34,578.58 L 567.51,576.91 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 621.0,515.59 L 616.68,513.57 L 617.84,511.09 L 622.16,513.11 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 553.32,556.79 L 551.4,554.83 L 554.89,551.42 L 556.8,553.38 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 585.81,565.83 L 583.86,567.74 L 580.99,564.81 L 582.95,562.9 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 610.86,534.48 L 606.82,531.96 L 608.27,529.64 L 612.31,532.16 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 601.04,326.89 A 186.24 186.24 0 0 0 568.03,345.24",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 669.69,527.45 L 659.13,527.91",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 645.98,550.06 L 637.67,571.71 L 671.25,589.68 L 682.65,560.37",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 687.21,526.81 L 649.08,528.35 L 645.98,550.06 L 682.65,560.37 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 687.21,475.22 L 653.16,475.22 L 653.34,502.28 L 687.21,500.81 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 508.34,577.19 L 522.69,609.72",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 500.36,579.75 L 508.62,614.52",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 301.21,600.99 L 301.13,594.45 L 305.59,564.89 L 263.37,576.87 L 293.17,603.97",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 245.54,604.93 L 285.44,612.79",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 250.12,643.97 L 283.54,620.78",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 417.05,712.39 L 413.05,715.16 L 411.49,712.92 L 415.49,710.14 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 345.45,734.37 L 343.89,732.12 L 347.8,729.4 L 349.36,731.65 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 370.4,758.8 L 333.62,705.92 L 311.94,714.93 L 307.36,720.49 L 345.85,775.83 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 370.44,770.33 L 368.88,768.08 L 372.79,765.36 L 374.35,767.61 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 370.4,758.8 L 345.85,775.83 L 383.94,830.59 L 408.49,813.56 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 422.77,877.31 L 424.33,879.55 L 420.33,882.33 L 418.77,880.09 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 408.49,813.56 L 383.94,830.59 L 431.46,898.93 L 441.9,896.66 L 458.32,885.21 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 256.35,643.87 L 274.05,631.59",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 274.05,631.59 L 280.38,640.73",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 280.38,640.73 L 262.69,653.01",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 262.69,653.01 L 256.35,643.87",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 681.65,478.67 L 681.65,497.57 L 661.5,497.57 L 661.51,478.81 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 680.96,504.64 L 681.65,523.53 L 661.51,524.26 L 660.82,505.38 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 681.34,534.2 L 678.61,552.9 L 658.67,549.99 L 661.4,531.29 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 675.58,564.51 L 668.31,581.96 L 649.71,574.21 L 656.97,556.76 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 637.67,571.71 L 671.25,589.68",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 359.77,676.58 L 355.78,656.43",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 356.36,677.26 L 352.37,657.11",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 338.62,681.04 L 334.47,659.72",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 322.34,691.75 L 315.37,656.17",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 306.66,698.54 L 307.99,661.87",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 283.54,620.78 L 250.12,643.97",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 285.44,612.79 L 245.54,604.93",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 293.17,603.97 L 263.37,576.87",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 550.18,445.29 L 585.53,447.75",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 575.7,473.08 L 555.35,467.25",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 542.15,477.78 L 575.33,490.83",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 533.12,544.85 L 510.64,515.4",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 492.35,557.63 L 506.76,552.37 L 497.06,532.76 L 486.72,536.83 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 485.91,560.06 L 470.78,562.29 L 469.36,540.41 L 480.33,538.94 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 448.57,562.44 L 463.87,562.73 L 462.49,540.85 L 451.42,540.78 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 407.92,540.26 L 405.55,556.07",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 449.14,532.14 L 431.32,529.34 L 426.23,564.71 L 444.07,567.41",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 430.45,559.76 L 441.63,561.29",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 433.55,538.25 L 444.58,539.77",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 444.58,539.77 L 441.63,561.29",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 430.45,559.76 L 433.55,538.25",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 512.34,555.94 L 496.65,524.07",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 534.38,491.8 L 563.55,512.29",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 299.59,653.63 L 272.7,672.28",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 740.33,689.8 L 746.02,688.06 L 746.02,679.37 L 731.11,658.09 L 660.7,707.18 L 678.03,732.04 L 686.07,726.44",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 692.34,722.07 L 702.03,715.31",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 708.3,710.94 L 718.01,704.17",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 724.28,699.8 L 732.85,693.82 L 733.56,693.35",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 315.95,594.04 L 304.87,592.96",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 288.09,689.61 A 12.51 12.51 0 0 0 302.64,694.24",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 288.09,689.61 L 277.35,674.13",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 302.64,694.24 L 303.55,669.18",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 295.59,661.48 L 277.35,674.13",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 295.59,661.48 L 303.55,669.18",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 307.83,666.24 L 306.83,693.81",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 309.05,659.42 L 307.65,698.03",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 234.53,576.03 L 567.23,344.1",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 747.59,703.88 L 412.61,937.4",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 412.61,937.4 L 172.92,591.88",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 172.92,591.88 L 554.87,325.6",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 172.92,591.88 L 412.61,937.4",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 412.61,937.4 L 426.3,927.86",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 426.3,927.86 L 223.77,635.93",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 234.53,576.03 A 43.08 43.08 0 0 0 223.77,635.93",
+        "layer": "0",
+        "type": "ARC"
+      },
+      {
+        "d": "M 696.89,614.03 L 712.54,645.75",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 722.24,603.05 L 735.71,635.78",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 750.31,594.65 L 759.34,628.86",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 670.74,673.79 L 805.02,623.71 L 808.03,623.71",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 671.64,628.74 L 691.2,658.2",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 981.65,288.14 L 673.81,288.15 L 554.87,325.6 L 172.92,591.88 L 412.61,937.4 L 747.59,703.88 L 981.66,703.88 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 981.65,288.14 L 673.81,288.15 L 554.87,325.6 L 172.92,591.88 L 412.61,937.4 L 747.59,703.88 L 981.66,703.88 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 545.17,426.36 A 30.52 30.52 0 0 0 533.72,434.25",
+        "layer": "comments",
+        "type": "ARC"
+      },
+      {
+        "d": "M 756.16,687.21 L 756.16,659.13",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 500.36,579.75 L 508.66,614.67",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 501.3,579.52 L 509.12,612.39",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 508.44,622.33 L 512.4,638.99",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 507.72,623.52 L 511.18,638.05",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 508.34,577.19 L 522.69,609.72",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 507.45,577.58 L 521.09,608.49",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 319.8,645.15 L 326.51,611.34",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 321.06,643.84 L 327.28,612.44",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 409.29,525.42 L 395.38,529.65",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 386.41,526.85 L 369.35,502.38",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 386.17,524.81 L 370.15,501.82",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 369.35,502.38 L 376.52,497.38",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 376.52,497.38 L 395.99,525.31",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 375.72,497.93 L 394.37,524.68",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 412.6,532.53 L 394.73,529.85 L 390.29,559.38 L 408.16,562.07 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 646.09,493.62 L 636.93,491.02",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 641.65,499.34 L 637.04,497.84",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 640.68,500.05 L 636.73,498.76",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 617.24,536.39 L 613.25,533.98",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 746.02,688.06 L 757.14,687.21",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 333.62,705.92 L 333.16,704.34",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 410.71,815.68 L 415.67,812.11 L 418.07,815.46 L 413.1,819.03 L 410.7,815.69",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 372.76,760.89 L 377.72,757.32 L 380.12,760.66 L 375.15,764.24 L 372.75,760.9",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 771.03,665.66 L 761.3,665.66 L 761.3,681.65 L 771.03,681.65",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 780.76,665.66 L 771.03,665.66 L 771.03,681.65 L 780.76,681.65",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 800.22,665.66 L 780.76,665.66 L 780.76,681.65 L 790.49,681.65",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 790.49,665.66 L 790.49,681.65 L 800.22,681.65",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 809.95,665.67 L 800.22,665.66 L 800.22,681.65 L 809.95,681.65",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 819.68,665.67 L 809.95,665.67 L 809.95,681.65 L 819.68,681.65",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 683.71,653.2 L 671.84,635.32 L 654.05,648.85 L 667.98,665.19 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 705.76,639.86 L 696.26,620.6 L 677.62,631.46 L 689.49,649.35 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 729.28,629.27 L 721.1,609.41 L 702.47,617.48 L 711.96,636.73 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 748.35,600.84 L 727.63,607.02 L 735.82,626.9 L 753.83,621.6 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 776.43,595.65 L 755.12,599.27 L 760.6,620.05 L 779.12,616.95 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 805.49,593.9 L 805.02,593.9 L 783.34,594.91 L 786.04,616.22 L 804.82,615.37 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 497.63,706.42 L 478.8,704.95 L 477.08,725.16 L 497.25,726.88 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 523.38,705.89 L 504.52,706.6 L 504.14,726.93 L 525.41,726.23 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 438.5,714.67 L 432.96,706.67 L 419.82,715.79 L 425.37,723.78",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 432.96,706.67 L 427.41,698.68 L 414.28,707.79 L 419.82,715.79 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 382.39,713.05 L 375.36,702.89 L 355.31,711.85 L 364.65,725.34 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 397.14,734.27 L 386.37,718.74 L 386.35,718.76 L 369.81,730.23 L 380.58,745.76 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 411.88,755.51 L 401.11,739.98 L 384.55,751.47 L 395.32,767.0 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 426.59,776.77 L 415.81,761.24 L 399.25,772.73 L 410.03,788.26 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 338.95,728.18 L 327.84,712.21 L 314.7,721.33 L 320.26,729.31",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 333.4,720.2 L 320.26,729.31 L 325.81,737.3",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 344.51,736.17 L 338.95,728.18 L 325.81,737.3 L 331.37,745.29",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 350.06,744.16 L 344.51,736.17 L 331.37,745.29 L 348.03,769.25",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 355.62,752.14 L 350.06,744.16 L 336.92,753.27",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 348.03,769.25 L 361.17,760.13 L 355.62,752.14 L 342.47,761.26",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 371.48,774.96 L 365.93,766.98 L 352.79,776.09 L 358.34,784.07",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 393.7,806.9 L 371.48,774.96 L 358.34,784.07 L 363.9,792.06",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 377.04,782.94 L 363.9,792.06 L 386.11,824.01",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 382.59,790.93 L 369.45,800.05",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 388.15,798.92 L 375.0,808.03",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 386.11,824.01 L 399.25,814.89 L 393.7,806.9 L 380.56,816.02",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 415.13,837.71 L 404.02,821.74 L 390.88,830.85 L 396.43,838.84",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 409.57,829.72 L 396.43,838.84 L 401.99,846.83",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 420.68,845.7 L 415.13,837.71 L 401.99,846.83 L 407.54,854.82",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 431.79,861.67 L 420.68,845.7 L 407.54,854.82 L 413.09,862.8",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 426.24,853.69 L 413.09,862.8 L 418.65,870.79",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 437.34,869.66 L 431.79,861.67 L 418.65,870.79 L 424.2,878.78",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 617.84,511.09 L 622.16,513.11 L 621.0,515.59 L 616.68,513.57 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 597.32,499.48 L 592.61,509.55 L 612.34,518.71 L 617.02,508.63 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 681.34,534.2 L 661.4,531.29 L 658.67,549.99 L 678.61,552.9 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 681.65,523.53 L 680.96,504.64 L 660.82,505.38 L 661.51,524.26 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 624.01,489.24 L 603.39,482.46 L 599.9,493.01 L 620.54,499.8 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 626.53,479.85 L 628.63,468.94 L 607.38,464.84 L 605.17,475.73 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 630.8,448.41 L 609.24,446.84 L 608.35,457.93 L 629.99,459.5 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 681.65,478.67 L 661.51,478.81 L 661.5,497.57 L 681.65,497.57 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 681.66,452.84 L 661.5,452.84 L 661.5,471.74 L 681.66,471.74 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 681.65,426.99 L 661.5,426.99 L 661.5,445.89 L 681.65,445.89 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 675.58,564.51 L 656.97,556.76 L 649.71,574.21 L 668.31,581.96 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 607.74,527.09 L 589.28,515.65 L 583.4,525.09 L 601.89,536.54 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 535.33,654.32 L 516.52,656.59 L 517.33,676.68 L 539.25,674.09 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 524.01,576.55 L 513.84,581.04 L 522.53,600.75 L 532.7,596.26 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 539.77,567.7 L 530.21,573.37 L 541.34,591.89 L 550.87,586.16 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 596.12,544.46 L 579.35,530.79 L 572.39,539.45 L 589.1,553.08 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 582.75,559.99 L 567.7,544.6 L 559.75,552.37 L 574.79,567.77 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 567.65,574.0 L 554.44,557.0 L 545.62,563.76 L 558.87,580.82 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 290.68,655.57 L 284.35,646.44 L 266.65,658.72 L 272.98,667.85 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 280.38,640.73 L 274.05,631.59 L 256.35,643.87 L 262.69,653.01 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 275.19,621.49 L 275.89,615.16 L 250.1,610.07 L 252.96,636.92 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 278.93,607.2 L 283.68,600.94 L 264.43,583.35 L 252.26,602.01 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 300.6,569.99 L 270.91,578.09 L 290.31,595.7 L 297.12,593.07 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 319.19,572.56 L 308.19,570.91 L 304.87,592.96 L 315.95,594.04 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 337.05,575.31 L 326.05,573.66 L 322.84,594.96 L 333.84,596.62 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 354.93,578.01 L 343.94,576.35 L 340.73,597.65 L 351.72,599.31 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 372.8,580.7 L 361.8,579.04 L 358.59,600.35 L 369.59,602.0 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 390.66,583.39 L 379.67,581.74 L 376.46,603.04 L 387.45,604.69 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 408.53,586.09 L 397.53,584.43 L 394.32,605.73 L 405.32,607.39 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 426.44,588.8 L 415.45,587.11 L 412.18,608.41 L 423.17,610.09 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 444.54,591.13 L 433.51,589.74 L 430.81,611.11 L 441.84,612.51 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 462.64,591.54 L 451.52,591.47 L 451.4,613.01 L 462.52,613.08 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 480.65,590.0 L 469.6,591.26 L 472.05,612.67 L 483.1,611.4 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 498.32,586.22 L 487.51,588.79 L 492.49,609.75 L 503.3,607.18 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 509.5,656.71 L 490.56,656.06 L 488.36,676.09 L 510.42,676.79 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 483.75,654.92 L 464.85,652.39 L 462.75,672.51 L 481.42,675.01 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 457.94,651.64 L 457.22,651.57 L 438.67,650.31 L 437.57,650.3 L 436.99,670.55 L 455.84,671.8 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 430.63,650.11 L 410.22,650.28 L 411.17,671.0 L 430.03,670.93 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 403.23,650.64 L 382.88,652.34 L 385.37,672.82 L 404.18,671.33 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 378.43,673.68 L 375.95,653.22 L 355.78,656.43 L 359.77,676.58 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 348.73,656.63 L 337.88,659.06 L 342.1,680.36 L 352.96,677.95 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 331.13,660.75 L 320.34,663.5 L 324.54,685.09 L 335.29,682.1 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 303.55,669.18 L 295.59,661.48 L 277.35,674.13 L 288.09,689.61 L 302.64,694.24 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 507.47,453.58 L 492.79,439.78 L 479.85,453.55 L 494.53,467.35 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 486.43,474.72 L 474.77,458.28 L 459.36,469.22 L 471.02,485.66 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 453.5,472.95 L 436.6,481.42 L 445.63,499.44 L 462.53,490.97 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 435.88,503.06 L 430.1,483.75 L 411.99,489.17 L 417.77,508.48 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 409.58,505.67 L 398.06,489.14 L 382.55,499.95 L 394.08,516.48 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 378.21,522.39 L 369.07,509.28 L 361.1,514.84 L 370.24,527.96 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 361.1,514.84 L 353.12,520.41 L 362.26,533.52 L 370.24,527.96",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 345.13,525.97 L 354.28,539.08 L 362.26,533.52",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 426.67,537.26 L 415.66,535.6 L 412.43,557.09 L 423.58,558.77 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 353.12,520.41 L 337.15,531.54 L 346.29,544.65 L 354.28,539.08",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 407.92,540.26 L 396.92,538.61 L 394.55,554.42 L 405.55,556.07 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 444.58,539.77 L 433.55,538.25 L 430.45,559.76 L 441.63,561.29 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 817.88,588.34 L 809.14,588.34 L 808.0,623.71 L 817.87,623.71",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 462.49,540.85 L 451.42,540.78 L 448.57,562.44 L 463.87,562.73 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 485.91,560.06 L 480.33,538.94 L 469.36,540.41 L 470.78,562.29 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 506.76,552.37 L 497.06,532.76 L 486.72,536.83 L 492.35,557.63 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 526.33,541.67 L 513.07,524.31 L 503.39,529.95 L 513.08,549.61 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 542.07,529.15 L 527.42,513.32 L 518.74,520.31 L 531.94,537.58 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 557.01,511.94 L 539.42,499.55 L 532.23,507.94 L 546.89,523.79 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 568.88,492.01 L 548.77,484.13 L 543.16,493.72 L 560.92,506.2 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 575.7,473.08 L 555.35,467.25 L 551.25,477.64 L 571.43,485.61 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 579.73,450.83 L 558.26,449.34 L 556.56,460.37 L 577.21,466.28 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 580.35,441.58 L 579.91,430.47 L 558.39,431.31 L 558.82,442.42 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 724.49,672.87 L 733.91,686.31 L 741.89,680.75 L 732.48,667.31",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 732.48,667.31 L 716.51,678.43 L 725.93,691.87 L 733.91,686.31",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 716.51,678.43 L 708.53,684.0 L 717.95,697.44 L 725.93,691.87",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 708.53,684.0 L 700.55,689.56 L 709.97,703.0 L 717.95,697.44",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 692.57,695.12 L 701.99,708.57 L 709.97,703.0",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 700.55,689.56 L 684.59,700.69 L 694.01,714.13 L 701.99,708.57",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 684.59,700.69 L 676.61,706.25 L 686.02,719.69 L 694.01,714.13",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 676.61,706.25 L 668.89,711.63 L 678.27,725.1 L 686.02,719.69",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 710.47,595.26 L 713.74,603.34",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 711.04,588.49 L 708.67,578.66",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 693.47,572.73 L 701.62,572.65",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 688.47,572.67 L 681.32,573.86",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 413.87,695.0 L 413.37,676.53",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 310.14,707.19 L 285.21,724.49",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 266.78,553.55 L 275.38,569.11",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 678.15,600.23 L 670.93,596.06",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 683.71,605.67 L 688.84,615.11",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 525.1,549.03 L 536.03,563.5",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 320.7,525.28 L 324.27,530.41",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 424.84,749.29 L 435.04,763.32 L 353.21,820.08 L 347.04,811.18",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 427.41,698.68 L 471.9,762.57",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 771.74,631.38 L 773.02,642.18 L 818.61,640.51 L 818.61,628.57",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 745.27,650.6 L 745.01,640.54",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 744.3,650.63 L 744.04,640.57",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 742.91,650.66 L 742.86,648.57",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 756.45,650.6 L 756.63,635.69",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 757.43,650.61 L 757.6,635.7",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 674.73,678.95 L 679.14,685.07",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 676.05,679.11 L 679.37,683.72",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 669.39,690.31 L 665.76,686.04",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 284.74,632.37 L 284.74,632.37",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 653.16,475.29 L 636.85,475.29",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 304.82,648.64 L 309.83,647.59 L 316.49,614.0 L 306.23,611.96 L 305.3,611.94 L 290.97,628.49 L 291.9,630.02 Z M 296.97,631.67 L 295.37,631.67 Z M 297.24,632.5 L 304.24,637.76 L 305.68,635.85 L 298.68,630.58 L 301.5,627.16 L 301.5,627.16 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 351.55,646.15 L 316.24,654.76 L 314.3,657.96 L 320.98,692.02",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 530.87,488.88 L 532.83,485.86 L 532.34,482.27 L 516.24,467.9 L 512.36,468.08 L 510.59,469.96",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 530.16,488.19 L 531.56,486.02 L 531.07,482.44 L 516.3,469.26 L 512.42,469.43 L 511.36,470.56",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 538.36,475.13 L 538.3,475.26 L 533.9,476.21 L 519.81,463.64 L 519.49,459.82 L 520.42,458.67",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 537.84,473.86 L 533.55,474.6 L 521.14,463.53 L 520.83,459.71 L 521.08,459.4",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 504.95,514.26 L 505.21,514.08 L 505.84,510.13 L 491.46,490.97 L 487.56,490.43 L 487.23,490.67",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 504.31,513.51 L 503.82,513.85 L 504.46,509.9 L 491.27,492.34 L 488.01,491.31 L 488.01,491.31",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 513.77,507.84 L 513.77,507.84 L 510.43,506.97 L 495.73,487.4 L 496.18,483.59",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 514.12,506.28 L 514.12,506.28 L 510.56,505.52 L 497.05,487.54 L 497.69,483.59 L 497.63,483.63",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 429.33,524.64 L 458.66,529.06",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 458.66,529.06 A 2.78 2.78 0 0 0 461.66,525.28",
+        "layer": "comments",
+        "type": "ARC"
+      },
+      {
+        "d": "M 461.66,525.28 L 456.47,512.21",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 429.47,523.68 L 456.96,527.28",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 456.96,527.28 A 2.78 2.78 0 0 0 459.9,523.5",
+        "layer": "comments",
+        "type": "ARC"
+      },
+      {
+        "d": "M 459.9,523.5 L 456.12,513.97",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 471.53,526.88 L 470.62,527.02 L 467.64,525.29 L 461.34,509.48 L 462.64,505.99 L 464.47,505.03",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 472.86,525.68 L 471.26,525.92 L 468.25,524.2 L 462.57,509.93 L 463.87,506.44 L 465.22,505.73",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 485.2,499.29 L 490.7,508.88",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 490.7,508.88 L 466.84,520.65",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 512.92,646.27 A 157.66 157.66 0 0 0 582.09,627.03",
+        "layer": "comments",
+        "type": "ARC"
+      },
+      {
+        "d": "M 480.65,644.29 A 157.66 157.66 0 0 0 512.92,646.27",
+        "layer": "comments",
+        "type": "ARC"
+      },
+      {
+        "d": "M 480.65,644.29 A 409.78 409.78 0 0 0 404.06,640.66",
+        "layer": "comments",
+        "type": "ARC"
+      },
+      {
+        "d": "M 404.06,640.66 A 374.52 374.52 0 0 0 351.75,647.02",
+        "layer": "comments",
+        "type": "ARC"
+      },
+      {
+        "d": "M 342.33,648.97 L 319.08,654.89",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 750.53,687.72 L 750.53,678.94 L 750.03,677.35 L 735.79,657.01 L 752.69,657.01 L 752.69,687.21",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 779.18,589.74 L 783.62,624.83",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 809.14,588.34 L 805.02,588.34 L 647.8,646.88",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 293.17,603.97 L 263.37,576.87 L 253.47,649.46",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 301.21,600.99 L 283.54,620.78",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 289.22,638.83 L 278.92,623.99 L 250.12,643.97",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 318.16,602.69 L 323.45,567.58",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 341.31,570.33 L 323.44,567.64",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 593.31,561.0 L 565.76,538.54",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 633.78,484.79 L 598.84,478.05",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 603.79,443.37 L 639.3,443.37",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 453.46,466.21 L 431.25,477.17",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 378.43,644.5 L 350.76,648.95",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 483.44,583.8 L 487.48,619.12",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 795.8,623.92 L 796.54,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 311.3,601.81 L 301.74,655.83",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 574.54,579.22 L 601.07,617.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 504.33,469.42 L 531.4,495.97",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 734.15,686.17 L 737.08,691.18",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 733.67,686.45 L 736.6,691.47",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 718.18,697.28 L 721.26,701.71",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 717.72,697.6 L 720.81,702.03",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 702.21,708.41 L 705.3,712.84",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 701.76,708.73 L 704.85,713.15",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 686.25,719.53 L 689.34,723.96",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 685.8,719.85 L 688.88,724.28",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 733.47,693.18 L 740.16,689.49 L 740.63,690.35 L 733.94,694.04 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 717.92,704.04 L 724.19,699.67 L 724.75,700.47 L 718.47,704.84 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 701.94,715.18 L 708.21,710.81 L 708.77,711.61 L 702.5,715.98 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 685.98,726.31 L 692.25,721.94 L 692.8,722.74 L 686.53,727.11 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 718.47,704.84 L 724.75,700.47",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 718.71,705.18 L 724.98,700.81",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 718.47,704.84 L 718.71,705.18",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 724.75,700.47 L 724.98,700.81",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 702.5,715.98 L 708.77,711.61",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 702.73,716.32 L 709.0,711.95",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 702.5,715.98 L 702.73,716.32",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 708.77,711.61 L 709.0,711.95",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 692.8,722.74 L 693.28,723.42",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 704.02,676.98 L 708.79,683.82",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 703.57,677.29 L 708.34,684.14",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 688.06,688.1 L 692.83,694.94",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 687.6,688.42 L 692.37,695.26",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 672.1,699.23 L 676.87,706.07",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 671.64,699.55 L 676.41,706.39",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 680.08,693.67 L 684.85,700.51",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 679.63,693.98 L 684.4,700.82",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 696.05,682.56 L 700.82,689.4",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 695.6,682.88 L 700.37,689.72",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 712.0,671.41 L 716.77,678.25",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 711.55,671.73 L 716.32,678.57",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 719.96,665.81 L 724.73,672.65",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 719.5,666.13 L 724.27,672.97",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 673.58,718.37 L 670.16,720.75",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 673.34,718.02 L 669.92,720.41",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 737.18,674.02 L 740.59,671.63",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 736.94,673.68 L 740.35,671.28",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 670.29,694.57 L 670.82,690.49 L 665.92,684.72 L 662.07,684.35",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 671.96,693.41 L 668.53,679.85 L 681.37,686.85",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 670.29,694.57 L 682.99,685.73",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 731.15,657.87 L 730.27,654.93",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 745.27,650.6 L 745.27,657.01",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 730.71,656.4 L 736.58,655.19 L 745.27,655.19",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 736.79,657.01 L 736.4,653.66",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 730.27,654.93 L 736.58,655.19 L 731.15,657.87",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 736.4,653.66 L 745.27,655.19 L 736.79,657.01",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 684.04,621.0 L 701.68,651.65",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 709.41,608.17 L 723.97,640.41",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 736.15,598.42 L 747.42,631.97",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 764.67,591.75 L 771.35,626.12",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 793.82,588.61 L 796.04,623.91",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 538.74,698.48 L 543.89,732.14",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 513.73,700.89 L 515.11,734.91",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 488.78,700.36 L 485.89,734.28",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 815.34,623.71 L 815.34,627.6",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 800.13,623.77 L 800.23,627.66",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 791.4,624.16 L 791.66,628.05",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 776.0,625.78 L 776.56,629.64",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 767.63,627.15 L 768.35,630.99",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 758.76,633.02 L 757.86,629.21",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 741.35,637.98 L 740.11,634.26",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 730.33,642.03 L 728.87,638.38",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 721.23,645.93 L 719.59,642.35",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 707.7,652.77 L 705.79,649.32",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 699.33,657.67 L 697.25,654.31",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 687.17,665.82 L 684.85,662.61",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 679.3,671.82 L 676.82,668.73",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 729.23,639.28 L 740.73,636.12 L 730.33,642.03",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 706.26,650.17 L 720.41,644.14 L 707.7,652.77",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 685.42,663.4 L 698.29,655.99 L 687.17,665.82",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 758.09,630.15 L 767.99,629.07 L 758.76,633.02",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 776.14,626.74 L 791.53,626.11 L 776.56,629.64",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 800.16,624.74 L 815.34,625.66 L 800.23,627.66",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 857.9,702.5 L 749.9,702.6 L 426.3,927.86 L 220.35,638.3 L 212.43,619.12 L 212.44,601.98 L 222.44,580.05 L 564.05,339.54 L 619.08,312.96",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 627.63,538.92 L 629.23,538.92 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 640.63,533.81 L 640.24,533.52 L 638.8,533.04 L 640.4,533.04 L 640.24,533.52 L 640.62,533.8 L 640.63,533.81 L 641.21,525.05 L 641.21,509.9 L 640.14,509.14 L 641.21,508.39 L 641.21,502.69 L 635.03,504.99 L 607.58,551.29 L 608.05,555.09 L 627.06,570.71 L 631.27,569.88 L 636.78,554.26 L 636.0,553.68 L 635.63,553.4 L 634.19,552.92 L 635.79,552.92 L 635.63,553.4 L 636.0,553.68 L 636.78,554.26 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 1160.0,106.91 L 43.26,106.91 L 43.26,1028.87 L 1160.0,1028.87 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      }
+    ],
+    "twin_houses": [
+      {
+        "d": "M 662.29,716.76 L 598.42,761.28",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 565.76,637.33 A 46.21 46.21 0 0 0 563.06,638.3",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 565.76,637.33 L 582.77,629.11",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 563.06,638.3 A 46.21 46.21 0 0 0 560.39,639.35",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 662.29,716.76 L 671.43,729.87",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 654.06,721.97 L 663.45,735.43",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 541.34,591.89 L 550.87,586.16",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 620.62,674.13 L 631.71,691.34",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 606.82,704.63 L 597.84,686.23",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 613.08,701.65 L 604.17,683.4",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 580.61,715.04 L 573.86,695.71",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 587.11,712.67 L 580.42,693.49",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 560.06,720.71 L 555.68,700.87",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 640.86,652.75 L 598.62,679.95 L 613.61,710.66 L 618.02,708.45 L 634.56,699.29 L 639.06,696.34 L 620.55,667.6",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 637.47,687.45 L 626.43,670.3 L 641.65,659.17 L 654.72,674.98 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 620.55,667.6 L 639.06,696.34 L 643.27,693.57 L 658.58,682.48 L 662.54,679.0 L 640.86,652.75",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 581.52,723.43 L 586.58,721.6 L 575.32,689.34 L 551.09,696.22 L 558.47,729.58 L 563.3,728.46 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 613.53,710.45 L 598.54,679.74 L 575.32,689.42 L 586.58,721.68 L 591.22,720.0 L 608.72,712.86 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 532.27,725.47 L 530.25,705.26 L 548.91,702.28 L 553.33,722.26 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 558.49,729.49 L 551.11,696.13 L 526.24,700.1 L 529.63,734.1 L 534.55,733.56 L 553.24,730.71 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 654.4,614.72 L 655.37,613.61",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 574.02,664.83 L 566.95,646.0 L 584.09,637.94 L 594.02,655.48 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 567.42,666.88 L 560.35,648.06 L 542.14,653.29 L 546.22,673.02 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 572.7,671.06 L 560.73,639.22 L 542.22,644.56 L 537.14,645.64 L 543.81,679.22 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 582.77,629.11 L 565.76,637.33 L 560.72,639.18 L 572.7,671.06 L 575.07,670.26 L 600.66,658.37 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 647.8,646.88 L 670.74,673.79",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 654.05,648.85 L 667.98,665.19",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 646.83,614.81 L 631.69,601.54 L 618.21,614.84 L 631.4,630.05 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 608.19,647.48 L 597.53,630.43 L 612.75,619.14 L 625.95,634.37 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 632.32,636.41 L 645.62,623.96 L 647.94,621.61 L 653.37,615.91 L 627.76,593.47 L 613.39,607.71 L 610.01,610.68",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 632.32,636.41 L 610.01,610.68 L 593.87,622.77 L 590.13,625.06 L 608.07,654.03 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 635.96,596.05 L 646.68,580.49",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 635.96,596.05 L 651.17,609.33",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 628.77,632.32 L 615.59,617.11",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 647.8,646.88 L 670.74,673.79",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 641.61,652.13 L 662.21,677.07",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 647.8,646.88 L 670.93,674.02",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 647.06,647.51 L 668.82,673.04",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 600.66,658.37 L 582.77,629.11",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 578.95,621.51 L 563.33,595.95",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 577.58,621.13 L 563.03,597.33",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 608.06,654.02 L 590.13,625.06",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 585.04,618.17 L 568.82,591.98",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 585.36,616.84 L 570.11,592.22",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 640.86,652.75 L 647.8,646.88",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 603.39,656.81 L 585.8,628.02",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 654.72,674.98 L 641.65,659.17 L 626.43,670.3 L 637.47,687.45 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 671.43,729.87 L 662.29,716.76 L 654.31,722.32 L 663.45,735.43 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 553.33,722.26 L 548.91,702.28 L 530.25,705.26 L 532.27,725.47 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 573.86,695.71 L 555.68,700.87 L 560.06,720.71 L 580.61,715.04 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 606.82,704.63 L 597.84,686.23 L 580.42,693.49 L 587.11,712.67 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 631.71,691.34 L 620.62,674.13 L 604.17,683.4 L 613.08,701.65 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 646.83,614.81 L 631.69,601.54 L 618.21,614.84 L 631.4,630.05 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 664.52,590.03 L 646.68,580.49 L 635.96,596.05 L 651.17,609.33 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 567.42,666.88 L 560.35,648.06 L 542.14,653.29 L 546.22,673.02 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 594.02,655.48 L 584.09,637.94 L 566.95,646.0 L 574.02,664.83 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 625.95,634.37 L 612.75,619.14 L 597.53,630.43 L 608.19,647.48 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 631.67,708.63 L 636.28,714.97",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 633.08,708.93 L 636.51,713.62",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 629.26,719.79 L 623.9,712.14",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 627.9,719.54 L 623.59,713.39",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 585.8,628.02 A 2.78 2.78 0 0 0 582.09,627.03",
+        "layer": "comments",
+        "type": "ARC"
+      },
+      {
+        "d": "M 671.25,589.68 L 637.67,571.71 L 624.71,590.83 L 653.38,615.9 L 654.76,614.31 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 660.7,707.18 L 657.92,703.2",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 662.07,684.35 L 675.19,675.2",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 626.29,725.25 L 629.31,729.58",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 628.57,723.66 L 659.31,705.19",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 659.31,705.19 L 628.51,728.43",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 654.31,722.32 L 648.74,714.33",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 659.31,705.19 L 627.68,727.24",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 609.95,674.0 L 626.43,703.79",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 630.95,660.46 L 650.9,688.05",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 659.41,637.45 L 680.83,665.59",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 587.07,684.92 L 599.93,716.44",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 563.31,693.14 L 572.36,725.96",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 657.02,688.26 L 654.82,685.21",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 648.62,694.33 L 646.42,691.29",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 633.38,704.08 L 631.63,700.92",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 620.36,711.26 L 618.62,708.11",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 607.05,717.6 L 605.63,714.12",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 595.95,722.18 L 594.52,718.65",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 655.4,686.01 L 678.06,670.27 L 657.02,688.26",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 632.02,701.63 L 647.52,692.81 L 633.38,704.08",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 606.0,715.03 L 619.49,709.69 L 607.05,717.6",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 578.75,725.18 L 595.23,720.41 L 579.49,727.86",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 579.52,662.54 L 581.66,667.62",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 587.87,658.66 L 590.3,663.72",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      }
+    ],
+    "townhouses": [
+      {
+        "d": "M 875.96,671.92 L 875.96,598.07 L 863.45,585.56 L 826.33,585.56 L 826.24,588.34 L 834.97,588.34 L 863.45,588.34 L 871.77,591.45 L 872.02,591.65 L 873.9,595.77 L 873.92,595.88 L 874.16,602.43 L 874.15,602.43 L 874.15,605.21 L 874.16,607.29 L 874.19,607.29 L 874.19,610.09 L 874.16,610.09 L 874.21,626.75 L 874.23,626.75 L 874.23,629.54 L 874.22,629.54 L 874.25,641.34 L 875.38,641.34 L 875.38,644.12 L 873.18,644.12 L 873.18,644.24 L 873.18,646.2 L 873.18,648.98 L 873.18,665.66 L 873.18,668.44 L 873.18,671.92 L 871.15,679.55 L 843.3,679.55 L 843.3,687.21 L 843.3,687.21 L 843.3,688.18 L 833.23,688.18 L 823.31,688.18 L 813.77,688.18 L 806.12,688.18 L 803.85,688.18 L 794.31,688.18 L 794.31,688.56 L 791.53,688.56 L 791.53,687.21 L 790.77,687.21 L 790.77,687.21 L 790.77,687.21 L 790.77,687.21 L 790.21,687.21 L 790.21,687.21 L 790.21,687.21 L 790.21,687.21 L 789.45,687.21 L 789.45,687.21 L 789.45,687.21 L 790.21,687.21 L 790.21,681.65 L 781.04,681.65 L 781.04,687.21 L 781.62,687.21 L 781.62,687.21 L 781.62,688.18 L 774.85,688.18 L 767.21,688.18 L 764.94,688.18 L 756.86,688.18 L 756.16,687.49 L 756.16,687.28 L 747.21,687.97 L 747.28,690.64 L 753.92,689.99 L 857.96,689.99 Z M 874.31,665.66 L 874.3,663.56 L 874.3,665.66 L 874.31,668.43 Z M 874.3,663.56 L 874.3,660.8 L 874.26,648.98 L 874.26,660.8 Z M 874.26,648.98 L 874.26,646.2 L 874.25,644.12 L 874.25,646.2 Z M 782.96,684.61 L 783.31,684.62 L 783.32,684.27 Z M 783.89,684.64 L 787.64,684.77 L 787.68,683.74 L 783.92,683.62 Z M 768.05,687.37 L 768.73,688.35 L 769.2,688.03 L 768.52,687.04 Z M 772.84,687.37 L 773.53,688.35 L 774.0,688.03 L 773.31,687.04 Z M 787.23,687.37 L 787.91,688.35 L 788.38,688.02 L 787.7,687.04 Z M 806.81,687.37 L 807.5,688.35 L 807.97,688.02 L 807.28,687.04 Z M 811.89,687.43 L 812.57,688.42 L 813.04,688.09 L 812.36,687.11 Z M 873.06,666.49 L 873.92,667.74 L 874.39,667.41 L 873.53,666.17 Z M 873.03,661.61 L 873.89,662.85 L 874.36,662.53 L 873.5,661.28 Z M 872.97,647.11 L 873.97,648.54 L 874.44,648.21 L 873.44,646.78 Z M 873.17,622.99 L 874.04,624.24 L 874.51,623.91 L 873.64,622.66 L 871.09,682.62 L 871.09,682.62 L 871.09,682.62 L 871.09,682.62 L 871.09,682.62 Z",
+        "layer": "0",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 843.31,591.38 L 842.33,591.38 L 842.35,602.61 L 843.32,602.61 L 873.69,585.5 L 873.61,596.62 L 873.93,607.86 L 873.82,617.79 L 873.9,626.73 L 873.97,638.31 L 873.98,647.6 L 873.98,657.12 L 874.12,665.12 L 842.85,655.81 L 842.93,646.63 L 842.96,637.39 L 843.04,628.45 L 842.98,625.55 L 842.98,625.58 L 842.72,620.25 L 842.74,607.58 L 842.66,598.94 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 843.3,673.49 L 843.3,678.52 L 871.69,678.52 L 873.18,671.92 L 873.18,668.44",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 873.18,665.66 L 873.18,663.58",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 873.18,660.8 L 873.18,648.98",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 873.18,646.2 L 873.18,644.12",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 873.18,641.34 L 873.18,629.53",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 873.18,626.75 L 873.18,624.66",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 873.18,621.88 L 873.18,610.07",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 873.18,607.29 L 873.18,605.2",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 873.18,602.43 L 873.18,598.07 L 871.32,592.35 L 843.3,592.35",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 771.03,665.67 L 770.75,665.67 L 770.75,665.67 L 770.75,665.67 L 770.75,665.67 L 761.3,665.67 L 761.3,681.65 L 771.03,681.65 Z M 763.49,674.37 L 762.96,674.35 L 762.94,674.89 Z M 780.76,665.67 L 780.48,665.67 L 780.48,665.67 L 780.48,665.67 L 780.48,665.67 L 771.03,665.67 L 771.03,681.65 L 780.76,681.65 Z M 772.12,674.06 L 772.65,674.08 L 772.67,673.54 Z M 790.49,665.67 L 790.21,665.67 L 790.21,665.67 L 790.21,665.67 L 790.21,665.67 L 781.04,665.67 L 781.04,665.67 L 781.04,665.67 L 781.04,665.67 L 780.76,665.67 L 780.76,681.65 L 790.49,681.65 Z M 782.9,674.08 L 782.36,674.06 L 782.34,674.59 Z M 800.22,665.67 L 799.94,665.67 L 799.94,665.67 L 799.94,665.67 L 799.94,665.67 L 790.77,665.67 L 790.77,665.67 L 790.77,665.67 L 790.77,665.67 L 790.49,665.67 L 790.49,681.65 L 800.22,681.65 Z M 791.38,674.37 L 791.91,674.39 L 791.93,673.85 Z M 809.95,665.67 L 809.67,665.67 L 809.67,665.67 L 809.67,665.67 L 809.67,665.67 L 800.5,665.67 L 800.5,665.67 L 800.49,665.67 L 800.49,665.67 L 800.22,665.67 L 800.22,681.65 L 809.95,681.65 Z M 801.43,674.35 L 801.96,674.37 L 801.98,673.84 Z M 819.67,665.67 L 819.4,665.67 L 819.4,665.67 L 819.4,665.67 L 819.4,665.67 L 810.22,665.67 L 810.22,665.67 L 810.22,665.67 L 810.22,665.67 L 809.95,665.67 L 809.95,681.65 L 819.67,681.65 Z M 810.7,674.06 L 811.24,674.07 L 811.26,673.54 Z M 829.4,665.67 L 829.13,665.67 L 829.13,665.67 L 829.12,665.67 L 829.12,665.67 L 819.95,665.67 L 819.95,665.67 L 819.95,665.67 L 819.95,665.67 L 819.68,665.67 L 819.68,681.65 L 829.4,681.65 Z M 822.22,673.71 L 821.69,673.7 L 821.67,674.23 Z M 839.13,665.67 L 829.68,665.67 L 829.68,665.67 L 829.68,665.67 L 829.68,665.67 L 829.4,665.67 L 829.41,681.65 L 839.13,681.65 Z M 830.92,673.38 L 831.46,673.4 L 831.48,672.86 Z M 867.62,664.62 L 851.64,664.62 L 851.64,674.35 L 867.62,674.35 Z M 859.22,666.96 L 858.39,666.96 Z M 867.62,654.89 L 851.64,654.89 L 851.64,664.62 L 867.62,664.62 Z M 858.39,657.23 L 859.22,657.23 Z M 867.62,645.16 L 851.64,645.16 L 851.64,654.89 L 867.62,654.89 Z M 858.39,647.5 L 859.22,647.5 Z M 867.62,635.43 L 851.64,635.43 L 851.64,645.16 L 867.62,645.16 Z M 859.22,637.77 L 858.38,637.77 Z M 867.62,625.7 L 851.64,625.71 L 851.64,635.43 L 867.62,635.43 Z M 859.22,628.05 L 858.38,628.05 Z M 867.62,615.98 L 851.64,615.98 L 851.64,615.98 L 851.64,625.71 L 867.62,625.7 Z M 859.22,618.32 L 858.38,618.32 Z M 867.62,606.25 L 851.64,606.25 L 851.64,615.98 L 867.62,615.98 Z M 858.38,608.59 L 859.22,608.59 Z M 867.62,596.52 L 851.64,596.52 L 851.64,606.25 L 867.62,606.25 Z M 858.38,598.86 L 859.22,598.86 Z M 831.5,593.9 L 821.97,593.9 L 821.63,615.37 L 831.49,615.37 Z M 821.97,593.9 L 812.44,593.9 L 811.77,615.37 L 821.63,615.37 Z M 763.86,674.39 L 769.72,674.59 L 769.78,672.99 L 763.92,672.79 Z M 773.56,674.12 L 779.42,674.32 L 779.47,672.71 L 773.61,672.51 Z M 783.26,674.1 L 789.12,674.3 L 789.18,672.69 L 783.32,672.49 Z M 792.82,674.42 L 798.68,674.63 L 798.73,673.02 L 792.87,672.82 Z M 802.87,674.41 L 808.73,674.61 L 808.78,673.01 L 802.92,672.81 Z M 812.14,674.11 L 818.0,674.31 L 818.06,672.71 L 812.2,672.51 Z M 822.59,673.73 L 828.45,673.94 L 828.51,672.33 L 822.65,672.13 Z M 832.36,673.44 L 838.22,673.64 L 838.28,672.03 L 832.42,671.83 Z M 858.82,667.66 L 859.0,672.21 L 860.25,672.17 L 860.07,667.62 Z M 858.82,657.93 L 859.0,662.49 L 860.25,662.44 L 860.07,657.89 Z M 858.82,648.21 L 859.0,652.76 L 860.25,652.71 L 860.07,648.16 Z M 858.82,638.48 L 859.0,643.03 L 860.25,642.98 L 860.07,638.43 Z M 858.82,628.75 L 859.0,633.3 L 860.25,633.25 L 860.07,628.7 Z M 858.82,619.02 L 859.0,623.57 L 860.24,623.52 L 860.07,618.97 Z M 858.82,609.29 L 859.0,613.84 L 860.24,613.79 L 860.07,609.24 Z M 858.82,599.56 L 859.0,604.11 L 860.24,604.07 L 860.07,599.51 L 765.34,668.96 L 765.34,668.96 L 777.22,669.08 L 777.22,669.08 L 785.11,669.32 L 785.11,669.32 L 796.52,669.2 L 796.52,669.2 L 807.23,669.08 L 807.23,669.08 L 815.47,668.96 L 815.47,668.96 L 824.06,668.73 L 824.06,668.73 L 835.24,668.85 L 835.24,668.85 L 856.07,668.02 L 856.07,668.02 L 855.24,659.79 L 855.24,659.79 L 855.72,651.44 L 855.72,651.44 L 854.42,639.09 L 854.42,639.09 L 854.42,628.15 L 854.42,628.15 L 854.07,620.15 L 854.07,620.15 L 854.89,612.03 L 854.89,612.03 L 856.42,602.85 L 856.42,602.85 L 823.94,606.03 L 818.88,605.8 Z",
+        "layer": "0",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 867.62,645.16 L 851.64,645.16",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,645.16 L 867.62,635.43 L 851.64,635.43 L 851.64,645.16 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 873.18,626.75 L 873.18,625.93 L 867.62,625.94 L 867.62,635.11 L 873.18,635.1 L 873.18,629.53 Z M 869.35,628.32 L 870.07,628.32 Z M 873.18,616.2 L 867.62,616.21 L 867.62,625.38 L 873.18,625.37 Z M 869.35,618.59 L 870.07,618.59 Z M 873.18,610.07 L 873.18,607.29 L 873.18,606.53 L 867.62,606.54 L 867.62,615.65 L 873.18,615.64 Z M 869.35,608.86 L 870.07,608.86 Z M 869.73,628.92 L 869.88,632.82 L 870.95,632.78 L 870.8,628.88 Z M 869.73,619.19 L 869.88,623.09 L 870.95,623.05 L 870.8,619.15 Z M 869.73,609.47 L 869.88,613.37 L 870.95,613.32 L 870.8,609.42 Z M 869.73,599.74 L 869.88,603.64 L 870.95,603.6 L 870.8,599.7 Z M 847.06,599.75 L 847.24,604.3 L 848.49,604.26 L 848.31,599.7 L 871.65,628.2 L 871.65,628.2 L 871.87,623.56 L 871.87,623.56 L 871.95,613.69 L 871.95,613.69 Z",
+        "layer": "0",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 867.62,674.35 L 859.79,674.35 L 859.79,678.52 L 871.69,678.52 L 873.18,671.92 L 873.18,668.44 L 873.18,665.62 L 873.18,664.84 L 867.62,664.85 Z M 869.36,667.24 L 870.07,667.24 Z M 867.62,664.3 L 873.18,664.29 L 873.18,655.11 L 867.62,655.12 Z M 869.36,657.51 L 870.07,657.51 Z M 873.18,648.98 L 873.18,646.2 L 873.18,645.38 L 867.62,645.39 L 867.62,654.57 L 873.18,654.56 Z M 869.36,647.78 L 870.07,647.78 Z M 873.18,635.66 L 867.62,635.67 L 867.62,644.84 L 873.18,644.83 Z M 869.35,638.05 L 870.07,638.05 L 869.9,674.87 L 869.9,674.87 L 869.16,662.5 L 869.16,662.5 L 872.05,649.37 L 872.05,649.37 L 871.45,641.03 L 871.45,641.03 Z",
+        "layer": "0",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 827.94,624.68 L 819.37,624.68 L 819.32,624.75 L 819.49,625.1 L 819.4,625.36 L 819.61,625.51 L 822.39,627.6 L 827.94,627.6 Z M 831.07,624.68 L 827.94,624.68 L 827.94,626.14 Z M 827.94,626.14 L 827.94,627.6 L 831.07,627.6 Z M 831.07,624.68 L 827.94,626.14 L 831.07,627.6 Z M 831.49,624.68 L 831.07,624.68 L 831.07,627.6 L 833.85,630.38 L 834.01,629.54 L 831.49,626.14 Z M 835.09,624.03 L 835.12,623.87 L 833.16,624.68 L 831.49,624.68 L 831.49,626.14 Z M 835.09,624.03 L 831.49,626.14 L 834.01,629.54 Z M 842.39,624.85 L 842.36,591.38 L 871.46,591.38 L 871.77,591.45 L 863.45,588.34 L 835.95,588.34 L 835.94,621.9 L 835.12,623.87 L 835.09,624.03 L 834.01,629.54 L 833.85,630.38 L 833.85,636.44 L 842.41,636.44 L 842.41,634.58 L 842.4,631.8 L 842.4,631.8 Z M 837.74,611.32 L 839.34,611.32 Z M 828.96,625.59 L 830.06,627.17 L 830.67,626.74 L 829.57,625.16 Z M 831.0,625.57 L 830.99,626.77 L 831.57,626.78 L 831.58,625.58 Z M 832.37,625.89 L 833.47,627.47 L 834.08,627.04 L 832.98,625.46 Z M 838.41,612.66 L 837.65,621.38 L 840.03,621.59 L 840.8,612.87 Z M 835.89,636.45 L 838.73,636.44 L 838.73,635.67 L 835.89,635.67 L 826.35,626.27 L 829.12,625.21 L 828.93,627.02 L 830.44,625.89 L 831.25,625.39 L 832.36,625.18 L 834.13,625.65 L 836.75,627.25 L 836.75,627.25 Z",
+        "layer": "0",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 867.62,596.52 L 867.62,674.35",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 851.64,606.51 L 843.3,606.53 L 843.3,615.7 L 851.64,615.68 Z M 846.63,608.78 L 847.46,608.78 Z M 851.64,596.52 L 859.64,596.52 L 859.63,592.35 L 843.3,592.35 L 843.3,605.97 L 851.64,605.95 Z M 846.63,599.05 L 847.46,599.05 Z M 851.64,616.24 L 843.3,616.26 L 843.3,625.43 L 851.64,625.41 Z M 847.46,618.51 L 846.63,618.51 Z M 851.64,625.97 L 843.3,625.98 L 843.3,635.16 L 851.64,635.14 Z M 846.63,628.24 L 847.46,628.24 Z M 851.64,635.7 L 843.3,635.71 L 843.3,644.89 L 851.64,644.87 Z M 846.63,637.96 L 847.46,637.96 Z M 851.64,645.43 L 843.3,645.44 L 843.3,654.61 L 851.64,654.6 Z M 846.63,647.69 L 847.46,647.69 Z M 851.64,655.15 L 843.3,655.17 L 843.3,664.34 L 851.64,664.33 Z M 846.63,657.42 L 847.46,657.42 Z M 859.79,674.35 L 851.64,674.35 L 851.64,664.88 L 843.3,664.9 L 843.3,678.43 L 843.3,678.52 L 859.79,678.52 Z M 846.63,667.15 L 847.46,667.15 Z M 847.06,599.75 L 847.24,604.3 L 848.49,604.26 L 848.31,599.7 Z M 847.06,619.21 L 847.24,623.76 L 848.49,623.71 L 848.31,619.16 Z M 847.06,628.94 L 847.24,633.49 L 848.49,633.44 L 848.31,628.89 Z M 847.07,638.67 L 847.24,643.22 L 848.49,643.17 L 848.31,638.62 Z M 847.07,648.4 L 847.24,652.95 L 848.49,652.9 L 848.31,648.35 Z M 842.24,652.33 L 843.11,653.58 L 843.58,653.25 L 842.71,652.0 Z M 847.07,658.12 L 847.24,662.68 L 848.49,662.63 L 848.31,658.08 Z M 847.07,667.85 L 847.24,672.41 L 848.49,672.36 L 848.31,667.81 L 845.04,612.77 L 845.04,612.77 L 845.79,602.94 L 845.79,602.94 L 845.35,619.76 L 845.35,619.76 L 845.6,630.64 L 845.6,630.64 L 845.79,640.26 L 845.79,640.26 L 846.11,650.44 L 846.11,650.44 L 845.79,659.45 L 845.79,659.45 L 846.8,674.43 L 846.8,674.43 Z",
+        "layer": "0",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 851.64,596.52 L 851.64,674.35",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 839.13,665.67 L 839.13,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 829.4,665.67 L 829.41,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 819.68,665.67 L 819.68,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 857.9,702.5 A 30.58 30.58 0 0 0 887.1,680.98",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 831.5,593.9 L 812.44,593.9",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 834.96,623.71 L 826.23,623.71",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 831.49,615.37 L 811.77,615.37",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,657.33 L 843.3,657.33",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 829.68,657.33 L 829.13,657.33",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 819.95,657.33 L 819.4,657.33",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 839.13,681.65 L 761.3,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 839.13,665.67 L 761.3,665.67",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 819.68,687.21 L 819.68,687.21",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,664.62 L 851.64,664.62",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,654.89 L 851.64,654.89",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,635.43 L 851.64,635.43",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,615.98 L 851.64,615.98",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,625.7 L 851.64,625.71",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,606.25 L 851.64,606.25",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,674.35 L 851.64,674.35",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,596.52 L 851.64,596.52",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 834.96,623.71 L 834.97,588.34",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 831.49,615.37 L 831.5,593.9",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 823.31,687.21 L 825.58,687.21",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 828.36,687.21 L 830.45,687.21",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 833.23,687.21 L 843.3,687.21 L 843.3,673.49",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 843.3,657.33 L 843.3,657.33 L 833.04,657.33",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 830.26,657.33 L 823.31,657.33",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 820.65,623.71 L 823.44,623.71",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 826.23,623.71 L 834.96,623.71 L 834.97,588.34 L 826.24,588.34",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 823.46,588.34 L 820.66,588.34",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 871.32,592.35 L 843.3,592.35",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,592.35 L 843.3,678.52",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,678.52 L 871.69,678.52",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,634.58 L 843.3,639.8",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 843.3,657.33 L 843.3,657.33",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 831.5,593.9 L 812.44,593.9 L 811.77,615.37 L 831.49,615.37 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 839.13,665.67 L 819.68,665.67 L 819.68,681.65 L 829.41,681.65",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 829.4,665.67 L 829.41,681.65 L 839.13,681.65 L 839.13,665.67",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 867.62,674.35 L 867.62,664.62 L 851.64,664.62 L 851.64,674.35 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 851.64,645.16 L 851.64,654.89 L 867.62,654.89 L 867.62,645.16",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 867.62,664.62 L 867.62,654.89",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 867.62,635.43 L 867.62,625.7 L 851.64,625.71 L 851.64,635.43",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 867.62,625.7 L 867.62,615.98",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 867.62,606.25 L 851.64,606.25 L 851.64,615.98 L 867.62,615.98 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 867.62,606.25 L 867.62,596.52 L 851.64,596.52 L 851.64,606.25",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 851.64,615.98 L 851.64,625.71",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 851.64,654.89 L 851.64,664.62",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 830.26,687.21 L 830.26,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 833.04,687.21 L 833.04,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 833.04,693.94 L 833.04,695.65",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 825.39,695.5 L 825.39,697.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 839.13,673.66 L 843.3,673.66",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 829.68,681.65 L 829.68,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 829.13,681.65 L 829.13,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 819.95,681.65 L 819.95,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 819.4,681.65 L 819.4,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 829.68,657.33 L 829.68,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 829.13,657.33 L 829.13,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 819.95,657.33 L 819.95,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 819.4,657.33 L 819.4,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 830.26,656.35 L 830.26,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 833.04,656.35 L 833.04,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 820.53,656.35 L 820.53,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 823.31,656.35 L 823.31,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 839.13,665.67 L 839.13,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 829.4,665.67 L 829.4,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 819.67,665.67 L 819.67,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,657.33 L 843.3,657.33",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 829.68,657.33 L 829.12,657.33",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 819.95,657.33 L 819.4,657.33",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 819.68,687.21 L 819.68,687.21",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 813.77,687.21 L 823.31,687.21",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 823.31,687.21 L 825.58,687.21",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 828.36,687.21 L 830.26,687.21",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 833.23,687.21 L 843.3,687.21 L 843.3,673.49",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 843.3,657.33 L 843.3,657.33 L 833.04,657.33",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 830.26,657.33 L 823.31,657.33",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 839.13,665.67 L 819.67,665.67 L 819.67,681.65 L 829.4,681.65",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 829.4,665.67 L 829.4,681.65 L 839.13,681.65 L 839.13,665.67",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 833.04,687.21 L 833.04,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 820.53,687.21 L 820.53,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 823.31,687.21 L 823.31,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 839.13,673.66 L 843.3,673.66",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 829.68,681.65 L 829.68,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 829.13,681.65 L 829.13,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 819.95,681.65 L 819.95,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 819.4,681.65 L 819.4,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 829.68,657.33 L 829.68,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 829.12,657.33 L 829.12,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 819.95,657.33 L 819.95,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 819.4,657.33 L 819.4,665.67",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 830.26,656.35 L 830.26,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 833.04,656.35 L 833.04,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 820.53,656.35 L 820.53,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 823.31,656.35 L 823.31,657.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 823.31,687.21 L 843.3,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 823.31,688.18 L 843.3,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 823.31,688.18 L 825.58,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 828.36,688.18 L 830.26,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 833.04,688.18 L 833.04,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 833.23,688.18 L 843.3,688.18",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,688.18 L 843.3,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,605.39 L 842.35,605.39 L 842.36,612.34 L 843.3,612.34 L 873.71,595.23 L 873.63,606.35 L 873.95,617.59 L 873.84,627.52 L 873.91,636.46 L 873.99,648.04 L 873.99,657.32 L 874.0,666.85 L 874.14,674.85 L 842.87,665.54 L 842.94,656.36 L 842.98,647.12 L 843.06,638.17 L 842.99,635.28 L 843.0,635.31 L 842.74,629.98 L 842.76,617.31 L 842.68,608.67 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 843.3,615.12 L 842.37,615.12 L 842.38,622.07 L 843.3,622.07 L 873.71,595.23 L 873.63,606.35 L 873.95,617.59 L 873.84,627.52 L 873.91,636.46 L 873.99,648.04 L 873.99,657.32 L 874.0,666.85 L 874.14,674.85 L 842.87,665.54 L 842.94,656.36 L 842.98,647.12 L 843.06,638.17 L 842.99,635.28 L 843.0,635.31 L 842.74,629.98 L 842.76,617.31 L 842.68,608.67 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 843.3,624.85 L 842.39,624.85 L 842.4,631.8 L 843.3,631.8 L 873.71,595.23 L 873.63,606.35 L 873.95,617.59 L 873.84,627.52 L 873.91,636.46 L 873.99,648.04 L 873.99,657.32 L 874.0,666.85 L 874.14,674.85 L 842.87,665.54 L 842.94,656.36 L 842.98,647.12 L 843.06,638.17 L 842.99,635.28 L 843.0,635.31 L 842.74,629.98 L 842.76,617.31 L 842.68,608.67 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 843.3,634.58 L 842.41,634.58 L 842.42,641.53 L 843.3,641.53 L 873.71,595.23 L 873.63,606.35 L 873.95,617.59 L 873.84,627.52 L 873.91,636.46 L 873.99,648.04 L 873.99,657.32 L 874.0,666.85 L 874.14,674.85 L 842.87,665.54 L 842.94,656.36 L 842.98,647.12 L 843.06,638.17 L 842.99,635.28 L 843.0,635.31 L 842.74,629.98 L 842.76,617.31 L 842.68,608.67 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 843.3,644.31 L 842.42,644.31 L 842.44,651.26 L 843.3,651.26 L 873.71,595.23 L 873.63,606.35 L 873.95,617.59 L 873.84,627.52 L 873.91,636.46 L 873.99,648.04 L 873.99,657.32 L 874.0,666.85 L 874.14,674.85 L 842.87,665.54 L 842.94,656.36 L 842.98,647.12 L 843.06,638.17 L 842.99,635.28 L 843.0,635.31 L 842.74,629.98 L 842.76,617.31 L 842.68,608.67 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 843.3,654.03 L 842.44,654.04 L 842.46,663.77 L 843.3,663.76 L 873.71,595.23 L 873.63,606.35 L 873.95,617.59 L 873.84,627.52 L 873.91,636.46 L 873.99,648.04 L 873.99,657.32 L 874.0,666.85 L 874.14,674.85 L 842.87,665.54 L 842.94,656.36 L 842.98,647.12 L 843.06,638.17 L 842.99,635.28 L 843.0,635.31 L 842.74,629.98 L 842.76,617.31 L 842.68,608.67 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 843.3,663.76 L 842.46,663.77 L 842.48,673.66 L 843.3,673.66 L 873.71,595.23 L 873.63,606.35 L 873.95,617.59 L 873.84,627.52 L 873.91,636.46 L 873.99,648.04 L 873.99,657.32 L 874.0,666.85 L 874.14,674.85 L 842.87,665.54 L 842.94,656.36 L 842.98,647.12 L 843.06,638.17 L 842.99,635.28 L 843.0,635.31 L 842.74,629.98 L 842.76,617.31 L 842.68,608.67 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 874.31,668.44 L 864.51,669.68 L 856.99,671.56 L 871.69,678.52 L 843.46,678.52 L 843.3,679.55 L 870.71,676.89 L 873.14,678.03 L 874.02,671.91 L 873.71,595.23 L 873.63,606.35 L 873.95,617.59 L 873.84,627.52 L 873.91,636.46 L 873.99,648.04 L 873.99,657.32 L 874.0,666.85 L 874.14,674.85 L 842.87,665.54 L 842.94,656.36 L 842.98,647.12 L 843.06,638.17 L 842.99,635.28 L 843.0,635.31 L 842.74,629.98 L 842.76,617.31 L 842.68,608.67 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 873.32,665.66 L 874.29,665.66 L 874.29,663.58 L 873.31,663.58 L 873.71,595.23 L 873.63,606.35 L 873.95,617.59 L 873.84,627.52 L 873.91,636.46 L 873.99,648.04 L 873.99,657.32 L 874.0,666.85 L 874.14,674.85 L 842.87,665.54 L 842.94,656.36 L 842.98,647.12 L 843.06,638.17 L 842.99,635.28 L 843.0,635.31 L 842.74,629.98 L 842.76,617.31 L 842.68,608.67 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 873.31,660.8 L 874.28,660.8 L 874.27,653.98 L 873.3,653.98 L 873.71,595.23 L 873.63,606.35 L 873.95,617.59 L 873.84,627.52 L 873.91,636.46 L 873.99,648.04 L 873.99,657.32 L 874.0,666.85 L 874.14,674.85 L 842.87,665.54 L 842.94,656.36 L 842.98,647.12 L 843.06,638.17 L 842.99,635.28 L 843.0,635.31 L 842.74,629.98 L 842.76,617.31 L 842.68,608.67 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 874.26,648.98 L 873.29,648.98 L 873.25,654.38 L 874.23,654.38 Z M 873.28,646.2 L 874.25,646.2 L 874.25,644.12 L 873.28,644.12 L 873.71,595.23 L 873.63,606.35 L 873.95,617.59 L 873.84,627.52 L 873.91,636.46 L 873.99,648.04 L 873.99,657.32 L 874.0,666.85 L 874.14,674.85 L 842.87,665.54 L 842.94,656.36 L 842.98,647.12 L 843.06,638.17 L 842.99,635.28 L 843.0,635.31 L 842.74,629.98 L 842.76,617.31 L 842.68,608.67 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 873.27,641.34 L 874.25,641.34 L 874.23,629.53 L 873.26,629.53 L 873.71,595.23 L 873.63,606.35 L 873.95,617.59 L 873.84,627.52 L 873.91,636.46 L 873.99,648.04 L 873.99,657.32 L 874.0,666.85 L 874.14,674.85 L 842.87,665.54 L 842.94,656.36 L 842.98,647.12 L 843.06,638.17 L 842.99,635.28 L 843.0,635.31 L 842.74,629.98 L 842.76,617.31 L 842.68,608.67 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 873.24,626.75 L 874.22,626.75 L 874.21,624.66 L 873.24,624.66 L 873.71,595.23 L 873.63,606.35 L 873.95,617.59 L 873.84,627.52 L 873.91,636.46 L 873.99,648.04 L 873.99,657.32 L 874.0,666.85 L 874.14,674.85 L 842.87,665.54 L 842.94,656.36 L 842.98,647.12 L 843.06,638.17 L 842.99,635.28 L 843.0,635.31 L 842.74,629.98 L 842.76,617.31 L 842.68,608.67 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 874.2,610.07 L 873.22,610.07 L 873.24,621.88 L 874.21,621.88 L 873.71,595.23 L 873.63,606.35 L 873.95,617.59 L 873.84,627.52 L 873.91,636.46 L 873.99,648.04 L 873.99,657.32 L 874.0,666.85 L 874.14,674.85 L 842.87,665.54 L 842.94,656.36 L 842.98,647.12 L 843.06,638.17 L 842.99,635.28 L 843.0,635.31 L 842.74,629.98 L 842.76,617.31 L 842.68,608.67 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 873.21,607.29 L 874.18,607.29 L 874.18,605.2 L 873.2,605.21 L 873.71,595.23 L 873.63,606.35 L 873.95,617.59 L 873.84,627.52 L 873.91,636.46 L 873.99,648.04 L 873.99,657.32 L 874.0,666.85 L 874.14,674.85 L 842.87,665.54 L 842.94,656.36 L 842.98,647.12 L 843.06,638.17 L 842.99,635.28 L 843.0,635.31 L 842.74,629.98 L 842.76,617.31 L 842.68,608.67 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 867.76,664.3 L 867.76,664.57 L 867.76,664.85 L 873.32,664.84 L 873.32,664.29 L 870.42,664.46 L 847.58,664.71 L 849.53,655.05 L 869.19,654.89 L 869.75,645.2 L 848.25,645.12 L 870.24,635.34 L 847.92,635.53 L 869.26,625.76 L 848.63,625.62 L 870.98,615.91 L 870.58,606.38 L 849.23,615.95 L 849.53,606.2 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 867.65,605.98 L 867.65,606.26 L 867.65,606.54 L 873.21,606.53 L 873.21,605.97 L 870.42,664.52 L 847.58,664.76 L 849.53,655.1 L 869.19,654.95 L 869.75,645.26 L 848.25,645.18 L 870.24,635.4 L 847.92,635.58 L 869.26,625.82 L 848.63,625.67 L 870.98,615.97 L 870.58,606.44 L 849.23,616.0 L 849.53,606.25 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 867.66,615.65 L 867.67,615.93 L 867.67,616.21 L 873.23,616.2 L 873.22,615.64 L 870.42,664.46 L 847.58,664.71 L 849.53,655.05 L 869.19,654.89 L 869.75,645.2 L 848.25,645.12 L 870.24,635.34 L 847.92,635.53 L 869.26,625.76 L 848.63,625.62 L 870.98,615.91 L 870.58,606.38 L 849.23,615.95 L 849.53,606.2 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 867.68,625.38 L 867.68,625.66 L 867.68,625.94 L 873.24,625.93 L 873.24,625.37 L 870.42,664.46 L 847.58,664.71 L 849.53,655.05 L 869.19,654.89 L 869.75,645.2 L 848.25,645.12 L 870.24,635.34 L 847.92,635.53 L 869.26,625.76 L 848.63,625.62 L 870.98,615.91 L 870.58,606.38 L 849.23,615.95 L 849.53,606.2 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 867.7,635.11 L 867.7,635.39 L 867.7,635.67 L 873.26,635.66 L 873.26,635.1 L 870.42,664.46 L 847.58,664.71 L 849.53,655.05 L 869.19,654.89 L 869.75,645.2 L 848.25,645.12 L 870.24,635.34 L 847.92,635.53 L 869.26,625.76 L 848.63,625.62 L 870.98,615.91 L 870.58,606.38 L 849.23,615.95 L 849.53,606.2 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 867.72,644.84 L 867.72,645.12 L 867.72,645.39 L 873.28,645.38 L 873.28,644.83 L 870.42,664.46 L 847.58,664.71 L 849.53,655.05 L 869.19,654.89 L 869.75,645.2 L 848.25,645.12 L 870.24,635.34 L 847.92,635.53 L 869.26,625.76 L 848.63,625.62 L 870.98,615.91 L 870.58,606.38 L 849.23,615.95 L 849.53,606.2 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 867.74,654.57 L 867.74,654.85 L 867.74,655.12 L 873.3,655.11 L 873.3,654.56 L 870.42,664.46 L 847.58,664.71 L 849.53,655.05 L 869.19,654.89 L 869.75,645.2 L 848.25,645.12 L 870.24,635.34 L 847.92,635.53 L 869.26,625.76 L 848.63,625.62 L 870.98,615.91 L 870.58,606.38 L 849.23,615.95 L 849.53,606.2 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 859.79,674.32 L 859.79,674.35",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 859.63,592.35 L 859.63,592.32",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,605.98 L 873.21,605.97",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,606.54 L 873.21,606.53",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,615.65 L 873.22,615.64",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,616.21 L 873.23,616.2",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,625.38 L 873.24,625.37",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,625.94 L 873.24,625.93",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,635.11 L 873.26,635.1",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,635.67 L 873.26,635.66",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,644.84 L 873.28,644.83",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,645.39 L 873.28,645.38",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,654.57 L 873.3,654.56",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,655.12 L 873.3,655.11",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,664.3 L 873.32,664.29",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,664.85 L 873.32,664.84",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,605.97 L 851.66,605.95",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,606.53 L 851.67,606.51",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,615.7 L 851.68,615.68",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,616.26 L 851.68,616.24",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,625.43 L 851.7,625.41",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,625.98 L 851.7,625.97",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,635.16 L 851.72,635.14",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,635.71 L 851.72,635.7",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,644.89 L 851.74,644.87",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,645.44 L 851.74,645.43",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,654.61 L 851.76,654.6",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,655.17 L 851.76,655.15",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,664.34 L 851.77,664.33",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,664.9 L 851.78,664.88",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.41,634.58 L 843.38,634.58",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.4,631.8 L 843.37,631.8",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 841.19,651.26 L 843.3,651.26",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,592.35 L 843.3,678.43",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,592.35 L 871.32,592.35",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.33,591.38 L 871.46,591.38",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 872.95,595.95 A 9.73 9.73 0 0 0 871.32,592.35",
+        "layer": "sec line",
+        "type": "ARC"
+      },
+      {
+        "d": "M 873.9,595.77 A 10.7 10.7 0 0 0 872.02,591.65",
+        "layer": "sec line",
+        "type": "ARC"
+      },
+      {
+        "d": "M 873.92,595.9 A 0.69 0.69 0 0 0 873.9,595.77",
+        "layer": "sec line",
+        "type": "ARC"
+      },
+      {
+        "d": "M 872.02,591.65 A 0.69 0.69 0 0 0 871.46,591.38",
+        "layer": "sec line",
+        "type": "ARC"
+      },
+      {
+        "d": "M 873.92,595.9 L 874.16,602.43",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 866.37,596.51 L 874.1,593.18 L 863.45,598.07 L 872.88,595.68 L 873.18,602.43 L 874.09,602.43 L 864.23,597.76 L 873.69,585.5 L 873.61,596.62 L 873.93,607.86 L 873.82,617.79 L 873.9,626.73 L 873.97,638.31 L 873.98,647.6 L 873.98,657.12 L 874.12,665.12 L 842.85,655.81 L 842.93,646.63 L 842.96,637.39 L 843.04,628.45 L 842.98,625.55 L 842.98,625.58 L 842.72,620.25 L 842.74,607.58 L 842.66,598.94 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 871.77,591.45 L 871.32,592.35",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,592.35 L 843.3,591.38",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 831.49,604.95 L 834.96,604.95",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 831.49,605.36 L 834.96,605.36",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 831.49,605.78 L 834.96,605.78",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 821.78,588.34 L 821.69,593.9",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 821.35,615.37 L 821.22,623.71",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 822.34,588.35 L 822.25,593.9",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 821.91,615.37 L 821.77,623.71",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 820.66,585.56 L 820.66,588.34",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 823.55,585.56 L 823.46,588.34",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 823.28,593.9 L 823.28,593.94",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 826.33,585.56 L 826.24,588.34",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 820.65,623.71 L 820.65,623.72",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 823.44,623.71 L 823.44,623.72",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 821.97,593.9 L 821.63,615.37",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 873.18,612.29 L 873.18,612.29",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 873.18,612.29 L 873.18,612.28",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 873.18,607.29 L 873.18,610.07",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 873.18,615.06 L 873.35,615.06",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 873.35,615.06 L 873.01,615.06",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 873.18,612.28 L 873.35,612.29",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 873.35,612.29 L 873.01,612.28",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 873.18,602.56 L 873.18,605.2",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 873.18,622.02 L 873.18,624.66",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 873.18,626.75 L 873.18,629.53",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 873.18,641.49 L 873.18,644.24",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 873.18,646.2 L 873.18,648.98",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 874.26,646.2 L 874.26,648.98",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 873.18,660.96 L 873.18,663.73",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 874.3,660.8 L 874.3,663.56",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 874.67,660.8 L 874.67,663.56",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 875.05,660.8 L 875.05,663.56",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 875.42,660.8 L 875.42,663.56",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 873.18,665.62 L 873.18,668.44",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 823.31,687.21 L 825.58,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 828.36,687.21 L 838.44,687.21",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 874.25,641.34 L 874.25,644.12",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 874.63,641.34 L 874.63,644.12",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 875.0,641.34 L 875.0,644.12",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 875.38,641.34 L 875.38,644.12",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 874.63,646.2 L 874.63,648.98",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 875.0,646.2 L 875.0,648.98",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 875.38,646.2 L 875.38,648.98",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 874.31,665.66 L 874.31,668.43",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 874.67,665.66 L 874.67,668.43",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 875.05,665.66 L 875.05,668.43",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 875.42,665.66 L 875.42,668.43",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 833.04,654.93 L 835.62,654.75 L 838.21,651.98 L 838.21,649.97",
+        "layer": "0",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 838.23,649.97 L 838.21,635.34",
+        "layer": "0",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 830.26,656.35 L 833.04,656.35 L 833.04,657.33 L 830.26,657.33 Z",
+        "layer": "0",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 820.53,656.35 L 823.31,656.35",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 823.44,623.72 L 826.23,623.71",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 835.12,623.87 L 833.85,630.38",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 831.07,627.6 L 831.07,624.68",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 827.94,627.6 L 827.94,624.68",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 831.49,627.6 L 831.49,624.68",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 835.09,624.03 L 831.49,626.14",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 831.49,626.14 L 834.01,629.54",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 831.07,624.68 L 827.94,626.14",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 827.94,626.14 L 831.07,627.6",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.41,635.34 L 833.93,635.34",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 833.04,657.15 L 842.45,657.13",
+        "layer": "0",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 833.04,656.35 L 833.04,649.72",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 833.04,649.98 L 842.44,649.96",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 838.21,635.34 L 833.04,649.98",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 838.21,635.34 L 842.43,649.96",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 838.21,651.42 L 838.21,651.02",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 833.04,651.03 L 833.04,654.93",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 873.18,665.66 L 875.42,665.66 L 875.42,668.43 L 873.18,668.43 Z",
+        "layer": "sec line",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 873.18,660.8 L 875.42,660.8 L 875.42,663.56 L 873.18,663.56 Z",
+        "layer": "0",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 873.18,646.2 L 875.38,646.2 L 875.38,648.98 L 873.18,648.98 Z",
+        "layer": "0",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 873.18,641.34 L 875.38,641.34 L 875.38,644.12 L 873.18,644.12 Z",
+        "layer": "0",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 873.18,626.75 L 874.23,626.75 L 874.23,629.54 L 873.18,629.54 Z",
+        "layer": "0",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 873.18,621.88 L 874.19,621.88 L 874.19,624.67 L 873.18,624.67 Z",
+        "layer": "0",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 873.18,607.29 L 874.19,607.29 L 874.19,610.09 L 873.18,610.09 Z",
+        "layer": "0",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 873.18,602.43 L 874.15,602.43 L 874.15,605.21 L 873.18,605.21 Z",
+        "layer": "0",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 874.15,605.21 L 874.25,641.34",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 874.25,644.12 L 874.25,646.2",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 874.26,648.98 L 874.26,660.8",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 874.3,663.56 L 874.3,665.66",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 874.3,668.43 L 874.14,670.83",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 874.14,670.83 L 873.42,676.29",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 873.42,676.29 L 873.2,677.94",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 871.15,679.55 A 2.78 2.78 0 0 0 873.2,677.94",
+        "layer": "0",
+        "type": "ARC"
+      },
+      {
+        "d": "M 871.15,679.55 L 845.26,679.55",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.48,676.77 A 2.78 2.78 0 0 0 845.26,679.55",
+        "layer": "0",
+        "type": "ARC"
+      },
+      {
+        "d": "M 842.44,654.03 L 842.44,651.26",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.03,654.03 L 842.02,651.26",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 841.61,654.03 L 841.6,651.26",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 841.19,654.03 L 841.19,651.26",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 841.19,654.03 L 843.3,654.03",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 841.58,641.53 L 843.28,641.53",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 841.59,644.3 L 843.28,644.3",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.42,641.53 L 842.42,644.31",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.0,641.53 L 842.01,644.31",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 841.58,641.53 L 841.59,644.31",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.4,631.8 L 842.41,634.58",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 841.98,631.8 L 841.99,634.58",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 841.98,631.8 L 843.3,631.8",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 841.99,634.58 L 843.3,634.58",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.35,602.61 L 843.3,602.61",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.35,605.39 L 843.3,605.39",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.36,612.34 L 843.3,612.34",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.37,615.12 L 843.3,615.12",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.38,622.07 L 843.3,622.07",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.38,624.85 L 843.3,624.85",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.35,602.61 L 842.35,605.39",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.36,612.34 L 842.36,615.12",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.38,622.07 L 842.38,624.85",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,592.35 L 843.3,585.56",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 937.19,702.5 L 953.76,687.71 L 949.7,687.71 L 945.53,684.93 L 945.53,685.82 L 941.71,689.97 L 941.71,689.99 L 895.92,689.99 L 893.74,689.99 L 887.1,680.98 L 857.9,702.5 L 894.01,694.32 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 805.02,593.9 A 234.88 234.88 0 0 0 783.34,594.91",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 776.43,595.65 A 234.88 234.88 0 0 0 755.12,599.27",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 748.35,600.84 A 234.88 234.88 0 0 0 727.63,607.02",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 721.1,609.41 A 234.88 234.88 0 0 0 702.47,617.48",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 696.26,620.6 A 234.88 234.88 0 0 0 677.62,631.46",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 671.84,635.32 A 234.88 234.88 0 0 0 654.05,648.85",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 805.02,615.37 A 213.41 213.41 0 0 0 786.04,616.22",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 779.12,616.95 A 213.41 213.41 0 0 0 760.6,620.05",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 753.83,621.6 A 213.41 213.41 0 0 0 735.82,626.9",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 729.28,629.27 A 213.41 213.41 0 0 0 711.96,636.73",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 705.76,639.86 A 213.41 213.41 0 0 0 689.49,649.35",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 683.71,653.2 A 213.41 213.41 0 0 0 667.98,665.19",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 511.07,795.38 L 522.69,797.47 L 553.08,776.28 L 552.8,776.07 L 551.58,776.14 L 521.79,796.91 L 512.11,795.17 L 475.73,742.73 L 478.32,738.39 L 536.92,737.97 L 539.54,739.14 L 559.24,767.42 L 558.55,771.29 L 552.88,775.24 L 552.96,775.59 L 552.8,776.07 L 553.08,776.28 L 559.9,771.53 L 560.59,767.66 L 540.0,738.1 L 537.37,736.93 L 471.44,736.55 L 468.34,732.08 L 467.86,730.26 L 470.6,698.12 L 441.46,695.04 Z M 462.5,723.67 L 447.55,702.11 L 450.08,697.76 L 466.85,699.67 L 469.23,702.66 L 467.56,722.32 Z M 529.0,790.55 L 533.83,797.49 L 537.2,795.14 L 532.36,788.2 Z M 489.41,771.41 L 496.09,766.78 L 493.75,763.41 L 487.07,768.04 L 465.63,728.7 L 465.63,728.7 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 867.62,596.52 L 867.63,674.35",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 851.64,596.52 L 851.64,674.35",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 839.13,665.67 L 839.13,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 829.4,665.67 L 829.41,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 819.68,665.67 L 819.68,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 857.9,702.5 A 30.58 30.58 0 0 0 887.1,680.98",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 831.5,593.9 L 812.45,593.9",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 834.96,623.71 L 805.02,623.71",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 831.49,615.37 L 811.77,615.37",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,657.33 L 757.13,657.33",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 839.13,681.65 L 761.3,681.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 839.13,665.67 L 761.3,665.66",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 516.2,791.49 L 506.67,787.34 L 507.97,789.21 L 515.39,793.44 L 517.65,793.02 L 557.65,765.14 L 556.46,763.43 Z M 529.0,790.55 L 533.83,797.49 L 537.2,795.14 L 532.36,788.2 Z M 526.84,768.41 L 533.84,773.67 L 535.28,771.76 L 528.28,766.49 Z M 499.41,789.03 L 506.4,794.3 L 507.84,792.38 L 500.85,787.12 L 534.82,779.59 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 517.58,798.16 L 521.79,796.91 L 551.58,776.14 L 551.36,775.59 L 551.52,775.11 L 551.1,774.79 Z M 529.0,790.55 L 533.83,797.49 L 537.2,795.14 L 532.36,788.2 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 559.73,768.77 L 559.24,767.42 L 518.23,796.01 L 516.09,796.45 L 508.39,789.82 L 512.11,795.17 L 517.58,798.16 Z M 529.0,790.55 L 533.83,797.49 L 537.2,795.14 L 532.36,788.2 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 559.24,767.42 L 558.44,766.28 L 517.93,794.52 L 515.73,794.95 L 508.12,789.42 L 508.39,789.82 L 516.09,796.45 L 518.23,796.01 Z M 529.0,790.55 L 533.83,797.49 L 537.2,795.14 L 532.36,788.2 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 517.65,793.02 L 515.39,793.44 L 507.97,789.21 L 508.12,789.42 L 515.73,794.95 L 517.93,794.52 L 558.44,766.28 L 557.65,765.14 Z M 529.0,790.55 L 533.83,797.49 L 537.2,795.14 L 532.36,788.2 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 546.26,755.99 L 552.16,764.48 L 555.53,762.13 L 549.62,753.65 Z M 526.84,768.41 L 533.84,773.67 L 535.28,771.76 L 528.28,766.49 Z M 496.09,766.78 L 494.89,766.13 L 491.27,765.13 Z M 556.46,763.43 L 544.53,746.3 L 542.87,746.76 L 505.5,475.65 L 482.7,752.78 L 522.92,763.08 L 516.2,791.49 L 514.21,777.44 L 514.21,777.44 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 600.72,779.16 L 536.85,823.68",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 671.43,729.87 L 607.56,774.39",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 591.58,766.05 L 527.71,810.57",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 463.41,778.61 L 507.78,842.58",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 476.54,769.5 L 520.92,833.47",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 819.68,687.21 L 819.68,687.21",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.63,664.62 L 851.64,664.62",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,654.89 L 851.64,654.89",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,645.16 L 851.64,645.16",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,635.43 L 851.64,635.43",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,615.98 L 851.64,615.98",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,625.71 L 851.64,625.71",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,606.25 L 851.64,606.25",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.63,674.35 L 851.64,674.35",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 470.82,840.47 L 460.01,824.97",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 460.01,824.97 L 443.45,836.45",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 443.45,836.45 L 454.22,851.98",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 454.22,851.98 L 470.82,840.47",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 430.54,782.48 L 413.99,793.97",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 462.64,818.92 L 434.65,838.33",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 434.65,838.33 L 449.39,859.57",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 434.66,838.32 L 462.64,818.92",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 433.13,776.46 L 405.16,795.86",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 977.49,703.88 A 4.17 4.17 0 1 0 985.83,703.88 A 4.17 4.17 0 1 0 977.49,703.88",
+        "layer": "set pack",
+        "type": "CIRCLE"
+      },
+      {
+        "d": "M 646.08,727.53 L 655.46,741.0",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 638.1,733.1 L 647.48,746.56",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 630.11,738.67 L 639.5,752.13",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 622.37,744.58 L 631.51,757.69",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 614.39,750.15 L 623.53,763.26",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 606.41,755.71 L 615.55,768.83",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 598.42,761.28 L 607.56,774.39",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 590.23,756.82 L 607.32,781.34",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 591.58,766.05 L 600.72,779.16",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 583.6,771.61 L 592.74,784.73",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 575.62,777.18 L 584.76,790.29",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 567.63,782.74 L 576.77,795.86",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 559.65,788.31 L 568.79,801.42",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 551.66,793.88 L 560.8,806.99",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 543.68,799.44 L 552.82,812.55",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 535.7,805.01 L 544.84,818.12",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 527.71,810.57 L 536.85,823.68",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 519.52,806.12 L 536.61,830.63",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 429.7,886.8 L 442.84,877.69",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 435.31,894.75 L 448.45,885.63",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 454.16,869.5 L 447.97,860.6",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 458.32,885.21 L 333.62,705.92",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 448.45,885.63 L 404.02,821.74",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 435.31,894.75 L 390.88,830.85",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 867.62,596.52 L 851.64,596.52",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 456.46,778.35 L 481.01,761.32",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 458.65,771.76 L 471.79,762.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 453.11,763.76 L 466.24,754.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 447.56,755.77 L 460.69,746.66",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 442.01,747.77 L 455.14,738.66",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 436.47,739.77 L 449.6,730.66",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 430.92,731.78 L 444.05,722.67",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 463.41,778.61 L 476.54,769.5",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 468.95,786.61 L 482.09,777.5",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 474.5,794.6 L 487.63,785.49",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 480.05,802.6 L 493.18,793.49",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 485.6,810.6 L 498.73,801.49",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 491.14,818.59 L 504.28,809.48",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 496.69,826.59 L 509.82,817.48",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 502.24,834.59 L 515.37,825.48",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 507.78,842.58 L 520.92,833.47",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 504.14,726.93 L 504.52,706.6",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 487.61,857.96 L 475.93,841.16 L 447.97,860.6 L 462.73,881.82 L 486.2,865.71 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 460.05,824.94 L 470.82,840.47 L 454.26,851.96 L 443.49,836.43 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 477.37,840.16 L 462.63,818.92 L 434.65,838.33 L 449.39,859.57 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 428.72,815.21 L 445.28,803.73 L 456.05,819.26 L 439.49,830.74 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 462.63,818.92 L 447.9,797.68 L 419.92,817.08 L 434.65,838.33 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 441.32,798.01 L 424.76,809.5",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 460.01,824.97 L 443.49,836.43 L 454.26,851.96 L 470.82,840.47",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 456.77,858.72 L 473.35,847.19 L 484.11,862.73 L 467.56,874.23 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 834.96,623.71 L 834.98,588.34",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 831.49,615.37 L 831.5,593.9",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 678.03,732.04 L 660.94,707.53 L 590.23,756.82 L 607.32,781.34 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 590.23,756.82 L 519.52,806.12 L 536.61,830.63 L 607.32,781.34 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 480.79,804.27 L 482.35,806.52 L 478.35,809.3 L 476.79,807.05 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 480.34,771.85 L 478.78,769.6 L 482.7,766.88 L 484.26,769.13 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 501.47,843.24 L 515.03,845.67 L 531.55,834.16 L 481.01,761.32",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 456.46,778.35 L 481.01,761.32 L 434.8,694.71 L 416.72,694.52 L 408.9,709.79 L 501.47,843.24",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 678.03,732.04 L 660.7,707.18",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 871.32,592.35 L 843.3,592.35",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,592.35 L 843.3,678.52",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,678.52 L 871.69,678.52",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 953.86,685.82 L 953.86,643.24",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 953.86,526.53 L 953.86,526.53 L 950.83,532.58 L 950.83,532.58 Z",
+        "layer": "0",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 915.05,517.82 L 880.13,517.86",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 915.05,517.82 L 914.91,381.7",
+        "layer": "0_AUX",
+        "type": "LINE"
+      },
+      {
+        "d": "M 953.86,526.53 L 953.85,367.36",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 873.18,598.07 L 871.32,592.35 L 843.3,592.35 L 843.3,678.52 L 871.69,678.52 L 873.18,671.92 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 838.59,657.33 L 838.59,703.88",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 937.88,563.32 L 930.93,563.32",
+        "layer": "code",
+        "type": "LINE"
+      },
+      {
+        "d": "M 935.98,554.98 L 958.03,554.98",
+        "layer": "code",
+        "type": "LINE"
+      },
+      {
+        "d": "M 947.61,595.29 L 942.31,588.34 L 933.71,588.34 L 933.71,563.32 L 937.88,563.32 L 947.61,553.59 L 947.61,548.13",
+        "layer": "code",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 941.81,575.29 L 939.39,578.7 L 942.16,589.04 L 947.98,590.94 L 949.19,576.64",
+        "layer": "A-03-PROJ",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 942.1,575.49 L 939.77,578.76 L 942.45,588.77 L 947.67,590.47 L 948.84,576.61",
+        "layer": "A-03-PROJ",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 940.70,561.47 A 1.46 1.46 0 1 0 943.62,561.47 A 1.46 1.46 0 1 0 940.70,561.47",
+        "layer": "A-03-PROJ",
+        "type": "CIRCLE"
+      },
+      {
+        "d": "M 948.78,570.06 L 946.07,560.49 L 945.62,559.99 L 940.7,558.06 L 939.65,558.7 L 938.29,573.2 L 938.51,573.81 L 942.07,577.32 L 943.2,577.27 L 948.63,570.76 Z",
+        "layer": "A-03-PROJ",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 949.03,577.02 L 948.95,576.06 L 946.49,573.95 L 945.83,573.82 L 942.19,574.97 L 942.36,576.79 L 947.54,578.19 L 948.26,577.96 Z",
+        "layer": "A-06-GRAY",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 948.76,576.8 L 948.72,576.32 L 946.27,574.21 L 945.94,574.15 L 942.32,575.3 L 942.45,576.45 L 947.63,577.86 L 947.99,577.74 Z",
+        "layer": "A-06-GRAY",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 460.6,883.62 L 462.19,885.9",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 494.51,769.8 A 29.2 29.2 0 0 0 494.51,769.8",
+        "layer": "comments",
+        "type": "ARC"
+      },
+      {
+        "d": "M 506.67,787.34 A 29.2 29.2 0 0 0 516.2,791.49",
+        "layer": "comments",
+        "type": "ARC"
+      },
+      {
+        "d": "M 507.97,789.21 A 12.33 12.33 0 0 0 515.39,793.44",
+        "layer": "comments",
+        "type": "ARC"
+      },
+      {
+        "d": "M 508.12,789.42 A 17.93 17.93 0 0 0 515.73,794.95",
+        "layer": "comments",
+        "type": "ARC"
+      },
+      {
+        "d": "M 506.67,787.34 A 26.18 26.18 0 0 0 506.67,787.34",
+        "layer": "comments",
+        "type": "ARC"
+      },
+      {
+        "d": "M 508.39,789.82 A 26.18 26.18 0 0 0 516.09,796.45",
+        "layer": "comments",
+        "type": "ARC"
+      },
+      {
+        "d": "M 531.55,834.16 L 536.61,830.63",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 536.53,834.08 L 518.56,808.4",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 518.06,806.76 L 518.08,805.41",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 518.06,806.76 A 2.78 2.78 0 0 0 518.56,808.4",
+        "layer": "comments",
+        "type": "ARC"
+      },
+      {
+        "d": "M 831.5,593.9 L 812.45,593.9 L 811.77,615.37 L 831.49,615.37 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 839.13,665.67 L 819.68,665.67 L 819.68,681.65 L 829.41,681.65",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 829.4,665.67 L 829.41,681.65 L 839.13,681.65 L 839.13,665.67",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 867.63,674.35 L 867.62,664.62 L 851.64,664.62 L 851.64,674.35 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 851.64,645.16 L 851.64,654.89 L 867.62,654.89 L 867.62,645.16",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 867.62,664.62 L 867.62,654.89",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 867.62,645.16 L 867.62,635.43 L 851.64,635.43 L 851.64,645.16 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 867.62,635.43 L 867.62,625.71 L 851.64,625.71 L 851.64,635.43",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 867.62,625.71 L 867.62,615.98",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 867.62,606.25 L 851.64,606.25 L 851.64,615.98 L 867.62,615.98 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 867.62,606.25 L 867.62,596.52 L 851.64,596.52 L 851.64,606.25",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 551.66,793.88 L 527.71,810.57 L 536.85,823.68 L 552.82,812.55",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 535.7,805.01 L 544.84,818.12",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 543.68,799.44 L 552.82,812.55 L 560.8,806.99",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 559.65,788.31 L 551.66,793.88 L 560.8,806.99 L 568.79,801.42",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 567.63,782.75 L 559.65,788.31 L 568.79,801.42 L 584.76,790.29",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 575.62,777.18 L 584.76,790.29 L 592.74,784.73",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 591.58,766.05 L 567.63,782.75 L 576.77,795.86",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 583.6,771.61 L 592.74,784.73 L 600.72,779.16 L 591.58,766.05",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 606.41,755.71 L 598.42,761.28 L 607.56,774.39 L 615.55,768.83",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 614.39,750.15 L 606.41,755.71 L 615.55,768.83 L 623.53,763.26",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 622.37,744.58 L 614.39,750.15 L 623.53,763.26 L 631.51,757.69",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 630.36,739.02 L 622.37,744.58 L 631.51,757.69 L 639.5,752.13",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 646.32,727.89 L 630.36,739.02 L 639.5,752.13 L 647.48,746.56",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 638.34,733.45 L 647.48,746.56 L 655.46,741.0",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 654.31,722.32 L 646.32,727.89 L 655.46,741.0 L 663.45,735.43",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 455.14,738.66 L 438.5,714.67 L 425.37,723.78 L 430.92,731.78",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 444.05,722.67 L 430.92,731.78 L 436.47,739.77",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 449.6,730.66 L 436.47,739.77 L 442.01,747.77",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 466.24,754.65 L 460.69,746.66 L 447.56,755.77 L 453.11,763.76 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 460.69,746.66 L 455.14,738.66 L 442.01,747.77 L 447.56,755.77",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 471.79,762.65 L 466.24,754.65 L 453.11,763.76 L 458.65,771.76 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 493.18,793.49 L 476.54,769.5 L 463.41,778.61 L 485.6,810.6",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 482.09,777.5 L 468.95,786.61",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 487.63,785.49 L 474.5,794.6",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 504.28,809.48 L 493.18,793.49 L 480.05,802.6",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 498.73,801.49 L 485.6,810.6 L 496.69,826.59",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 520.92,833.47 L 504.28,809.48 L 491.14,818.59",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 509.82,817.48 L 496.69,826.59 L 507.78,842.58",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 507.78,842.58 L 520.92,833.47",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 441.32,798.02 L 441.32,798.01 L 430.55,782.48 L 413.99,793.97 L 424.76,809.5 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 456.05,819.26 L 445.28,803.73 L 428.72,815.21 L 439.49,830.74 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 470.82,840.47 L 460.01,824.97 L 443.49,836.43 L 454.26,851.96 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 484.11,862.73 L 473.35,847.19 L 456.77,858.72 L 467.56,874.23 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 448.45,885.63 L 437.34,869.66 L 424.2,878.78 L 429.76,886.76",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 442.9,877.65 L 429.76,886.76 L 435.31,894.75 L 448.45,885.63",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 574.73,807.45 L 582.67,818.85",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 565.13,831.01 L 572.49,825.58",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 551.19,738.77 L 567.8,762.63",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 552.84,739.44 L 568.05,761.28",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 560.59,767.66 L 540.0,738.1",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 559.24,767.42 L 539.54,739.14",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 542.87,746.76 L 544.53,746.3",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 558.72,734.28 L 565.44,747.44 L 595.2,733.75 L 592.11,726.58",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 487.33,739.21 L 482.9,752.8 L 498.1,753.68 L 513.33,753.47 L 543.03,751.17 L 542.87,746.76",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 572.64,730.87 L 572.64,730.87",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 514.8,810.03 L 516.41,808.97",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 515.37,825.48 L 502.24,834.59",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 851.64,615.98 L 851.64,625.71",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 851.64,654.89 L 851.64,664.62",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 529.63,734.1 L 560.11,777.82",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 593.6,784.13 L 598.37,790.97",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 585.61,789.69 L 590.38,796.53",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 577.63,795.26 L 582.4,802.1",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 569.65,800.82 L 574.42,807.66",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 561.66,806.39 L 566.43,813.23",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 553.68,811.95 L 558.45,818.79",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 545.7,817.52 L 550.46,824.36",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 537.71,823.08 L 542.48,829.93",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 871.69,678.52 L 891.25,678.52",
+        "layer": "sec line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 531.55,834.16 L 540.3,846.73 L 494.32,878.75 L 485.56,866.18 Z",
+        "layer": "sec line",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 775.04,729.79 L 765.04,734.02 L 710.98,771.71",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 825.58,687.21 L 833.23,687.21 L 833.23,688.18 L 825.58,688.18 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 686.53,727.11 L 692.8,722.74",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 686.77,727.45 L 693.04,723.08",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 687.01,727.79 L 693.28,723.42",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 686.77,727.45 L 693.04,723.08",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 686.53,727.11 L 687.01,727.79",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 638.34,733.45 L 632.77,725.46",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 579.49,727.86 L 578.5,724.27",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 567.81,731.14 L 566.81,727.49",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 552.95,734.45 L 552.4,730.84",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 537.37,736.93 L 536.81,733.22",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 521.58,738.42 L 521.46,734.7",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 509.47,738.89 L 509.35,735.1",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 492.88,738.59 L 493.2,734.9",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 479.75,737.56 L 480.06,733.78",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 552.53,731.71 L 567.31,729.32 L 552.95,734.45",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 521.49,735.65 L 537.09,735.07 L 521.58,738.42",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 493.12,735.82 L 509.41,737.0 L 492.88,738.59",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 828.01,638.26 L 828.01,628.57",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 828.01,638.26 L 828.01,628.57",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 624.09,721.36 L 624.21,716.78 L 593.65,730.16 L 595.2,733.75 L 589.78,736.25 L 589.97,736.76 L 589.81,737.24 L 590.18,737.52 L 595.34,741.4 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 595.34,741.4 L 590.18,737.52 L 589.81,737.24 L 588.38,736.89 L 565.44,747.44 L 558.72,734.28 L 554.58,735.13 L 552.84,739.44 L 567.65,760.71 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      }
+    ],
+    "apartment_buildings": [
+      {
+        "d": "M 575.42,350.61 L 575.53,351.28 L 591.8,359.77 L 592.41,359.47 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 609.22,439.9 A 151.49 151.49 0 0 0 609.28,428.78",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 550.33,431.76 L 550.13,446.63",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 653.16,377.1 L 653.16,402.95",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 653.16,402.95 L 653.16,428.8",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 653.16,428.8 L 653.16,454.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 585.76,387.88 L 548.03,414.18",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 637.87,397.17 L 637.87,371.32",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 637.87,371.32 L 637.87,345.47",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 443.63,509.19 A 173.31 173.31 0 0 0 525.63,443.21",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 420.16,516.47 A 187.08 187.08 0 0 0 443.63,509.19",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 490.37,433.44 L 517.36,454.66",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 506.95,411.16 L 532.9,433.65",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 630.92,428.78 L 609.28,428.78",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 653.16,351.25 L 653.16,377.1",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 977.48,288.14 A 4.17 4.17 0 1 0 985.82,288.14 A 4.17 4.17 0 1 0 977.48,288.14",
+        "layer": "set pack",
+        "type": "CIRCLE"
+      },
+      {
+        "d": "M 953.86,669.31 L 953.86,628.91",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 603.82,425.3 L 639.26,425.3",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 639.26,425.3 L 639.26,407.23",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 639.26,407.23 L 603.82,407.24",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 639.33,425.3 L 603.82,425.3",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 674.7,323.58 L 674.7,342.49 L 654.55,342.49 L 654.55,323.58 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 681.65,349.43 L 681.65,368.34 L 661.5,368.34 L 661.5,349.43 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 681.65,375.29 L 681.65,394.19 L 661.5,394.19 L 661.5,375.29 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 681.65,401.14 L 681.65,420.04 L 661.5,420.04 L 661.5,401.14 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 609.38,352.0 L 609.38,333.1 L 629.53,333.1 L 629.53,352.0 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 609.38,377.86 L 609.38,358.95 L 629.53,358.95 L 629.53,377.85 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 609.38,403.71 L 609.38,384.8 L 629.54,384.8 L 629.54,403.71 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 514.97,410.58 L 528.83,397.73 L 542.53,412.52 L 528.66,425.36 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 496.85,434.13 L 508.02,418.88 L 524.28,430.79 L 513.11,446.04 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 637.87,381.38 L 603.82,381.38 L 603.82,407.24 L 637.87,407.23 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 637.87,355.48 L 603.82,355.48 L 603.82,381.33 L 637.87,381.33 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 637.87,329.63 L 603.82,329.63 L 603.82,355.48 L 637.87,355.48 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 687.21,397.66 L 653.16,397.66 L 653.16,423.51 L 687.21,423.51",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 687.21,371.81 L 687.21,345.96 L 653.16,345.96 L 653.16,371.81 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 687.21,423.51 L 687.21,371.81 L 653.16,371.81 L 653.16,397.66",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 525.63,443.21 L 532.9,433.65 L 506.95,411.16 L 497.0,424.26 L 490.37,433.44 L 517.36,454.66 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 546.73,404.98 L 537.59,391.87 L 569.51,369.61 L 578.66,382.72 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 585.75,387.88 L 585.75,385.61 L 569.76,362.67 L 530.97,389.71 L 548.05,414.17 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 550.36,417.48 L 548.03,414.18 L 530.97,389.71 L 529.09,391.02 L 506.95,411.16 L 532.9,433.65 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 680.26,345.96 L 680.26,320.11 L 646.21,320.11 L 646.21,345.96 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 630.92,410.71 L 609.38,410.71 L 609.38,421.83 L 630.92,421.83 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 639.26,407.23 L 603.82,407.24 L 603.82,425.3 L 639.26,425.3 Z",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 639.33,440.25 L 639.33,425.3 L 603.82,425.3 L 603.82,440.25",
+        "layer": "set pack",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 601.04,362.17 A 20.85 20.85 0 0 0 568.27,345.07",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 568.03,345.24 L 568.27,345.07",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 601.04,325.38 L 601.04,362.17",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 553.51,380.67 L 562.65,393.78",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 545.53,386.24 L 554.67,399.35",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 561.49,375.11 L 570.63,388.22",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 550.36,417.48 L 548.05,414.17",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 637.11,315.94 A 35.44 35.44 0 0 0 624.85,317.09",
+        "layer": "0",
+        "type": "ARC"
+      },
+      {
+        "d": "M 637.11,315.94 L 651.15,318.37",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 651.15,318.37 A 30.58 30.58 0 0 0 659.01,318.7",
+        "layer": "0",
+        "type": "ARC"
+      },
+      {
+        "d": "M 687.21,327.79 A 9.73 9.73 0 0 0 677.65,318.06",
+        "layer": "0",
+        "type": "ARC"
+      },
+      {
+        "d": "M 687.21,327.79 L 705.27,327.76",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 715.0,318.03 A 9.73 9.73 0 0 0 705.27,327.79",
+        "layer": "0",
+        "type": "ARC"
+      },
+      {
+        "d": "M 715.0,318.03 L 736.51,318.03",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 736.51,318.03 L 751.79,310.38",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 751.79,310.38 L 896.87,310.38",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 953.85,367.36 A 56.98 56.98 0 0 0 896.87,310.38",
+        "layer": "0",
+        "type": "ARC"
+      },
+      {
+        "d": "M 953.85,367.36 L 953.86,526.53",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 950.83,532.58 A 30.58 30.58 0 0 0 947.61,546.26",
+        "layer": "0",
+        "type": "ARC"
+      },
+      {
+        "d": "M 947.61,546.26 L 947.61,553.59",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 937.88,563.32 A 9.73 9.73 0 0 0 947.61,553.59",
+        "layer": "0",
+        "type": "ARC"
+      },
+      {
+        "d": "M 947.61,595.29 L 947.61,602.62",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 947.61,602.62 A 30.58 30.58 0 0 0 950.88,616.39",
+        "layer": "0",
+        "type": "ARC"
+      },
+      {
+        "d": "M 953.86,628.91 A 27.8 27.8 0 0 0 950.88,616.39",
+        "layer": "0",
+        "type": "ARC"
+      },
+      {
+        "d": "M 953.86,628.91 L 953.87,703.88",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 554.84,325.63 L 172.92,591.88",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 568.21,345.11 L 568.39,344.98",
+        "layer": "0",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 714.96,318.03 L 736.51,318.03 L 736.51,318.03 L 715.0,318.03 L 705.27,327.76 L 705.27,327.79",
+        "layer": "0",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 914.91,381.7 L 887.35,352.73",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 887.35,352.73 L 753.45,352.87",
+        "layer": "0",
+        "type": "LINE"
+      },
+      {
+        "d": "M 753.45,352.87 L 753.48,386.88",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 953.85,367.36 A 56.98 56.98 0 0 0 896.87,310.38",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 896.87,310.38 L 751.79,310.38",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 751.79,310.38 L 736.51,318.03",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 736.51,318.03 L 715.0,318.03",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 715.0,318.03 A 9.73 9.73 0 0 0 705.27,327.79",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 937.88,563.32 L 937.88,563.32",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 947.61,553.59 L 947.61,546.26",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 950.83,532.58 A 30.58 30.58 0 0 0 947.61,546.26",
+        "layer": "set pack",
+        "type": "ARC"
+      },
+      {
+        "d": "M 950.83,532.58 L 953.86,526.53",
+        "layer": "set pack",
+        "type": "LINE"
+      },
+      {
+        "d": "M 936.81,554.98 L 930.34,554.98",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 941.71,591.6 L 955.67,591.59",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 940.63,559.36 A 0.14 0.14 0 1 0 940.91,559.36 A 0.14 0.14 0 1 0 940.63,559.36",
+        "layer": "comments",
+        "type": "CIRCLE"
+      },
+      {
+        "d": "M 940.56,559.36 A 0.21 0.21 0 1 0 940.98,559.36 A 0.21 0.21 0 1 0 940.56,559.36",
+        "layer": "comments",
+        "type": "CIRCLE"
+      },
+      {
+        "d": "M 918.49,554.98 L 918.49,563.32",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 944.44,574.26 L 944.55,574.59",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 943.98,560.11 A 0.14 0.14 0 1 0 944.26,560.11 A 0.14 0.14 0 1 0 943.98,560.11",
+        "layer": "comments",
+        "type": "CIRCLE"
+      },
+      {
+        "d": "M 943.91,560.11 A 0.21 0.21 0 1 0 944.33,560.11 A 0.21 0.21 0 1 0 943.91,560.11",
+        "layer": "comments",
+        "type": "CIRCLE"
+      },
+      {
+        "d": "M 939.92,562.23 A 0.14 0.14 0 1 0 940.20,562.23 A 0.14 0.14 0 1 0 939.92,562.23",
+        "layer": "comments",
+        "type": "CIRCLE"
+      },
+      {
+        "d": "M 939.85,562.23 A 0.21 0.21 0 1 0 940.27,562.23 A 0.21 0.21 0 1 0 939.85,562.23",
+        "layer": "comments",
+        "type": "CIRCLE"
+      },
+      {
+        "d": "M 947.98,590.94 L 945.28,592.23",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 945.64,592.71 L 942.16,589.04",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 556.24,414.32 A 26.89 26.89 0 0 0 552.32,418.72",
+        "layer": "comments",
+        "type": "ARC"
+      },
+      {
+        "d": "M 552.32,418.72 A 2.78 2.78 0 0 0 554.7,423.11",
+        "layer": "comments",
+        "type": "ARC"
+      },
+      {
+        "d": "M 550.83,425.35 A 2.78 2.78 0 0 0 548.25,427.41",
+        "layer": "comments",
+        "type": "ARC"
+      },
+      {
+        "d": "M 560.65,408.71 A 28.97 28.97 0 0 0 560.65,408.71",
+        "layer": "comments",
+        "type": "ARC"
+      },
+      {
+        "d": "M 554.95,412.68 A 28.97 28.97 0 0 0 546.93,424.64",
+        "layer": "comments",
+        "type": "ARC"
+      },
+      {
+        "d": "M 545.17,426.36 A 2.78 2.78 0 0 0 546.93,424.64",
+        "layer": "comments",
+        "type": "ARC"
+      },
+      {
+        "d": "M 646.21,320.11 L 646.21,317.51",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 643.99,397.1 L 646.09,397.1",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 643.99,401.27 L 646.09,401.27",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 643.99,367.35 L 646.09,367.35",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 648.17,367.35 L 648.17,367.35",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 643.99,371.52 L 646.09,371.52",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 648.17,371.52 L 648.17,371.52",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 643.99,425.3 L 646.09,425.3",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 648.18,401.27 L 653.16,401.27",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 643.99,401.27 L 637.87,401.27",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 630.92,428.78 L 609.28,428.78 L 609.22,439.9 L 630.92,439.89 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 681.65,401.14 L 661.5,401.14 L 661.5,420.04 L 681.65,420.04 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 630.92,421.83 L 630.92,410.71 L 609.38,410.71 L 609.38,421.83 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 629.54,384.8 L 609.38,384.8 L 609.38,403.71 L 629.54,403.71 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 629.53,358.95 L 609.38,358.95 L 609.38,377.86 L 629.53,377.85 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 629.53,333.1 L 609.38,333.1 L 609.38,352.0 L 629.53,352.0 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 681.65,375.29 L 661.5,375.29 L 661.5,394.19 L 681.65,394.19 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 681.65,349.43 L 661.5,349.43 L 661.5,368.34 L 681.65,368.34 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 674.7,323.58 L 654.55,323.58 L 654.55,342.49 L 674.7,342.49 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 578.66,382.72 L 569.51,369.61 L 561.54,375.18 L 570.68,388.29 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 561.54,375.18 L 553.56,380.74 L 562.7,393.85 L 570.68,388.29",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 553.56,380.74 L 545.58,386.31 L 554.72,399.42 L 562.7,393.85",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 545.58,386.31 L 537.59,391.87 L 546.73,404.98 L 554.72,399.42",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 542.53,412.52 L 528.83,397.73 L 514.97,410.58 L 528.66,425.36 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 524.28,430.79 L 508.02,418.88 L 496.85,434.13 L 513.11,446.04 Z",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 933.08,563.25 L 933.71,588.41 L 942.31,588.51 L 947.98,590.94 L 949.18,576.65 L 948.79,570.43 L 945.9,560.19 L 940.02,558.12 L 933.01,559.09 L 933.08,563.25",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 580.69,361.22 L 584.55,353.82",
+        "layer": "comments",
+        "type": "LINE"
+      },
+      {
+        "d": "M 575.22,350.82 L 566.39,354.01 L 270.5,560.28 L 267.46,554.77 L 568.39,344.98",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 575.22,350.82 L 585.9,351.04 L 589.78,343.66 L 568.15,345.15",
+        "layer": "comments",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 568.39,344.98 L 568.03,345.24 L 568.03,345.24",
+        "layer": "0",
+        "type": "LWPOLYLINE"
+      }
+    ],
+    "roads": [
+      {
+        "d": "M 875.96,598.07 L 875.96,671.92",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 888.47,598.07 L 888.47,671.92",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 882.21,575.83 L 882.22,671.92",
+        "layer": "CL",
+        "type": "LINE"
+      },
+      {
+        "d": "M 857.9,696.24 A 24.32 24.32 0 0 0 882.22,671.92",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 887.1,680.98 A 30.58 30.58 0 0 0 888.47,671.92",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 857.9,689.99 A 18.07 18.07 0 0 0 875.96,671.92",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 863.45,585.56 L 826.33,585.56",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 823.55,585.56 L 820.66,585.56",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 817.88,585.56 L 805.01,585.56",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 875.96,598.07 A 12.51 12.51 0 0 0 863.45,585.56",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 857.9,696.24 L 753.92,696.24",
+        "layer": "CL",
+        "type": "LINE"
+      },
+      {
+        "d": "M 857.96,689.99 L 753.92,689.99",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 753.92,696.24 A 27.8 27.8 0 0 0 738.02,701.24",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 753.92,689.99 A 34.05 34.05 0 0 0 734.44,696.1",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 751.5,702.51 A 13.9 13.9 0 0 0 743.55,705.0",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 903.03,673.22 L 903.03,680.21",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 903.03,680.21 L 899.45,680.21",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 899.45,680.21 L 899.45,673.22",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 899.45,673.22 L 903.03,673.22",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 934.42,649.41 L 934.42,663.57",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 934.42,663.57 L 929.72,663.57",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 929.72,663.57 L 929.72,649.41",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 929.72,649.41 L 934.42,649.41",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 903.03,608.37 L 903.03,601.39",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 903.03,601.39 L 899.45,601.39",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 899.45,601.39 L 899.45,608.37",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 899.45,608.37 L 903.03,608.37",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 934.42,632.19 L 934.42,618.02",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 934.42,618.02 L 929.72,618.02",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 929.72,618.02 L 929.72,632.19",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 929.72,632.19 L 934.42,632.19",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 895.92,663.44 L 895.92,668.61 L 894.03,668.61 L 894.03,684.82 L 895.92,684.82 L 895.92,689.99 L 941.71,689.99 L 941.71,680.0 L 944.21,679.94 L 944.21,661.2 L 943.3,661.21 L 943.3,651.77 L 944.2,651.77 L 944.2,629.82 L 943.3,629.82 L 943.3,620.39 L 944.2,620.39 L 944.2,615.59 L 941.72,615.59 L 941.71,591.6 L 895.92,591.6 L 895.92,596.78 L 894.03,596.78 L 894.03,612.99 L 895.92,612.99 L 895.92,618.16 L 911.96,618.15 L 911.96,616.97 L 922.23,616.97 L 922.23,625.11 L 919.94,625.11 L 919.94,656.48 L 922.23,656.48 L 922.23,664.62 L 911.96,664.62 L 911.96,663.44 L 895.92,663.44",
+        "layer": "ASPHALT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 927.37,607.19 L 927.37,601.39",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 927.37,601.39 L 920.39,601.39",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 920.39,605.94 L 920.39,607.19",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 920.39,607.19 L 927.37,607.19",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 916.79,605.94 L 916.79,601.39",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 916.79,601.39 L 920.39,601.39",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 920.39,605.94 L 916.79,605.94",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 927.37,680.2 L 927.37,674.4",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 927.37,674.4 L 920.4,674.4",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 920.4,674.4 L 920.4,675.65",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 920.4,680.2 L 927.37,680.2",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 920.4,675.65 L 916.79,675.66",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 916.79,675.66 L 916.79,680.2",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 916.79,680.2 L 920.4,680.2",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 916.79,675.66 L 927.37,680.2",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 916.79,680.2 L 927.37,674.4",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 927.37,607.19 L 916.79,601.39",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 916.79,605.94 L 927.37,601.39",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 934.42,632.19 L 929.72,618.02",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 934.42,618.02 L 929.72,632.19",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 934.42,663.57 L 929.72,649.41",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 934.42,649.41 L 929.72,663.57",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 903.03,608.37 L 899.45,601.39",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 903.03,601.39 L 899.45,608.37",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 903.03,680.21 L 899.45,673.22",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 903.03,673.22 L 899.45,680.21",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 945.52,367.36 L 896.87,318.72 L 753.76,318.72 L 738.48,326.37 L 715.0,326.37 L 713.61,327.77 L 713.62,375.35 L 745.13,375.35 L 745.1,344.54 L 890.93,344.39 L 923.24,378.37 L 923.4,526.15 L 888.47,526.19 L 888.47,553.6 L 889.86,554.99 L 937.84,554.98 L 937.88,554.98 L 939.27,553.59 L 939.27,546.26 L 943.37,528.85 L 945.52,524.56 Z",
+        "layer": "ASPHALT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 420.25,894.76 L 306.99,731.5",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 415.11,898.33 A 22.93 22.93 0 0 0 447.07,904.07",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 409.97,901.89 A 29.19 29.19 0 0 0 450.64,909.2",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 281.23,694.37 L 235.19,628.01",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 415.77,912.69 L 223.77,635.93",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 409.97,901.89 L 299.42,742.53",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 270.95,701.5 L 224.92,635.14",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 386.81,929.47 L 196.52,655.17",
+        "layer": "City_road",
+        "type": "LINE"
+      },
+      {
+        "d": "M 1009.46,638.55 L 1009.45,367.36",
+        "layer": "City_road",
+        "type": "LINE"
+      },
+      {
+        "d": "M 1002.51,638.55 L 1002.5,367.36",
+        "layer": "City_Edge",
+        "type": "LINE"
+      },
+      {
+        "d": "M 1009.46,638.55 A 43.08 43.08 0 0 0 1052.54,681.63",
+        "layer": "City_road",
+        "type": "ARC"
+      },
+      {
+        "d": "M 1002.51,638.55 A 50.03 50.03 0 0 0 1052.54,688.58",
+        "layer": "City_Edge",
+        "type": "ARC"
+      },
+      {
+        "d": "M 953.85,208.92 L 953.85,197.83",
+        "layer": "City_road",
+        "type": "LINE"
+      },
+      {
+        "d": "M 447.96,959.08 L 424.67,925.52",
+        "layer": "City_road",
+        "type": "LINE"
+      },
+      {
+        "d": "M 406.7,958.13 L 386.81,929.47",
+        "layer": "City_road",
+        "type": "LINE"
+      },
+      {
+        "d": "M 567.23,344.1 L 234.53,576.03",
+        "layer": "City_road",
+        "type": "LINE"
+      },
+      {
+        "d": "M 568.39,344.98 L 235.33,577.17",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 566.39,354.01 L 238.91,582.3",
+        "layer": "CL",
+        "type": "LINE"
+      },
+      {
+        "d": "M 594.79,368.83 A 18.07 18.07 0 0 0 592.35,359.76",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 575.22,350.82 A 18.07 18.07 0 0 0 566.39,354.01",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 591.8,359.77 A 22.93 22.93 0 0 0 575.53,351.28",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 575.42,350.61 A 0.35 0.35 0 0 0 575.53,351.28",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 591.8,359.77 A 0.35 0.35 0 0 0 592.41,359.47",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 320.7,525.28 A 18.76 18.76 0 0 0 328.63,559.23",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 270.88,567.63 L 242.48,587.43",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 136.48,644.38 L 125.8,651.83",
+        "layer": "City_road",
+        "type": "LINE"
+      },
+      {
+        "d": "M 553.26,299.62 L 160.2,573.64",
+        "layer": "City_road",
+        "type": "LINE"
+      },
+      {
+        "d": "M 160.2,573.64 L 100.37,615.35",
+        "layer": "City_road",
+        "type": "LINE"
+      },
+      {
+        "d": "M 896.87,265.9 L 660.55,265.91",
+        "layer": "City_road",
+        "type": "LINE"
+      },
+      {
+        "d": "M 1085.57,310.37 L 1066.43,310.37",
+        "layer": "City_road",
+        "type": "LINE"
+      },
+      {
+        "d": "M 896.87,310.38 L 751.79,310.38",
+        "layer": "City_road",
+        "type": "LINE"
+      },
+      {
+        "d": "M 601.04,326.89 A 186.24 186.24 0 0 0 568.03,345.24",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 660.55,265.91 A 187.63 187.63 0 0 0 553.26,299.62",
+        "layer": "City_road",
+        "type": "ARC"
+      },
+      {
+        "d": "M 1066.43,310.37 A 56.98 56.98 0 0 0 1009.45,367.36",
+        "layer": "City_road",
+        "type": "ARC"
+      },
+      {
+        "d": "M 953.85,367.36 A 56.98 56.98 0 0 0 896.87,310.38",
+        "layer": "City_road",
+        "type": "ARC"
+      },
+      {
+        "d": "M 896.87,265.9 A 56.98 56.98 0 0 0 953.85,208.92",
+        "layer": "City_road",
+        "type": "ARC"
+      },
+      {
+        "d": "M 234.53,576.03 A 43.08 43.08 0 0 0 223.77,635.93",
+        "layer": "City_road",
+        "type": "ARC"
+      },
+      {
+        "d": "M 235.33,577.17 A 41.69 41.69 0 0 0 224.92,635.14",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 238.91,582.3 A 35.44 35.44 0 0 0 230.05,631.57",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 242.48,587.43 A 29.19 29.19 0 0 0 235.19,628.01",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 196.52,655.17 A 43.08 43.08 0 0 0 136.48,644.38",
+        "layer": "City_road",
+        "type": "ARC"
+      },
+      {
+        "d": "M 747.59,703.88 L 981.66,703.88",
+        "layer": "City_road",
+        "type": "LINE"
+      },
+      {
+        "d": "M 747.59,703.88 L 422.87,930.25",
+        "layer": "City_road",
+        "type": "LINE"
+      },
+      {
+        "d": "M 960.8,208.92 L 960.8,203.06",
+        "layer": "City_Edge",
+        "type": "LINE"
+      },
+      {
+        "d": "M 417.31,966.12 L 199.95,652.79",
+        "layer": "City_Edge",
+        "type": "LINE"
+      },
+      {
+        "d": "M 444.53,961.46 L 422.87,930.25",
+        "layer": "City_Edge",
+        "type": "LINE"
+      },
+      {
+        "d": "M 422.87,930.25 L 287.9,735.68",
+        "layer": "City_Edge",
+        "type": "LINE"
+      },
+      {
+        "d": "M 258.27,692.97 L 220.35,638.3",
+        "layer": "City_Edge",
+        "type": "LINE"
+      },
+      {
+        "d": "M 564.05,339.54 L 232.5,570.67",
+        "layer": "City_Edge",
+        "type": "LINE"
+      },
+      {
+        "d": "M 132.17,640.62 L 122.62,647.27",
+        "layer": "City_Edge",
+        "type": "LINE"
+      },
+      {
+        "d": "M 1085.57,304.81 L 1065.04,304.81",
+        "layer": "City_Edge",
+        "type": "LINE"
+      },
+      {
+        "d": "M 898.26,304.82 L 763.26,304.82",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 763.26,304.82 A 27.8 27.8 0 0 0 750.83,307.76",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 739.6,304.83 L 674.52,304.83",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 727.48,307.61 L 674.52,307.61",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 727.48,307.61 A 27.8 27.8 0 0 0 739.6,304.83",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 729.29,315.25 L 715.0,315.25",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 715.0,315.25 A 12.51 12.51 0 0 0 702.5,327.76",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 677.48,315.25 L 674.52,315.25",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 674.52,304.83 A 193.18 193.18 0 0 0 646.15,306.92",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 619.08,312.96 A 193.18 193.18 0 0 0 564.05,339.54",
+        "layer": "City_Edge",
+        "type": "ARC"
+      },
+      {
+        "d": "M 631.8,312.2 A 27.8 27.8 0 0 0 619.08,312.96",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 674.52,307.61 A 190.4 190.4 0 0 0 658.98,308.24",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 651.96,307.93 A 27.8 27.8 0 0 0 658.98,308.24",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 677.7,315.28 A 182.76 182.76 0 0 0 658.77,315.93",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 689.99,327.79 A 12.51 12.51 0 0 0 677.7,315.28",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 651.63,315.63 A 27.8 27.8 0 0 0 658.77,315.93",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 555.01,305.18 L 163.38,578.2",
+        "layer": "City_Edge",
+        "type": "LINE"
+      },
+      {
+        "d": "M 163.38,578.2 L 103.55,619.91",
+        "layer": "City_Edge",
+        "type": "LINE"
+      },
+      {
+        "d": "M 898.26,271.46 L 662.3,271.47",
+        "layer": "City_Edge",
+        "type": "LINE"
+      },
+      {
+        "d": "M 662.3,271.47 A 187.63 187.63 0 0 0 555.01,305.18",
+        "layer": "City_Edge",
+        "type": "ARC"
+      },
+      {
+        "d": "M 960.82,788.88 L 960.81,636.6",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 960.81,636.6 A 27.8 27.8 0 0 0 957.88,624.16",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 960.81,612.94 L 960.81,535.95",
+        "layer": "City_Edge",
+        "type": "LINE"
+      },
+      {
+        "d": "M 960.81,512.29 L 960.8,367.36",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 957.87,524.72 A 27.8 27.8 0 0 0 960.81,512.29",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 958.03,600.82 L 958.03,548.06",
+        "layer": "City_Edge",
+        "type": "LINE"
+      },
+      {
+        "d": "M 950.39,602.62 L 950.39,598.07",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 950.39,598.07 A 12.51 12.51 0 0 0 937.88,585.56",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 946.46,579.07 A 20.85 20.85 0 0 0 937.88,577.22",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 946.46,579.07 A 2.78 2.78 0 0 0 950.39,576.54",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 950.39,602.62 A 27.8 27.8 0 0 0 953.32,615.06",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 950.39,553.59 L 950.39,546.26",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 937.88,566.1 A 12.51 12.51 0 0 0 950.39,553.59",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 937.88,563.32 A 9.73 9.73 0 0 0 947.61,553.59",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 937.88,574.44 A 20.85 20.85 0 0 0 946.46,572.59",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 950.39,575.12 A 2.78 2.78 0 0 0 946.46,572.59",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 1065.04,304.81 A 62.54 62.54 0 0 0 1002.5,367.36",
+        "layer": "City_Edge",
+        "type": "ARC"
+      },
+      {
+        "d": "M 960.8,367.36 A 62.54 62.54 0 0 0 898.26,304.82",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 1011.46,241.18 A 62.54 62.54 0 0 0 1048.87,269.33",
+        "layer": "City_Edge",
+        "type": "ARC"
+      },
+      {
+        "d": "M 898.26,271.46 A 62.54 62.54 0 0 0 960.8,208.92",
+        "layer": "City_Edge",
+        "type": "ARC"
+      },
+      {
+        "d": "M 199.95,652.79 A 48.64 48.64 0 0 0 132.17,640.62",
+        "layer": "City_Edge",
+        "type": "ARC"
+      },
+      {
+        "d": "M 232.5,570.67 A 48.64 48.64 0 0 0 220.35,638.3",
+        "layer": "City_Edge",
+        "type": "ARC"
+      },
+      {
+        "d": "M 953.86,526.53 L 953.85,367.36",
+        "layer": "City_road",
+        "type": "LINE"
+      },
+      {
+        "d": "M 981.65,288.14 L 981.65,218.75",
+        "layer": "City_Axies",
+        "type": "LINE"
+      },
+      {
+        "d": "M 1073.87,288.14 L 981.65,288.14",
+        "layer": "City_Axies",
+        "type": "LINE"
+      },
+      {
+        "d": "M 981.66,702.48 L 981.65,288.14",
+        "layer": "City_Axies",
+        "type": "LINE"
+      },
+      {
+        "d": "M 554.87,325.61 L 172.92,591.88",
+        "layer": "City_Axies",
+        "type": "LINE"
+      },
+      {
+        "d": "M 674.09,288.15 A 208.49 208.49 0 0 0 554.87,325.61",
+        "layer": "City_Axies",
+        "type": "ARC"
+      },
+      {
+        "d": "M 981.65,288.14 L 674.09,288.15",
+        "layer": "City_Axies",
+        "type": "LINE"
+      },
+      {
+        "d": "M 412.38,937.06 L 172.92,591.88",
+        "layer": "City_Axies",
+        "type": "LINE"
+      },
+      {
+        "d": "M 434.25,968.59 L 412.38,937.06",
+        "layer": "City_Axies",
+        "type": "LINE"
+      },
+      {
+        "d": "M 244.11,640.85 A 63.67 63.67 0 0 0 244.11,640.86",
+        "layer": "OUTLINE ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 594.79,368.83 L 594.79,440.25",
+        "layer": "CL",
+        "type": "LINE"
+      },
+      {
+        "d": "M 601.04,326.89 L 601.04,440.25",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 601.04,362.17 A 20.85 20.85 0 0 0 568.39,344.98",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 437.5,575.62 A 136.9 136.9 0 0 0 594.79,440.25",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 436.57,581.81 A 143.15 143.15 0 0 0 601.04,440.25",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 437.5,575.62 L 300.96,555.06",
+        "layer": "CL",
+        "type": "LINE"
+      },
+      {
+        "d": "M 436.57,581.81 L 298.93,561.08",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 300.03,561.24 A 41.69 41.69 0 0 0 269.97,568.27",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 300.96,555.06 A 47.95 47.95 0 0 0 266.4,563.14",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 436.16,584.56 L 306.07,564.96",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 643.23,630.28 A 141.76 141.76 0 0 0 689.99,525.05",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 647.42,634.92 A 148.02 148.02 0 0 0 688.06,573.59",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 688.49,572.33 A 148.02 148.02 0 0 0 696.25,525.05",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 670.04,612.76 A 150.1 150.1 0 0 0 678.15,600.23",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 698.84,558.46 A 154.27 154.27 0 0 0 702.5,525.05",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 471.55,695.45 A 322.21 322.21 0 0 0 416.67,691.74",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 416.67,691.74 A 12.51 12.51 0 0 0 406.62,711.38",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 416.56,685.49 A 18.76 18.76 0 0 0 401.48,714.94",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 472.51,689.27 A 328.46 328.46 0 0 0 331.44,698.3",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 473.46,683.09 A 334.71 334.71 0 0 0 329.71,692.29",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 389.29,697.36 A 18.76 18.76 0 0 0 370.92,689.51",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 875.96,598.07 L 875.96,671.92",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 888.47,598.07 L 888.47,671.92",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 900.98,585.56 A 12.51 12.51 0 0 0 888.47,598.07",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 882.21,575.83 L 882.22,671.92",
+        "layer": "CL",
+        "type": "LINE"
+      },
+      {
+        "d": "M 857.9,696.24 A 24.32 24.32 0 0 0 882.22,671.92",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 887.1,680.98 A 30.58 30.58 0 0 0 888.47,671.92",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 887.1,680.98 A 6.95 6.95 0 0 0 893.74,689.99",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 857.9,689.99 A 18.07 18.07 0 0 0 875.96,671.92",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 471.49,695.44 A 210.32 210.32 0 0 0 549.04,693.77",
+        "layer": "OUTLINE ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 472.51,689.27 A 204.07 204.07 0 0 0 645.56,636.65",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 473.53,683.1 A 197.94 197.94 0 0 0 643.23,630.28",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 471.49,695.44 A 210.32 210.32 0 0 0 644.57,646.0",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 805.02,585.56 A 243.22 243.22 0 0 0 644.57,646.0",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 805.01,575.84 A 252.95 252.95 0 0 0 661.17,620.72",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 805.01,574.45 A 254.34 254.34 0 0 0 724.81,587.43",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 805.01,566.11 A 262.68 262.68 0 0 0 722.18,579.51",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 698.84,558.46 A 18.07 18.07 0 0 0 722.18,579.51",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 683.71,605.67 A 230.49 230.49 0 0 0 671.0,613.74",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 670.04,612.76 A 0.69 0.69 0 0 0 671.0,613.74",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 692.38,564.17 A 27.1 27.1 0 0 0 694.12,571.78",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 692.38,564.17 A 0.69 0.69 0 0 0 691.02,564.04",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 937.88,585.56 L 900.98,585.56",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 863.45,585.56 L 805.02,585.56",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 875.96,598.07 A 12.51 12.51 0 0 0 863.45,585.56",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 937.88,577.22 L 805.02,577.23",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 937.88,574.44 L 805.01,574.45",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 950.39,575.83 L 805.01,575.84",
+        "layer": "CL",
+        "type": "LINE"
+      },
+      {
+        "d": "M 937.88,566.1 L 889.86,566.1",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 877.35,553.6 A 12.51 12.51 0 0 0 889.86,566.1",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 852.33,566.11 L 805.01,566.11",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 313.39,705.27 A 22.93 22.93 0 0 0 304.56,738.97",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 294.76,731.53 A 29.19 29.19 0 0 0 299.42,742.53",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 300.59,728.27 A 27.8 27.8 0 0 0 285.81,706.51",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 332.12,698.11 A 116.05 116.05 0 0 0 308.1,708.0",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 330.4,692.09 A 122.3 122.3 0 0 0 307.92,701.01",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 281.23,694.37 A 20.85 20.85 0 0 0 307.92,701.01",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 270.95,701.5 A 33.36 33.36 0 0 0 283.24,712.22",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 286.9,719.81 A 6.95 6.95 0 0 0 283.24,712.22",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 278.13,721.6 A 4.86 4.86 0 0 0 286.9,719.81",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 288.07,735.16 A 17.37 17.37 0 0 0 294.18,731.35",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 294.76,731.53 A 0.35 0.35 0 0 0 294.18,731.35",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 276.09,697.93 A 27.1 27.1 0 0 0 285.81,706.51",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 291.03,710.04 A 22.93 22.93 0 0 0 308.1,708.0",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 689.99,327.79 L 689.99,330.18",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 689.99,330.18 L 689.99,525.05",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 696.24,304.83 L 696.25,525.05",
+        "layer": "CL",
+        "type": "LINE"
+      },
+      {
+        "d": "M 702.5,327.76 L 702.5,376.74",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 702.5,376.74 A 9.73 9.73 0 0 0 712.23,386.47",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 702.5,408.71 L 702.5,525.05",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 712.23,398.98 A 9.73 9.73 0 0 0 702.5,408.71",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 741.72,312.31 L 750.83,307.76",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 729.29,315.25 A 27.8 27.8 0 0 0 741.72,312.31",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 631.8,312.2 L 651.63,315.63",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 646.15,306.92 L 651.96,307.93",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 857.9,696.24 L 753.92,696.24",
+        "layer": "CL",
+        "type": "LINE"
+      },
+      {
+        "d": "M 857.96,689.99 L 753.92,689.99",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 753.92,696.24 A 27.8 27.8 0 0 0 738.02,701.23",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 753.92,689.99 A 34.05 34.05 0 0 0 734.44,696.1",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 738.02,701.23 L 447.07,904.07",
+        "layer": "CL",
+        "type": "LINE"
+      },
+      {
+        "d": "M 734.44,696.1 L 516.62,847.95",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 499.19,844.82 A 12.51 12.51 0 0 0 516.62,847.95",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 494.05,848.39 A 18.76 18.76 0 0 0 520.2,853.09",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 489.42,874.55 A 18.76 18.76 0 0 0 494.1,848.46",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 454.64,906.41 A 34.05 34.05 0 0 0 454.64,906.41",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 415.11,898.33 L 304.56,738.97",
+        "layer": "CL",
+        "type": "LINE"
+      },
+      {
+        "d": "M 276.09,697.93 L 230.05,631.57",
+        "layer": "CL",
+        "type": "LINE"
+      },
+      {
+        "d": "M 953.32,533.83 L 957.87,524.72",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 953.32,533.83 A 27.8 27.8 0 0 0 950.39,546.26",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 953.32,615.06 L 957.88,624.16",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 450.64,909.2 L 743.55,705.0",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 751.5,702.5 L 937.19,702.5",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 893.74,689.99 L 937.19,689.99",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 898.2,689.99 L 941.36,689.99",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 751.5,702.5 A 13.9 13.9 0 0 0 743.55,705.0",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 406.62,711.38 L 499.19,844.82",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 388.96,696.9 L 493.81,848.04",
+        "layer": "CL",
+        "type": "LINE"
+      },
+      {
+        "d": "M 684.43,590.10 A 9.03 9.03 0 1 0 702.49,590.10 A 9.03 9.03 0 1 0 684.43,590.10",
+        "layer": "ASPHALT",
+        "type": "CIRCLE"
+      },
+      {
+        "d": "M 693.47,572.73 A 17.37 17.37 0 0 0 689.32,573.23",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 688.49,572.33 A 0.69 0.69 0 0 0 689.32,573.23",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 693.47,572.73 A 0.69 0.69 0 0 0 694.12,571.78",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 679.31,600.18 A 17.37 17.37 0 0 0 683.75,604.5",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 683.71,605.67 A 0.69 0.69 0 0 0 683.75,604.5",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 679.31,600.18 A 0.69 0.69 0 0 0 678.15,600.23",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 688.49,572.33 A 148.02 148.02 0 0 0 691.02,564.04",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 278.13,721.6 L 258.27,692.97",
+        "layer": "City_Edge",
+        "type": "LINE"
+      },
+      {
+        "d": "M 592.41,359.47 A 12.51 12.51 0 0 0 575.42,350.61",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 953.86,651.75 L 953.86,688.6",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 877.35,553.6 L 877.35,417.05",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 871.1,575.83 L 871.09,417.05",
+        "layer": "CL",
+        "type": "LINE"
+      },
+      {
+        "d": "M 864.84,553.6 L 864.84,414.27",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 864.84,414.27 A 15.29 15.29 0 0 0 849.55,398.98",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 852.33,566.11 A 12.51 12.51 0 0 0 864.84,553.6",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 871.09,417.05 A 24.32 24.32 0 0 0 846.77,392.73",
+        "layer": "CL",
+        "type": "ARC"
+      },
+      {
+        "d": "M 877.35,417.05 A 30.58 30.58 0 0 0 846.77,386.47",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 710.25,594.56 A 17.37 17.37 0 0 0 710.81,589.05",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 711.63,588.32 A 0.69 0.69 0 0 0 710.81,589.05",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 710.25,594.56 A 0.69 0.69 0 0 0 711.19,595.38",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 805.02,577.23 A 251.56 251.56 0 0 0 711.19,595.38",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 711.63,588.32 A 26.41 26.41 0 0 0 724.81,587.43",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 937.19,702.5 A 16.68 16.68 0 0 0 953.86,685.82",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 945.53,685.82 L 945.52,643.24",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 941.36,689.99 A 4.17 4.17 0 0 0 945.53,685.82",
+        "layer": "ASPHALT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 945.52,643.24 L 953.86,643.24",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 950.39,575.12 L 950.39,576.54",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 882.91,467.94 L 884.77,467.94 L 884.77,461.89 L 882.91,461.89 L 882.91,451.54 L 900.7,451.54 L 900.7,461.89 L 895.42,461.89 L 895.42,467.94 L 900.7,467.94 L 900.7,488.3 L 895.42,488.3 L 895.42,494.34 L 900.7,494.34 L 900.7,504.7 L 882.91,504.7 L 882.91,494.34 L 884.77,494.34 L 884.77,488.3 L 882.91,488.3 Z",
+        "layer": "ASPHALT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 882.91,406.46 L 884.76,406.46 L 884.76,400.42 L 882.91,400.42 L 882.9,390.06 L 900.69,390.06 L 900.69,400.42 L 895.41,400.42 L 895.41,406.46 L 900.69,406.46 L 900.7,426.82 L 895.41,426.82 L 895.41,432.87 L 900.7,432.87 L 900.7,443.22 L 882.91,443.22 L 882.91,432.87 L 884.76,432.87 L 884.76,426.82 L 882.91,426.82 Z",
+        "layer": "ASPHALT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 847.08,378.93 L 847.08,377.07 L 841.03,377.07 L 841.03,378.93 L 830.68,378.93 L 830.68,361.14 L 841.03,361.14 L 841.03,366.42 L 847.08,366.42 L 847.08,361.14 L 867.44,361.14 L 867.44,366.42 L 873.49,366.42 L 873.49,361.14 L 883.84,361.14 L 883.84,378.93 L 873.49,378.93 L 873.49,377.07 L 867.44,377.07 L 867.44,378.93 Z",
+        "layer": "ASPHALT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 782.8,378.94 L 782.8,377.08 L 776.76,377.08 L 776.76,378.94 L 766.4,378.94 L 766.4,361.15 L 776.76,361.15 L 776.76,366.43 L 782.8,366.43 L 782.8,361.15 L 803.16,361.15 L 803.16,366.43 L 809.21,366.43 L 809.21,361.15 L 819.56,361.15 L 819.56,378.94 L 809.21,378.94 L 809.21,377.08 L 803.16,377.08 L 803.16,378.94 Z",
+        "layer": "ASPHALT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 856.13,506.2 L 826.66,506.2 L 826.66,518.91 L 827.64,518.91 L 827.64,531.32 L 815.22,531.32 L 815.22,530.34 L 802.95,530.35 L 802.95,529.65 L 797.81,529.65 L 797.81,534.92 L 796.14,534.92 L 796.14,543.69 L 797.39,543.69 L 797.39,546.47 L 796.14,546.47 L 796.14,555.24 L 797.81,555.24 L 797.81,560.5 L 802.95,560.5 L 802.95,559.81 L 846.64,559.81 L 846.64,557.5 L 851.29,557.5 L 851.29,554.05 L 854.37,554.05 L 854.37,550.91 L 856.13,550.91 L 856.13,506.2",
+        "layer": "ASPHALT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 856.13,495.08 L 856.13,483.81 L 854.07,483.81 L 854.07,478.46 L 851.62,478.46 L 851.62,474.79 L 856.13,474.79 L 856.13,469.23 L 851.62,469.23 L 851.62,464.73 L 856.13,464.74 L 856.12,459.18 L 851.65,459.18 L 851.65,451.45 L 856.12,451.45 L 856.12,445.89 L 851.65,445.89 L 851.65,441.4 L 856.12,441.4 L 856.12,435.84 L 851.65,435.84 L 851.65,428.95 L 856.01,428.95 L 856.01,426.51 L 856.51,426.51 L 856.51,409.7 L 856.16,409.7 L 856.16,406.7 L 853.66,406.7 L 853.69,404.54 L 848.53,404.54 L 848.52,410.96 L 847.41,410.96 L 847.41,409.04 L 843.46,409.04 L 843.46,404.54 L 837.9,404.54 L 837.9,409.01 L 833.41,409.02 L 833.41,404.54 L 827.85,404.54 L 827.85,409.02 L 820.12,409.02 L 820.12,404.54 L 814.56,404.54 L 814.56,409.02 L 810.07,409.02 L 810.07,404.54 L 804.51,404.54 L 804.51,408.99 L 796.78,408.99 L 796.78,404.54 L 791.22,404.54 L 791.22,409.02 L 786.73,409.02 L 786.73,404.54 L 781.17,404.54 L 781.17,408.99 L 777.22,408.99 L 777.22,437.62 L 781.17,437.62 L 781.17,442.07 L 786.72,442.07 L 786.72,437.6 L 791.23,437.6 L 791.23,442.07 L 796.78,442.07 L 796.78,437.6 L 804.51,437.59 L 804.51,442.07 L 810.07,442.07 L 810.07,437.9 L 818.84,437.9 L 818.84,436.89 L 824.01,436.89 L 824.01,443.38 L 823.05,443.38 L 823.05,445.91 L 818.6,445.91 L 818.6,451.45 L 823.07,451.45 L 823.08,459.18 L 818.6,459.18 L 818.6,464.74 L 823.08,464.74 L 823.07,469.25 L 818.6,469.23 L 818.6,474.79 L 823.05,474.79 L 823.05,484.66 L 819.77,484.66 L 819.77,481.76 L 816.44,481.77 L 816.44,484.66 L 812.82,484.66 L 812.82,490.5 L 814.63,490.5 L 814.63,497.17 L 819.77,497.17 L 819.77,495.08 L 824.36,495.08 L 824.36,497.17 L 829.92,497.17 L 829.92,495.08 L 834.5,495.08 L 834.5,492.98 L 838.67,492.98 L 838.67,495.08 L 849.18,495.08 L 849.18,494.48 L 851.12,494.48 L 851.12,495.08 L 856.1,495.08",
+        "layer": "ASPHALT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 856.13,506.2 L 856.1,495.08",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 855.85,506.2 L 855.82,495.08",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 849.55,398.98 L 712.23,398.98",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 846.77,392.73 L 708.73,392.72",
+        "layer": "CL",
+        "type": "LINE"
+      },
+      {
+        "d": "M 846.77,386.47 L 712.23,386.47",
+        "layer": "ASPHALT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 953.85,367.36 L 896.87,310.38 L 751.79,310.38 L 736.51,318.03 L 715.0,318.03 L 705.27,327.79 L 705.28,376.74 L 712.23,383.69 L 753.48,383.69 L 753.45,352.87 L 887.35,352.73 L 914.91,381.7 L 915.05,517.82 L 880.13,517.86 L 880.13,553.6 L 889.86,563.32 L 937.88,563.32 L 937.88,563.32 L 947.61,553.59 L 947.61,546.26 L 950.83,532.58 L 953.86,526.53 Z",
+        "layer": "ASPHALT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 565.59,362.18 L 324.27,530.41 L 329.57,553.04 L 441.8,569.95 L 588.53,440.25 L 588.53,374.15 L 565.59,362.18",
+        "layer": "ASPHALT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 567.18,364.46 L 325.86,532.69 L 329.98,550.29 L 442.18,567.19 L 585.75,440.24 L 585.75,374.15 Z",
+        "layer": "ASPHALT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 421.07,889.85 L 420.25,894.76 L 443.49,898.94 L 485.84,869.41 L 488.96,852.02 L 383.88,700.54 L 371.9,695.68 L 330.61,705.1 L 311.25,713.41 L 306.99,731.5 L 313.1,734.22 L 421.07,889.85",
+        "layer": "ASPHALT",
+        "type": "LWPOLYLINE"
+      }
+    ],
+    "parking": [
+      {
+        "d": "M 873.18,648.98 L 873.18,665.66",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 873.18,668.44 L 873.18,671.92",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 857.9,687.21 A 15.29 15.29 0 0 0 873.18,671.92",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 825.93,652.44 L 759.23,652.44",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 826.9,653.41 L 759.23,653.41",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 840.52,687.21 L 833.04,687.21",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 830.26,687.21 L 823.31,687.21",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 820.53,687.21 L 808.9,687.21",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 825.93,652.44 A 6.95 6.95 0 0 0 832.88,645.49",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 826.9,653.41 A 6.95 6.95 0 0 0 833.85,646.46",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 843.3,687.21 L 857.83,687.21",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 840.52,687.21 L 833.04,687.21",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 830.26,687.21 L 823.31,687.21",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 585.75,374.15 A 11.81 11.81 0 0 0 567.18,364.46",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 570.46,362.18 L 407.15,476.03",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 637.11,315.94 A 35.44 35.44 0 0 0 624.85,317.09",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 953.87,788.88 L 953.86,628.91",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 736.51,318.03 L 715.0,318.03",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 715.0,318.03 A 9.73 9.73 0 0 0 705.27,327.76",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 687.21,327.79 A 9.73 9.73 0 0 0 677.65,318.06",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 651.15,318.37 A 30.58 30.58 0 0 0 659.01,318.7",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 585.75,374.15 L 585.75,403.28",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 603.82,345.78 L 603.82,421.15",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 641.9,316.77 L 641.9,316.77",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 643.99,353.74 L 643.99,367.35",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 643.99,371.52 L 643.99,397.1",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 643.99,401.27 L 643.99,421.15",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 603.82,421.15 L 603.82,440.25",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 643.99,421.15 L 643.99,425.3",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 643.99,429.47 L 643.99,440.25",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 857.9,687.21 A 15.29 15.29 0 0 0 873.18,671.92",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 585.75,387.88 L 585.75,385.62",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 646.09,353.74 L 646.09,367.35",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 646.09,371.52 L 646.09,397.1",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 646.09,401.27 L 646.09,425.3",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 646.09,429.47 L 646.09,493.62",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 687.21,327.79 L 687.21,327.79",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 687.21,345.96 L 687.21,525.05",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 705.27,327.76 L 705.28,376.74",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 736.51,318.03 L 751.79,310.38",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 637.11,315.94 L 651.15,318.37",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 825.93,652.44 L 759.23,652.44",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 826.9,653.41 L 759.23,653.41",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 840.52,687.21 L 757.14,687.21",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 401.27,482.19 A 134.82 134.82 0 0 0 452.01,463.84",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 437.96,511.26 A 171.93 171.93 0 0 0 471.36,495.5",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 452.01,463.84 A 136.86 136.86 0 0 0 471.54,449.4",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 471.54,449.4 A 136.21 136.21 0 0 0 502.32,409.68",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 705.28,408.71 L 705.28,525.04",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 712.23,401.76 A 6.95 6.95 0 0 0 705.28,408.71",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 646.09,353.74 L 643.99,353.74",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 585.75,423.99 L 550.83,425.35",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 585.67,421.91 L 554.7,423.11",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 880.13,417.05 A 33.36 33.36 0 0 0 846.77,383.69",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 825.93,652.44 A 6.95 6.95 0 0 0 832.88,645.49",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 826.9,653.41 A 6.95 6.95 0 0 0 833.85,646.46",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 849.55,401.76 L 712.23,401.76",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 862.06,414.27 A 12.51 12.51 0 0 0 849.55,401.76",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 846.77,383.69 L 712.23,383.69",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 705.28,376.74 A 6.95 6.95 0 0 0 712.23,383.69",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 843.3,687.21 L 857.83,687.21",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 428.99,519.21 A 178.84 178.84 0 0 0 452.77,510.69",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 464.47,505.03 A 178.84 178.84 0 0 0 487.23,490.67",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 496.16,483.6 A 178.84 178.84 0 0 0 510.59,469.96",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 520.42,458.67 A 178.84 178.84 0 0 0 536.44,434.96",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 429.25,520.15 A 179.81 179.81 0 0 0 452.2,512.01",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 465.22,505.73 A 179.81 179.81 0 0 0 488.01,491.31",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 462.38,508.77 A 181.2 181.2 0 0 0 485.07,495.15",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 462.67,510.18 A 182.59 182.59 0 0 0 485.5,496.55",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 463.44,512.12 A 184.68 184.68 0 0 0 486.08,498.68",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 497.63,483.63 A 179.81 179.81 0 0 0 511.36,470.56",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 521.08,459.4 A 179.81 179.81 0 0 0 537.29,435.44",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 429.26,520.15 A 136.95 136.95 0 0 0 456.12,513.97",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 556.24,414.32 L 585.75,393.74",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 549.61,416.4 L 549.6,416.41",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 554.95,412.68 L 585.75,391.2",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 648.17,351.65 L 641.9,351.65",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 641.9,351.65 L 641.9,440.25",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 524.7,609.93 A 253.64 253.64 0 0 0 563.65,588.88",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 637.87,351.65 L 639.33,425.3",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      }
+    ],
+    "landscape": [
+      {
+        "d": "M 873.18,598.07 L 873.18,607.29",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 873.18,610.07 L 873.18,626.75",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 873.18,629.53 L 873.18,646.2",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 873.18,598.07 A 9.73 9.73 0 0 0 871.32,592.35",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 871.77,591.45 A 16.38 16.38 0 0 0 863.45,588.34",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 863.45,588.34 L 826.24,588.34",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 823.46,588.34 L 820.66,588.34",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 817.88,588.34 L 805.01,588.34",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 833.16,624.68 L 813.68,624.68",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 833.16,624.68 A 2.78 2.78 0 0 0 835.94,621.9",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 830.79,628.57 L 805.02,628.58",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 818.61,629.96 L 781.6,629.97",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 818.61,631.35 L 771.87,631.36",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 818.61,632.74 L 771.91,632.75",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 831.07,627.6 L 805.02,627.6",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 757.43,650.61 A 1.81 1.81 0 0 0 759.23,652.44",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 806.12,687.21 L 789.45,687.21",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 786.67,687.21 L 784.4,687.21",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 781.62,687.21 L 769.99,687.21",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 772.26,687.21 L 764.94,687.21",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 831.5,588.34 L 831.5,588.34",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 832.88,630.66 L 832.88,645.49",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 831.49,635.8 L 831.49,649.66",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 830.1,636.66 L 830.1,651.05",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 828.01,637.35 L 828.01,652.12",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 833.85,630.38 L 833.85,646.46",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 833.85,630.38 A 2.78 2.78 0 0 0 831.07,627.6",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 832.88,630.66 A 2.08 2.08 0 0 0 830.79,628.57",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 757.13,657.33 L 762.16,657.33",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 764.94,657.33 L 771.89,657.33",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 774.67,657.33 L 781.62,657.33",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 784.4,657.33 L 791.35,657.33",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 796.54,657.33 L 800.43,657.33",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 809.67,657.33 L 810.22,657.33",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 819.4,657.33 L 819.95,657.33",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 829.13,657.33 L 829.68,657.33",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 758.94,656.35 L 762.16,656.35",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 764.94,656.35 L 771.89,656.35",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 774.67,656.35 L 781.62,656.35",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 784.4,656.35 L 791.35,656.35",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 794.13,656.35 L 801.07,656.35",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 803.85,656.35 L 810.8,656.35",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 813.58,656.35 L 820.53,656.35",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 823.31,656.35 L 830.26,656.35",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 833.04,656.35 L 839.55,656.35",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 839.55,656.35 A 3.16 3.16 0 0 0 842.44,654.03",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 758.94,656.35 A 2.78 2.78 0 0 0 756.16,659.13",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 834.97,588.34 L 834.96,623.71",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 835.95,588.34 L 835.94,621.9",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,592.35 L 843.3,678.52",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 828.59,630.92 A 19.36 19.36 0 0 0 818.61,628.58",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 831.49,635.8 A 5.56 5.56 0 0 0 828.59,630.92",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 826.87,631.61 A 17.97 17.97 0 0 0 818.61,629.97",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 830.1,636.66 A 5.56 5.56 0 0 0 826.87,631.61",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 824.03,632.02 A 16.58 16.58 0 0 0 818.61,631.36",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 828.01,637.35 A 5.56 5.56 0 0 0 824.03,632.02",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 828.01,638.26 L 818.61,638.07",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 757.13,657.33 L 762.16,657.33",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 764.94,657.33 L 771.89,657.33",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 774.67,657.33 L 781.62,657.33",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 784.4,657.33 L 791.34,657.33",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 796.54,657.33 L 800.43,657.33",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 809.67,657.33 L 810.22,657.33",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 819.4,657.33 L 819.95,657.33",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 829.12,657.33 L 829.68,657.33",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 758.94,656.35 L 762.16,656.35",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 764.94,656.35 L 771.89,656.35",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 774.67,656.35 L 781.62,656.35",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 784.4,656.35 L 791.34,656.35",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 794.12,656.35 L 801.07,656.35",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 803.85,656.35 L 810.8,656.35",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 813.58,656.35 L 820.53,656.35",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 823.31,656.35 L 830.26,656.35",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 758.94,656.35 A 2.78 2.78 0 0 0 756.16,659.13",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 842.48,676.77 L 842.48,673.49",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.46,673.66 L 842.46,663.77",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.46,663.77 L 842.44,654.03",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.44,651.26 L 842.42,644.31",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.42,641.53 L 842.41,634.58",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.4,631.8 L 842.39,624.85",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.38,622.07 L 842.37,615.12",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.36,612.34 L 842.35,605.39",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.35,602.61 L 842.32,591.38",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 758.76,633.02 L 756.63,635.69 L 756.45,650.6 L 759.23,653.41",
+        "layer": "V-NODE-TEXT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 771.91,632.75 L 757.59,636.66",
+        "layer": "V-NODE-TEXT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 757.57,638.11 L 772.38,636.78",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 805.02,588.34 A 240.44 240.44 0 0 0 647.8,646.88",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 805.02,623.71 A 205.07 205.07 0 0 0 670.74,673.79",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 805.02,624.68 A 204.1 204.1 0 0 0 672.74,673.36",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 668.82,673.04 A 2.78 2.78 0 0 0 672.74,673.36",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 805.02,628.58 A 200.14 200.14 0 0 0 758.99,633.96",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 741.66,638.9 A 200.14 200.14 0 0 0 676.52,675.36",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 744.17,645.6 A 117.47 117.47 0 0 0 675.81,678.7",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 744.21,646.99 A 116.08 116.08 0 0 0 676.6,679.87",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 742.86,648.57 A 129.86 129.86 0 0 0 676.6,679.87",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 676.52,675.36 A 2.78 2.78 0 0 0 676.05,679.11",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 805.02,627.6 A 201.12 201.12 0 0 0 758.77,633.02",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 758.77,633.02 A 2.78 2.78 0 0 0 756.63,635.69",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 758.99,633.96 A 1.81 1.81 0 0 0 757.6,635.7",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 741.35,637.98 A 201.11 201.11 0 0 0 675.19,675.2",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 675.19,675.2 A 2.78 2.78 0 0 0 674.73,678.95",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 745.01,640.54 A 2.78 2.78 0 0 0 741.35,637.98",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 744.04,640.57 A 1.81 1.81 0 0 0 741.66,638.9",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 665.33,667.44 A 213.41 213.41 0 0 0 665.28,667.49",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 693.78,615.57 L 693.8,615.62",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 715.65,644.21 L 715.66,644.21",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 431.46,898.93 A 13.9 13.9 0 0 0 441.9,896.66",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 329.43,530.2 L 325.86,532.69",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 407.15,476.03 L 330.57,529.41",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 325.86,532.69 A 9.73 9.73 0 0 0 329.98,550.29",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 624.85,317.09 A 187.63 187.63 0 0 0 567.23,344.1",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 953.86,628.91 A 27.8 27.8 0 0 0 950.93,616.48",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 677.65,318.06 A 179.98 179.98 0 0 0 659.01,318.7",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 958.03,600.82 A 27.8 27.8 0 0 0 960.81,612.94",
+        "layer": "Land line",
+        "type": "ARC"
+      },
+      {
+        "d": "M 947.61,602.62 L 947.61,595.29",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 947.61,602.62 A 30.58 30.58 0 0 0 950.84,616.3",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 947.61,553.59 L 947.61,546.26",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 937.88,563.32 A 9.73 9.73 0 0 0 947.61,553.59",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 435.96,967.4 L 204.44,633.67",
+        "layer": "city_green",
+        "type": "LINE"
+      },
+      {
+        "d": "M 432.54,969.78 L 201.02,636.05",
+        "layer": "city_green",
+        "type": "LINE"
+      },
+      {
+        "d": "M 674.09,283.98 L 942.48,283.97",
+        "layer": "city_green",
+        "type": "LINE"
+      },
+      {
+        "d": "M 1020.81,283.97 L 1068.32,283.97",
+        "layer": "city_green",
+        "type": "LINE"
+      },
+      {
+        "d": "M 674.09,292.32 L 942.48,292.31",
+        "layer": "city_green",
+        "type": "LINE"
+      },
+      {
+        "d": "M 942.48,292.31 A 4.17 4.17 0 0 0 942.48,283.97",
+        "layer": "city_green",
+        "type": "ARC"
+      },
+      {
+        "d": "M 1020.81,292.31 L 1079.4,292.31",
+        "layer": "city_green",
+        "type": "LINE"
+      },
+      {
+        "d": "M 1020.81,283.97 A 4.17 4.17 0 1 0 1020.81,292.31",
+        "layer": "city_green",
+        "type": "ARC"
+      },
+      {
+        "d": "M 978.18,216.14 L 978.18,253.14",
+        "layer": "city_green",
+        "type": "LINE"
+      },
+      {
+        "d": "M 985.13,221.37 L 985.13,253.14",
+        "layer": "city_green",
+        "type": "LINE"
+      },
+      {
+        "d": "M 978.18,253.14 A 3.47 3.47 0 1 0 985.13,253.14",
+        "layer": "city_green",
+        "type": "ARC"
+      },
+      {
+        "d": "M 552.49,322.19 L 110.7,630.17",
+        "layer": "city_green",
+        "type": "LINE"
+      },
+      {
+        "d": "M 674.09,283.98 A 212.66 212.66 0 0 0 552.49,322.19",
+        "layer": "city_green",
+        "type": "ARC"
+      },
+      {
+        "d": "M 557.26,329.03 L 115.47,637.01",
+        "layer": "city_green",
+        "type": "LINE"
+      },
+      {
+        "d": "M 674.09,292.32 A 204.32 204.32 0 0 0 557.26,329.03",
+        "layer": "city_green",
+        "type": "ARC"
+      },
+      {
+        "d": "M 204.44,633.67 A 2.08 2.08 0 1 0 201.02,636.05",
+        "layer": "city_green",
+        "type": "ARC"
+      },
+      {
+        "d": "M 554.87,325.6 L 172.92,591.88",
+        "layer": "SITE",
+        "type": "LINE"
+      },
+      {
+        "d": "M 674.09,288.15 A 208.47 208.47 0 0 0 554.87,325.6",
+        "layer": "SITE",
+        "type": "ARC"
+      },
+      {
+        "d": "M 937.88,563.32 L 889.86,563.32",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 880.13,553.6 A 9.73 9.73 0 0 0 889.86,563.32",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 585.75,440.29 L 585.75,403.28",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 430.17,624.27 A 186.1 186.1 0 0 0 459.78,626.34",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 462.58,629.38 A 2.78 2.78 0 0 0 459.78,626.34",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 472.89,625.74 A 186.1 186.1 0 0 0 505.03,620.28",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 472.89,625.74 A 2.78 2.78 0 0 0 470.34,628.64",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 508.44,622.33 A 2.78 2.78 0 0 0 505.03,620.28",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 430.03,625.24 A 187.07 187.07 0 0 0 458.73,627.32",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 461.51,630.36 A 2.78 2.78 0 0 0 458.73,627.32",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 473.89,626.64 A 187.07 187.07 0 0 0 504.33,621.47",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 471.62,628.21 A 188.46 188.46 0 0 0 504.68,622.81",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 471.35,629.62 A 189.85 189.85 0 0 0 507.71,623.45",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 471.42,631.01 A 191.24 191.24 0 0 0 508.03,624.8",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 473.89,626.64 A 2.78 2.78 0 0 0 471.35,629.53",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 507.72,623.52 A 2.78 2.78 0 0 0 504.33,621.47",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 505.37,625.51 A 1.39 1.39 0 0 0 505.37,625.51",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 506.37,623.81 A 1.39 1.39 0 0 0 504.68,622.81",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 430.75,620.47 A 182.25 182.25 0 0 0 507.16,615.71",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 507.16,615.71 A 2.78 2.78 0 0 0 509.12,612.39",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 562.1,595.28 A 186.79 186.79 0 0 0 562.12,595.26",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 562.46,595.87 A 187.49 187.49 0 0 0 562.51,595.83",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 569.51,588.29 A 185.4 185.4 0 0 0 598.07,561.6",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 602.03,561.35 A 2.78 2.78 0 0 0 598.07,561.6",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 606.25,551.44 A 185.4 185.4 0 0 0 633.54,499.59",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 606.25,551.44 A 2.78 2.78 0 0 0 606.71,555.25",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 569.51,588.29 A 2.78 2.78 0 0 0 568.82,591.98",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 570.79,588.54 A 186.37 186.37 0 0 0 598.16,562.97",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 581.39,579.84 A 75.26 75.26 0 0 0 600.77,562.07",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 602.11,562.74 A 2.78 2.78 0 0 0 598.16,562.97",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 607.58,551.29 A 186.37 186.37 0 0 0 634.46,499.9",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 607.58,551.29 A 129.55 129.55 0 0 0 635.03,504.99",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 607.58,551.29 A 2.78 2.78 0 0 0 608.05,555.09",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 570.79,588.54 A 2.78 2.78 0 0 0 570.11,592.22",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 637.04,497.84 A 2.78 2.78 0 0 0 633.54,499.59",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 636.73,498.76 A 1.81 1.81 0 0 0 634.46,499.9",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 636.93,491.02 A 186.1 186.1 0 0 0 643.99,440.25",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 438.85,566.69 A 127.86 127.86 0 0 0 585.75,440.25",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 430.17,624.27 L 417.06,622.3",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 403.25,620.22 L 376.95,616.26",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 363.6,614.25 L 329.65,609.13",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 329.65,609.13 A 2.78 2.78 0 0 0 326.51,611.34",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 430.03,625.24 L 418.06,623.43",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 418.06,623.43 A 2.78 2.78 0 0 0 414.87,626.24",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 377.98,617.4 A 2.78 2.78 0 0 0 374.79,620.29",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 330.42,610.23 A 2.78 2.78 0 0 0 327.28,612.44",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 307.42,602.09 A 21.06 21.06 0 0 0 284.72,626.18",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 284.72,626.18 A 2.78 2.78 0 0 0 284.77,626.44",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 345.03,552.56 L 329.98,550.29",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 438.85,566.69 L 346.92,552.84",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 612.35,595.61 A 95.34 95.34 0 0 0 623.22,583.94",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 623.22,583.94 A 2.78 2.78 0 0 0 622.89,580.15",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 631.54,571.41 A 95.34 95.34 0 0 0 643.57,525.05",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 627.35,572.21 A 2.78 2.78 0 0 0 631.54,571.41",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 611.7,594.89 A 94.37 94.37 0 0 0 621.87,584.07",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 610.22,594.35 A 92.98 92.98 0 0 0 622.28,581.29",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 610.22,594.35 A 2.78 2.78 0 0 0 609.29,596.48",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 608.83,593.73 A 91.59 91.59 0 0 0 621.42,580.11",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 608.83,593.73 A 2.78 2.78 0 0 0 607.89,595.87",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 606.75,592.78 A 89.5 89.5 0 0 0 619.85,578.73",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 606.75,592.78 A 2.78 2.78 0 0 0 605.79,594.93",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 621.87,584.07 A 2.79 2.79 0 0 0 621.41,580.13",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 631.27,569.88 A 94.37 94.37 0 0 0 642.6,525.05",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 631.27,569.88 A 122.87 122.87 0 0 0 641.21,525.05",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 627.06,570.71 A 2.78 2.78 0 0 0 631.27,569.88",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 623.15,589.48 A 98.82 98.82 0 0 0 647.05,525.05",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 612.35,595.61 A 2.08 2.08 0 0 0 611.67,597.19",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 611.7,594.89 A 3.06 3.06 0 0 0 610.7,597.21",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 641.36,628.21 A 138.98 138.98 0 0 0 687.21,525.05",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 416.72,694.52 A 9.73 9.73 0 0 0 408.9,709.79",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 471.13,698.2 A 319.43 319.43 0 0 0 416.72,694.52",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 466.85,699.67 A 317.34 317.34 0 0 0 450.08,697.76",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 450.08,697.76 A 2.78 2.78 0 0 0 447.55,702.11",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 469.23,702.66 A 2.78 2.78 0 0 0 466.85,699.67",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 473.88,680.34 A 337.49 337.49 0 0 0 328.94,689.62",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 480.57,640.39 A 412.92 412.92 0 0 0 473.14,639.4",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 470.7,636.77 A 2.78 2.78 0 0 0 473.14,639.4",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 458.99,637.9 A 412.92 412.92 0 0 0 416.86,636.32",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 458.99,637.9 A 2.78 2.78 0 0 0 462.0,635.39",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 414.04,633.59 A 2.78 2.78 0 0 0 416.86,636.32",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 480.71,639.43 A 413.9 413.9 0 0 0 474.07,638.54",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 471.64,635.9 A 2.78 2.78 0 0 0 474.07,638.54",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 458.12,636.85 A 413.9 413.9 0 0 0 417.81,635.33",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 458.12,636.85 A 2.78 2.78 0 0 0 461.13,634.34",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 415.0,632.61 A 2.78 2.78 0 0 0 417.81,635.33",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 402.39,635.79 A 413.9 413.9 0 0 0 378.65,637.63",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 375.58,635.02 A 2.78 2.78 0 0 0 378.65,637.63",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 363.57,639.52 A 413.9 413.9 0 0 0 324.44,647.08",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 365.94,637.08 A 102.62 102.62 0 0 0 324.44,647.08",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 321.06,643.84 A 2.78 2.78 0 0 0 324.44,647.08",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 364.58,640.36 A 412.92 412.92 0 0 0 323.2,648.39",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 364.58,640.36 A 2.78 2.78 0 0 0 366.97,637.47",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 319.8,645.15 A 2.78 2.78 0 0 0 323.2,648.39",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 363.57,639.52 A 2.78 2.78 0 0 0 365.95,636.63",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 402.39,635.79 A 2.78 2.78 0 0 0 405.03,632.91",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 403.41,636.72 A 377.66 377.66 0 0 0 377.78,638.89",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 374.68,636.28 A 2.78 2.78 0 0 0 377.78,638.89",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 403.41,636.72 A 2.78 2.78 0 0 0 406.04,633.83",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 873.18,598.07 L 873.18,671.92",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 873.18,598.07 A 9.73 9.73 0 0 0 863.45,588.34",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 746.02,679.37 L 746.02,688.06",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 891.25,598.07 L 891.25,689.53",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 480.57,640.39 A 154.52 154.52 0 0 0 509.77,642.42",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 509.77,642.42 A 2.78 2.78 0 0 0 512.4,638.99",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 480.73,639.43 A 153.55 153.55 0 0 0 508.52,641.47",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 508.5,640.08 A 103.92 103.92 0 0 0 486.54,640.33",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 508.52,641.47 A 2.78 2.78 0 0 0 511.18,638.05",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 508.5,640.08 A 5.98 5.98 0 0 0 511.3,637.88",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 538.34,639.71 A 155.22 155.22 0 0 0 577.87,625.42",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 535.22,638.12 A 2.78 2.78 0 0 0 538.34,639.71",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 577.87,625.42 A 2.78 2.78 0 0 0 578.95,621.51",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 538.93,638.59 A 154.25 154.25 0 0 0 576.48,625.05",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 575.3,624.09 A 88.09 88.09 0 0 0 554.17,634.41",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 575.3,624.09 A 2.78 2.78 0 0 0 576.34,623.17",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 577.3,620.69 A 45.15 45.15 0 0 0 554.17,634.41",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 535.79,637.0 A 2.78 2.78 0 0 0 538.93,638.59",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 576.48,625.05 A 2.78 2.78 0 0 0 577.58,621.13",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 576.34,623.17 A 5.99 5.99 0 0 0 577.3,620.69",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 588.89,619.06 A 155.22 155.22 0 0 0 610.59,602.46",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 585.04,618.17 A 2.78 2.78 0 0 0 588.89,619.06",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 589.22,617.7 A 154.25 154.25 0 0 0 609.93,601.75",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 586.42,617.82 A 152.86 152.86 0 0 0 608.43,601.24",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 608.43,601.24 A 2.78 2.78 0 0 0 609.34,599.12",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 585.36,616.84 A 151.47 151.47 0 0 0 607.02,600.64",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 607.02,600.64 A 2.78 2.78 0 0 0 607.94,598.51",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 584.21,615.1 A 149.38 149.38 0 0 0 604.9,599.73",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 604.9,599.73 A 2.78 2.78 0 0 0 605.84,597.6",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 585.36,616.84 A 2.78 2.78 0 0 0 589.22,617.7",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 610.59,602.46 A 3.47 3.47 0 0 0 611.72,599.83",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 609.93,601.75 A 2.5 2.5 0 0 0 610.75,599.85",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 473.98,680.36 A 195.03 195.03 0 0 0 639.49,629.96",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 478.32,738.39 A 251.95 251.95 0 0 0 536.92,737.97",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 475.78,739.5 A 253.34 253.34 0 0 0 539.47,739.04",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 475.25,740.83 A 254.73 254.73 0 0 0 540.36,740.32",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 475.47,742.26 A 256.12 256.12 0 0 0 541.26,741.6",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 482.7,752.78 A 265.85 265.85 0 0 0 543.22,751.15",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 539.54,739.14 A 2.78 2.78 0 0 0 536.92,737.97",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 554.58,735.13 A 251.95 251.95 0 0 0 620.06,712.5",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 559.55,735.94 A 253.76 253.76 0 0 0 623.19,712.92",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 592.84,728.23 A 255.56 255.56 0 0 0 624.29,714.39",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 593.55,730.19 A 257.65 257.65 0 0 0 625.5,716.11",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 623.59,713.39 A 2.78 2.78 0 0 0 620.06,712.5",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 633.92,704.9 A 251.95 251.95 0 0 0 660.38,686.91",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 642.06,699.88 A 47.32 47.32 0 0 0 661.75,687.6",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 633.92,704.9 A 2.78 2.78 0 0 0 633.08,708.93",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 554.58,735.13 A 2.78 2.78 0 0 0 552.84,739.44",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 478.32,738.39 A 2.78 2.78 0 0 0 475.73,742.73",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 471.44,736.55 A 250.98 250.98 0 0 0 537.37,736.93",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 540.0,738.1 A 2.78 2.78 0 0 0 537.37,736.93",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 552.95,734.45 A 250.98 250.98 0 0 0 620.36,711.26",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 623.9,712.14 A 2.78 2.78 0 0 0 620.36,711.26",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 632.51,704.6 A 250.98 250.98 0 0 0 662.07,684.35",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 632.51,704.6 A 2.78 2.78 0 0 0 631.67,708.63",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 552.95,734.45 A 2.78 2.78 0 0 0 551.19,738.77",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 474.52,734.16 A 248.2 248.2 0 0 0 661.81,681.0",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 661.81,681.0 A 2.78 2.78 0 0 0 662.21,677.07",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 472.1,731.17 A 2.78 2.78 0 0 0 474.52,734.16",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 660.38,686.91 A 41.69 41.69 0 0 0 661.84,685.72",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 665.76,686.04 A 2.78 2.78 0 0 0 661.84,685.72",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 471.03,698.18 A 213.1 213.1 0 0 0 583.56,686.36",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 805.01,563.33 A 265.45 265.45 0 0 0 721.3,576.88",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 900.98,588.34 A 9.73 9.73 0 0 0 891.25,598.07",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 863.45,588.34 L 805.02,588.34",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 833.16,624.68 L 805.02,624.68",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 833.16,624.68 A 2.78 2.78 0 0 0 835.94,621.9",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 830.79,628.57 L 805.02,628.58",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 818.61,629.96 L 781.6,629.97",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 818.61,631.35 L 771.87,631.36",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 818.61,632.74 L 771.91,632.75",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 831.07,627.6 L 805.02,627.6",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 852.33,563.33 L 805.01,563.33",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 852.33,563.33 A 9.73 9.73 0 0 0 862.06,553.6",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 452.37,695.87 L 452.37,695.81",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 333.64,705.91 A 108.25 108.25 0 0 0 311.94,714.93",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 311.94,714.93 A 9.73 9.73 0 0 0 307.36,720.49",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 329.64,689.42 A 125.08 125.08 0 0 0 306.66,698.54",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 283.52,692.78 A 18.07 18.07 0 0 0 306.66,698.54",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 283.52,692.78 L 253.47,649.46",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 682.19,562.07 L 682.25,562.09",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 679.73,570.04 L 679.79,570.06",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 679.96,569.38 L 680.0,569.39",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 682.01,562.74 L 682.05,562.75",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 687.21,509.83 L 687.21,509.83",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 687.21,502.88 L 687.21,502.88",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 542.95,679.42 L 542.95,679.41",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 549.76,678.01 L 549.75,677.96",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 346.92,552.85 L 330.55,529.37",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 455.74,678.05 L 455.74,678.05",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 349.93,515.85 L 349.96,515.89",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 341.95,521.42 L 341.98,521.46",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 357.91,510.29 L 357.94,510.33",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 346.92,552.85 L 348.73,553.12",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 643.57,501.98 L 643.57,525.05",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 642.6,502.69 L 642.6,525.05",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 641.21,502.69 L 641.21,525.05",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 756.45,650.6 A 2.78 2.78 0 0 0 759.23,653.41",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 757.43,650.61 A 1.81 1.81 0 0 0 759.23,652.44",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 742.9,652.44 L 740.61,652.44",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 746.02,688.06 A 36.83 36.83 0 0 0 740.33,689.8",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 733.56,693.35 A 36.83 36.83 0 0 0 732.85,693.82",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 720.1,659.85 L 682.99,685.73",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 679.14,685.07 A 2.78 2.78 0 0 0 682.99,685.73",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 670.29,694.57 L 640.12,715.61",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 636.28,714.97 A 2.78 2.78 0 0 0 640.12,715.61",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 628.57,723.66 L 571.67,763.32",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 628.57,723.66 A 2.78 2.78 0 0 0 629.26,719.79",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 567.8,762.63 A 2.78 2.78 0 0 0 571.67,763.32",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 559.9,771.53 L 522.69,797.47",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 559.9,771.53 A 2.78 2.78 0 0 0 560.59,767.66",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 511.07,795.38 A 8.34 8.34 0 0 0 522.69,797.47",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 729.07,658.32 L 518.08,805.41",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 732.94,659.01 A 2.78 2.78 0 0 0 729.07,658.32",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 719.55,659.05 L 683.22,684.38",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 679.37,683.72 A 2.78 2.78 0 0 0 683.22,684.38",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 668.86,694.39 L 640.34,714.27",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 636.51,713.62 A 2.78 2.78 0 0 0 640.34,714.27",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 627.22,723.42 L 571.92,761.97",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 627.22,723.42 A 2.78 2.78 0 0 0 627.9,719.54",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 558.55,771.29 L 521.79,796.91",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 558.55,771.29 A 2.78 2.78 0 0 0 559.24,767.42",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 556.46,763.43 L 516.2,791.49",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 558.45,764.58 L 558.45,764.58",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 557.65,765.14 L 517.65,793.02",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 559.24,765.72 L 559.24,765.72",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 558.44,766.28 L 517.93,794.52",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 560.04,766.86 L 560.04,766.86",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 559.24,767.42 L 518.23,796.01",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 560.83,768.0 L 560.83,768.0",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 559.73,768.77 L 517.58,798.16",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 512.11,795.17 A 6.95 6.95 0 0 0 521.79,796.91",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 740.61,652.44 A 36.83 36.83 0 0 0 719.55,659.05",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 742.36,653.45 A 35.86 35.86 0 0 0 720.1,659.85",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 742.36,653.45 A 2.78 2.78 0 0 0 745.27,650.6",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 742.9,652.44 A 1.81 1.81 0 0 0 744.3,650.63",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 741.03,652.44 A 2.45 2.45 0 0 0 742.91,650.66",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 732.85,693.82 L 724.28,699.8",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 718.01,704.17 L 708.3,710.94",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 702.03,715.31 L 692.34,722.07",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 686.07,726.44 L 515.03,845.67",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 501.47,843.24 A 9.73 9.73 0 0 0 515.03,845.67",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 484.25,867.13 L 441.9,896.66",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 950.83,532.58 L 953.86,526.53",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 960.81,535.95 A 27.8 27.8 0 0 0 958.03,548.06",
+        "layer": "Land line",
+        "type": "ARC"
+      },
+      {
+        "d": "M 950.83,532.58 A 30.58 30.58 0 0 0 947.61,546.26",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 950.84,616.3 L 950.93,616.48",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 985.13,323.13 A 3.47 3.47 0 0 0 978.18,323.13",
+        "layer": "city_green",
+        "type": "ARC"
+      },
+      {
+        "d": "M 550.13,446.63 L 549.85,449.6",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 539.42,645.15 L 536.67,645.74",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 585.76,385.62 L 569.73,362.63",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 346.92,552.84 L 330.55,529.37",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 439.53,642.02 L 434.9,642.0",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 462.82,643.72 L 458.38,643.31",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 453.46,466.21 L 471.33,495.52",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 431.25,477.17 L 443.63,509.19",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 548.03,414.18 L 530.94,389.67",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 346.92,552.84 L 348.73,553.12",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 585.76,387.88 L 585.76,385.62",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 408.9,709.79 L 501.47,843.24",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 441.46,695.04 L 511.07,795.38",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 436.02,694.76 L 532.34,833.61",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 468.34,732.08 L 471.44,736.55",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 467.86,730.26 A 2.78 2.78 0 0 0 468.34,732.08",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 475.73,742.73 L 512.11,795.17",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 447.55,702.11 L 462.5,723.67",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 462.5,723.67 A 2.78 2.78 0 0 0 467.56,722.32",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 380.85,701.06 L 477.36,840.17",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 560.39,639.35 L 542.22,644.56",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 542.22,644.56 A 278.95 278.95 0 0 0 539.45,645.14",
+        "layer": "Land line",
+        "type": "ARC"
+      },
+      {
+        "d": "M 489.24,647.37 A 158.06 158.06 0 0 0 492.02,647.67",
+        "layer": "Land line",
+        "type": "ARC"
+      },
+      {
+        "d": "M 431.25,477.17 A 137.6 137.6 0 0 0 453.46,466.21",
+        "layer": "Land line",
+        "type": "ARC"
+      },
+      {
+        "d": "M 501.85,410.01 A 134.82 134.82 0 0 0 501.85,410.01",
+        "layer": "Land line",
+        "type": "ARC"
+      },
+      {
+        "d": "M 431.25,477.17 L 443.63,509.19",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 473.38,451.48 L 496.17,477.15",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 453.46,466.21 A 139.64 139.64 0 0 0 473.38,451.48",
+        "layer": "Land line",
+        "type": "ARC"
+      },
+      {
+        "d": "M 473.38,451.48 L 496.17,477.15",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 473.38,451.48 A 138.99 138.99 0 0 0 490.37,433.44",
+        "layer": "Land line",
+        "type": "ARC"
+      },
+      {
+        "d": "M 420.16,516.47 L 416.8,517.34",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 413.01,482.82 A 120.73 120.73 0 0 0 406.94,484.41",
+        "layer": "Land line",
+        "type": "ARC"
+      },
+      {
+        "d": "M 413.01,482.82 A 140.15 140.15 0 0 0 431.25,477.17",
+        "layer": "Land line",
+        "type": "ARC"
+      },
+      {
+        "d": "M 506.95,411.16 A 127.6 127.6 0 0 0 497.0,424.26",
+        "layer": "Land line",
+        "type": "ARC"
+      },
+      {
+        "d": "M 490.37,433.44 A 138.98 138.98 0 0 0 497.0,424.26",
+        "layer": "Land line",
+        "type": "ARC"
+      },
+      {
+        "d": "M 530.97,389.71 A 124.77 124.77 0 0 0 506.95,411.16",
+        "layer": "Land line",
+        "type": "ARC"
+      },
+      {
+        "d": "M 550.36,417.48 L 530.95,389.67",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 548.03,414.18 L 550.36,417.48",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 444.18,792.41 L 429.45,771.17",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 429.45,771.17 L 414.71,749.93",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 375.69,753.38 L 403.67,733.98",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 477.37,840.16 L 449.39,859.57",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 449.39,859.57 L 477.37,840.16",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 418.4,755.22 L 390.42,774.62",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 403.69,733.96 L 375.71,753.37",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 390.42,774.62 L 418.4,755.22",
+        "layer": "Land line",
+        "type": "LINE"
+      },
+      {
+        "d": "M 685.12,590.10 A 8.34 8.34 0 1 0 701.80,590.10 A 8.34 8.34 0 1 0 685.12,590.10",
+        "layer": "PAVEMENT",
+        "type": "CIRCLE"
+      },
+      {
+        "d": "M 345.03,552.56 L 329.43,530.2",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 446.36,530.3 L 413.29,525.32",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 731.11,658.09 L 660.7,707.18",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 660.94,707.53 L 678.03,732.04",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 431.46,898.93 L 307.36,720.49",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 831.5,588.34 L 831.5,588.34",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 650.44,644.62 L 650.44,644.62",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 668.76,630.68 L 668.74,630.66",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 674.54,626.83 L 674.53,626.81",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 701.56,559.06 A 157.05 157.05 0 0 0 705.28,525.04",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 701.56,559.06 A 15.29 15.29 0 0 0 721.3,576.88",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 611.67,597.19 L 611.72,599.83",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 610.7,597.21 L 610.75,599.85",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 609.29,596.48 L 609.34,599.12",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 607.89,595.87 L 607.94,598.51",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 605.79,594.93 L 605.84,597.6",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 470.6,698.12 L 467.86,730.26",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 469.23,702.66 L 467.56,722.32",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 862.06,553.6 L 862.06,414.27",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 880.13,553.6 L 880.13,417.05",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 832.88,630.66 L 832.88,645.49",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 833.85,630.38 L 833.85,646.46",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 833.85,630.38 A 2.78 2.78 0 0 0 831.07,627.6",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 832.88,630.66 A 2.08 2.08 0 0 0 830.79,628.57",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 937.88,588.34 L 900.98,588.34",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 937.88,588.34 L 937.88,563.32 L 947.61,553.59 L 947.61,546.26 L 950.83,532.58 L 953.86,526.53 L 953.85,367.36 L 896.87,310.38 L 751.79,310.38 L 736.51,318.03 L 715.0,318.03 L 705.27,327.76 L 687.21,327.79 L 677.65,318.06 L 659.01,318.7 L 651.15,318.37 L 637.11,315.94 L 624.85,317.09 L 567.23,344.1 L 234.53,576.03 L 223.77,635.93 L 426.3,927.86 L 747.59,703.88 L 953.87,703.88 L 953.86,628.91 L 950.88,616.39 L 947.61,602.62 L 947.61,595.29 L 942.31,588.34 Z",
+        "layer": "PAVEMENT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 471.53,526.88 A 87.7 87.7 0 0 0 504.95,514.26",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 513.77,507.84 A 87.7 87.7 0 0 0 530.87,488.88",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 538.36,475.13 A 87.7 87.7 0 0 0 545.54,437.18",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 472.86,525.68 A 86.72 86.72 0 0 0 504.31,513.51",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 514.12,506.28 A 86.72 86.72 0 0 0 530.16,488.19",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 537.84,473.86 A 86.72 86.72 0 0 0 544.56,437.22",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 545.54,437.18 A 4.86 4.86 0 0 0 536.44,434.96",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 544.56,437.22 A 3.89 3.89 0 0 0 537.29,435.44",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 456.47,512.21 A 2.78 2.78 0 0 0 452.77,510.69",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 456.12,513.97 A 2.84 2.84 0 0 0 452.2,512.01",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 486.71,494.64 A 2.78 2.78 0 0 0 485.07,495.15",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 487.23,496.05 A 2.78 2.78 0 0 0 485.5,496.55",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 487.99,498.2 A 2.78 2.78 0 0 0 486.08,498.68",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 429.26,520.15 A 57.14 57.14 0 0 0 456.9,515.93",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 428.99,519.21 A 2.78 2.78 0 0 0 429.33,524.64",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 429.25,520.15 A 1.81 1.81 0 0 0 429.47,523.68",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 410.96,521.16 A 2.78 2.78 0 0 0 410.47,521.29",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 395.38,529.65 A 2.78 2.78 0 0 0 393.43,531.9",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 643.57,501.98 A 2.78 2.78 0 0 0 641.65,499.34",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 642.6,502.69 A 2.78 2.78 0 0 0 640.68,500.05",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 381.09,701.5 L 371.6,697.42 L 333.64,705.91",
+        "layer": "PAVEMENT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 515.39,793.44 A 2.78 2.78 0 0 0 517.65,793.02",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 515.73,794.95 A 2.78 2.78 0 0 0 517.93,794.52",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 516.09,796.45 A 2.78 2.78 0 0 0 518.23,796.01",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 568.05,761.28 A 2.78 2.78 0 0 0 571.92,761.97",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 668.86,694.39 A 2.78 2.78 0 0 0 669.39,690.31",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 291.1,630.58 L 306.54,605.65 L 306.68,605.68 L 315.93,607.51 L 318.12,610.78 L 310.34,650.03 L 305.33,651.08 L 291.1,630.58",
+        "layer": "PAVEMENT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 291.9,630.02 L 306.4,606.62 L 306.49,606.63 L 314.79,608.27 L 316.97,611.54 L 309.83,647.59 L 304.82,648.64 L 291.9,630.02",
+        "layer": "PAVEMENT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 309.01,651.7 L 309.0,651.74",
+        "layer": "PAVEMENT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 290.97,628.49 L 306.22,607.02 L 306.52,607.06 L 316.14,608.97",
+        "layer": "V-NODE-TEXT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 290.97,628.49 L 305.9,608.39 L 306.36,608.45 L 316.99,610.55",
+        "layer": "V-NODE-TEXT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 305.56,609.78 A 15.29 15.29 0 0 0 290.97,628.49",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 306.21,609.83 A 2.78 2.78 0 0 0 305.56,609.78",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 305.3,611.94 A 16.71 16.71 0 0 0 290.97,628.49",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 306.23,611.96 A 2.78 2.78 0 0 0 305.3,611.94",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 306.21,609.83 L 316.89,611.95",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 306.23,611.96 L 316.49,614.0",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 605.19,655.76 L 588.15,627.86",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 589.07,624.04 A 159.54 159.54 0 0 0 621.81,597.48",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 589.07,624.04 A 2.78 2.78 0 0 0 588.15,627.86",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 621.59,597.71 A 2.78 2.78 0 0 0 622.46,595.64",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 622.46,595.64 L 622.41,593.0",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 623.15,589.48 A 63.6 63.6 0 0 0 622.41,593.0",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 647.05,525.05 L 647.05,500.99",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 647.05,500.99 L 651.89,494.79",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 651.89,494.79 L 651.88,351.63",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 521.09,608.49 A 2.78 2.78 0 0 0 524.7,609.93",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 430.8,620.39 L 307.46,602.09",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 286.7,633.5 L 298.21,650.09",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 298.21,650.09 A 17.4 17.4 0 0 0 307.13,656.68",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 309.05,659.42 A 2.78 2.78 0 0 0 307.13,656.68",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 497.66,483.61 A 62.23 62.23 0 0 0 515.28,468.68",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 521.08,459.4 A 89.24 89.24 0 0 0 540.18,433.49",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 521.08,459.4 A 53.88 53.88 0 0 0 540.78,437.26",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 542.1,437.55 A 0.69 0.69 0 0 0 540.78,437.26",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 497.66,483.61 A 39.19 39.19 0 0 0 516.53,469.47",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 532.9,433.65 L 517.36,454.66 L 508.35,465.22 L 496.17,477.15 L 484.16,486.89 L 471.36,495.5 L 455.08,504.28 L 443.63,509.19 L 428.84,514.17 L 416.92,517.74",
+        "layer": "V-NODE-TEXT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 533.72,434.25 L 518.16,455.29",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 518.16,455.29 L 509.1,465.91",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 509.1,465.91 L 496.85,477.91",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 496.85,477.91 L 484.77,487.71",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 484.77,487.71 L 471.88,496.37",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 471.88,496.37 L 455.53,505.19",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 455.53,505.19 L 443.99,510.14",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 443.99,510.14 L 429.14,515.14",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 429.14,515.14 L 397.54,525.73",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 394.37,524.68 A 2.78 2.78 0 0 0 397.54,525.73",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 446.19,531.68 A 92.33 92.33 0 0 0 550.09,434.7",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 446.32,530.61 A 91.26 91.26 0 0 0 549.02,434.76",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 563.65,588.88 A 187.08 187.08 0 0 0 640.23,425.24",
+        "layer": "PAVEMENT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 284.77,626.44 L 286.29,632.58",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 286.29,632.58 A 2.78 2.78 0 0 0 286.7,633.5",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 314.0,656.43 L 315.37,656.17",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 350.48,647.72 L 350.76,648.95",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 351.55,646.15 L 351.75,647.02",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 648.18,494.81 L 648.17,351.65",
+        "layer": "PAVEMENT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 323.39,603.42 L 323.15,605.04",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 328.1,604.18 L 327.87,605.74",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 563.03,597.33 L 568.73,606.56 L 530.04,626.39",
+        "layer": "V-NODE-TEXT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 365.97,616.86 L 366.97,637.47",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 365.97,616.86 A 2.78 2.78 0 0 0 363.6,614.25",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 365.03,617.7 L 365.95,636.63",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 373.76,619.15 L 374.68,636.28",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 376.95,616.26 A 2.78 2.78 0 0 0 373.76,619.15",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 374.79,620.29 L 375.58,635.02",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 405.61,622.86 L 406.04,633.83",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 405.61,622.86 A 2.78 2.78 0 0 0 403.25,620.22",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 404.67,623.7 L 405.03,632.91",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 413.87,625.1 L 414.04,633.59",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 417.06,622.3 A 2.78 2.78 0 0 0 413.87,625.1",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 414.87,626.24 L 415.0,632.61",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 462.58,629.38 L 462.0,635.39",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 461.51,630.36 L 461.13,634.34",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 470.34,628.64 L 470.7,636.77",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 471.35,629.53 L 471.64,635.9",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 602.03,561.35 L 622.89,580.15",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 602.11,562.74 L 621.41,580.13",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 606.71,555.25 L 627.35,572.21",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 608.05,555.09 L 627.06,570.71",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 757.13,657.33 L 843.3,657.33",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 758.94,656.35 L 839.55,656.35",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 839.55,656.35 A 2.78 2.78 0 0 0 842.33,653.57",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 758.94,656.35 A 2.78 2.78 0 0 0 756.16,659.13",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 747.21,687.97 L 746.98,679.05",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 746.02,679.37 L 731.11,658.09",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 746.98,679.05 L 732.94,659.01",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 834.98,588.34 L 834.96,623.71",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 835.95,588.34 L 835.94,621.9",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 843.3,592.35 L 843.3,678.52",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 842.33,588.34 L 842.33,653.57",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 475.82,698.97 L 472.91,733.18",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 474.85,698.88 L 472.1,731.17",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 394.73,529.85 L 390.28,559.37",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 393.43,531.9 L 389.32,559.23",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 390.24,534.47 L 386.57,558.82",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 390.24,534.47 A 2.78 2.78 0 0 0 385.9,531.78",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 388.94,536.56 L 385.61,558.67",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 388.94,536.56 A 2.78 2.78 0 0 0 384.6,533.87",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 386.41,526.85 L 348.73,553.12",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 385.48,528.68 L 350.13,553.33",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 385.48,528.68 A 2.78 2.78 0 0 0 386.17,524.81",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 385.9,531.78 L 354.13,553.93",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 384.6,533.87 L 355.52,554.14",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 528.52,613.78 A 219.35 219.35 0 0 0 559.1,596.48",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 544.16,605.74 A 28.64 28.64 0 0 0 559.88,597.63",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 528.52,613.78 A 2.78 2.78 0 0 0 527.15,617.42",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 563.03,597.33 A 2.78 2.78 0 0 0 559.1,596.48",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 563.03,597.33 A 5.04 5.04 0 0 0 559.88,597.63",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 527.26,613.29 A 218.38 218.38 0 0 0 559.38,595.1",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 527.26,613.29 A 2.78 2.78 0 0 0 525.88,616.94",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 563.33,595.95 A 2.78 2.78 0 0 0 559.38,595.1",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 591.58,766.05 L 583.24,754.08",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 598.42,761.28 L 590.08,749.31",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 583.79,754.88 L 591.62,751.53",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 591.62,751.53 L 586.81,759.21",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 365.03,617.7 L 362.67,615.09 L 330.42,610.23",
+        "layer": "PAVEMENT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 363.63,618.05 L 362.46,616.46 L 327.83,611.25",
+        "layer": "PAVEMENT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 365.06,618.26 L 327.26,612.57",
+        "layer": "PAVEMENT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 365.13,619.68 L 326.98,613.93",
+        "layer": "PAVEMENT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 361.22,624.71 L 325.9,619.39",
+        "layer": "PAVEMENT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 361.22,624.71 L 362.05,619.21",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 404.67,623.7 L 402.31,621.06 L 377.98,617.4",
+        "layer": "V-NODE-TEXT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 403.27,624.02 L 402.1,622.43 L 375.4,618.41",
+        "layer": "V-NODE-TEXT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 404.69,624.23 L 374.82,619.73",
+        "layer": "V-NODE-TEXT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 404.75,625.64 L 374.84,621.14",
+        "layer": "V-NODE-TEXT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 771.91,632.75 L 757.59,636.66",
+        "layer": "V-NODE-TEXT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 757.57,638.1 L 772.38,636.78",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 623.31,726.14 A 11.6 11.6 0 0 0 625.5,716.11",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 619.66,728.69 A 12.83 12.83 0 0 0 624.21,716.78",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 622.88,724.75 L 569.15,762.21",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 624.09,721.36 L 567.65,760.71",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 618.83,729.27 L 571.92,761.97",
+        "layer": "V-NODE-TEXT",
+        "type": "LINE"
+      },
+      {
+        "d": "M 461.32,632.35 A 18.42 18.42 0 0 0 448.25,627.07",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 461.14,634.18 A 26.42 26.42 0 0 0 442.87,626.72",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 460.67,635.62 A 36.02 36.02 0 0 0 442.87,626.72",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 456.31,634.85 A 81.34 81.34 0 0 0 414.87,626.24",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 454.46,635.49 A 79.95 79.95 0 0 0 414.95,627.63",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 446.82,636.02 A 18.42 18.42 0 0 0 458.51,633.78",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 642.58,502.37 A 31.46 31.46 0 0 0 635.03,504.99",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 667.57,688.17 A 11.6 11.6 0 0 0 661.75,687.6",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 450.93,526.7 A 59.14 59.14 0 0 0 460.09,524.38",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 456.12,513.97 L 456.9,515.93",
+        "layer": "V-NODE-TEXT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 494.6,496.78 A 16.56 16.56 0 0 0 486.71,494.64",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 498.65,502.18 A 15.17 15.17 0 0 0 487.23,496.05",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 498.65,502.18 A 25.44 25.44 0 0 0 487.99,498.2",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 501.41,515.27 A 28.5 28.5 0 0 0 494.48,499.95",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 499.44,516.38 A 26.42 26.42 0 0 0 490.07,498.57",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 516.53,469.47 L 515.28,468.68",
+        "layer": "V-NODE-TEXT",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 520.95,499.79 A 122.26 122.26 0 0 0 529.04,480.63",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      },
+      {
+        "d": "M 541.19,464.39 A 222.96 222.96 0 0 0 542.1,437.55",
+        "layer": "V-NODE-TEXT",
+        "type": "ARC"
+      }
+    ],
+    "water_features": [
+      {
+        "d": "M 843.3,688.18 L 843.3,687.21 L 833.23,687.21 L 833.23,688.18 Z M 803.85,688.18 L 803.85,687.21 L 794.31,687.21 L 794.31,688.18 Z M 781.62,688.18 L 781.62,687.21 L 774.85,687.21 L 774.85,688.18 Z M 764.94,688.18 L 764.94,687.21 L 757.13,687.21 L 757.13,657.33 L 762.16,657.33 L 762.16,656.35 L 758.94,659.13 L 756.16,659.13 L 756.86,687.49 L 756.86,688.18 Z M 771.89,657.33 L 771.89,656.35 L 764.94,656.35 L 764.94,657.33 Z M 781.62,657.33 L 781.62,656.35 L 774.67,656.35 L 774.67,657.33 Z M 791.34,657.33 L 791.34,656.35 L 784.4,656.35 L 784.4,657.33 Z M 800.43,657.33 L 799.14,656.35 L 794.12,656.35 L 794.12,657.33 Z M 810.8,657.33 L 810.8,656.35 L 803.85,656.35 L 803.85,657.33 Z M 820.53,657.33 L 820.53,656.35 L 813.58,656.35 L 813.58,657.33 Z M 830.26,657.33 L 830.26,656.35 L 823.31,656.35 L 823.31,657.33 Z M 769.99,687.21 L 769.99,688.18 L 772.07,688.18 L 772.07,687.21 Z M 767.21,688.18 L 767.21,687.21 L 764.94,687.21 L 764.94,688.18 Z M 786.67,688.18 L 786.67,687.21 L 781.62,687.21 L 781.62,688.18 Z M 789.45,687.21 L 789.45,688.18 L 791.53,688.18 L 791.53,687.21 Z M 806.12,688.18 L 806.12,687.21 L 803.85,687.21 L 803.85,688.18 Z M 808.9,687.21 L 808.9,688.18 L 810.99,688.18 L 810.99,687.21 Z M 813.77,687.21 L 813.77,688.18 L 823.31,688.18 L 823.31,687.21 Z M 813.77,688.18 L 813.77,687.21 L 813.77,687.21 L 813.77,688.18 Z M 825.58,688.18 L 825.58,687.21 L 823.31,687.21 L 823.31,688.18 Z M 828.36,687.21 L 828.36,688.18 L 830.45,688.18 L 830.45,687.21 L 840.37,687.73 L 829.25,687.63 L 818.0,687.93 L 808.07,687.8 L 799.13,687.86 L 787.56,687.91 L 778.27,687.9 L 768.74,687.89 L 760.74,688.01 L 770.11,656.76 L 779.3,656.85 L 788.53,656.9 L 797.48,657.0 L 800.37,656.94 L 800.35,656.95 L 805.67,656.7 L 818.34,656.74 L 826.98,656.68 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 771.91,632.75 L 757.59,636.66 L 757.57,638.11 L 772.38,636.78 Z M 771.91,632.75 L 771.74,631.38 L 758.99,633.96 L 757.6,635.7 L 757.59,636.66 Z M 818.61,632.74 L 771.91,632.75 L 773.02,642.18 L 818.61,640.51 Z M 793.5,635.0 L 795.1,635.0 Z M 818.61,631.35 L 771.87,631.36 L 771.74,631.38 L 771.91,632.75 L 818.61,632.74 Z M 818.61,629.96 L 781.57,629.97 L 771.87,631.36 L 818.61,631.35 Z M 818.61,628.58 L 805.02,628.58 L 781.57,629.97 L 818.61,629.96 Z M 830.79,628.57 L 820.05,628.57 L 828.59,630.92 L 831.49,635.8 L 831.49,649.66 L 832.88,645.49 L 832.88,630.66 Z M 828.59,630.92 L 820.05,628.57 L 818.61,628.58 L 818.61,629.97 L 826.87,631.61 L 830.1,636.66 L 830.1,651.05 L 831.49,649.66 L 831.49,635.8 Z M 826.87,631.61 L 818.61,629.97 L 818.61,638.07 L 828.01,638.26 L 828.01,652.12 L 830.1,651.05 L 830.1,636.66 Z M 795.38,635.83 L 802.37,641.09 L 803.81,639.18 L 796.82,633.91 L 767.15,636.2 L 766.71,633.17 L 781.52,637.54 L 781.52,637.54 L 791.15,632.19 L 795.7,630.05 L 815.15,629.6 L 829.96,630.14 L 829.7,633.35 L 828.8,636.29 Z",
+        "layer": "0",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 756.45,650.6 L 759.23,653.41 L 826.9,653.41 L 833.85,646.46 L 833.85,630.38 L 831.07,627.6 L 805.02,627.6 L 758.76,633.02 L 756.63,635.69 Z M 757.6,635.7 L 758.99,633.96 L 805.02,628.58 L 818.61,628.58 L 820.05,628.57 L 830.79,628.57 L 832.88,630.66 L 832.88,645.49 L 825.93,652.44 L 759.23,652.44 L 757.43,650.61 Z M 771.91,632.75 L 818.61,632.74 L 818.61,640.51 L 773.02,642.18 Z M 794.01,644.41 L 792.41,644.41 Z M 795.1,635.0 L 793.5,635.0 Z M 794.28,645.23 L 801.28,650.5 L 802.72,648.58 L 795.72,643.32 Z M 819.64,625.54 L 823.42,628.39 L 824.2,627.35 L 820.42,624.51 Z M 795.38,635.83 L 802.37,641.09 L 803.81,639.18 L 796.82,633.91 L 757.03,636.58 L 757.03,636.58 L 757.03,636.58 L 757.03,636.58 L 757.03,636.58 Z",
+        "layer": "0",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 756.45,650.6 L 756.63,635.69 L 758.76,633.02 L 805.02,627.6 L 822.39,627.6 L 819.61,625.51 L 819.4,625.36 L 818.63,625.1 L 818.71,624.84 L 818.51,624.68 L 813.68,624.68 L 813.59,624.69 L 783.68,625.66 L 740.37,635.05 L 741.35,637.98 L 745.01,640.54 L 745.27,650.6 L 742.36,653.45 L 729.15,655.29 L 730.93,657.84 L 732.94,659.01 L 746.98,679.05 L 747.21,687.97 L 750.53,687.72 L 750.53,678.94 L 750.03,677.35 L 735.79,657.02 L 752.69,657.01 L 752.69,687.55 L 756.16,687.28 L 756.16,659.13 L 758.94,656.35 L 762.16,656.35 L 764.94,656.35 L 771.89,656.35 L 774.67,656.35 L 774.67,656.35 L 781.62,656.35 L 784.4,656.35 L 784.4,656.35 L 784.4,656.35 L 791.35,656.35 L 791.35,656.35 L 794.12,656.35 L 801.07,656.35 L 803.85,656.35 L 803.85,656.35 L 803.85,656.35 L 810.8,656.35 L 813.58,656.35 L 813.58,656.35 L 820.53,656.35 L 823.31,656.35 L 830.26,656.35 L 833.04,656.35 L 833.04,657.33 L 843.3,657.33 L 843.3,657.33 L 843.3,634.58 L 842.41,634.58 L 842.41,636.44 L 838.31,636.44 L 835.86,636.45 L 835.71,636.45 L 835.19,636.44 L 833.85,636.44 L 833.85,646.46 L 826.9,653.41 L 759.23,653.41 Z M 794.23,655.57 L 793.43,655.54 L 792.63,655.51 Z M 830.92,654.72 L 831.28,654.72 Z M 833.04,651.03 L 838.21,651.02 L 838.21,651.42 L 838.49,651.55 L 838.22,651.69 L 838.21,651.7 L 838.21,651.98 L 835.62,654.75 L 833.04,654.93 Z M 794.78,655.6 L 803.53,655.92 L 803.62,653.52 L 794.87,653.2 Z M 766.99,622.85 L 773.98,628.12 L 775.42,626.2 L 768.43,620.94 Z M 743.96,628.17 L 750.95,633.44 L 752.39,631.52 L 745.4,626.26 Z M 838.55,651.73 L 840.06,652.83 L 840.36,652.41 L 838.85,651.31 Z M 831.29,654.96 L 832.53,656.5 L 832.95,656.16 L 831.71,654.62 Z M 836.15,654.08 L 837.25,655.66 L 837.86,655.24 L 836.76,653.66 Z M 836.5,645.51 L 837.62,647.11 L 838.23,646.68 L 837.11,645.09 Z M 830.77,656.35 L 831.45,657.33 L 831.93,657.0 L 831.24,656.02 Z M 842.24,652.33 L 843.11,653.58 L 843.58,653.25 L 842.71,652.0 Z M 749.26,643.29 L 753.09,648.79 L 754.46,647.84 L 750.63,642.33 Z M 838.41,612.66 L 837.65,621.38 L 840.03,621.59 L 840.8,612.87 Z M 794.28,645.23 L 801.28,650.5 L 802.72,648.58 L 795.72,643.32 Z M 819.64,625.54 L 823.42,628.39 L 824.2,627.35 L 820.42,624.51 Z M 795.38,635.83 L 802.37,641.09 L 803.81,639.18 L 796.82,633.91 Z M 835.89,636.45 L 838.73,636.44 L 838.73,635.67 L 835.89,635.67 L 753.08,652.54 L 753.08,652.54 L 753.08,652.54 L 753.08,652.54 L 834.17,653.17 L 834.17,653.17 L 834.17,653.17 L 834.17,653.17 L 834.17,653.17 L 834.17,653.17 L 834.17,653.17 L 834.17,653.17 L 834.17,653.17 Z",
+        "layer": "0",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 834.97,605.78 L 831.49,605.78 L 831.49,615.37 L 821.91,615.37 L 821.77,623.71 L 823.44,623.71 L 823.44,623.72 L 826.23,623.71 L 834.96,623.71 Z M 825.58,618.94 L 826.44,618.94 Z M 821.35,615.37 L 811.77,615.37 L 812.08,605.47 L 808.61,605.36 L 808.03,623.71 L 808.0,624.03 L 817.87,623.71 L 820.65,623.71 L 821.22,623.71 Z M 813.08,618.6 L 812.21,618.6 L 833.32,618.79 L 833.32,618.79 L 815.88,616.55 L 815.88,616.55 Z",
+        "layer": "0",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 812.44,593.9 L 821.69,593.9 L 821.78,588.34 L 817.88,588.34 L 809.14,588.34 L 808.63,604.53 L 812.11,604.64 Z M 811.94,590.56 L 812.95,590.56 Z M 834.97,588.34 L 826.24,588.34 L 822.34,588.34 L 822.25,593.9 L 831.5,593.9 L 831.49,604.95 L 834.97,604.95 Z M 825.64,591.12 L 826.64,591.12 Z M 813.28,590.71 L 818.73,591.61 L 818.97,590.12 L 813.53,589.22 Z M 826.98,591.27 L 832.42,592.17 L 832.67,590.68 L 827.23,589.78 L 810.53,599.15 L 810.53,599.15 L 833.31,598.37 L 833.31,598.37 Z",
+        "layer": "0",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 867.62,605.98 L 873.18,605.97 L 873.18,598.07 L 871.32,592.35 L 859.63,592.35 L 859.64,596.52 L 867.62,596.52 Z M 870.07,599.14 L 869.35,599.14 Z M 869.73,599.74 L 869.88,603.64 L 870.95,603.6 L 870.8,599.7 L 869.86,597.94 L 869.86,597.94 Z",
+        "layer": "0",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 829.68,681.65 L 829.68,687.21 L 830.45,687.21 L 838.44,687.21 L 843.3,687.21 L 843.3,673.66 L 839.13,673.66 L 839.13,681.65 L 839.13,681.65 L 839.13,681.65 L 839.13,681.65 Z M 833.19,684.86 L 833.53,684.87 L 833.55,684.53 Z M 834.11,684.9 L 837.87,685.03 L 837.9,684.0 L 834.15,683.87 L 839.95,683.44 L 839.95,683.44 Z",
+        "layer": "0",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 761.3,673.66 L 757.13,673.66 L 757.14,687.21 L 762.16,687.21 L 764.94,687.21 L 764.94,688.18 L 767.21,688.18 L 771.89,688.18 L 771.89,687.21 L 769.99,687.21 L 769.99,687.21 L 770.76,687.21 L 770.76,681.65 L 761.3,681.65 L 761.3,681.65 L 761.3,681.65 Z M 763.56,684.57 L 763.22,684.56 L 763.21,684.9 Z M 771.31,681.65 L 771.31,687.21 L 771.89,687.21 L 780.48,687.21 L 780.48,681.65 Z M 773.44,684.66 L 773.78,684.67 L 773.79,684.33 Z M 781.04,681.65 L 781.04,687.21 L 781.62,687.21 L 784.4,687.21 L 784.4,687.21 L 786.67,687.21 L 789.45,687.21 L 790.21,687.21 L 790.21,681.65 Z M 782.96,684.61 L 783.31,684.62 L 783.32,684.27 Z M 790.77,681.65 L 790.77,687.21 L 791.35,687.21 L 799.94,687.21 L 799.94,681.65 Z M 793.04,684.56 L 793.39,684.57 L 793.4,684.23 Z M 800.5,681.65 L 800.5,687.21 L 801.07,687.21 L 806.12,687.21 L 809.67,687.21 L 809.67,681.65 Z M 803.11,684.67 L 803.46,684.68 L 803.47,684.33 Z M 810.23,681.65 L 810.23,687.21 L 810.8,687.21 L 813.77,687.21 L 819.4,687.21 L 819.4,681.65 Z M 813.59,684.69 L 813.24,684.68 L 813.23,685.03 Z M 819.95,681.65 L 819.95,687.21 L 820.53,687.21 L 823.31,687.21 L 825.58,687.21 L 829.13,687.21 L 829.13,681.65 Z M 822.37,685.0 L 822.03,684.98 L 822.01,685.33 Z M 763.8,684.58 L 767.55,684.71 L 767.59,683.68 L 763.84,683.55 Z M 768.05,687.37 L 768.73,688.35 L 769.2,688.03 L 768.52,687.04 Z M 774.36,684.69 L 778.12,684.82 L 778.15,683.8 L 774.4,683.67 Z M 783.89,684.64 L 787.64,684.77 L 787.68,683.74 L 783.92,683.62 Z M 793.97,684.59 L 797.72,684.72 L 797.76,683.69 L 794.0,683.57 Z M 804.04,684.7 L 807.79,684.83 L 807.83,683.8 L 804.07,683.67 Z M 813.82,684.71 L 817.58,684.84 L 817.61,683.81 L 813.86,683.68 Z M 822.61,685.01 L 826.36,685.14 L 826.39,684.11 L 822.64,683.98 Z M 834.11,684.9 L 837.87,685.03 L 837.9,684.0 L 834.15,683.87 Z M 832.36,673.44 L 838.22,673.64 L 838.28,672.03 L 832.42,671.83 L 759.65,678.53 L 759.65,678.53 L 777.31,683.27 L 777.31,683.27 L 786.09,683.18 L 786.09,683.18 L 795.58,682.83 L 795.58,682.83 L 808.58,682.39 L 808.58,682.39 L 814.3,682.21 L 814.3,682.21 L 823.17,682.83 L 823.17,682.83 Z",
+        "layer": "0",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 871.15,679.55 L 843.3,679.55 L 843.3,687.21 L 857.83,687.21 L 858.09,683.2 Z",
+        "layer": "0",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 813.68,624.68 A 2.78 2.78 0 0 0 813.59,624.69",
+        "layer": "0",
+        "type": "ARC"
+      },
+      {
+        "d": "M 825.93,652.44 L 828.01,652.12 L 828.01,638.26 L 818.61,638.07 L 818.61,640.51 L 773.02,642.18 L 772.38,636.78 L 757.57,638.11 L 757.43,650.61 L 759.23,652.44 Z M 792.41,644.41 L 794.01,644.41 Z M 794.28,645.23 L 801.28,650.5 L 802.72,648.58 L 795.72,643.32 L 786.51,647.8 L 786.51,647.8 Z",
+        "layer": "0",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 770.75,657.33 L 764.94,657.33 L 764.94,656.35 L 762.16,656.35 L 762.16,657.33 L 757.13,657.33 L 757.13,673.66 L 761.3,673.66 L 761.3,665.67 L 770.75,665.67 Z M 760.39,662.65 L 760.92,662.66 L 760.94,662.13 Z M 780.48,657.33 L 774.67,657.33 L 774.67,656.35 L 771.89,656.35 L 771.89,657.33 L 771.31,657.33 L 771.31,665.67 L 780.48,665.67 Z M 772.39,662.12 L 772.92,662.14 L 772.94,661.61 Z M 790.21,657.33 L 784.4,657.33 L 784.4,656.35 L 781.62,656.35 L 781.62,657.33 L 781.04,657.33 L 781.04,665.67 L 790.21,665.67 Z M 782.1,662.1 L 782.63,662.12 L 782.65,661.59 Z M 799.94,657.33 L 796.54,657.33 L 794.12,657.33 L 794.12,656.35 L 791.35,656.35 L 791.35,657.33 L 790.77,657.33 L 790.77,665.67 L 799.94,665.67 Z M 791.65,662.43 L 792.18,662.45 L 792.2,661.92 Z M 809.67,657.33 L 803.85,657.33 L 803.85,656.35 L 801.07,656.35 L 801.07,657.33 L 801.07,657.33 L 801.07,656.35 L 796.52,656.35 L 796.54,657.33 L 800.43,657.33 L 800.43,657.33 L 796.54,657.33 L 796.54,657.33 L 796.54,657.33 L 796.52,656.35 L 794.13,656.35 L 794.13,657.33 L 794.12,657.33 L 794.12,656.35 L 791.35,656.35 L 791.35,657.33 L 790.77,657.33 L 790.77,665.67 L 800.22,665.67 L 809.67,665.67 Z M 801.7,662.42 L 802.24,662.44 L 802.26,661.9 Z M 819.4,657.33 L 813.58,657.33 L 813.58,656.35 L 810.8,656.35 L 810.8,657.33 L 810.22,657.33 L 810.22,665.67 L 819.4,665.67 Z M 810.97,662.12 L 811.51,662.14 L 811.53,661.6 Z M 829.12,657.33 L 823.31,657.33 L 823.31,656.35 L 820.53,656.35 L 820.53,657.33 L 819.95,657.33 L 819.95,665.67 L 829.12,665.67 Z M 821.42,661.74 L 821.96,661.76 L 821.98,661.23 Z M 833.04,657.33 L 830.26,657.33 L 830.26,657.33 L 829.68,657.33 L 829.68,665.67 L 839.13,665.67 L 839.13,673.66 L 842.48,673.66 L 842.48,673.49 L 843.3,673.49 L 843.3,657.33 Z M 833.65,661.53 L 833.11,661.51 L 833.09,662.05 Z M 761.83,662.7 L 767.69,662.9 L 767.74,661.3 L 761.88,661.1 Z M 773.83,662.18 L 779.69,662.38 L 779.74,660.78 L 773.88,660.58 Z M 783.54,662.16 L 789.4,662.36 L 789.45,660.76 L 783.59,660.56 Z M 793.09,662.49 L 798.95,662.69 L 799.0,661.09 L 793.14,660.89 Z M 803.14,662.48 L 809.0,662.68 L 809.06,661.07 L 803.2,660.87 Z M 812.42,662.18 L 818.27,662.38 L 818.33,660.78 L 812.47,660.57 Z M 822.86,661.8 L 828.72,662.0 L 828.78,660.4 L 822.92,660.2 Z M 834.02,661.55 L 839.88,661.75 L 839.93,660.15 L 834.07,659.94 L 768.01,659.1 L 768.01,659.1 L 779.4,659.46 L 779.4,659.46 L 786.7,659.55 L 786.7,659.55 L 795.51,659.73 L 795.51,659.73 L 806.01,659.73 L 806.01,659.73 L 815.8,659.55 L 815.8,659.55 L 824.43,659.55 L 824.43,659.55 L 832.44,659.1 L 832.44,659.1 Z",
+        "layer": "0",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 824.04,632.02 L 818.61,631.36 L 818.61,638.07 L 828.01,638.26 L 828.01,637.35 L 823.09,634.53 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 821.91,615.37 L 821.35,615.37 L 821.22,623.71 L 821.77,623.71 Z M 822.34,588.34 L 821.78,588.34 L 821.69,593.9 L 822.25,593.9 L 821.43,619.73 L 821.96,592.56 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 752.69,657.01 L 735.79,657.02 L 750.03,677.35 L 750.53,678.94 L 750.53,687.72 L 752.69,687.55 L 750.61,671.25 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 794.12,657.33 L 794.12,656.35 L 791.35,656.35 L 791.35,657.33 L 790.77,657.33 L 790.77,665.67 L 799.94,665.67 L 799.94,657.33 L 796.54,657.33 Z M 792.72,662.47 L 792.18,662.45 L 792.17,662.99 Z M 793.09,662.49 L 798.95,662.69 L 799.0,661.09 L 793.14,660.89 L 793.55,659.55 L 793.55,659.55 Z",
+        "layer": "0",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 842.45,657.13 L 839.39,653.19 L 839.55,656.35 L 833.04,656.35 L 833.04,657.15 L 841.36,656.68 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 771.31,681.65 L 771.03,681.65 L 770.75,681.65 L 770.75,687.21 L 771.31,687.21 Z M 771.31,657.33 L 770.75,657.33 L 770.75,665.67 L 771.03,665.67 L 771.31,665.67 Z M 781.04,657.33 L 780.48,657.33 L 780.48,665.67 L 780.76,665.67 L 781.04,665.67 Z M 781.04,681.65 L 780.76,681.65 L 780.48,681.65 L 780.48,687.21 L 781.04,687.21 Z M 790.77,681.65 L 790.49,681.65 L 790.21,681.65 L 790.21,687.21 L 790.77,687.21 Z M 790.77,657.33 L 790.21,657.33 L 790.21,665.67 L 790.77,665.67 Z M 800.5,681.65 L 800.22,681.65 L 799.94,681.65 L 799.94,687.21 L 800.5,687.21 Z M 800.49,657.37 L 800.43,657.33 L 799.94,657.33 L 799.94,665.67 L 800.22,665.67 L 800.49,665.67 Z M 810.22,681.65 L 809.95,681.65 L 809.67,681.65 L 809.67,687.21 L 810.22,687.21 Z M 810.22,657.33 L 809.67,657.33 L 809.67,665.67 L 809.95,665.67 L 810.22,665.67 Z M 819.95,681.65 L 819.67,681.65 L 819.4,681.65 L 819.4,687.21 L 819.95,687.21 Z M 829.68,681.65 L 829.4,681.65 L 829.13,681.65 L 829.13,687.21 L 829.68,687.21 Z M 819.95,657.33 L 819.4,657.33 L 819.4,665.67 L 819.67,665.67 L 819.95,665.67 Z M 829.68,657.33 L 829.12,657.33 L 829.12,665.67 L 829.68,665.67 L 771.14,684.31 L 770.94,661.47 L 780.59,663.44 L 780.71,683.1 L 790.4,683.68 L 790.52,662.18 L 800.26,684.19 L 800.11,661.87 L 809.84,683.23 L 810.02,662.6 L 819.69,684.96 L 829.22,684.58 L 819.69,663.22 L 829.44,663.54 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 756.16,687.49 A 0.69 0.69 0 0 0 756.86,688.18",
+        "layer": "sec line",
+        "type": "ARC"
+      },
+      {
+        "d": "M 843.32,605.97 L 843.33,606.53 L 851.66,606.51 L 851.66,605.95 L 870.42,664.46 L 847.58,664.71 L 849.53,655.05 L 869.19,654.89 L 869.75,645.2 L 848.25,645.12 L 870.24,635.34 L 847.92,635.53 L 869.26,625.76 L 848.63,625.62 L 870.98,615.91 L 870.58,606.38 L 849.23,615.95 L 849.53,606.2 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 843.34,615.7 L 843.34,616.25 L 851.68,616.24 L 851.68,615.96 L 851.68,615.68 L 870.42,664.46 L 847.58,664.71 L 849.53,655.05 L 869.19,654.89 L 869.75,645.2 L 848.25,645.12 L 870.24,635.34 L 847.92,635.53 L 869.26,625.76 L 848.63,625.62 L 870.98,615.91 L 870.58,606.38 L 849.23,615.95 L 849.53,606.2 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 843.36,625.43 L 843.36,625.98 L 851.7,625.97 L 851.7,625.69 L 851.7,625.41 L 870.42,664.46 L 847.58,664.71 L 849.53,655.05 L 869.19,654.89 L 869.75,645.2 L 848.25,645.12 L 870.24,635.34 L 847.92,635.53 L 869.26,625.76 L 848.63,625.62 L 870.98,615.91 L 870.58,606.38 L 849.23,615.95 L 849.53,606.2 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 843.43,635.16 L 843.38,635.22 L 843.38,635.71 L 851.72,635.7 L 851.72,635.42 L 851.72,635.14 L 870.42,664.46 L 847.58,664.71 L 849.53,655.05 L 869.19,654.89 L 869.75,645.2 L 848.25,645.12 L 870.24,635.34 L 847.92,635.53 L 869.26,625.76 L 848.63,625.62 L 870.98,615.91 L 870.58,606.38 L 849.23,615.95 L 849.53,606.2 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 843.4,644.89 L 843.4,645.44 L 851.74,645.43 L 851.74,644.87 L 870.42,664.46 L 847.58,664.71 L 849.53,655.05 L 869.19,654.89 L 869.75,645.2 L 848.25,645.12 L 870.24,635.34 L 847.92,635.53 L 869.26,625.76 L 848.63,625.62 L 870.98,615.91 L 870.58,606.38 L 849.23,615.95 L 849.53,606.2 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 843.42,654.61 L 843.42,655.17 L 851.76,655.15 L 851.76,654.88 L 851.75,654.6 L 870.42,664.46 L 847.58,664.71 L 849.53,655.05 L 869.19,654.89 L 869.75,645.2 L 848.25,645.12 L 870.24,635.34 L 847.92,635.53 L 869.26,625.76 L 848.63,625.62 L 870.98,615.91 L 870.58,606.38 L 849.23,615.95 L 849.53,606.2 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 843.43,664.34 L 843.44,664.9 L 851.77,664.88 L 851.77,664.6 L 851.77,664.33 L 870.42,664.46 L 847.58,664.71 L 849.53,655.05 L 869.19,654.89 L 869.75,645.2 L 848.25,645.12 L 870.24,635.34 L 847.92,635.53 L 869.26,625.76 L 848.63,625.62 L 870.98,615.91 L 870.58,606.38 L 849.23,615.95 L 849.53,606.2 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 843.3,591.38 L 843.3,592.35 L 871.32,592.35 L 871.77,591.45 L 871.46,591.38 L 848.52,591.77 Z",
+        "layer": "sec line",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 767.21,687.21 L 769.99,687.21 L 769.99,688.93 L 767.21,688.93 Z",
+        "layer": "0",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 772.07,687.21 L 774.84,687.21 L 774.84,688.93 L 772.07,688.93 Z",
+        "layer": "0",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 786.67,687.21 L 789.45,687.21 L 789.45,688.56 L 786.67,688.56 Z",
+        "layer": "0",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 791.53,687.21 L 794.31,687.21 L 794.31,688.56 L 791.53,688.56 Z",
+        "layer": "0",
+        "type": "LWPOLYLINE"
+      },
+      {
+        "d": "M 541.19,464.39 L 542.1,437.55 L 540.78,437.26 L 521.08,459.4 L 520.83,459.71 L 521.14,463.53 L 533.55,474.6 L 537.84,473.86 L 530.55,460.4 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 634.46,499.9 L 636.73,498.76 L 640.68,500.05 L 642.6,502.69 L 642.6,510.39 L 643.57,511.12 L 643.57,501.98 L 641.65,499.34 L 637.04,497.84 L 633.54,499.59 L 606.25,551.44 L 606.71,555.25 L 627.35,572.21 L 631.54,571.41 L 638.55,555.6 L 637.73,554.98 L 631.27,569.88 L 627.06,570.71 L 608.05,555.09 L 607.58,551.29 Z M 637.73,554.98 L 638.55,555.6 L 641.92,542.74 L 641.05,542.08 Z M 641.05,542.08 L 641.92,542.74 L 642.99,535.59 L 642.09,534.9 Z M 643.57,525.05 L 643.57,511.12 L 642.6,510.39 L 642.6,525.05 L 642.09,534.9 L 642.99,535.59 Z M 623.22,583.94 L 622.89,580.15 L 602.03,561.35 L 598.07,561.6 L 569.51,588.29 L 568.82,591.98 L 585.04,618.17 L 588.89,619.06 L 610.59,602.46 L 611.72,599.83 L 611.67,597.19 L 612.35,595.61 Z M 611.7,594.89 L 610.7,597.21 L 610.75,599.85 L 609.93,601.75 L 589.22,617.7 L 585.35,616.82 L 570.11,592.22 L 570.79,588.54 L 598.16,562.97 L 602.11,562.74 L 621.56,580.27 L 621.87,584.07 Z M 611.39,591.83 L 610.47,590.52 Z M 598.07,589.04 L 597.15,587.73 Z M 598.49,609.58 L 597.58,608.26 Z M 578.95,621.51 L 563.33,595.95 L 559.38,595.1 L 527.26,613.29 L 525.88,616.94 L 530.04,626.39 L 530.91,625.94 L 527.15,617.42 L 528.52,613.78 L 559.1,596.48 L 563.01,597.31 L 568.73,606.56 L 568.69,606.59 L 577.58,621.13 L 576.48,625.05 L 538.93,638.59 L 535.79,637.0 L 530.91,625.94 L 530.04,626.39 L 535.22,638.12 L 538.34,639.71 L 577.87,625.42 Z M 508.44,622.33 L 505.03,620.28 L 472.89,625.74 L 470.34,628.64 L 470.7,636.77 L 473.14,639.4 L 480.57,640.39 L 509.77,642.42 L 512.4,638.99 Z M 511.18,638.05 L 508.52,641.47 L 480.72,639.43 L 474.07,638.54 L 471.64,635.9 L 471.35,629.53 L 473.89,626.64 L 504.33,621.47 L 507.72,623.52 Z M 483.63,631.98 L 482.72,630.66 Z M 462.0,635.39 L 462.58,629.38 L 459.78,626.34 L 430.17,624.27 L 417.06,622.3 L 413.87,625.1 L 414.04,633.59 L 416.86,636.32 L 458.99,637.9 Z M 458.12,636.85 L 417.81,635.33 L 415.0,632.61 L 414.87,626.24 L 418.06,623.43 L 430.03,625.24 L 458.73,627.32 L 461.51,630.36 L 461.13,634.34 Z M 431.06,629.65 L 430.14,628.33 Z M 612.0,592.0 L 619.0,597.26 L 620.44,595.35 L 613.45,590.08 Z M 599.11,609.74 L 606.1,615.01 L 607.54,613.09 L 600.55,607.83 Z M 598.68,589.21 L 605.68,594.47 L 607.12,592.56 L 600.12,587.29 Z M 558.77,633.11 L 561.85,640.99 L 565.67,639.49 L 562.6,631.62 Z M 568.5,628.63 L 575.5,633.89 L 576.94,631.98 L 569.94,626.71 Z M 484.25,632.14 L 491.24,637.41 L 492.68,635.49 L 485.69,630.23 Z M 434.65,618.2 L 433.6,626.59 L 437.67,627.1 L 438.72,618.71 Z M 431.67,629.81 L 438.67,635.07 L 440.11,633.16 L 433.11,627.89 L 619.29,532.65 L 640.04,548.71 L 642.16,536.87 L 642.98,530.96 L 622.1,584.29 L 622.1,584.29 L 622.1,584.29 L 622.1,584.29 L 622.1,584.29 L 578.65,623.72 L 511.38,635.61 L 511.38,635.61 L 511.38,635.61 L 461.02,636.19 L 461.02,636.19 L 461.02,636.19 L 405.21,634.94 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 544.16,605.74 L 559.88,597.63 L 563.03,597.33 L 559.1,596.48 Z M 568.69,606.59 L 563.03,597.33 L 559.88,597.63 L 544.16,605.74 L 528.52,613.78 L 527.15,617.42 L 530.91,625.94 L 553.42,601.19 L 548.24,611.62 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 530.91,625.94 L 535.79,637.0 L 538.93,638.59 L 542.92,637.66 L 543.55,637.5 L 554.17,634.41 L 577.3,620.69 L 568.69,606.59 Z M 550.34,620.46 L 551.94,620.46 Z M 552.21,621.28 L 559.21,626.55 L 560.65,624.63 L 553.65,619.37 L 561.46,618.38 L 561.46,618.38 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 794.94,653.19 L 794.3,652.71 L 793.82,653.35 L 756.87,648.48 L 808.05,627.96 L 831.58,650.41 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 818.61,628.57 L 818.61,627.6 L 805.02,627.6 L 771.63,630.41 L 771.74,631.38 L 805.02,628.58 L 808.09,628.19 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 670.29,694.57 L 670.82,690.49 L 665.92,684.72 L 662.07,684.35 L 632.51,704.6 L 631.67,708.63 L 636.28,714.97 L 640.12,715.61 Z M 640.34,714.27 L 636.51,713.62 L 633.08,708.93 L 633.92,704.9 L 660.38,686.91 L 661.84,685.72 L 665.76,686.04 L 669.39,690.31 L 668.86,694.39 Z M 646.5,698.03 L 648.1,698.03 Z M 720.1,659.85 L 742.36,653.45 L 745.27,650.6 L 745.01,640.54 L 741.35,637.98 L 675.19,675.2 L 674.73,678.95 L 679.14,685.07 L 682.99,685.73 Z M 683.22,684.38 L 679.37,683.72 L 676.05,679.11 L 676.52,675.36 L 741.66,638.9 L 744.04,640.57 L 744.3,650.63 L 742.9,652.44 L 740.61,652.44 L 719.55,659.05 Z M 709.16,655.4 L 710.77,655.4 Z M 711.04,656.22 L 718.03,661.49 L 719.48,659.57 L 712.48,654.31 L 653.86,705.33 L 653.86,705.33 L 653.86,705.33 L 698.52,674.22 L 698.52,674.22 L 698.52,674.22 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 744.17,645.6 L 744.04,640.57 L 741.66,638.9 L 676.52,675.36 L 675.81,678.7 L 709.18,655.55 L 709.16,655.4 L 710.6,654.91 L 728.37,647.41 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 740.55,650.04 L 742.91,650.66 L 758.43,762.2 L 712.33,657.18 L 717.09,660.76 L 740.61,689.27 L 740.61,652.44 L 704.06,664.66 L 720.61,654.72 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 711.06,656.23 L 710.98,656.16 L 710.6,655.88 L 709.18,655.55 L 675.81,678.7 L 676.05,679.11 L 676.6,679.87 Z M 712.41,657.24 L 711.06,656.23 L 676.6,679.87 Z M 744.21,646.99 L 744.17,645.6 L 710.6,654.91 L 710.77,655.4 L 710.6,655.88 L 710.98,656.16 L 711.06,656.23 Z M 742.86,648.57 L 742.91,650.66 L 741.03,652.44 L 742.9,652.44 L 744.3,650.63 L 744.21,646.99 L 711.06,656.23 L 712.41,657.24 Z M 711.04,656.22 L 718.03,661.49 L 719.48,659.57 L 712.48,654.31 L 704.0,658.8 L 707.8,658.86 L 721.27,651.53 L 722.73,652.47 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 717.09,660.76 L 712.41,657.24 L 676.6,679.87 L 679.37,683.72 L 683.22,684.38 L 693.94,674.04 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 636.93,491.02 L 646.09,493.62 L 646.09,481.81 L 645.71,481.13 L 646.09,480.45 L 646.09,475.29 L 640.66,475.29 Z M 640.66,475.29 L 646.09,475.29 L 646.09,472.35 L 645.17,471.65 L 644.8,471.37 L 643.36,470.89 L 644.96,470.89 L 644.8,471.37 L 645.17,471.65 L 646.09,472.35 L 646.09,456.03 L 644.78,455.42 L 646.06,454.78 L 646.09,454.73 L 646.09,430.91 L 644.73,430.34 L 645.53,429.54 L 643.99,429.47 L 643.99,440.25 Z M 646.09,406.6 L 645.29,405.8 L 646.09,405.0 L 646.09,401.27 L 643.99,401.27 L 643.99,421.15 L 643.99,425.3 L 646.09,425.3 Z M 646.09,381.92 L 645.31,381.33 L 644.93,381.05 L 643.99,381.31 L 643.99,397.1 L 646.09,397.1 Z M 646.09,371.52 L 643.99,371.52 L 643.99,379.83 L 645.09,380.57 L 644.93,381.05 L 645.31,381.33 L 646.09,381.92 Z M 643.99,367.35 L 646.09,367.35 L 646.09,354.78 L 644.71,353.74 L 643.99,353.74 Z M 636.45,439.45 L 643.45,444.71 L 644.89,442.8 L 637.89,437.53 L 642.06,478.49 L 642.56,465.11 L 645.29,409.95 L 645.22,391.48 L 645.13,374.62 L 644.81,363.64 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 454.46,635.49 L 456.31,634.85 L 414.87,626.24 L 414.89,627.63 L 430.38,628.22 L 431.02,628.31 Z M 456.31,634.85 L 458.51,633.78 L 442.87,626.72 L 430.03,625.24 L 418.06,623.43 L 414.87,626.24 Z M 458.12,636.85 L 460.67,635.62 L 458.51,633.78 L 449.65,636.2 Z M 460.67,635.62 L 461.13,634.34 L 461.14,634.18 L 446.35,626.97 L 442.87,626.72 Z M 450.26,627.17 L 446.35,626.97 L 461.14,634.18 L 461.32,632.35 Z M 461.32,632.35 L 461.51,630.36 L 458.73,627.32 L 450.26,627.17 Z M 433.1,626.53 L 434.15,618.14 L 430.07,617.63 L 429.02,626.02 L 447.16,631.77 L 449.29,631.0 L 456.66,635.95 L 457.02,631.86 L 458.46,630.59 L 459.73,629.35 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 508.03,624.8 L 507.72,623.52 L 507.71,623.45 L 471.35,629.62 L 471.42,631.01 Z M 506.37,623.81 L 504.68,622.81 L 471.62,628.21 L 471.35,629.53 L 471.35,629.62 Z M 504.68,622.81 L 506.37,623.81 L 507.71,623.45 L 504.33,621.47 L 473.89,626.64 L 471.62,628.21 L 488.73,628.29 L 489.25,626.92 L 489.27,625.51 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 508.03,624.8 L 506.37,634.49 L 499.01,773.67 L 431.16,982.1 L 474.41,635.78 L 471.64,635.9 L 457.89,440.25 Z M 484.25,632.14 L 491.24,637.41 L 492.68,635.49 L 485.69,630.23 L 503.72,635.34 L 503.72,635.34 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 600.77,562.07 L 598.16,562.97 L 581.39,579.84 L 595.0,568.0 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 584.26,615.07 L 604.9,599.73 L 605.84,597.6 L 605.79,594.93 L 606.75,592.78 L 619.85,578.73 L 602.11,562.74 L 600.77,562.07 L 581.39,579.84 L 570.79,588.54 L 570.11,592.22 Z M 596.81,588.39 L 598.41,588.39 Z M 598.68,589.21 L 605.68,594.47 L 607.12,592.56 L 600.12,587.29 L 588.23,595.27 L 588.23,595.27 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 636.78,554.26 L 637.73,554.98 L 642.09,534.9 L 640.63,533.81 Z M 631.27,569.88 L 637.73,554.98 L 636.78,554.26 Z M 642.6,525.05 L 642.6,510.39 L 641.96,509.9 L 641.58,509.62 L 641.21,509.9 L 641.21,525.05 L 640.63,533.81 L 642.09,534.9 Z M 607.58,551.29 L 635.03,504.99 L 642.58,502.37 L 640.68,500.05 L 636.73,498.76 L 634.46,499.9 Z M 641.21,508.39 L 641.74,509.14 L 641.58,509.62 L 641.96,509.9 L 642.6,510.39 L 642.6,502.69 L 642.58,502.37 L 641.21,502.69 L 640.62,538.92 L 636.51,556.86 L 641.94,527.03 L 636.05,501.73 L 641.73,506.61 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 406.04,633.83 L 405.61,622.86 L 403.25,620.22 L 376.95,616.26 L 373.76,619.15 L 374.68,636.28 L 377.78,638.89 L 385.51,638.05 L 385.65,637.92 L 386.59,637.94 L 403.41,636.72 Z M 402.39,635.79 L 378.65,637.63 L 375.58,635.02 L 374.79,620.29 L 377.98,617.4 L 402.31,621.06 L 404.67,623.7 L 405.03,632.91 Z M 387.31,623.02 L 387.2,623.11 L 386.29,621.79 L 387.39,622.93 L 387.55,623.05 Z M 366.97,637.47 L 365.97,616.86 L 363.6,614.25 L 329.65,609.13 L 326.51,611.34 L 319.8,645.15 L 323.2,648.39 L 364.58,640.36 Z M 363.57,639.52 L 324.44,647.08 L 321.06,643.84 L 327.28,612.44 L 330.42,610.23 L 362.67,615.09 L 365.03,617.7 L 365.95,636.63 Z M 340.65,628.94 L 339.73,627.62 Z M 304.82,648.64 L 291.9,630.02 L 290.97,628.49 L 291.1,630.58 L 305.33,651.08 L 310.34,650.03 L 318.12,610.78 L 315.93,607.51 L 306.68,605.68 L 306.54,605.65 L 291.1,630.58 L 289.33,619.72 L 306.4,606.62 L 306.49,606.63 L 314.79,608.27 L 316.97,611.54 L 309.83,647.59 Z M 551.19,738.77 L 567.8,762.63 L 571.67,763.32 L 583.79,754.88 L 583.24,754.08 L 571.92,761.97 L 568.05,761.28 L 552.84,739.44 L 554.58,735.13 L 620.06,712.5 L 623.59,713.39 L 627.9,719.54 L 627.22,723.42 L 590.08,749.31 L 590.63,750.11 L 628.57,723.66 L 629.26,719.79 L 623.9,712.14 L 620.36,711.26 L 552.95,734.45 Z M 341.26,629.1 L 348.26,634.37 L 349.7,632.45 L 342.7,627.19 Z M 590.24,737.58 L 597.23,742.84 L 598.68,740.93 L 591.68,735.66 Z M 595.12,734.64 L 599.96,741.58 L 603.33,739.23 L 598.49,732.3 L 404.71,635.61 L 404.71,635.61 L 404.71,635.61 L 365.44,638.93 L 365.44,638.93 L 365.44,638.93 L 308.04,650.87 L 551.5,736.85 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 404.75,625.64 L 404.69,624.23 L 374.82,619.73 L 374.79,620.29 L 374.84,621.14 Z M 403.27,624.02 L 402.1,622.43 L 375.4,618.41 L 374.82,619.73 Z M 402.1,622.43 L 403.27,624.02 L 404.69,624.23 L 404.67,623.7 L 402.31,621.06 L 377.98,617.4 L 375.4,618.41 L 394.34,623.58 L 394.86,622.15 L 396.5,620.92 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 363.57,639.52 L 365.94,637.08 L 324.44,647.08 Z M 361.22,624.71 L 362.05,619.21 L 326.98,613.93 L 325.9,619.39 Z M 365.13,619.68 L 365.06,618.26 L 327.26,612.57 L 326.98,613.93 Z M 363.63,618.05 L 362.46,616.46 L 327.83,611.25 L 327.28,612.44 L 327.26,612.57 Z M 362.46,616.46 L 363.63,618.05 L 365.06,618.26 L 365.03,617.7 L 362.67,615.09 L 330.42,610.23 L 327.83,611.25 L 355.71,640.33 L 348.68,621.59 L 348.47,616.15 L 349.14,615.25 L 350.58,614.24 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 597.23,608.92 L 598.83,608.92 L 598.72,609.32 L 608.43,601.24 L 609.34,599.12 L 609.29,596.48 L 610.22,594.35 L 612.43,592.31 L 611.94,591.94 L 611.57,591.66 L 610.13,591.18 L 611.73,591.18 L 611.57,591.66 L 611.94,591.94 L 613.56,593.15 L 611.7,594.89 L 610.7,597.21 L 610.75,599.85 L 609.93,601.75 L 599.8,610.25 L 599.05,609.68 L 598.67,609.4 Z M 612.43,592.31 L 613.56,593.15 L 621.87,584.07 L 622.28,581.29 Z M 611.57,591.66 L 610.93,591.18 L 610.45,591.82 Z M 598.67,609.4 L 598.03,608.92 L 597.55,609.56 Z M 610.29,590.7 L 610.93,591.18 L 611.41,590.54 L 609.85,599.59 L 617.21,587.64 L 615.72,587.75 L 614.09,587.13 L 595.26,611.14 L 595.35,612.18 L 603.95,604.53 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 599.8,610.25 L 599.05,609.68 L 598.67,609.4 L 598.24,609.69 L 586.42,617.82 L 589.21,617.7 Z M 598.24,609.69 L 597.23,608.92 L 597.27,608.68 L 585.36,616.84 L 586.42,617.82 Z M 608.43,601.24 L 609.34,599.12 L 609.29,596.48 L 610.22,594.35 L 612.43,592.31 L 611.94,591.94 L 611.57,591.66 L 610.77,591.96 L 608.83,593.73 L 607.89,595.87 L 607.94,598.51 L 607.02,600.64 L 598.01,608.12 L 598.83,608.92 L 598.72,609.32 Z M 611.72,591.06 L 611.73,591.18 L 611.57,591.66 L 611.94,591.94 L 612.43,592.31 L 622.28,581.29 L 621.41,580.13 L 592.76,614.76 L 592.63,612.96 L 603.52,604.62 L 614.16,589.28 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 607.02,600.64 L 607.94,598.51 L 607.89,595.87 L 608.83,593.73 L 610.77,591.96 L 610.13,591.18 L 611.72,591.06 L 621.41,580.13 L 619.85,578.73 L 606.75,592.78 L 605.79,594.93 L 605.84,597.6 L 604.9,599.73 L 584.26,615.07 L 585.36,616.84 L 597.27,608.68 L 598.01,608.12 L 600.95,604.72 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 414.89,627.63 L 415.0,632.61 L 417.8,635.33 L 449.65,636.2 L 454.46,635.49 L 431.1,628.32 L 431.08,628.35 L 431.4,628.99 L 429.8,628.99 L 430.38,628.22 L 425.39,630.81 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 402.39,635.79 L 405.03,632.91 L 404.75,625.64 L 374.84,621.14 L 375.58,635.02 L 378.65,637.63 Z M 386.16,626.23 L 387.77,626.23 Z M 388.04,627.05 L 395.03,632.32 L 396.48,630.4 L 389.48,625.14 L 384.64,632.75 L 384.64,632.75 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 365.94,637.08 L 365.95,636.63 L 365.13,619.68 L 362.05,619.21 L 361.22,624.71 L 325.9,619.39 L 321.06,643.84 L 324.44,647.08 Z M 339.39,628.28 L 340.99,628.28 Z M 341.26,629.1 L 348.26,634.37 L 349.7,632.45 L 342.7,627.19 L 338.42,631.74 L 338.42,631.74 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 508.52,641.47 L 511.18,638.05 L 508.5,640.08 L 486.73,640.3 Z M 484.25,632.14 L 491.24,637.41 L 492.68,635.49 L 485.69,630.23 L 505.67,640.72 L 499.57,626.27 L 499.57,626.27 L 499.57,626.27 L 499.57,626.27 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 554.17,634.41 L 568.72,628.78 L 568.44,628.57 L 568.07,628.29 L 566.63,627.81 L 566.71,627.45 Z M 568.18,626.8 L 567.91,627.17 L 568.23,627.81 L 568.07,628.29 L 568.44,628.57 L 568.72,628.78 L 576.48,625.05 L 577.58,621.13 L 577.3,620.69 L 576.34,623.17 L 575.3,624.09 Z M 575.3,624.09 L 576.34,623.17 L 577.3,620.69 L 554.17,634.41 L 566.71,627.45 L 567.65,627.04 L 564.95,629.28 L 571.01,626.33 L 570.07,624.71 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 527.01,752.94 L 543.03,751.17 L 542.87,746.76 L 544.53,746.3 L 541.26,741.6 L 486.0,743.29 L 482.9,752.8 L 498.1,753.68 L 513.33,753.47 Z M 486.0,743.29 L 475.47,742.26 L 475.73,742.73 L 482.7,752.78 L 482.9,752.8 Z M 486.0,743.29 L 486.44,741.93 L 475.25,740.83 L 475.47,742.26 Z M 486.44,741.93 L 486.89,740.57 L 475.78,739.5 L 475.25,740.83 Z M 486.89,740.57 L 487.33,739.21 L 478.32,738.39 L 475.78,739.5 Z M 541.26,741.6 L 540.36,740.32 L 486.44,741.93 L 486.0,743.29 Z M 540.36,740.32 L 539.54,739.14 L 539.47,739.04 L 486.89,740.57 L 486.44,741.93 Z M 539.47,739.04 L 536.92,737.97 L 487.33,739.21 L 486.89,740.57 Z M 488.8,742.0 L 488.3,750.44 L 492.39,750.68 L 492.9,742.24 L 518.4,749.7 L 482.14,746.44 L 482.48,742.2 L 483.87,741.16 L 484.93,739.87 L 498.3,743.1 L 500.84,741.8 L 502.24,740.67 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 622.88,724.75 L 624.09,721.36 L 567.65,760.71 L 568.05,761.28 L 569.15,762.21 Z M 616.55,730.85 L 616.49,729.81 L 616.07,729.5 L 569.15,762.21 L 571.92,761.97 Z M 625.5,716.11 L 624.21,716.78 L 619.66,728.69 L 623.31,726.14 Z M 627.9,719.54 L 625.5,716.11 L 623.31,726.14 L 627.22,723.42 Z M 625.5,716.11 L 624.29,714.39 L 592.82,728.24 L 593.65,730.16 Z M 624.29,714.39 L 623.59,713.39 L 623.19,712.92 L 592.11,726.58 L 592.82,728.24 Z M 623.19,712.92 L 620.06,712.5 L 558.72,734.28 L 559.57,735.94 Z M 588.38,736.89 L 588.71,736.1 L 589.78,736.25 L 595.2,733.75 L 592.11,726.58 L 559.57,735.94 L 565.44,747.44 Z M 590.24,737.58 L 597.23,742.84 L 598.68,740.93 L 591.68,735.66 L 587.55,747.85 L 589.77,748.49 L 620.12,727.5 L 624.85,722.55 L 626.96,721.29 L 608.08,723.29 L 606.33,721.77 L 605.67,720.03 L 585.93,733.78 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 661.75,687.6 L 667.57,688.17 L 665.76,686.04 L 661.84,685.72 L 660.38,686.91 L 642.06,699.88 L 646.52,698.2 L 646.5,698.03 L 647.94,697.55 L 654.82,692.36 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 647.94,697.55 L 648.1,698.03 L 646.52,698.2 L 642.06,699.88 L 633.92,704.9 L 633.08,708.93 L 636.51,713.62 L 640.34,714.27 L 668.86,694.39 L 669.39,690.31 L 667.57,688.17 L 661.75,687.6 L 656.65,696.09 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 833.85,646.46 L 833.85,630.38 L 831.07,627.6 L 818.61,627.6 L 818.61,628.57 L 830.79,628.57 L 832.88,630.66 L 832.88,645.49 L 825.93,652.44 L 795.05,652.44 L 794.94,653.19 L 795.23,653.41 L 826.9,653.41 Z M 795.37,653.53 L 802.37,658.8 L 803.81,656.88 L 796.81,651.62 Z M 794.28,645.23 L 801.28,650.5 L 802.72,648.58 L 795.72,643.32 Z M 795.68,622.13 L 796.08,630.57 L 800.18,630.38 L 799.78,621.94 L 830.61,650.92 L 806.45,628.16 L 806.45,628.16 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 453.47,526.21 L 454.46,526.95 L 454.46,526.95 L 456.92,523.9 L 457.32,524.53 L 440.81,467.67 L 459.01,525.87 L 452.31,522.38 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 624.85,317.09 A 187.63 187.63 0 0 0 567.23,344.1",
+        "layer": "0",
+        "type": "ARC"
+      },
+      {
+        "d": "M 677.65,318.06 A 179.98 179.98 0 0 0 659.01,318.7",
+        "layer": "0",
+        "type": "ARC"
+      },
+      {
+        "d": "M 673.81,288.15 A 208.47 208.47 0 0 0 554.87,325.6",
+        "layer": "0",
+        "type": "ARC"
+      },
+      {
+        "d": "M 673.81,288.15 A 208.47 208.47 0 0 0 554.84,325.63",
+        "layer": "0",
+        "type": "ARC"
+      },
+      {
+        "d": "M 472.32,526.24 L 479.31,531.51 L 480.75,529.59 L 473.76,524.33 Z M 463.47,498.55 L 470.46,503.81 L 471.9,501.9 L 464.91,496.63 L 466.07,519.41 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 513.77,507.84 L 530.87,488.88 L 532.83,485.86 L 532.34,482.27 L 516.24,467.9 L 512.36,468.08 L 510.59,469.96 L 496.16,483.6 L 495.74,487.41 L 510.43,506.97 Z M 510.56,505.52 L 497.05,487.54 L 497.62,483.64 L 511.36,470.56 L 512.42,469.43 L 516.3,469.26 L 531.07,482.44 L 531.56,486.02 L 530.16,488.19 L 514.12,506.28 Z M 505.43,489.81 L 507.03,489.81 Z M 506.58,463.05 L 513.57,468.31 L 515.01,466.4 L 508.02,461.13 Z M 507.3,490.63 L 514.3,495.89 L 515.74,493.98 L 508.74,488.71 L 512.46,507.1 L 512.46,507.1 L 512.46,507.1 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 538.3,475.25 L 545.54,437.18 L 536.44,434.96 L 520.42,458.67 L 519.49,459.82 L 519.81,463.64 L 533.9,476.21 Z M 533.55,474.6 L 521.14,463.53 L 520.83,459.71 L 521.08,459.4 L 537.29,435.44 L 544.56,437.22 L 537.84,473.86 Z M 529.31,456.1 L 530.91,456.1 Z M 523.26,442.43 L 530.25,447.69 L 531.69,445.78 L 524.7,440.52 Z M 531.19,456.92 L 538.18,462.18 L 539.62,460.27 L 532.63,455.0 L 535.83,476.51 L 535.83,476.51 L 535.83,476.51 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 501.41,515.27 L 504.04,513.68 L 504.46,509.9 L 498.65,502.18 L 494.48,499.95 Z M 499.44,516.38 L 501.41,515.27 L 494.48,499.95 L 490.07,498.57 L 500.33,508.17 L 496.71,505.57 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 490.7,508.88 L 483.57,512.39 L 482.6,512.87 L 466.84,520.65 L 468.25,524.2 L 470.64,525.95 L 470.44,525.42 L 472.04,525.42 L 471.94,525.82 L 472.86,525.68 L 499.44,516.38 L 490.07,498.57 L 487.99,498.2 L 486.08,498.68 L 485.2,499.29 L 493.7,509.84 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 531.56,486.02 L 531.07,482.44 L 529.04,480.63 L 520.95,499.79 L 530.16,488.19 L 529.12,487.37 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 497.66,483.61 L 497.05,487.54 L 510.56,505.52 L 514.12,506.28 L 520.95,499.79 L 529.04,480.63 L 516.53,469.47 Z M 507.03,489.81 L 505.43,489.81 Z M 507.3,490.63 L 514.3,495.89 L 515.74,493.98 L 508.74,488.71 L 517.2,483.49 L 517.2,483.49 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 521.08,459.4 L 540.78,437.26 L 542.1,437.55 L 541.19,464.39 L 544.56,437.22 L 540.18,433.49 L 534.34,445.55 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 521.08,459.4 L 540.78,437.26 L 542.1,437.55 L 541.19,464.39 L 544.56,437.22 L 540.18,433.49 Z M 523.26,442.43 L 530.25,447.69 L 531.69,445.78 L 524.7,440.52 Z M 531.19,456.92 L 538.18,462.18 L 539.62,460.27 L 532.63,455.0 L 529.99,465.18 L 529.99,465.18 L 529.99,465.18 L 533.05,448.93 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 438.09,525.96 L 438.3,525.99 L 456.9,528.79 L 455.47,527.72 L 455.1,527.43 L 453.66,526.85 L 429.54,523.68 L 429.25,520.15 L 452.2,512.01 L 456.12,513.97 L 456.9,515.93 L 459.9,523.5 L 456.96,527.28 L 455.25,527.06 L 455.1,527.43 L 455.47,527.72 L 456.9,528.79 L 458.66,529.06 L 461.66,525.28 L 456.47,512.21 L 452.77,510.69 L 428.99,519.21 L 429.33,524.64 Z M 449.07,481.29 L 456.07,486.55 L 457.51,484.64 L 450.51,479.37 Z M 423.43,489.34 L 430.43,494.6 L 431.87,492.69 L 424.87,487.43 Z M 475.59,545.07 L 482.59,550.34 L 484.03,548.42 L 477.03,543.16 Z M 455.79,546.26 L 462.79,551.53 L 464.23,549.61 L 457.23,544.35 Z M 436.08,545.21 L 443.08,550.48 L 444.52,548.56 L 437.52,543.3 Z M 417.84,540.52 L 424.84,545.79 L 426.28,543.87 L 419.28,538.61 Z M 472.32,526.24 L 479.31,531.51 L 480.75,529.59 L 473.76,524.33 Z M 421.69,525.15 L 428.69,530.42 L 430.13,528.5 L 423.13,523.24 Z M 463.47,498.55 L 470.46,503.81 L 471.9,501.9 L 464.91,496.63 Z M 409.28,515.17 L 416.28,520.44 L 417.72,518.52 L 410.72,513.26 Z M 437.83,506.6 L 444.83,511.87 L 446.27,509.95 L 439.27,504.69 Z M 445.79,521.46 L 452.79,526.72 L 454.23,524.81 L 447.24,519.54 L 431.62,524.73 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 L 505.51,512.82 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 434.74,463.35 L 422.31,529.08 L 453.36,514.55 L 380.72,347.01 Z M 455.53,527.78 L 462.53,533.04 L 463.97,531.12 L 456.97,525.86 Z M 445.79,521.46 L 452.79,526.72 L 454.23,524.81 L 447.24,519.54 L 448.99,514.61 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 462.67,510.18 L 463.44,512.12 L 486.08,498.68 L 488.08,498.22 L 498.65,502.18 L 498.52,502.0 L 487.23,496.05 L 485.5,496.55 Z M 485.5,496.55 L 487.23,496.05 L 498.52,502.0 L 494.6,496.78 L 486.71,494.64 L 485.07,495.15 L 462.38,508.77 L 462.57,509.93 L 462.67,510.18 Z M 485.07,495.15 L 486.71,494.64 L 494.6,496.78 L 491.27,492.34 L 488.01,491.31 L 465.22,505.73 L 463.87,506.44 L 462.38,508.77 Z M 463.44,512.12 L 466.84,520.65 L 482.04,513.15 L 482.34,512.74 L 482.03,512.1 L 483.63,512.1 L 483.57,512.39 L 490.7,508.88 L 485.2,499.29 Z M 463.47,498.55 L 470.46,503.81 L 471.9,501.9 L 464.91,496.63 L 476.6,503.52 L 477.66,500.99 L 481.95,496.47 L 476.66,509.13 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 460.09,524.38 L 459.9,523.5 L 456.9,515.93 L 429.26,520.15 L 429.54,523.68 L 451.61,526.58 Z M 443.92,520.63 L 445.52,520.63 Z M 445.79,521.46 L 452.79,526.72 L 454.23,524.81 L 447.24,519.54 L 455.71,522.43 L 455.71,522.43 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 290.97,628.49 L 305.3,611.94 L 306.23,611.96 L 316.49,614.0 L 316.89,611.95 L 306.21,609.83 L 305.69,609.78 Z M 290.97,628.49 L 305.56,609.78 L 306.21,609.83 L 316.89,611.95 L 316.97,611.54 L 316.99,610.55 L 306.36,608.45 L 305.9,608.39 Z M 290.97,628.49 L 305.9,608.39 L 306.36,608.45 L 316.99,610.55 L 316.14,608.97 L 306.52,607.06 L 306.22,607.02 Z M 290.97,628.49 L 306.22,607.02 L 306.52,607.06 L 316.14,608.97 L 314.79,608.27 L 306.49,606.63 L 306.4,606.62 L 299.65,612.3 L 299.37,610.36 L 299.47,608.49 L 299.53,607.44 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 515.31,468.66 L 512.45,469.41 L 511.39,470.54 L 497.69,483.59 Z M 516.56,469.45 L 516.33,469.24 L 515.31,468.66 L 497.69,483.59 L 508.58,474.67 L 510.09,475.24 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 540.18,433.49 L 537.29,435.44 L 521.08,459.4 L 535.63,440.35 Z",
+        "layer": ".",
+        "type": "HATCH"
+      },
+      {
+        "d": "M 290,410 C 315,430 330,510 310,610 C 290,700 275,800 310,910 C 345,1000 410,1090 455,1150 C 415,1165 360,1105 320,1030 C 280,945 255,825 260,720 C 265,600 290,490 260,440 Z",
+        "layer": "Water Feature Geometry",
+        "type": "PATH"
+      },
+      {
+        "d": "M 490,490 C 525,520 560,610 570,720 C 580,830 570,935 530,1030 C 490,1115 430,1180 370,1215 C 395,1195 455,1130 495,1040 C 535,950 550,840 535,735 C 520,635 495,550 460,520 Z",
+        "layer": "Water Feature Geometry",
+        "type": "PATH"
+      },
+      {
+        "d": "M 550,280 C 580,260 635,260 660,280 C 675,305 650,335 605,340 C 565,335 540,305 550,280 Z",
+        "layer": "Water Feature Geometry",
+        "type": "PATH"
+      }
+    ],
+    "amenities": [
+      {
+        "d": "M 275,620 L 320,620 L 320,630 L 275,630 Z",
+        "layer": "Boardwalk Deck",
+        "type": "PATH"
+      },
+      {
+        "d": "M 270,750 L 315,750 L 315,760 L 270,760 Z",
+        "layer": "Boardwalk Deck",
+        "type": "PATH"
+      },
+      {
+        "d": "M 290,880 L 335,880 L 335,890 L 290,890 Z",
+        "layer": "Boardwalk Deck",
+        "type": "PATH"
+      },
+      {
+        "d": "M 345,1010 L 390,1010 L 390,1020 L 345,1020 Z",
+        "layer": "Boardwalk Deck",
+        "type": "PATH"
+      },
+      {
+        "d": "M 515,600 L 560,600 L 560,610 L 515,610 Z",
+        "layer": "Boardwalk Deck",
+        "type": "PATH"
+      },
+      {
+        "d": "M 530,735 L 575,735 L 575,745 L 530,745 Z",
+        "layer": "Boardwalk Deck",
+        "type": "PATH"
+      },
+      {
+        "d": "M 515,870 L 560,870 L 560,880 L 515,880 Z",
+        "layer": "Boardwalk Deck",
+        "type": "PATH"
+      },
+      {
+        "d": "M 475,1000 L 520,1000 L 520,1010 L 475,1010 Z",
+        "layer": "Boardwalk Deck",
+        "type": "PATH"
+      }
+    ]
+  }
+};
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = VILLAGIO_VECTOR_LAYERS;
+}

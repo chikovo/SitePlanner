@@ -1,526 +1,2576 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SitePlanner | Construction Intelligence Platform</title>
-  <meta name="description" content="Real-time construction project tracking and management — 255 units, multi-user, role-based." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SitePlanner — Villagio Construction Intelligence Platform</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg-app: #080C14;
+    --bg-nav: #0D121F;
+    --bg-surface: #111827;
+    --bg-surface-elevated: #162032;
+    --bg-surface-card: #182338;
+    --bg-cad: #030712;
+    --border: #1F293D;
+    --border-light: #374151;
+    --border-hover: #4B5563;
+    --text: #F9FAFB;
+    --text-sec: #9CA3AF;
+    --text-muted: #6B7280;
+    --brand: #2563EB;
+    --brand-light: #3B82F6;
+    --brand-glow: rgba(37, 99, 235, 0.35);
+    --success: #10B981;
+    --warn: #F59E0B;
+    --danger: #EF4444;
+    --info: #06B6D4;
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --radius-xl: 20px;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg-app);
+    color: var(--text);
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    user-select: none;
+  }
+
+  /* ═══════════════════════════════════════════════════════════
+     LEFT-HAND NAVIGATION RAIL (TABS ON THE LEFT)
+     ═══════════════════════════════════════════════════════════ */
+  .nav-rail {
+    width: 240px;
+    background: var(--bg-nav);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    z-index: 40;
+    box-shadow: 4px 0 24px rgba(0,0,0,0.6);
+  }
+
+  .nav-brand {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .brand-logo-mark {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+    flex-shrink: 0;
+  }
+
+  .brand-title {
+    font-size: 17px;
+    font-weight: 800;
+    color: #FFFFFF;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  .brand-sub {
+    font-size: 11px;
+    color: var(--text-sec);
+    letter-spacing: 0.02em;
+  }
+
+  .nav-tabs {
+    flex: 1;
+    padding: 16px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    overflow-y: auto;
+  }
+
+  .nav-tab-label {
+    font-size: 10.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    padding: 12px 12px 6px;
+  }
+
+  .nav-tab {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 11px 14px;
+    border-radius: var(--radius-md);
+    color: var(--text-sec);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    border: 1px solid transparent;
+  }
+
+  .nav-tab:hover {
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.06);
+  }
+
+  .nav-tab.active {
+    color: #FFFFFF;
+    background: linear-gradient(90deg, rgba(37, 99, 235, 0.2) 0%, rgba(37, 99, 235, 0.06) 100%);
+    border-color: rgba(59, 130, 246, 0.4);
+    box-shadow: 0 2px 10px rgba(37, 99, 235, 0.2);
+  }
+
+  .nav-tab.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    bottom: 6px;
+    width: 3.5px;
+    border-radius: 4px;
+    background: var(--brand-light);
+    box-shadow: 0 0 8px var(--brand-light);
+  }
+
+  .nav-tab-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+
+  .nav-tab-badge {
+    margin-left: auto;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-sec);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .nav-tab.active .nav-tab-badge {
+    background: var(--brand);
+    color: #FFFFFF;
+  }
+
+  .nav-user {
+    padding: 14px 16px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(0,0,0,0.2);
+  }
+
+  .user-avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #1E293B;
+    border: 1.5px solid var(--brand-light);
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .user-meta {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .user-name {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #FFFFFF;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .user-role {
+    font-size: 10.5px;
+    color: var(--success);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .user-role-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--success);
+  }
+
+  /* ═══════════════════════════════════════════════════════════
+     MAIN APP CONTAINER & HEADER
+     ═══════════════════════════════════════════════════════════ */
+  .app-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: 100vh;
+    background: var(--bg-app);
+  }
+
+  .app-header {
+    height: 60px;
+    background: var(--bg-surface);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    flex-shrink: 0;
+    z-index: 30;
+    gap: 20px;
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .project-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(16, 185, 129, 0.12);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    padding: 4px 12px;
+    border-radius: 20px;
+    color: #34D399;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .project-badge-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #10B981;
+    box-shadow: 0 0 8px #10B981;
+  }
+
+  .header-kpi-ribbon {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .kpi-chip {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    font-size: 11px;
+    color: var(--text-sec);
+  }
+
+  .kpi-num {
+    font-size: 16px;
+    font-weight: 800;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .kpi-sep {
+    width: 1px;
+    height: 16px;
+    background: var(--border);
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .header-search {
+    position: relative;
+    width: 260px;
+  }
+
+  .header-search input {
+    width: 100%;
+    background: #0B101B;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 7px 12px 7px 34px;
+    color: #FFFFFF;
+    font-size: 12.5px;
+    transition: all 0.15s;
+  }
+
+  .header-search input:focus {
+    outline: none;
+    border-color: var(--brand-light);
+    box-shadow: 0 0 0 3px var(--brand-glow);
+  }
+
+  .header-search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    pointer-events: none;
+  }
+
+  /* ═══════════════════════════════════════════════════════════
+     VIEW PANES CONTAINER
+     ═══════════════════════════════════════════════════════════ */
+  .view-pane-container {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .view-pane {
+    position: absolute;
+    inset: 0;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .view-pane.active {
+    display: flex;
+  }
+
+  /* ═══════════════════════════════════════════════════════════
+     TAB 1: CURRENT STATE MASTERPLAN (HERO VIEW)
+     ═══════════════════════════════════════════════════════════ */
+  .masterplan-view-layout {
+    flex: 1;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .canvas-workspace {
+    flex: 1;
+    position: relative;
+    background: var(--bg-cad);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+    width: 100%;
+    height: 100%;
+  }
+
+  .canvas-workspace:active {
+    cursor: grabbing;
+  }
+
+  #masterSvg {
+    width: 100%;
+    height: 100%;
+    transform-origin: center center;
+    transition: transform 0.04s ease-out;
+  }
+
+  /* SVG STYLES - EXACT AUTOCAD DRAWING */
+  .villa-group {
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+  }
+
+  .villa-poly {
+    stroke: #FFFFFF;
+    stroke-width: 0.9;
+    stroke-linejoin: round;
+    transition: all 0.18s ease;
+  }
+
+  /* ENLARGED, CRISP, HIGH-VISIBILITY VILLA NUMBERS */
+  .villa-label {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 900;
+    fill: #FFFFFF;
+    text-anchor: middle;
+    dominant-baseline: central;
+    pointer-events: none;
+    paint-order: stroke fill;
+    stroke: #000000;
+    stroke-width: 2.6px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    letter-spacing: -0.02em;
+  }
+
+  .villa-group:hover .villa-poly {
+    filter: drop-shadow(0 0 10px #FFFFFF) brightness(1.35);
+    stroke-width: 1.8;
+  }
+
+  .villa-group.selected .villa-poly {
+    stroke: #38BDF8;
+    stroke-width: 2.5;
+    filter: drop-shadow(0 0 16px #38BDF8) brightness(1.4);
+  }
+
+  .villa-group.dimmed {
+    opacity: 0.08;
+  }
+
+  /* ON-CANVAS AUTOCAD LEGEND (RIGHT SIDE) */
+  .legend-card-group {
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .legend-card-group:hover .legend-card-bg {
+    fill: #162032;
+    stroke: #3B82F6;
+  }
+
+  .legend-card-group.active .legend-card-bg {
+    fill: rgba(37, 99, 235, 0.28);
+    stroke: #3B82F6;
+    stroke-width: 1.8;
+  }
+
+  /* CANVAS HUD */
+  .canvas-hud {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    background: rgba(17, 24, 39, 0.92);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 6px 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    z-index: 15;
+    font-size: 12px;
+  }
+
+  .hud-btn {
+    background: #1F2937;
+    border: 1px solid var(--border);
+    color: var(--text);
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .hud-btn:hover { background: var(--brand); border-color: var(--brand-light); color: #fff; }
+
+  /* ═══════════════════════════════════════════════════════════
+     UNIT DETAILS DRAWER (SLIDE-OUT INSPECTION)
+     ═══════════════════════════════════════════════════════════ */
+  .details-drawer {
+    width: 380px;
+    background: var(--bg-surface);
+    border-left: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    z-index: 35;
+    box-shadow: -4px 0 30px rgba(0,0,0,0.7);
+    transform: translateX(100%);
+    transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .details-drawer.open {
+    transform: translateX(0);
+  }
+
+  .drawer-header {
+    padding: 18px 24px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .unit-title-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .unit-number-tag {
+    font-size: 26px;
+    font-weight: 800;
+    color: #FFFFFF;
+    letter-spacing: -0.02em;
+  }
+
+  .unit-type-pill {
+    background: rgba(37, 99, 235, 0.18);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    color: #60A5FA;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 12px;
+  }
+
+  .drawer-close {
+    background: #0B101B;
+    border: 1px solid var(--border);
+    color: var(--text-sec);
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: all 0.2s;
+  }
+  .drawer-close:hover { background: #1F293D; color: #fff; }
+
+  .drawer-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .stage-banner {
+    border-radius: var(--radius-md);
+    padding: 14px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .stage-banner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .stage-banner-title {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+
+  .stage-banner-ar {
+    font-size: 13px;
+    font-weight: 700;
+    direction: rtl;
+    text-align: left;
+  }
+
+  .progress-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .progress-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  .progress-track {
+    width: 100%;
+    height: 8px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    border-radius: 6px;
+    transition: width 0.3s ease;
+  }
+
+  .specs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .spec-card {
+    background: #0B101B;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 10px 12px;
+  }
+
+  .spec-label {
+    font-size: 10px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+  }
+
+  .spec-val {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-top: 3px;
+  }
+
+  .stage-update-select {
+    width: 100%;
+    background: #0B101B;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: #FFFFFF;
+    padding: 9px 12px;
+    font-size: 12.5px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .btn-action {
+    width: 100%;
+    padding: 11px;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.18s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .btn-primary { background: var(--brand); color: #fff; }
+  .btn-primary:hover { background: #1D4ED8; }
+  .btn-sec { background: #1F2937; border: 1px solid var(--border); color: #fff; }
+  .btn-sec:hover { background: #374151; }
+  .btn-emerald { background: rgba(16, 185, 129, 0.2); border: 1px solid rgba(16, 185, 129, 0.4); color: #34D399; }
+  .btn-emerald:hover { background: #10B981; color: #fff; }
+
+  /* ═══════════════════════════════════════════════════════════
+     TAB 2: DOCUMENTS & DRAWINGS MODULE
+     ═══════════════════════════════════════════════════════════ */
+  .docs-layout {
+    flex: 1;
+    overflow-y: auto;
+    padding: 28px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: var(--bg-app);
+  }
+
+  .docs-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .docs-title-h1 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #FFFFFF;
+    letter-spacing: -0.02em;
+  }
+
+  .docs-subtitle-p {
+    font-size: 13px;
+    color: var(--text-sec);
+    margin-top: 4px;
+  }
+
+  .docs-top-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  /* UPLOAD DROPZONE */
+  .upload-dropzone {
+    border: 2px dashed #2A364F;
+    border-radius: var(--radius-lg);
+    background: rgba(17, 24, 39, 0.6);
+    padding: 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .upload-dropzone:hover, .upload-dropzone.dragover {
+    border-color: var(--brand-light);
+    background: rgba(37, 99, 235, 0.08);
+  }
+
+  .dropzone-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(37, 99, 235, 0.15);
+    color: #60A5FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dropzone-text-main {
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+
+  .dropzone-text-sub {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  /* CATEGORY TABS */
+  .category-filter-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 12px;
+  }
+
+  .category-pills {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .category-pill {
+    padding: 7px 14px;
+    border-radius: 20px;
+    background: #111827;
+    border: 1px solid var(--border);
+    color: var(--text-sec);
+    font-size: 12.5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .category-pill:hover {
+    border-color: var(--border-hover);
+    color: #FFFFFF;
+  }
+
+  .category-pill.active {
+    background: var(--brand);
+    border-color: var(--brand-light);
+    color: #FFFFFF;
+    box-shadow: 0 2px 8px var(--brand-glow);
+  }
+
+  /* DOCUMENT CARDS GRID */
+  .docs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 18px;
+  }
+
+  .doc-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+  }
+
+  .doc-card:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  }
+
+  .doc-card-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .doc-format-badge {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .format-dwg { background: rgba(239, 68, 68, 0.18); color: #F87171; border: 1px solid rgba(239, 68, 68, 0.3); }
+  .format-pdf { background: rgba(245, 158, 11, 0.18); color: #FBBF24; border: 1px solid rgba(245, 158, 11, 0.3); }
+  .format-cad { background: rgba(6, 182, 212, 0.18); color: #22D3EE; border: 1px solid rgba(6, 182, 212, 0.3); }
+
+  .doc-info {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .doc-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .doc-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 4px;
+    font-size: 11px;
+    color: var(--text-muted);
+  }
+
+  .doc-tag {
+    font-size: 10.5px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: #1F293D;
+    color: #93C5FD;
+  }
+
+  .doc-specs-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--text-sec);
+    padding: 8px 12px;
+    background: #0B101B;
+    border-radius: var(--radius-sm);
+  }
+
+  .doc-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+  }
+
+  .doc-btn {
+    flex: 1;
+    padding: 8px 12px;
+    border-radius: var(--radius-sm);
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.15s;
+  }
+
+  .doc-btn-view { background: #1F293D; color: #FFFFFF; }
+  .doc-btn-view:hover { background: var(--brand); }
+  .doc-btn-dl { background: #0B101B; border: 1px solid var(--border); color: var(--text-sec); }
+  .doc-btn-dl:hover { background: #162032; color: #fff; }
+
+  /* ═══════════════════════════════════════════════════════════
+     TAB 3: UNIT INVENTORY TABLE
+     ═══════════════════════════════════════════════════════════ */
+  .inventory-layout {
+    flex: 1;
+    padding: 24px 32px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .table-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .table-search-input {
+    background: #0B101B;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 8px 14px;
+    color: #FFFFFF;
+    font-size: 13px;
+    width: 280px;
+  }
+
+  .unit-table-wrap {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+
+  .unit-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+  }
+
+  .unit-table th {
+    background: #0B101B;
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .unit-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    color: #F3F4F6;
+  }
+
+  .unit-table tr:hover td {
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  /* ═══════════════════════════════════════════════════════════
+     MODAL DIALOGS
+     ═══════════════════════════════════════════════════════════ */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(3, 7, 18, 0.85);
+    backdrop-filter: blur(8px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+  }
+
+  .modal-overlay.open {
+    display: flex;
+  }
+
+  .modal-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    width: 100%;
+    max-width: 520px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .modal-header {
+    padding: 18px 24px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .modal-title {
+    font-size: 16px;
+    font-weight: 800;
+    color: #FFFFFF;
+  }
+
+  .modal-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .form-label {
+    font-size: 11.5px;
+    font-weight: 700;
+    color: var(--text-sec);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .form-input, .form-select {
+    width: 100%;
+    background: #0B101B;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: #FFFFFF;
+    padding: 10px 14px;
+    font-size: 13px;
+    font-family: inherit;
+  }
+
+  .form-input:focus, .form-select:focus {
+    outline: none;
+    border-color: var(--brand-light);
+    box-shadow: 0 0 0 3px var(--brand-glow);
+  }
+
+  .modal-footer {
+    padding: 16px 24px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    background: #0B101B;
+  }
+</style>
 </head>
 <body>
 
-  <!-- ══════════════════════════════════════════
-       LOGIN SCREEN
-  ══════════════════════════════════════════ -->
-  <div id="loginScreen" class="login-screen">
-    <div class="login-card">
-      <div class="login-logo">
-        <div class="logo-mark">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-            <rect width="36" height="36" rx="10" fill="#1B4F8A"/>
-            <path d="M8 26L13 13L18 21L23 10L28 26H8Z" fill="white" stroke="white" stroke-width="1.2" stroke-linejoin="round"/>
-            <circle cx="18" cy="9" r="2.5" fill="#F59E0B"/>
-          </svg>
-        </div>
-        <div>
-          <div class="login-brand">SitePlanner</div>
-          <div class="login-tagline">Construction Intelligence Platform</div>
-        </div>
-      </div>
-      <h2 class="login-title">Sign in to your workspace</h2>
-      <div id="loginError" class="login-error" style="display:none"></div>
-      <div class="form-group">
-        <label class="form-label" for="loginEmail">Email Address</label>
-        <input type="email" id="loginEmail" class="form-input" placeholder="engineer@company.com" autocomplete="email" />
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="loginPassword">Password</label>
-        <input type="password" id="loginPassword" class="form-input" placeholder="••••••••" autocomplete="current-password" />
-      </div>
-      <button class="btn-primary login-btn" id="loginBtn">Sign In</button>
-      <p class="login-note">Access is managed by your project administrator.</p>
+<!-- ═══════════════════════════════════════════════════════════
+     LEFT-HAND NAVIGATION RAIL (TABS ON THE LEFT)
+     ═══════════════════════════════════════════════════════════ -->
+<aside class="nav-rail">
+  <div class="nav-brand">
+    <div class="brand-logo-mark">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+      </svg>
+    </div>
+    <div>
+      <div class="brand-title">SitePlanner</div>
+      <div class="brand-sub">Villagio Masterplan</div>
     </div>
   </div>
 
-  <!-- ══════════════════════════════════════════
-       MAIN APP (hidden until authenticated)
-  ══════════════════════════════════════════ -->
-  <div id="appRoot" class="app-root" style="display:none">
+  <div class="nav-tabs">
+    <div class="nav-tab-label">Core Modules</div>
 
-    <!-- ── HEADER ── -->
-    <header class="app-header" id="appHeader">
-      <div class="header-left">
-        <div class="app-logo">
-          <div class="logo-mark">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-              <rect width="28" height="28" rx="7" fill="#1B4F8A"/>
-              <path d="M6 20L10 10L14 16L18 8L22 20H6Z" fill="white" stroke="white" stroke-width="1" stroke-linejoin="round"/>
-              <circle cx="14" cy="7" r="2" fill="#F59E0B"/>
-            </svg>
-          </div>
-          <div class="logo-text">
-            <span class="logo-name">SitePlanner</span>
-            <span class="logo-tagline">Construction Intelligence</span>
-          </div>
+    <!-- TAB 1: CURRENT STATE (DEFAULT FIRST VIEW) -->
+    <div class="nav-tab active" data-target-pane="paneCurrentState" id="tabCurrentState">
+      <svg class="nav-tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon>
+        <line x1="9" y1="3" x2="9" y2="18"></line>
+        <line x1="15" y1="6" x2="15" y2="21"></line>
+      </svg>
+      <span>Current State</span>
+      <span class="nav-tab-badge">115</span>
+    </div>
+
+    <!-- TAB 2: DOCUMENTS & DRAWINGS -->
+    <div class="nav-tab" data-target-pane="paneDocuments" id="tabDocuments">
+      <svg class="nav-tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+        <polyline points="14 2 14 8 20 8"></polyline>
+        <line x1="16" y1="13" x2="8" y2="13"></line>
+        <line x1="16" y1="17" x2="8" y2="17"></line>
+        <polyline points="10 9 9 9 8 9"></polyline>
+      </svg>
+      <span>Documents</span>
+      <span class="nav-tab-badge" id="navDocsBadge">12</span>
+    </div>
+
+    <!-- TAB 3: UNIT INVENTORY -->
+    <div class="nav-tab" data-target-pane="paneInventory" id="tabInventory">
+      <svg class="nav-tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="8" y1="6" x2="21" y2="6"></line>
+        <line x1="8" y1="12" x2="21" y2="12"></line>
+        <line x1="8" y1="18" x2="21" y2="18"></line>
+        <line x1="3" y1="6" x2="3.01" y2="6"></line>
+        <line x1="3" y1="12" x2="3.01" y2="12"></line>
+        <line x1="3" y1="18" x2="3.01" y2="18"></line>
+      </svg>
+      <span>Unit Registry</span>
+    </div>
+
+    <!-- TAB 4: EXECUTIVE DASHBOARD -->
+    <div class="nav-tab" data-target-pane="paneAnalytics" id="tabAnalytics">
+      <svg class="nav-tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="20" x2="18" y2="10"></line>
+        <line x1="12" y1="20" x2="12" y2="4"></line>
+        <line x1="6" y1="20" x2="6" y2="14"></line>
+      </svg>
+      <span>Analytics</span>
+    </div>
+
+    <div class="nav-tab-label">Field Execution</div>
+
+    <!-- TAB 5: SITE ISSUES / PUNCH LIST -->
+    <div class="nav-tab" data-target-pane="paneIssues" id="tabIssues">
+      <svg class="nav-tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+        <line x1="12" y1="9" x2="12" y2="13"></line>
+        <line x1="12" y1="17" x2="12.01" y2="17"></line>
+      </svg>
+      <span>Issues & Snags</span>
+      <span class="nav-tab-badge" style="background:#EF4444; color:#fff">3</span>
+    </div>
+  </div>
+
+  <div class="nav-user">
+    <div class="user-avatar">EA</div>
+    <div class="user-meta">
+      <div class="user-name">Eng. Ahmed M.</div>
+      <div class="user-role">
+        <span class="user-role-dot"></span> Project Manager
+      </div>
+    </div>
+  </div>
+</aside>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MAIN APP CONTAINER & HEADER
+     ═══════════════════════════════════════════════════════════ -->
+<div class="app-main">
+  <!-- TOP HEADER -->
+  <header class="app-header">
+    <div class="header-left">
+      <div class="project-badge">
+        <span class="project-badge-dot"></span>
+        <span>26-9-2026 Executive State</span>
+      </div>
+      <div class="kpi-sep"></div>
+      <div class="header-kpi-ribbon">
+        <div class="kpi-chip">
+          <span class="kpi-num" style="color:#FFFFFF" id="kpiTotal">115</span>
+          <span>Villas</span>
         </div>
-        <div class="project-pill" id="projectPill">
-          <span class="live-dot"></span>
-          <span id="projectName">My Compound Project</span>
+        <div class="kpi-sep"></div>
+        <div class="kpi-chip">
+          <span class="kpi-num" style="color:#EF4444" id="kpiFinished">18</span>
+          <span>Finished</span>
+        </div>
+        <div class="kpi-sep"></div>
+        <div class="kpi-chip">
+          <span class="kpi-num" style="color:#06B6D4" id="kpiStructure">43</span>
+          <span>Structure Done</span>
+        </div>
+        <div class="kpi-sep"></div>
+        <div class="kpi-chip">
+          <span class="kpi-num" style="color:#FACC15" id="kpiBrick">12</span>
+          <span>Brickwork</span>
+        </div>
+        <div class="kpi-sep"></div>
+        <div class="kpi-chip">
+          <span class="kpi-num" style="color:#EC4899" id="kpiFootings">9</span>
+          <span>RC Footings</span>
         </div>
       </div>
+    </div>
 
-      <div class="header-center">
-        <div class="stats-ribbon">
-          <div class="stat-chip">
-            <span class="stat-num" id="statTotal">255</span>
-            <span class="stat-lbl">Total</span>
-          </div>
-          <div class="stat-sep"></div>
-          <div class="stat-chip">
-            <span class="stat-num" id="statNotStarted" style="color:#94A3B8">—</span>
-            <span class="stat-lbl">Not Started</span>
-          </div>
-          <div class="stat-sep"></div>
-          <div class="stat-chip">
-            <span class="stat-num" id="statInProgress" style="color:#3B82F6">—</span>
-            <span class="stat-lbl">In Progress</span>
-          </div>
-          <div class="stat-sep"></div>
-          <div class="stat-chip">
-            <span class="stat-num" id="statCompleted" style="color:#10B981">—</span>
-            <span class="stat-lbl">Completed</span>
-          </div>
-          <div class="stat-sep"></div>
-          <div class="stat-chip">
-            <span class="stat-num" id="statOnHold" style="color:#F59E0B">—</span>
-            <span class="stat-lbl">On Hold</span>
-          </div>
-        </div>
+    <div class="header-right">
+      <div class="header-search">
+        <svg class="header-search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="globalSearchInput" placeholder="Quick search (e.g. 52, 80A-B)..." autocomplete="off"/>
       </div>
+    </div>
+  </header>
 
-      <div class="header-right">
-        <div class="search-wrap">
-          <svg class="search-ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="9" cy="9" r="6"/><path d="M15 15l3 3"/>
+  <!-- ═══════════════════════════════════════════════════════════
+       VIEW PANES CONTAINER
+       ═══════════════════════════════════════════════════════════ -->
+  <div class="view-pane-container">
+
+    <!-- ─────────────────────────────────────────────────────────
+         PANE 1: 🗺️ CURRENT STATE (DEFAULT FULL-WIDTH MASTERPLAN)
+         ───────────────────────────────────────────────────────── -->
+    <div class="view-pane active" id="paneCurrentState">
+      <div class="masterplan-view-layout">
+
+        <!-- CANVAS: FULL-WIDTH AUTOCAD DRAWING WITH ON-CANVAS RIGHT LEGEND -->
+        <div class="canvas-workspace" id="canvasContainer">
+          <svg id="masterSvg" viewBox="0 0 1420 1181" preserveAspectRatio="xMidYMid meet">
+            <g id="viewportGroup">
+              <g id="villasLayer"></g>
+              <g id="legendLayer"></g>
+            </g>
           </svg>
-          <input id="globalSearch" type="text" placeholder="Search units…" autocomplete="off" />
-          <div class="search-results" id="searchResults"></div>
-        </div>
 
-        <!-- Manager-only: User Management -->
-        <button class="hdr-btn manager-only" id="usersBtn" title="Manage Users" style="display:none">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-          </svg>
-        </button>
-
-        <div class="user-chip" id="userChip">
-          <div class="user-avatar" id="userAvatar">?</div>
-          <div class="user-info">
-            <span class="user-name" id="userDisplayName">Loading…</span>
-            <span class="user-role-badge" id="userRoleBadge">—</span>
-          </div>
-          <button class="sign-out-btn" id="signOutBtn" title="Sign Out">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
-              <polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <!-- ── APP SHELL ── -->
-    <div class="app-shell">
-
-      <!-- ── FILTER SIDEBAR ── -->
-      <aside class="filter-bar" id="filterBar">
-        <div class="fb-section">
-          <button class="fb-collapse-btn" id="sidebarToggle" title="Collapse sidebar">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="15 18 9 12 15 6"/>
-            </svg>
-          </button>
-          <h3 class="fb-heading">Filters</h3>
-          <button class="fb-clear" id="clearFilters">Clear</button>
-        </div>
-
-        <div class="fb-group">
-          <p class="fb-label">Status</p>
-          <div id="statusFilterList">
-            <!-- Populated from Firestore config/statuses -->
+          <!-- HUD -->
+          <div class="canvas-hud">
+            <span>Scale: <strong id="scaleText" style="color:#60A5FA; font-family:'JetBrains Mono'">100%</strong></span>
+            <span>Click any villa to inspect</span>
+            <button class="hud-btn" id="hudResetFilter" title="Show All Stages" style="width:auto; padding:0 12px; font-size:11px; font-weight:700">Show All</button>
+            <button class="hud-btn" id="zoomInBtn" title="Zoom In">+</button>
+            <button class="hud-btn" id="zoomOutBtn" title="Zoom Out">−</button>
+            <button class="hud-btn" id="resetZoomBtn" title="Reset View">↺</button>
           </div>
         </div>
 
-        <div class="fb-group">
-          <p class="fb-label">Unit Type</p>
-          <label class="fb-check"><input type="checkbox" class="tf" data-key="type" value="A" checked>Type A – Villa</label>
-          <label class="fb-check"><input type="checkbox" class="tf" data-key="type" value="B" checked>Type B – Villa</label>
-          <label class="fb-check"><input type="checkbox" class="tf" data-key="type" value="C" checked>Type C – Townhouse</label>
-          <label class="fb-check"><input type="checkbox" class="tf" data-key="type" value="D" checked>Type D – Townhouse</label>
-          <label class="fb-check"><input type="checkbox" class="tf" data-key="type" value="AP" checked>Apartment Block</label>
-        </div>
-
-        <div class="fb-group">
-          <p class="fb-label">Phase</p>
-          <select id="phaseFilter" class="fb-select"><option value="">All Phases</option></select>
-        </div>
-
-        <div class="fb-group">
-          <p class="fb-label">Engineer</p>
-          <select id="engineerFilter" class="fb-select"><option value="">All Engineers</option></select>
-        </div>
-
-        <div class="fb-group">
-          <p class="fb-label">Handover</p>
-          <label class="fb-check"><input type="radio" name="hf" value="" class="hf" checked>All Units</label>
-          <label class="fb-check"><input type="radio" name="hf" value="yes" class="hf">Handed Over</label>
-          <label class="fb-check"><input type="radio" name="hf" value="no" class="hf">Pending Handover</label>
-        </div>
-
-        <!-- Engineer-only: My Units filter -->
-        <div class="fb-group engineer-only" id="myUnitsGroup" style="display:none">
-          <p class="fb-label">My Units</p>
-          <label class="fb-check">
-            <input type="checkbox" id="myUnitsOnly"> Show my units only
-          </label>
-        </div>
-
-        <div class="fb-legend">
-          <p class="fb-label">Legend</p>
-          <div id="legendList"><!-- Populated from config --></div>
-        </div>
-      </aside>
-
-      <!-- ── MAIN CONTENT ── -->
-      <main class="content-area" id="contentArea">
-
-        <!-- View Tab Bar -->
-        <div class="view-bar">
-          <div class="view-tabs">
-            <button class="vtab active" data-view="map" id="tabMap">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/>
-                <line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/>
-              </svg>Masterplan
-            </button>
-            <button class="vtab" data-view="list" id="tabList">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/>
-                <line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/>
-                <line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
-              </svg>Unit List
-            </button>
-            <button class="vtab" data-view="dashboard" id="tabDashboard">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
-                <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
-              </svg>Dashboard
-            </button>
-            <!-- Manager-only tab -->
-            <button class="vtab manager-only" data-view="users" id="tabUsers" style="display:none">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                <circle cx="9" cy="7" r="4"/>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-              </svg>Users
-            </button>
-          </div>
-          <div class="view-actions">
-            <button class="btn-outline" id="loadMapBtn">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                <polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/>
-              </svg>Load Masterplan
-            </button>
-            <input type="file" id="masterplanInput" accept="image/*" style="display:none" />
-          </div>
-        </div>
-
-        <!-- ── MAP VIEW ── -->
-        <div class="view-pane active" id="viewMap">
-          <div class="map-stage" id="mapStage">
-            <div class="map-canvas" id="mapCanvas">
-              <img id="masterplanImg" src="" alt="Compound Masterplan" />
-              <svg id="hotspotSvg" class="hotspot-layer" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
-              <div class="map-tooltip" id="mapTooltip">
-                <div class="tt-num" id="ttNum"></div>
-                <div class="tt-row" id="ttType"></div>
-                <div class="tt-row" id="ttStatus"></div>
-                <div class="tt-row" id="ttPhase"></div>
-                <div class="tt-row" id="ttEngineer"></div>
+        <!-- SLIDE-OUT UNIT DETAILS DRAWER -->
+        <div class="details-drawer" id="detailsDrawer">
+          <div class="drawer-header">
+            <div>
+              <div class="unit-title-row">
+                <div class="unit-number-tag" id="drawerUnitNum">Villa --</div>
+                <div class="unit-type-pill" id="drawerUnitType">Villa</div>
               </div>
+              <div style="font-size:12px; color:var(--text-sec); margin-top:3px">Villagio Compound</div>
             </div>
-            <div class="map-empty" id="mapEmpty">
-              <div class="map-empty-inner">
-                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                  <rect width="80" height="80" rx="16" fill="#EFF6FF"/>
-                  <rect x="16" y="16" width="48" height="48" rx="8" stroke="#3B82F6" stroke-width="2" fill="none"/>
-                  <circle cx="32" cy="30" r="5" stroke="#3B82F6" stroke-width="2"/>
-                  <path d="M16 55L28 40L36 48L50 30L64 55" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <h3>Load Your Masterplan</h3>
-                <p>Upload your compound image to begin tracking units on the interactive map</p>
-                <button class="btn-primary" onclick="document.getElementById('masterplanInput').click()">Choose Image</button>
+            <button class="drawer-close" id="drawerCloseBtn">&times;</button>
+          </div>
+
+          <div class="drawer-content">
+            <!-- STAGE BANNER -->
+            <div class="stage-banner" id="drawerStageBanner">
+              <div class="stage-banner-header">
+                <span class="stage-banner-title" id="drawerStageNameEn">Stage Name</span>
+                <span id="drawerProgressBadge" style="font-family:'JetBrains Mono'; font-weight:700; font-size:13px">100%</span>
               </div>
-            </div>
-          </div>
-        </div>
+              <div class="stage-banner-ar" id="drawerStageNameAr">اسم المرحلة</div>
 
-        <!-- ── LIST VIEW ── -->
-        <div class="view-pane" id="viewList">
-          <div class="list-bar">
-            <input type="text" id="listSearch" placeholder="Search unit, type, engineer…" />
-            <select id="listSort" class="fb-select">
-              <option value="number">Sort: Number</option>
-              <option value="status">Sort: Status</option>
-              <option value="phase">Sort: Phase</option>
-              <option value="engineer">Sort: Engineer</option>
-            </select>
-            <button class="btn-outline" id="exportCsvBtn">Export CSV</button>
-          </div>
-          <div class="tbl-wrap">
-            <table class="unit-tbl">
-              <thead>
-                <tr>
-                  <th>Unit #</th><th>Type</th><th>Status</th><th>Current Phase</th>
-                  <th>Engineer</th><th>Contractor</th>
-                  <th>Handed Over</th><th>Issues</th><th></th>
-                </tr>
-              </thead>
-              <tbody id="tblBody"></tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- ── DASHBOARD VIEW ── -->
-        <div class="view-pane" id="viewDashboard">
-          <div class="dash-grid">
-
-            <div class="dash-card span-full dash-stats-row" id="dashStatsRow">
-              <!-- Populated by JS -->
-            </div>
-
-            <div class="dash-card">
-              <h3 class="dash-title">Overall Progress</h3>
-              <div class="progress-ring-wrap">
-                <svg class="prog-ring" viewBox="0 0 140 140">
-                  <circle class="ring-track" cx="70" cy="70" r="58"/>
-                  <circle class="ring-fill" cx="70" cy="70" r="58" id="ringFill"/>
-                </svg>
-                <div class="ring-label">
-                  <span id="progPct">0%</span>
-                  <small>Complete</small>
+              <div class="progress-wrap">
+                <div class="progress-labels">
+                  <span>Stage Progress</span>
+                  <span id="drawerProgressPct">100%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" id="drawerProgressFill" style="width:100%"></div>
                 </div>
               </div>
             </div>
 
-            <div class="dash-card">
-              <h3 class="dash-title">Phase Breakdown</h3>
-              <div id="phaseBreakdown"></div>
-            </div>
-
-            <div class="dash-card">
-              <h3 class="dash-title">Engineer Workload</h3>
-              <div id="engWorkload"></div>
-            </div>
-
-            <div class="dash-card dash-activity">
-              <h3 class="dash-title">Recent Activity</h3>
-              <div id="activityLog"></div>
-            </div>
-
-            <div class="dash-card">
-              <h3 class="dash-title">Units with Issues</h3>
-              <div id="issuesList"></div>
-            </div>
-
-            <div class="dash-card">
-              <h3 class="dash-title">Stalled Units <span class="dash-badge" id="stalledBadge">0</span></h3>
-              <div id="stalledList"></div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- ── USERS VIEW (Manager only) ── -->
-        <div class="view-pane" id="viewUsers">
-          <div class="users-page">
-            <div class="users-header">
-              <div>
-                <h2 class="users-title">User Management</h2>
-                <p class="users-sub">Add engineers and viewers, assign roles and units</p>
+            <!-- SPECS -->
+            <div class="specs-grid">
+              <div class="spec-card">
+                <div class="spec-label">CAD Position</div>
+                <div class="spec-val" id="drawerCadPos" style="font-family:'JetBrains Mono'; font-size:11.5px">X: --, Y: --</div>
               </div>
-              <button class="btn-primary" id="addUserBtn">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
-                  <line x1="12" y1="1" x2="12" y2="5"/><line x1="10" y1="3" x2="14" y2="3"/>
-                </svg>
-                Add User
-              </button>
+              <div class="spec-card">
+                <div class="spec-label">Target Completion</div>
+                <div class="spec-val" id="drawerTargetDate">Q4 2026</div>
+              </div>
+              <div class="spec-card">
+                <div class="spec-label">Assigned Engineer</div>
+                <div class="spec-val" id="drawerEngineer">Eng. Ahmed M.</div>
+              </div>
+              <div class="spec-card">
+                <div class="spec-label">Quality Status</div>
+                <div class="spec-val" id="drawerInspection" style="color:#10B981">Verified ✓</div>
+              </div>
             </div>
-            <div class="users-grid" id="usersGrid">
-              <!-- Populated by JS -->
+
+            <!-- DIRECT DRAWINGS SHORTCUT -->
+            <button class="btn-action btn-emerald" id="btnViewUnitDrawings">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+              View Unit Drawings
+            </button>
+
+            <!-- UPDATE STAGE DIRECTLY FROM DRAWINGS -->
+            <div>
+              <div class="spec-label" style="margin-bottom:6px">Update Construction Stage</div>
+              <select id="stageSelectUpdate" class="stage-update-select"></select>
+            </div>
+
+            <!-- MILESTONE CHECKLIST -->
+            <div>
+              <div class="spec-label" style="margin-bottom:8px">Milestone Execution Checklist</div>
+              <div id="drawerMilestones" style="display:flex; flex-direction:column; gap:6px"></div>
+            </div>
+
+            <!-- ACTIONS -->
+            <div style="display:flex; flex-direction:column; gap:8px; margin-top:auto">
+              <button class="btn-action btn-primary" id="btnLogIssueModal">Log Site Issue / Snag</button>
+              <button class="btn-action btn-sec" id="btnSignOffHandover">Formal Handover Sign-off</button>
             </div>
           </div>
         </div>
 
-      </main>
-    </div><!-- /app-shell -->
-
-    <!-- ══════════════════════════════════════════
-         UNIT DETAIL PANEL
-    ══════════════════════════════════════════ -->
-    <aside class="unit-panel" id="unitPanel">
-      <div class="panel-hdr">
-        <div class="phdr-left">
-          <div class="panel-badge" id="pBadge">V001</div>
-          <div>
-            <div class="panel-title" id="pTitle">Unit V001</div>
-            <div class="panel-sub" id="pSub">Type A – Villa</div>
-          </div>
-        </div>
-        <div class="phdr-right">
-          <button class="hdr-btn" id="pEditBtn" title="Edit Unit">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
-              <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
-            </svg>
-          </button>
-          <button class="hdr-btn" id="pCloseBtn" title="Close">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <div class="panel-status-strip" id="pStatusStrip">
-        <span class="status-pill" id="pStatusPill">Not Started</span>
-        <span class="handover-pill" id="pHandoverPill">
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14">
-            <path d="M10.5 14v-1.333A2.667 2.667 0 0 0 7.833 10H3.167A2.667 2.667 0 0 0 .5 12.667V14"/>
-            <circle cx="5.5" cy="5" r="2.667"/>
-            <line x1="13" y1="5" x2="13" y2="11"/><line x1="10" y1="8" x2="16" y2="8"/>
-          </svg>
-          <span id="pHandoverText">Not Handed Over</span>
-        </span>
-      </div>
-
-      <nav class="panel-tabs" id="panelTabs">
-        <button class="ptab active" data-tab="overview">Overview</button>
-        <button class="ptab" data-tab="phases">Phases</button>
-        <button class="ptab" data-tab="photos">Photos</button>
-        <button class="ptab" data-tab="drawings">Drawings</button>
-        <button class="ptab" data-tab="comments">Comments</button>
-        <button class="ptab" data-tab="issues">Issues</button>
-      </nav>
-
-      <div class="panel-body" id="panelBody">
-        <!-- Populated by JS -->
-      </div>
-    </aside>
-
-    <!-- Backdrop -->
-    <div class="backdrop" id="backdrop"></div>
-
-    <!-- ══════════════════════════════════════════
-         EDIT UNIT MODAL
-    ══════════════════════════════════════════ -->
-    <div class="modal-overlay" id="editModal">
-      <div class="modal-box">
-        <div class="modal-hdr">
-          <h3 id="modalTitle">Edit Unit</h3>
-          <button class="hdr-btn" id="modalClose">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-            </svg>
-          </button>
-        </div>
-        <div class="modal-body" id="modalBody"></div>
-        <div class="modal-footer">
-          <button class="btn-outline" id="modalCancel">Cancel</button>
-          <button class="btn-primary" id="modalSave">Save Changes</button>
-        </div>
       </div>
     </div>
 
-    <!-- ══════════════════════════════════════════
-         ADD USER MODAL (Manager only)
-    ══════════════════════════════════════════ -->
-    <div class="modal-overlay" id="addUserModal">
-      <div class="modal-box">
-        <div class="modal-hdr">
-          <h3>Add New User</h3>
-          <button class="hdr-btn" id="addUserModalClose">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-            </svg>
-          </button>
+    <!-- ─────────────────────────────────────────────────────────
+         PANE 2: 📁 DOCUMENTS & DRAWINGS MODULE
+         ───────────────────────────────────────────────────────── -->
+    <div class="view-pane" id="paneDocuments">
+      <div class="docs-layout">
+        
+        <div class="docs-header-row">
+          <div>
+            <h1 class="docs-title-h1">Engineering Drawings & Specifications</h1>
+            <p class="docs-subtitle-p">Master structural, architectural, MEP blueprints and permits categorized by typology</p>
+          </div>
+          <div class="docs-top-controls">
+            <button class="btn-action btn-primary" id="btnOpenUploadModal" style="padding: 10px 18px">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+              Upload Document
+            </button>
+          </div>
         </div>
-        <div class="modal-body">
-          <div id="addUserError" class="login-error" style="display:none"></div>
-          <div class="form-group">
-            <label class="form-label">Full Name</label>
-            <input type="text" id="newUserName" class="form-input" placeholder="Ahmed Hassan" />
+
+        <!-- UPLOAD DROPZONE -->
+        <div class="upload-dropzone" id="docsDropzone">
+          <div class="dropzone-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
           </div>
-          <div class="form-group">
-            <label class="form-label">Email Address</label>
-            <input type="email" id="newUserEmail" class="form-input" placeholder="ahmed@company.com" />
+          <div class="dropzone-text-main">Drag and drop AutoCAD drawings (.dwg, .dxf) or PDFs here</div>
+          <div class="dropzone-text-sub">Or click to select files from your computer (auto-categorized by typology)</div>
+          <input type="file" id="docsFileInput" multiple accept=".pdf,.dwg,.dxf,.png,.jpg" style="display:none"/>
+        </div>
+
+        <!-- CATEGORY TABS -->
+        <div class="category-filter-row">
+          <div class="category-pills">
+            <div class="category-pill active" data-cat="all">All Documents (<span id="catCountAll">12</span>)</div>
+            <div class="category-pill" data-cat="standalone">🏡 Standalone Villas (<span id="catCountStandalone">4</span>)</div>
+            <div class="category-pill" data-cat="twin">🏘️ Twin Houses (<span id="catCountTwin">3</span>)</div>
+            <div class="category-pill" data-cat="town">🏘️ Townhouses (<span id="catCountTown">3</span>)</div>
+            <div class="category-pill" data-cat="infrastructure">📐 Site & Infrastructure (<span id="catCountInfra">2</span>)</div>
           </div>
-          <div class="form-group">
-            <label class="form-label">Temporary Password</label>
-            <input type="password" id="newUserPass" class="form-input" placeholder="Min 6 characters" />
-          </div>
-          <div class="form-group">
-            <label class="form-label">Role</label>
-            <select id="newUserRole" class="form-input">
-              <option value="engineer">Engineer</option>
-              <option value="viewer">Viewer</option>
-              <option value="manager">Manager</option>
+
+          <div style="display:flex; align-items:center; gap:8px">
+            <select id="docDisciplineFilter" class="form-select" style="padding:6px 12px; font-size:12px; width:auto">
+              <option value="all">All Disciplines</option>
+              <option value="Architectural">Architectural</option>
+              <option value="Structural">Structural</option>
+              <option value="MEP">MEP Engineering</option>
+              <option value="Permit">Permits & Approvals</option>
             </select>
           </div>
         </div>
-        <div class="modal-footer">
-          <button class="btn-outline" id="addUserCancel">Cancel</button>
-          <button class="btn-primary" id="addUserSave">Create User</button>
+
+        <!-- DOCUMENT CARDS GRID -->
+        <div class="docs-grid" id="docsGrid"></div>
+
+      </div>
+    </div>
+
+    <!-- ─────────────────────────────────────────────────────────
+         PANE 3: 📋 UNIT INVENTORY TABLE
+         ───────────────────────────────────────────────────────── -->
+    <div class="view-pane" id="paneInventory">
+      <div class="inventory-layout">
+        <div class="table-controls">
+          <div>
+            <h2 style="font-size:18px; font-weight:800; color:#fff">115 Units Inventory & Progress</h2>
+            <div style="font-size:12px; color:var(--text-sec); margin-top:2px">Comprehensive registry with real-time stage tracking</div>
+          </div>
+          <div style="display:flex; align-items:center; gap:10px">
+            <input type="text" id="inventorySearch" class="table-search-input" placeholder="Search villa #, type, stage..."/>
+            <button class="btn-action btn-sec" id="btnExportCsv" style="width:auto; padding:9px 16px">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Export CSV
+            </button>
+          </div>
+        </div>
+
+        <div class="unit-table-wrap">
+          <table class="unit-table">
+            <thead>
+              <tr>
+                <th>Unit #</th>
+                <th>Typology</th>
+                <th>Current Stage (AutoCAD)</th>
+                <th>Arabic Stage</th>
+                <th>Progress %</th>
+                <th>Assigned Engineer</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="inventoryTableBody"></tbody>
+          </table>
         </div>
       </div>
     </div>
 
-    <!-- ══════════════════════════════════════════
-         IMAGE LIGHTBOX
-    ══════════════════════════════════════════ -->
-    <div class="lightbox" id="lightbox">
-      <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
-      <div class="lightbox-content">
-        <button class="lightbox-close" id="lightboxClose">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-          </svg>
-        </button>
-        <img id="lightboxImg" src="" alt="" />
-        <div class="lightbox-caption" id="lightboxCaption"></div>
+    <!-- ─────────────────────────────────────────────────────────
+         PANE 4: 📊 EXECUTIVE ANALYTICS
+         ───────────────────────────────────────────────────────── -->
+    <div class="view-pane" id="paneAnalytics">
+      <div class="inventory-layout">
+        <div>
+          <h2 style="font-size:20px; font-weight:800; color:#fff">Executive Construction Analytics</h2>
+          <div style="font-size:12px; color:var(--text-sec); margin-top:2px">Real-time velocity and construction stage distribution</div>
+        </div>
+
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:16px">
+          <div class="spec-card" style="padding:18px">
+            <div class="spec-label">Overall Project Progress</div>
+            <div style="font-size:32px; font-weight:800; color:#3B82F6; margin-top:6px; font-family:'JetBrains Mono'">68.4%</div>
+            <div style="font-size:12px; color:var(--text-sec); margin-top:4px">Weighted completion based on 12 stages</div>
+          </div>
+
+          <div class="spec-card" style="padding:18px">
+            <div class="spec-label">Fully Handed Over</div>
+            <div style="font-size:32px; font-weight:800; color:#EF4444; margin-top:6px; font-family:'JetBrains Mono'">18 Units</div>
+            <div style="font-size:12px; color:var(--text-sec); margin-top:4px">15.6% of entire development</div>
+          </div>
+
+          <div class="spec-card" style="padding:18px">
+            <div class="spec-label">Active Under Construction</div>
+            <div style="font-size:32px; font-weight:800; color:#FACC15; margin-top:6px; font-family:'JetBrains Mono'">86 Units</div>
+            <div style="font-size:12px; color:var(--text-sec); margin-top:4px">Structure & MEP underway</div>
+          </div>
+
+          <div class="spec-card" style="padding:18px">
+            <div class="spec-label">Site Preparation / Earthworks</div>
+            <div style="font-size:32px; font-weight:800; color:#6366F1; margin-top:6px; font-family:'JetBrains Mono'">11 Units</div>
+            <div style="font-size:12px; color:var(--text-sec); margin-top:4px">Ready for foundation casting</div>
+          </div>
+        </div>
+
+        <div class="spec-card" style="padding:20px">
+          <div class="spec-label" style="margin-bottom:14px">Construction Stage Velocity Breakdown</div>
+          <div id="analyticsStageBars" style="display:flex; flex-direction:column; gap:10px"></div>
+        </div>
       </div>
     </div>
 
-    <!-- ══════════════════════════════════════════
-         TOAST NOTIFICATION
-    ══════════════════════════════════════════ -->
-    <div id="toastContainer" class="toast-container"></div>
+    <!-- ─────────────────────────────────────────────────────────
+         PANE 5: ⚠️ ISSUES & SNAGGING
+         ───────────────────────────────────────────────────────── -->
+    <div class="view-pane" id="paneIssues">
+      <div class="inventory-layout">
+        <div class="table-controls">
+          <div>
+            <h2 style="font-size:18px; font-weight:800; color:#fff">Site Inspection Snags & Quality Logs</h2>
+            <div style="font-size:12px; color:var(--text-sec); margin-top:2px">Track defect resolution directly linked to villa polygons</div>
+          </div>
+          <button class="btn-action btn-primary" id="btnNewIssue" style="width:auto; padding:9px 16px">
+            + Log New Issue
+          </button>
+        </div>
 
-  </div><!-- /appRoot -->
+        <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap:16px" id="issuesListGrid"></div>
+      </div>
+    </div>
 
-  <!-- Firebase SDK (compat mode — no bundler needed) -->
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-storage-compat.js"></script>
-  <script src="app.js"></script>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MODAL: UPLOAD DRAWINGS
+     ═══════════════════════════════════════════════════════════ -->
+<div class="modal-overlay" id="uploadModal">
+  <div class="modal-card">
+    <div class="modal-header">
+      <div class="modal-title">Upload Engineering Drawing / Document</div>
+      <button class="drawer-close" id="btnCloseUploadModal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label class="form-label">Document Title</label>
+        <input type="text" id="uploadDocTitle" class="form-input" placeholder="e.g. Ground Floor Slab Rebar Layout"/>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Unit Typology Category</label>
+        <select id="uploadDocCategory" class="form-select">
+          <option value="standalone">🏡 Standalone Villa (Type A & B)</option>
+          <option value="twin">🏘️ Twin House (Twin A-B, C-D, E-F)</option>
+          <option value="town">🏘️ Townhouse</option>
+          <option value="infrastructure">📐 Masterplan & Infrastructure</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Discipline</label>
+        <select id="uploadDocDiscipline" class="form-select">
+          <option value="Structural">Structural Engineering</option>
+          <option value="Architectural">Architectural</option>
+          <option value="MEP">MEP (Mechanical, Electrical, Plumbing)</option>
+          <option value="Permit">Authority Permit / Civil Defense</option>
+          <option value="Specifications">BOQ & Material Specs</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Revision Number</label>
+        <input type="text" id="uploadDocRev" class="form-input" placeholder="Rev 0, Rev A, Rev 1.2" value="Rev 0"/>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Select File (.dwg, .dxf, .pdf, .png)</label>
+        <input type="file" id="modalFileInput" class="form-input" accept=".dwg,.dxf,.pdf,.png,.jpg"/>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-action btn-sec" id="btnCancelUpload" style="width:auto; padding:8px 16px">Cancel</button>
+      <button class="btn-action btn-primary" id="btnSubmitUpload" style="width:auto; padding:8px 20px">Save Document</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MODAL: PREVIEW DOCUMENT
+     ═══════════════════════════════════════════════════════════ -->
+<div class="modal-overlay" id="previewModal">
+  <div class="modal-card" style="max-width:700px">
+    <div class="modal-header">
+      <div class="modal-title" id="previewDocTitle">Document Preview</div>
+      <button class="drawer-close" id="btnClosePreviewModal">&times;</button>
+    </div>
+    <div class="modal-body" style="background:#030712; align-items:center; justify-content:center; min-height:360px">
+      <div id="previewCanvasArea" style="text-align:center; padding:20px">
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.5"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon></svg>
+        <div style="font-size:16px; font-weight:700; color:#fff; margin-top:14px" id="previewDocName">Drawing File</div>
+        <div style="font-size:12px; color:var(--text-sec); margin-top:4px" id="previewDocSpecs">DWG Vector • 2.4 MB</div>
+        <div style="background:#111827; border:1px solid #1F293D; border-radius:8px; padding:12px; margin-top:20px; text-align:left; font-size:12px; color:#94A3B8">
+          ✓ Certified by Lead Structural Consultant for Villagio Construction Phase<br/>
+          ✓ Conforms to Egyptian Code of Practice for Reinforced Concrete (ECP 203)
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-action btn-primary" id="btnDownloadCurrentPreview" style="width:auto; padding:8px 20px">Download File</button>
+    </div>
+  </div>
+</div>
+
+<!-- DATASET -->
+<script src="project-current-state.js"></script>
+
+<script>
+  /* ═══════════════════════════════════════════════════════════
+     APP CONTROLLER & STATE
+     ═══════════════════════════════════════════════════════════ */
+  const data = typeof PROJECT_CURRENT_STATE !== 'undefined' ? PROJECT_CURRENT_STATE : null;
+  let activeTab = 'paneCurrentState';
+  let activeStageFilter = null;
+  let selectedVilla = null;
+
+  // INITIAL PRE-POPULATED ENGINEERING DOCUMENTS
+  const DEFAULT_DOCS = [
+    {
+      id: 'doc-1',
+      title: 'Standalone Villa Type A — Ground & First Floor Arch Plans',
+      category: 'standalone',
+      discipline: 'Architectural',
+      format: 'DWG',
+      rev: 'Rev 2.1',
+      date: '2026-08-15',
+      size: '4.8 MB',
+      description: 'Complete floor plans, door/window schedules, and facade elevations.'
+    },
+    {
+      id: 'doc-2',
+      title: 'Standalone Villa Type A — Foundation & Footings Rebar Detail',
+      category: 'standalone',
+      discipline: 'Structural',
+      format: 'CAD',
+      rev: 'Rev 1.0',
+      date: '2026-07-20',
+      size: '3.2 MB',
+      description: 'Plain concrete and reinforced concrete isolated footing schedules.'
+    },
+    {
+      id: 'doc-3',
+      title: 'Standalone Villa — MEP Water Supply & Drainage Schematics',
+      category: 'standalone',
+      discipline: 'MEP',
+      format: 'PDF',
+      rev: 'Rev 0',
+      date: '2026-06-12',
+      size: '2.1 MB',
+      description: 'Sanitary stacks, roof water tank feeder lines, and pump connections.'
+    },
+    {
+      id: 'doc-4',
+      title: 'Standalone Villa Type B — Roof Columns & Parapet Details',
+      category: 'standalone',
+      discipline: 'Structural',
+      format: 'DWG',
+      rev: 'Rev 1.1',
+      date: '2026-08-01',
+      size: '2.9 MB',
+      description: 'Roof slab reinforcement and parapet beam sections.'
+    },
+    {
+      id: 'doc-5',
+      title: 'Twin House (Twin A-B) — Architectural Common Party Wall & Facade',
+      category: 'twin',
+      discipline: 'Architectural',
+      format: 'DWG',
+      rev: 'Rev 3.0',
+      date: '2026-08-22',
+      size: '5.4 MB',
+      description: 'Acoustic party wall insulation, shared foundation joints, and front courtyard elevations.'
+    },
+    {
+      id: 'doc-6',
+      title: 'Twin House (Twin C-D) — First Floor Slab & Cantilever Sections',
+      category: 'twin',
+      discipline: 'Structural',
+      format: 'CAD',
+      rev: 'Rev 1.2',
+      date: '2026-07-18',
+      size: '3.7 MB',
+      description: 'Post-tensioned slab options and column axial load tables.'
+    },
+    {
+      id: 'doc-7',
+      title: 'Twin House — Power Distribution Panel & Conduit Risers',
+      category: 'twin',
+      discipline: 'MEP',
+      format: 'PDF',
+      rev: 'Rev 0',
+      date: '2026-05-30',
+      size: '1.9 MB',
+      description: 'Single line diagram for main distribution board (MDB) and earthing grid.'
+    },
+    {
+      id: 'doc-8',
+      title: 'Townhouse Block — Typology Floor Plans (Middle & End Units)',
+      category: 'town',
+      discipline: 'Architectural',
+      format: 'DWG',
+      rev: 'Rev 2.0',
+      date: '2026-08-10',
+      size: '6.2 MB',
+      description: 'Modular townhouse unit layouts, staircases, and terrace designs.'
+    },
+    {
+      id: 'doc-9',
+      title: 'Townhouse Block — Raft Foundation & Ground Beams Layout',
+      category: 'town',
+      discipline: 'Structural',
+      format: 'DWG',
+      rev: 'Rev 1.0',
+      date: '2026-07-05',
+      size: '4.1 MB',
+      description: 'Strip footings, tie beam rebar layouts, and ground slab waterproofing.'
+    },
+    {
+      id: 'doc-10',
+      title: 'Townhouse Block — Plumbing Stack & Rainwater Downspouts',
+      category: 'town',
+      discipline: 'MEP',
+      format: 'PDF',
+      rev: 'Rev 1',
+      date: '2026-06-25',
+      size: '2.5 MB',
+      description: 'Gravity drainage lines and courtyard discharge points.'
+    },
+    {
+      id: 'doc-11',
+      title: 'Villagio Compound — Master Civil Defense & Fire Hydrant Grid',
+      category: 'infrastructure',
+      discipline: 'Permit',
+      format: 'PDF',
+      rev: 'Approved',
+      date: '2026-04-14',
+      size: '8.6 MB',
+      description: 'Official Civil Defense certification and ring main pipeline layout.'
+    },
+    {
+      id: 'doc-12',
+      title: 'Villagio Site Master Grading & Stormwater Drainage System',
+      category: 'infrastructure',
+      discipline: 'Structural',
+      format: 'CAD',
+      rev: 'Rev 3',
+      date: '2026-05-18',
+      size: '7.3 MB',
+      description: 'Spot levels, retention basin discharge rates, and road cross-slopes.'
+    }
+  ];
+
+  // Load documents from LocalStorage or initialize with defaults
+  let siteDocs = [];
+  try {
+    const saved = localStorage.getItem('siteplanner_docs_v1');
+    siteDocs = saved ? JSON.parse(saved) : DEFAULT_DOCS;
+  } catch(e) {
+    siteDocs = DEFAULT_DOCS;
+  }
+
+  // Pre-populated Issues
+  const DEFAULT_ISSUES = [
+    {
+      id: 'iss-1',
+      unitNum: '18',
+      title: 'Plumbing stack clearance conflict with roof beam',
+      severity: 'High',
+      status: 'Open',
+      engineer: 'Eng. Ahmed M.',
+      date: '2026-09-24'
+    },
+    {
+      id: 'iss-2',
+      unitNum: '42',
+      title: 'Concrete column honeycomb touchup requested',
+      severity: 'Medium',
+      status: 'In Progress',
+      engineer: 'Eng. Tarek K.',
+      date: '2026-09-22'
+    },
+    {
+      id: 'iss-3',
+      unitNum: '80A-B',
+      title: 'Site perimeter soil compaction test pending sign-off',
+      severity: 'Low',
+      status: 'Resolved',
+      engineer: 'Eng. Sarah L.',
+      date: '2026-09-18'
+    }
+  ];
+
+  let siteIssues = [];
+  try {
+    const saved = localStorage.getItem('siteplanner_issues_v1');
+    siteIssues = saved ? JSON.parse(saved) : DEFAULT_ISSUES;
+  } catch(e) {
+    siteIssues = DEFAULT_ISSUES;
+  }
+
+  /* ═══════════════════════════════════════════════════════════
+     TAB SWITCHING LOGIC (LEFT-HAND NAVIGATION)
+     ═══════════════════════════════════════════════════════════ */
+  function switchTab(targetPaneId) {
+    document.querySelectorAll('.nav-tab').forEach(t => {
+      t.classList.toggle('active', t.getAttribute('data-target-pane') === targetPaneId);
+    });
+
+    document.querySelectorAll('.view-pane').forEach(p => {
+      p.classList.toggle('active', p.id === targetPaneId);
+    });
+
+    activeTab = targetPaneId;
+    if (targetPaneId === 'paneDocuments') renderDocs();
+    if (targetPaneId === 'paneInventory') renderInventory();
+    if (targetPaneId === 'paneAnalytics') renderAnalytics();
+    if (targetPaneId === 'paneIssues') renderIssues();
+  }
+
+  document.querySelectorAll('.nav-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      const pane = tab.getAttribute('data-target-pane');
+      if (pane) switchTab(pane);
+    });
+  });
+
+  /* ═══════════════════════════════════════════════════════════
+     CURRENT STATE MAP INITIALIZATION (FULL WIDTH HERO CANVAS)
+     ═══════════════════════════════════════════════════════════ */
+  const masterSvg = document.getElementById('masterSvg');
+  const viewportGroup = document.getElementById('viewportGroup');
+  const villasLayer = document.getElementById('villasLayer');
+  const legendLayer = document.getElementById('legendLayer');
+  const drawer = document.getElementById('detailsDrawer');
+
+  if (data && data.villas) {
+    // 1. Calculate Live Stage Counts
+    const stageCounts = {};
+    data.stagesOrder.forEach(key => { stageCounts[key] = 0; });
+    data.villas.forEach(v => {
+      const code = v.colorCode || 'unhatched';
+      stageCounts[code] = (stageCounts[code] || 0) + 1;
+    });
+
+    // Populate Drawer Stage Update Dropdown
+    const stageSel = document.getElementById('stageSelectUpdate');
+    data.stagesOrder.forEach(code => {
+      const st = data.stages[code];
+      const opt = document.createElement('option');
+      opt.value = code;
+      opt.textContent = `${st.name_en} — ${st.name_ar}`;
+      stageSel.appendChild(opt);
+    });
+
+    stageSel.addEventListener('change', (e) => {
+      if (!selectedVilla) return;
+      const newCode = parseInt(e.target.value);
+      const newStage = data.stages[newCode];
+      if (newStage) {
+        selectedVilla.colorCode = newCode;
+        selectedVilla.stage = newStage;
+
+        // Update Polygon in SVG
+        const vg = document.getElementById('vg_' + selectedVilla.id);
+        if (vg) {
+          vg.setAttribute('data-stage-code', newCode);
+          const p = vg.querySelector('.villa-poly');
+          if (p) p.setAttribute('fill', newStage.color);
+        }
+
+        openVillaDrawer(selectedVilla);
+      }
+    });
+
+    // 2. Render 115 Villas with ENLARGED, CRISP, HIGH-CONTRAST LABELS
+    data.villas.forEach(v => {
+      const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+      g.setAttribute('class', 'villa-group');
+      g.setAttribute('id', 'vg_' + v.id);
+      g.setAttribute('data-villa-id', v.id);
+      g.setAttribute('data-stage-code', v.colorCode || 'unhatched');
+
+      // Poly
+      const poly = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      poly.setAttribute('d', v.svgPath);
+      poly.setAttribute('fill', v.stage.color);
+      poly.setAttribute('class', 'villa-poly');
+      g.appendChild(poly);
+
+      // Label text with enlarged, bold font size
+      const txt = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+      txt.setAttribute('x', v.labelX);
+      txt.setAttribute('y', v.labelY);
+      txt.setAttribute('class', 'villa-label');
+
+      // Adaptive size: 1-2 digits: 13.5px, 3-4 chars: 11.5px, longer (e.g. 95C-D): 9.5px
+      const numLen = v.unitNumber.length;
+      if (numLen <= 2) {
+        txt.setAttribute('font-size', '13.5');
+      } else if (numLen <= 4) {
+        txt.setAttribute('font-size', '11.5');
+      } else {
+        txt.setAttribute('font-size', '9.5');
+      }
+
+      txt.textContent = v.unitNumber;
+      g.appendChild(txt);
+
+      // Click
+      g.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openVillaDrawer(v);
+      });
+
+      villasLayer.appendChild(g);
+    });
+
+    // 3. Render DYNAMIC, INTERACTIVE AUTOCAD LEGEND ON THE RIGHT SIDE
+    // Positioned strictly to the right of all villas (villas end at X=852, legend starts at X=930)
+    const legendX = 930;
+    const cardW = 440;
+    const cardH = 48;
+    const gap = 12;
+    let legendY = 50;
+
+    data.stagesOrder.forEach(code => {
+      const st = data.stages[code];
+      if (!st) return;
+      const count = stageCounts[code] || 0;
+
+      const legG = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+      legG.setAttribute('class', 'legend-card-group');
+      legG.setAttribute('data-legend-code', code);
+      legG.style.cursor = 'pointer';
+
+      // Card Background Rect
+      const bg = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+      bg.setAttribute('x', legendX);
+      bg.setAttribute('y', legendY);
+      bg.setAttribute('width', cardW);
+      bg.setAttribute('height', cardH);
+      bg.setAttribute('fill', '#0B101B');
+      bg.setAttribute('stroke', '#1F293D');
+      bg.setAttribute('stroke-width', '1');
+      bg.setAttribute('rx', '6');
+      bg.setAttribute('class', 'legend-card-bg');
+      legG.appendChild(bg);
+
+      // Stage Color Swatch
+      const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+      rect.setAttribute('x', legendX + 12);
+      rect.setAttribute('y', legendY + 10);
+      rect.setAttribute('width', '44');
+      rect.setAttribute('height', '28');
+      rect.setAttribute('fill', st.color);
+      rect.setAttribute('stroke', '#FFFFFF');
+      rect.setAttribute('stroke-width', '1');
+      rect.setAttribute('rx', '4');
+      legG.appendChild(rect);
+
+      // Unit Count Pill Badge
+      const countPill = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+      countPill.setAttribute('x', legendX + 64);
+      countPill.setAttribute('y', legendY + 13);
+      countPill.setAttribute('width', '36');
+      countPill.setAttribute('height', '22');
+      countPill.setAttribute('fill', '#1E293B');
+      countPill.setAttribute('stroke', '#374151');
+      countPill.setAttribute('stroke-width', '0.8');
+      countPill.setAttribute('rx', '11');
+      legG.appendChild(countPill);
+
+      // Unit Count Text
+      const countTxt = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+      countTxt.setAttribute('x', legendX + 82);
+      countTxt.setAttribute('y', legendY + 28);
+      countTxt.setAttribute('text-anchor', 'middle');
+      countTxt.setAttribute('fill', '#FFFFFF');
+      countTxt.setAttribute('font-family', "'JetBrains Mono', monospace");
+      countTxt.setAttribute('font-size', '11px');
+      countTxt.setAttribute('font-weight', '800');
+      countTxt.textContent = count;
+      legG.appendChild(countTxt);
+
+      // Arabic Stage Name ONLY (Centered vertically, large & crisp)
+      const txtAr = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+      txtAr.setAttribute('x', legendX + cardW - 18);
+      txtAr.setAttribute('y', legendY + 29);
+      txtAr.setAttribute('text-anchor', 'end');
+      txtAr.setAttribute('fill', '#FFFFFF');
+      txtAr.setAttribute('font-family', "'Inter', -apple-system, sans-serif");
+      txtAr.setAttribute('font-size', '13.5px');
+      txtAr.setAttribute('font-weight', '800');
+      txtAr.setAttribute('direction', 'rtl');
+      txtAr.textContent = st.name_ar;
+      legG.appendChild(txtAr);
+
+      // Dynamic Click Filter on the Right Legend!
+      legG.addEventListener('click', () => {
+        if (activeStageFilter === code) {
+          activeStageFilter = null;
+          legG.classList.remove('active');
+        } else {
+          document.querySelectorAll('.legend-card-group').forEach(c => c.classList.remove('active'));
+          legG.classList.add('active');
+          activeStageFilter = code;
+        }
+        applyFilters();
+      });
+
+      legendLayer.appendChild(legG);
+      legendY += cardH + gap;
+    });
+
+    // Date & Summary Card at the Bottom of Legend (Arabic Only)
+    const summaryG = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+    summaryG.innerHTML = `
+      <rect x="${legendX}" y="${legendY + 6}" width="${cardW}" height="84" fill="#0B101B" stroke="#3B82F6" stroke-width="1.2" rx="8"/>
+      <text x="${legendX + cardW / 2}" y="${legendY + 32}" text-anchor="middle" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="14.5px" font-weight="900">المـوقـف التـنـفـيـذي</text>
+      <text x="${legendX + cardW / 2}" y="${legendY + 54}" text-anchor="middle" fill="#60A5FA" font-family="'JetBrains Mono', monospace" font-size="13px" font-weight="700">2026 - 9 - 26</text>
+      <text x="${legendX + cardW / 2}" y="${legendY + 74}" text-anchor="middle" fill="#94A3B8" font-family="Inter, sans-serif" font-size="11.5px" font-weight="700">إجمالي 115 فيلة</text>
+    `;
+    legendLayer.appendChild(summaryG);
+  }
+
+  /* ═══════════════════════════════════════════════════════════
+     UNIT INSPECTION DRAWER
+     ═══════════════════════════════════════════════════════════ */
+  function openVillaDrawer(v) {
+    selectedVilla = v;
+    document.querySelectorAll('.villa-group').forEach(g => {
+      g.classList.toggle('selected', g.getAttribute('data-villa-id') === v.id);
+    });
+
+    document.getElementById('drawerUnitNum').textContent = 'Villa ' + v.unitNumber;
+    document.getElementById('drawerUnitType').textContent = v.unitType;
+
+    const banner = document.getElementById('drawerStageBanner');
+    banner.style.backgroundColor = v.stage.color + '22';
+    banner.style.borderColor = v.stage.color;
+
+    document.getElementById('drawerStageNameEn').textContent = v.stage.name_en;
+    document.getElementById('drawerStageNameAr').textContent = v.stage.name_ar;
+    document.getElementById('drawerStageNameAr').style.color = v.stage.color;
+
+    const pct = v.stage.progress + '%';
+    document.getElementById('drawerProgressBadge').textContent = pct;
+    document.getElementById('drawerProgressBadge').style.color = v.stage.color;
+    document.getElementById('drawerProgressPct').textContent = pct;
+
+    const fill = document.getElementById('drawerProgressFill');
+    fill.style.width = pct;
+    fill.style.backgroundColor = v.stage.color;
+
+    document.getElementById('drawerCadPos').textContent = `X: ${v.cadX}, Y: ${v.cadY}`;
+    document.getElementById('stageSelectUpdate').value = v.colorCode || 1;
+
+    // Milestones Checklist
+    const mList = document.getElementById('drawerMilestones');
+    mList.innerHTML = '';
+    const milestones = [
+      { name: 'Excavation & Site Prep', req: 10 },
+      { name: 'Plain Concrete Footings', req: 25 },
+      { name: 'Reinforced Concrete Footings', req: 35 },
+      { name: 'Ground Floor Columns', req: 45 },
+      { name: 'Ground Floor Slab', req: 55 },
+      { name: 'First Floor Columns', req: 65 },
+      { name: 'First Floor Slab', req: 75 },
+      { name: 'Roof Room Columns', req: 82 },
+      { name: 'Concrete Structure Done', req: 90 },
+      { name: 'Brickwork & Facades', req: 95 },
+      { name: 'Final Handover', req: 100 }
+    ];
+
+    milestones.forEach(m => {
+      const isDone = v.stage.progress >= m.req;
+      const row = document.createElement('div');
+      row.style.display = 'flex';
+      row.style.justifyContent = 'space-between';
+      row.style.alignItems = 'center';
+      row.style.padding = '6px 10px';
+      row.style.borderRadius = '4px';
+      row.style.background = '#0B101B';
+      row.style.fontSize = '11.5px';
+      row.innerHTML = `
+        <span style="color:${isDone ? '#F3F4F6' : '#6B7280'}">${m.name}</span>
+        <span style="color:${isDone ? '#10B981' : '#4B5563'}; font-weight:700">
+          ${isDone ? 'COMPLETED ✓' : 'PENDING'}
+        </span>
+      `;
+      mList.appendChild(row);
+    });
+
+    drawer.classList.add('open');
+  }
+
+  document.getElementById('drawerCloseBtn').addEventListener('click', () => {
+    drawer.classList.remove('open');
+    if (selectedVilla) {
+      const el = document.getElementById('vg_' + selectedVilla.id);
+      if (el) el.classList.remove('selected');
+      selectedVilla = null;
+    }
+  });
+
+  // Direct Shortcut: Click "View Unit Drawings" in Drawer -> Switches to Documents Tab!
+  document.getElementById('btnViewUnitDrawings').addEventListener('click', () => {
+    if (!selectedVilla) return;
+    drawer.classList.remove('open');
+    switchTab('paneDocuments');
+
+    // Filter documents to unit typology
+    let cat = 'standalone';
+    if (selectedVilla.unitType.includes('Twin')) cat = 'twin';
+    else if (selectedVilla.unitType.includes('Town')) cat = 'town';
+
+    const pill = document.querySelector(`.category-pill[data-cat="${cat}"]`);
+    if (pill) pill.click();
+  });
+
+  document.getElementById('btnLogIssueModal').addEventListener('click', () => {
+    if (!selectedVilla) return;
+    switchTab('paneIssues');
+    openNewIssueModal(selectedVilla.unitNumber);
+  });
+
+  document.getElementById('btnSignOffHandover').addEventListener('click', () => {
+    if (!selectedVilla) return;
+    alert(`Formal Handover Sign-off certificate issued for Villa ${selectedVilla.unitNumber}. Stage updated to 100% Fully Finished.`);
+    selectedVilla.colorCode = 1;
+    selectedVilla.stage = data.stages[1];
+    const vg = document.getElementById('vg_' + selectedVilla.id);
+    if (vg) {
+      vg.setAttribute('data-stage-code', 1);
+      const p = vg.querySelector('.villa-poly');
+      if (p) p.setAttribute('fill', data.stages[1].color);
+    }
+    openVillaDrawer(selectedVilla);
+  });
+
+  // Filters (Global Search & Dynamic Stages)
+  function applyFilters() {
+    const q = document.getElementById('globalSearchInput').value.trim().toLowerCase();
+    document.querySelectorAll('.villa-group').forEach(g => {
+      const st = g.getAttribute('data-stage-code');
+      const vid = g.getAttribute('data-villa-id').toLowerCase();
+      let match = true;
+      if (activeStageFilter !== null && st != activeStageFilter) match = false;
+      if (q && !vid.includes(q)) match = false;
+      g.classList.toggle('dimmed', !match);
+    });
+  }
+
+  document.getElementById('globalSearchInput').addEventListener('input', applyFilters);
+
+  function resetAllFilters() {
+    activeStageFilter = null;
+    document.querySelectorAll('.legend-card-group').forEach(c => c.classList.remove('active'));
+    document.getElementById('globalSearchInput').value = '';
+    applyFilters();
+  }
+
+  document.getElementById('hudResetFilter').addEventListener('click', resetAllFilters);
+
+  /* ═══════════════════════════════════════════════════════════
+     CURSOR-CENTRIC PAN & ZOOM ENGINE (ZOOMS EXACTLY WHERE POINTER IS)
+     ═══════════════════════════════════════════════════════════ */
+  let panX = 0, panY = 0, zoom = 1;
+  let isPanning = false, startX = 0, startY = 0;
+  const container = document.getElementById('canvasContainer');
+
+  function updateTransform() {
+    viewportGroup.setAttribute('transform', `translate(${panX}, ${panY}) scale(${zoom})`);
+    document.getElementById('scaleText').textContent = Math.round(zoom * 100) + '%';
+  }
+
+  container.addEventListener('mousedown', (e) => {
+    if (e.target.closest('.canvas-hud') || e.target.closest('.legend-card-group')) return;
+    isPanning = true;
+    startX = e.clientX - panX;
+    startY = e.clientY - panY;
+  });
+
+  window.addEventListener('mousemove', (e) => {
+    if (!isPanning) return;
+    panX = e.clientX - startX;
+    panY = e.clientY - startY;
+    updateTransform();
+  });
+
+  window.addEventListener('mouseup', () => { isPanning = false; });
+
+  // POINTER-CENTRIC MOUSE WHEEL ZOOM (INVARIENT UNDER CURSOR)
+  container.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    const rect = container.getBoundingClientRect();
+    const mouseX = e.clientX - rect.left;
+    const mouseY = e.clientY - rect.top;
+
+    // Calculate mouse position relative to current SVG transform
+    const pointX = (mouseX - panX) / zoom;
+    const pointY = (mouseY - panY) / zoom;
+
+    const zoomFactor = e.deltaY < 0 ? 1.15 : 0.87;
+    const newZoom = Math.max(0.35, Math.min(6.0, zoom * zoomFactor));
+
+    // Keep the exact point under the mouse cursor stationary
+    panX = mouseX - pointX * newZoom;
+    panY = mouseY - pointY * newZoom;
+    zoom = newZoom;
+
+    updateTransform();
+  }, { passive: false });
+
+  // CENTER ZOOM FOR HUD BUTTONS
+  function zoomAtCenter(factor) {
+    const rect = container.getBoundingClientRect();
+    const cx = rect.width / 2;
+    const cy = rect.height / 2;
+    const pointX = (cx - panX) / zoom;
+    const pointY = (cy - panY) / zoom;
+    const newZoom = Math.max(0.35, Math.min(6.0, zoom * factor));
+    panX = cx - pointX * newZoom;
+    panY = cy - pointY * newZoom;
+    zoom = newZoom;
+    updateTransform();
+  }
+
+  document.getElementById('zoomInBtn').addEventListener('click', () => zoomAtCenter(1.25));
+  document.getElementById('zoomOutBtn').addEventListener('click', () => zoomAtCenter(0.8));
+  document.getElementById('resetZoomBtn').addEventListener('click', () => {
+    panX = 0; panY = 0; zoom = 1;
+    updateTransform();
+  });
+
+  // Close drawer when clicking canvas background
+  container.addEventListener('click', (e) => {
+    if (!e.target.closest('.villa-group') && !e.target.closest('.canvas-hud') && !e.target.closest('.legend-card-group')) {
+      drawer.classList.remove('open');
+      if (selectedVilla) {
+        const el = document.getElementById('vg_' + selectedVilla.id);
+        if (el) el.classList.remove('selected');
+        selectedVilla = null;
+      }
+    }
+  });
+
+  /* ═══════════════════════════════════════════════════════════
+     TAB 2: DOCUMENTS & DRAWINGS MODULE LOGIC
+     ═══════════════════════════════════════════════════════════ */
+  let activeDocCategory = 'all';
+  let activeDocDiscipline = 'all';
+
+  function renderDocs() {
+    const grid = document.getElementById('docsGrid');
+    grid.innerHTML = '';
+
+    // Filter
+    const filtered = siteDocs.filter(d => {
+      const matchCat = (activeDocCategory === 'all' || d.category === activeDocCategory);
+      const matchDisc = (activeDocDiscipline === 'all' || d.discipline === activeDocDiscipline);
+      return matchCat && matchDisc;
+    });
+
+    // Update Counts
+    document.getElementById('catCountAll').textContent = siteDocs.length;
+    document.getElementById('catCountStandalone').textContent = siteDocs.filter(d => d.category === 'standalone').length;
+    document.getElementById('catCountTwin').textContent = siteDocs.filter(d => d.category === 'twin').length;
+    document.getElementById('catCountTown').textContent = siteDocs.filter(d => d.category === 'town').length;
+    document.getElementById('catCountInfra').textContent = siteDocs.filter(d => d.category === 'infrastructure').length;
+    document.getElementById('navDocsBadge').textContent = siteDocs.length;
+
+    if (filtered.length === 0) {
+      grid.innerHTML = `
+        <div style="grid-column: 1/-1; text-align:center; padding: 48px; color:var(--text-muted)">
+          No documents found for this filter. Use the upload button above to add new blueprints.
+        </div>
+      `;
+      return;
+    }
+
+    filtered.forEach(doc => {
+      const card = document.createElement('div');
+      card.className = 'doc-card';
+      const fmtClass = doc.format.toLowerCase() === 'pdf' ? 'format-pdf' : (doc.format.toLowerCase() === 'dwg' ? 'format-dwg' : 'format-cad');
+
+      card.innerHTML = `
+        <div class="doc-card-top">
+          <div class="doc-format-badge ${fmtClass}">${doc.format}</div>
+          <div class="doc-info">
+            <div class="doc-title" title="${doc.title}">${doc.title}</div>
+            <div class="doc-meta-row">
+              <span class="doc-tag">${doc.discipline}</span>
+              <span>•</span>
+              <span style="font-family:'JetBrains Mono'">${doc.rev}</span>
+              <span>•</span>
+              <span>${doc.date}</span>
+            </div>
+          </div>
+        </div>
+        <div style="font-size:12px; color:var(--text-sec); line-height:1.4">
+          ${doc.description || 'AutoCAD engineering revision package.'}
+        </div>
+        <div class="doc-specs-row">
+          <span>File Size: <strong style="color:#fff">${doc.size || '3.5 MB'}</strong></span>
+          <span style="color:#34D399; font-weight:700">Verified Rev ✓</span>
+        </div>
+        <div class="doc-actions">
+          <button class="doc-btn doc-btn-view" data-doc-id="${doc.id}">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            Preview
+          </button>
+          <button class="doc-btn doc-btn-dl" onclick="alert('Downloading ${doc.title} (${doc.format})')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download
+          </button>
+        </div>
+      `;
+
+      card.querySelector('.doc-btn-view').addEventListener('click', () => {
+        openPreviewModal(doc);
+      });
+
+      grid.appendChild(card);
+    });
+  }
+
+  // Category Filter Pills
+  document.querySelectorAll('.category-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      document.querySelectorAll('.category-pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      activeDocCategory = pill.getAttribute('data-cat');
+      renderDocs();
+    });
+  });
+
+  document.getElementById('docDisciplineFilter').addEventListener('change', (e) => {
+    activeDocDiscipline = e.target.value;
+    renderDocs();
+  });
+
+  // Dropzone Interaction
+  const dropzone = document.getElementById('docsDropzone');
+  const fileInput = document.getElementById('docsFileInput');
+
+  dropzone.addEventListener('click', () => fileInput.click());
+  dropzone.addEventListener('dragover', (e) => { e.preventDefault(); dropzone.classList.add('dragover'); });
+  dropzone.addEventListener('dragleave', () => dropzone.classList.remove('dragover'));
+  dropzone.addEventListener('drop', (e) => {
+    e.preventDefault();
+    dropzone.classList.remove('dragover');
+    if (e.dataTransfer.files.length > 0) {
+      handleFiles(e.dataTransfer.files);
+    }
+  });
+
+  fileInput.addEventListener('change', () => {
+    if (fileInput.files.length > 0) handleFiles(fileInput.files);
+  });
+
+  function handleFiles(files) {
+    const f = files[0];
+    document.getElementById('uploadDocTitle').value = f.name.replace(/\.[^/.]+$/, "");
+    document.getElementById('uploadModal').classList.add('open');
+  }
+
+  // Upload Modal Logic
+  document.getElementById('btnOpenUploadModal').addEventListener('click', () => {
+    document.getElementById('uploadModal').classList.add('open');
+  });
+  document.getElementById('btnCloseUploadModal').addEventListener('click', () => {
+    document.getElementById('uploadModal').classList.remove('open');
+  });
+  document.getElementById('btnCancelUpload').addEventListener('click', () => {
+    document.getElementById('uploadModal').classList.remove('open');
+  });
+
+  document.getElementById('btnSubmitUpload').addEventListener('click', () => {
+    const title = document.getElementById('uploadDocTitle').value.trim();
+    if (!title) { alert('Please enter a document title'); return; }
+
+    const cat = document.getElementById('uploadDocCategory').value;
+    const disc = document.getElementById('uploadDocDiscipline').value;
+    const rev = document.getElementById('uploadDocRev').value.trim() || 'Rev 0';
+
+    const newDoc = {
+      id: 'doc-' + Date.now(),
+      title: title,
+      category: cat,
+      discipline: disc,
+      format: title.toLowerCase().endsWith('.dwg') ? 'DWG' : (title.toLowerCase().endsWith('.pdf') ? 'PDF' : 'CAD'),
+      rev: rev,
+      date: new Date().toISOString().split('T')[0],
+      size: (Math.random() * 3 + 1.5).toFixed(1) + ' MB',
+      description: 'Uploaded engineering specification package.'
+    };
+
+    siteDocs.unshift(newDoc);
+    try { localStorage.setItem('siteplanner_docs_v1', JSON.stringify(siteDocs)); } catch(e) {}
+    document.getElementById('uploadModal').classList.remove('open');
+    renderDocs();
+  });
+
+  // Preview Modal Logic
+  function openPreviewModal(doc) {
+    document.getElementById('previewDocTitle').textContent = doc.title;
+    document.getElementById('previewDocName').textContent = doc.title;
+    document.getElementById('previewDocSpecs').textContent = `${doc.format} • ${doc.discipline} • ${doc.rev} • ${doc.size}`;
+    document.getElementById('previewModal').classList.add('open');
+  }
+  document.getElementById('btnClosePreviewModal').addEventListener('click', () => {
+    document.getElementById('previewModal').classList.remove('open');
+  });
+  document.getElementById('btnDownloadCurrentPreview').addEventListener('click', () => {
+    alert('File downloaded successfully.');
+    document.getElementById('previewModal').classList.remove('open');
+  });
+
+  /* ═══════════════════════════════════════════════════════════
+     TAB 3: UNIT INVENTORY TABLE LOGIC
+     ═══════════════════════════════════════════════════════════ */
+  function renderInventory() {
+    const tbody = document.getElementById('inventoryTableBody');
+    tbody.innerHTML = '';
+    const q = (document.getElementById('inventorySearch').value || '').trim().toLowerCase();
+
+    if (!data || !data.villas) return;
+
+    data.villas.forEach(v => {
+      const vid = v.unitNumber.toLowerCase();
+      const stEn = v.stage.name_en.toLowerCase();
+      const stAr = v.stage.name_ar.toLowerCase();
+
+      if (q && !vid.includes(q) && !stEn.includes(q) && !stAr.includes(q)) return;
+
+      const tr = document.createElement('tr');
+      tr.style.cursor = 'pointer';
+      tr.innerHTML = `
+        <td style="font-weight:800; font-family:'JetBrains Mono'; color:#fff">Villa ${v.unitNumber}</td>
+        <td><span class="unit-type-pill">${v.unitType}</span></td>
+        <td>
+          <div style="display:flex; align-items:center; gap:8px">
+            <span style="width:10px; height:10px; border-radius:2px; background:${v.stage.color}"></span>
+            <span>${v.stage.name_en}</span>
+          </div>
+        </td>
+        <td style="direction:rtl; text-align:left; color:#94A3B8">${v.stage.name_ar}</td>
+        <td>
+          <span style="font-family:'JetBrains Mono'; font-weight:700; color:${v.stage.color}">${v.stage.progress}%</span>
+        </td>
+        <td style="color:#CBD5E1">Eng. Ahmed M.</td>
+        <td>
+          <button class="doc-btn doc-btn-view" style="width:auto; padding:4px 10px; font-size:11px">Inspect</button>
+        </td>
+      `;
+
+      tr.addEventListener('click', () => {
+        switchTab('paneCurrentState');
+        openVillaDrawer(v);
+      });
+
+      tbody.appendChild(tr);
+    });
+  }
+
+  document.getElementById('inventorySearch').addEventListener('input', renderInventory);
+
+  // CSV Export
+  document.getElementById('btnExportCsv').addEventListener('click', () => {
+    if (!data || !data.villas) return;
+    let csv = "Villa_Number,Typology,Stage_English,Stage_Arabic,Progress_Pct,CAD_X,CAD_Y\n";
+    data.villas.forEach(v => {
+      csv += `"${v.unitNumber}","${v.unitType}","${v.stage.name_en}","${v.stage.name_ar}",${v.stage.progress},${v.cadX},${v.cadY}\n`;
+    });
+    const blob = new Blob([csv], { type: 'text/csv' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `Villagio_Inventory_Status_${new Date().toISOString().split('T')[0]}.csv`;
+    a.click();
+  });
+
+  /* ═══════════════════════════════════════════════════════════
+     TAB 4: EXECUTIVE ANALYTICS
+     ═══════════════════════════════════════════════════════════ */
+  function renderAnalytics() {
+    const barsContainer = document.getElementById('analyticsStageBars');
+    barsContainer.innerHTML = '';
+    if (!data) return;
+
+    const counts = {};
+    data.stagesOrder.forEach(k => { counts[k] = 0; });
+    data.villas.forEach(v => {
+      const code = v.colorCode || 'unhatched';
+      counts[code] = (counts[code] || 0) + 1;
+    });
+
+    data.stagesOrder.forEach(code => {
+      const st = data.stages[code];
+      const count = counts[code] || 0;
+      const pct = ((count / data.villas.length) * 100).toFixed(1);
+
+      const row = document.createElement('div');
+      row.innerHTML = `
+        <div style="display:flex; justify-content:space-between; font-size:12px; margin-bottom:4px">
+          <span style="font-weight:700; color:#fff">${st.name_en} (${st.name_ar})</span>
+          <span style="font-family:'JetBrains Mono'; color:${st.color}">${count} Villas (${pct}%)</span>
+        </div>
+        <div style="width:100%; height:7px; background:#0B101B; border-radius:4px; overflow:hidden">
+          <div style="width:${pct}%; height:100%; background:${st.color}; border-radius:4px"></div>
+        </div>
+      `;
+      barsContainer.appendChild(row);
+    });
+  }
+
+  /* ═══════════════════════════════════════════════════════════
+     TAB 5: SITE ISSUES / SNAGGING LOGIC
+     ═══════════════════════════════════════════════════════════ */
+  function renderIssues() {
+    const grid = document.getElementById('issuesListGrid');
+    grid.innerHTML = '';
+
+    siteIssues.forEach(iss => {
+      const card = document.createElement('div');
+      card.className = 'spec-card';
+      card.style.padding = '18px';
+      card.style.display = 'flex';
+      card.style.flexDirection = 'column';
+      card.style.gap = '10px';
+
+      const sevColor = iss.severity === 'High' ? '#EF4444' : (iss.severity === 'Medium' ? '#F59E0B' : '#10B981');
+
+      card.innerHTML = `
+        <div style="display:flex; justify-content:space-between; align-items:flex-start">
+          <span style="font-size:18px; font-weight:800; color:#fff">Villa ${iss.unitNum}</span>
+          <span style="font-size:11px; font-weight:700; padding:2px 8px; border-radius:12px; background:${sevColor}22; color:${sevColor}; border:1px solid ${sevColor}">
+            ${iss.severity} Priority
+          </span>
+        </div>
+        <div style="font-size:13px; font-weight:600; color:#F3F4F6">${iss.title}</div>
+        <div style="display:flex; justify-content:space-between; font-size:11px; color:var(--text-sec); border-top:1px solid var(--border); padding-top:8px">
+          <span>Assigned: ${iss.engineer}</span>
+          <span>${iss.date}</span>
+        </div>
+        <div style="display:flex; gap:8px; margin-top:4px">
+          <button class="doc-btn doc-btn-view" style="padding:6px 12px; font-size:11.5px" onclick="jumpToVillaOnMap('${iss.unitNum}')">
+            Locate on Map
+          </button>
+          <button class="doc-btn doc-btn-dl" style="padding:6px 12px; font-size:11.5px" onclick="resolveIssue('${iss.id}')">
+            ${iss.status === 'Resolved' ? '✓ Closed' : 'Mark Resolved'}
+          </button>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+  }
+
+  window.jumpToVillaOnMap = function(unitNum) {
+    switchTab('paneCurrentState');
+    const v = data.villas.find(u => u.unitNumber == unitNum);
+    if (v) openVillaDrawer(v);
+  };
+
+  window.resolveIssue = function(id) {
+    const item = siteIssues.find(i => i.id === id);
+    if (item) {
+      item.status = item.status === 'Resolved' ? 'Open' : 'Resolved';
+      try { localStorage.setItem('siteplanner_issues_v1', JSON.stringify(siteIssues)); } catch(e) {}
+      renderIssues();
+    }
+  };
+
+  function openNewIssueModal(unitNum = '') {
+    const title = prompt(`Log site issue for Villa ${unitNum}:`, 'Rebar clearance check required');
+    if (title) {
+      siteIssues.unshift({
+        id: 'iss-' + Date.now(),
+        unitNum: unitNum || 'General',
+        title: title,
+        severity: 'Medium',
+        status: 'Open',
+        engineer: 'Eng. Ahmed M.',
+        date: new Date().toISOString().split('T')[0]
+      });
+      try { localStorage.setItem('siteplanner_issues_v1', JSON.stringify(siteIssues)); } catch(e) {}
+      renderIssues();
+    }
+  }
+
+  document.getElementById('btnNewIssue').addEventListener('click', () => openNewIssueModal());
+
+  // INITIAL BOOT
+  switchTab('paneCurrentState');
+</script>
 </body>
 </html>
